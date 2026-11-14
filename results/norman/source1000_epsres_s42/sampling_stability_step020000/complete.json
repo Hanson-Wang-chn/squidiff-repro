@@ -1,0 +1,11 @@
+{
+  "args": {
+    "run": "source1000_epsres_s42",
+    "data_root": "data/research/source_1000_full",
+    "checkpoint": "step_020000.pt",
+    "weights": "model",
+    "sampling_steps": "1000",
+    "tag": "step020000"
+  },
+  "purpose": "Only an implementation/stability diagnostic, not an interaction forecast benchmark"
+}

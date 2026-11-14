@@ -1,0 +1,11 @@
+{
+  "frozen_at": "2026-11-13 20:00 Asia/Shanghai",
+  "question": "Does training-only normalization and endpoint validation of latent noise rescue intermediate-state inference?",
+  "training": "Reuse fixed final 100000-step models; no additional intermediate training information",
+  "models": ["source_fp32_s42", "source_fp32_s43", "source_fp32_s44", "fresh_endpoints_fp32_s42", "full_endpoints_fp32_s42"],
+  "sigma_candidates": "0, 0.5, 0.75, 1, 1.25, 1.5 times pooled within-endpoint training latent RMS; additionally published sigma=0.7",
+  "selection": "Lowest average gene-wise Wasserstein distance on independent day0/day3 validation cells only; common random numbers across candidates",
+  "evaluation": "One selected sigma per final model, evaluated on both middle days after selection is saved",
+  "scope": "Inference optimization beyond the literal public protocol; reported separately and never replaces fixed-sigma primary results",
+  "fresh_split_note": "Protocol fixed before fresh-split trained predictions are available; fresh cells share the public dataset and are not donor-held-out"
+}

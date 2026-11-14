@@ -1,0 +1,10 @@
+{
+  "time": "2026-11-13 19:46:03",
+  "old_controllers": [
+    95387,
+    97515,
+    99145
+  ],
+  "interrupted_training_pid": 100604,
+  "reason": "Private MPS improves aggregate throughput; 330 identical updates produced identical full model SHA256 across native and 1/2/3 MPS processes. Full state is restored; all science configurations unchanged."
+}

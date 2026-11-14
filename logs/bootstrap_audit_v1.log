@@ -1,0 +1,19 @@
+                                                                 opposite_percent           delta_r2_truth_reference          
+                                                                             mean       std                     mean       std
+mode               control_reference                                                                                          
+cell_shift_AB_rep0 full_control_mean                                    74.145631  1.778758                 0.939656  0.006581
+                   random_controls_from_entire_pool                     16.165049  2.844401                 0.939933  0.006885
+                   released_same_indices_first_target_n_controls        12.208738  1.814208                 0.937192  0.007058
+centroid_AB_rep0   full_control_mean                                    64.975728  1.475592                 0.941753  0.006182
+                   random_controls_from_entire_pool                      9.864078  1.783115                 0.942029  0.006410
+                   released_same_indices_first_target_n_controls         8.213592  1.418522                 0.939372  0.006668
+exact_no_change    full_control_mean                                     0.000000  0.000000                -0.023650  0.001372
+                   random_controls_from_entire_pool                     14.145631  2.310132                -0.018824  0.031500
+                   released_same_indices_first_target_n_controls        13.519417  1.802361                -0.065712  0.036130
+literal_AB_rep0    full_control_mean                                    62.519417  1.747266                 0.941034  0.006648
+                   random_controls_from_entire_pool                      9.334951  1.632556                 0.941191  0.007072
+                   released_same_indices_first_target_n_controls         8.121359  1.527088                 0.938569  0.007140
+oracle_AB_rep0     full_control_mean                                    69.635922  1.548018                 0.989584  0.003453
+                   random_controls_from_entire_pool                     12.587379  2.335989                 0.989674  0.003395
+                   released_same_indices_first_target_n_controls         8.796117  1.916180                 0.989117  0.003615
+[2026-11-13 19:11:21] Norman bootstrap参考审计 v1 完成：比较原notebook只使用控制组前257个细胞与全部6618控制细胞。

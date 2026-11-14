@@ -1,0 +1,8 @@
+# Bootstrap environment; install the pinned Python packages with setup_env.sh.
+name: squidiff
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - git

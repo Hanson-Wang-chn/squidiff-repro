@@ -1,0 +1,71 @@
+{
+  "args": {
+    "dataset": "ipsc",
+    "run": "source_fp32_s44",
+    "data_root": "data/research/source",
+    "checkpoint": "latest.pt",
+    "weights": "model",
+    "tag": "raw_controls",
+    "modes": "centroid,cell_shift,oracle",
+    "sigmas": "0,0.5,0.7",
+    "repeats": 1,
+    "cells": 600,
+    "sample_steps": 1000,
+    "bn_recalibrate": false,
+    "inference_math": "ieee"
+  },
+  "checkpoint_step": 100000,
+  "summary": {
+    "('cell_shift', 'day1')": {
+      "pearson": 0.8072869262175355,
+      "r2": 0.6400653906538173,
+      "relative_mse_gain": 0.029505506690711725
+    },
+    "('cell_shift', 'day2')": {
+      "pearson": 0.8650468410752443,
+      "r2": 0.733835833783355,
+      "relative_mse_gain": -0.05611908799875698
+    },
+    "('centroid_sigma0', 'day1')": {
+      "pearson": 0.7862376619049536,
+      "r2": 0.5791766213221949,
+      "relative_mse_gain": -0.13466935676034497
+    },
+    "('centroid_sigma0', 'day2')": {
+      "pearson": 0.825621091992283,
+      "r2": 0.6465795081278689,
+      "relative_mse_gain": -0.40234552555153535
+    },
+    "('centroid_sigma0.5', 'day1')": {
+      "pearson": 0.8046352858965486,
+      "r2": 0.6374759330437865,
+      "relative_mse_gain": 0.022523531948806075
+    },
+    "('centroid_sigma0.5', 'day2')": {
+      "pearson": 0.8873905560316027,
+      "r2": 0.7403053025770734,
+      "relative_mse_gain": -0.03044872981576696
+    },
+    "('centroid_sigma0.7', 'day1')": {
+      "pearson": 0.7653069063290543,
+      "r2": 0.35105954691258767,
+      "relative_mse_gain": -0.7497432029417246
+    },
+    "('centroid_sigma0.7', 'day2')": {
+      "pearson": 0.8773163369443825,
+      "r2": 0.29726640944843785,
+      "relative_mse_gain": -1.7883932285434563
+    },
+    "('oracle', 'day1')": {
+      "pearson": 0.8959718765275096,
+      "r2": 0.8015113164696284,
+      "relative_mse_gain": 0.4648134151357385
+    },
+    "('oracle', 'day2')": {
+      "pearson": 0.9682664148681315,
+      "r2": 0.9328303045110107,
+      "relative_mse_gain": 0.7334757771891635
+    }
+  },
+  "oracle_is_not_forecasting": "Real target expression is encoded for oracle diagnostic only"
+}

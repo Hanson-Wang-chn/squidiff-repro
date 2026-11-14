@@ -1,0 +1,12 @@
+{
+  "training_seeds": [
+    42,
+    43,
+    44
+  ],
+  "noise_repeats_per_seed": 3,
+  "shaded_ranges": "Min/max across the 9 generated curves, not biological confidence intervals",
+  "endpoints": "The released mixed sampler reconstructs real individual endpoints; only its middle days are forecasts",
+  "positive_control": "All-days oracle deliberately uses real intermediate inputs and is diagnostic only",
+  "interaction": "All 203 source features, averaged predictions from all 3 pre-specified models"
+}

@@ -1,0 +1,198 @@
+{
+  "created": "2025-03-20T23:57:20.005115+00:00",
+  "modified": "2025-03-20T23:57:20.475673+00:00",
+  "id": 15061773,
+  "conceptrecid": "15061772",
+  "doi": "10.5281/zenodo.15061773",
+  "conceptdoi": "10.5281/zenodo.15061772",
+  "doi_url": "https://doi.org/10.5281/zenodo.15061773",
+  "metadata": {
+    "title": "Squidiff",
+    "doi": "10.5281/zenodo.15061773",
+    "publication_date": "2025-03-21",
+    "description": "<p>Squidiff (Single-cell QUantitative Inference of stimuli responses by a DIFFusion model) is a computational framework designed to predict transcriptomic responses of diverse cell types to a spectrum of environmental changes, including cell differentiation, gene perturbation, and drug treatment.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "He, Siyu",
+        "affiliation": "Stanford University",
+        "orcid": "0000-0001-7187-3034"
+      },
+      {
+        "name": "Zhu, Yuefei",
+        "affiliation": "Columbia University"
+      },
+      {
+        "name": "Tavakol, Daniel",
+        "affiliation": "Columbia University Irving Medical Center",
+        "orcid": "0000-0003-0451-0617"
+      },
+      {
+        "name": "Ye, Haotian",
+        "affiliation": "Stanford University"
+      },
+      {
+        "name": "Lao, Yeh-Hsing",
+        "affiliation": "University at Buffalo, State University of New York",
+        "orcid": "0000-0002-7990-199X"
+      },
+      {
+        "name": "Zhu, Zixian",
+        "affiliation": "Columbia University"
+      },
+      {
+        "name": "Xu, Cong",
+        "affiliation": "Columbia University"
+      },
+      {
+        "name": "Chauhan, Sharadha",
+        "affiliation": "Columbia University"
+      },
+      {
+        "name": "Garty, Guy",
+        "affiliation": "Columbia University",
+        "orcid": "0000-0001-5683-7318"
+      },
+      {
+        "name": "Tomer, Raju",
+        "affiliation": "Columbia University",
+        "orcid": "0000-0002-4229-2860"
+      },
+      {
+        "name": "Vunjak-Novakovic, Gordana",
+        "affiliation": "Columbia University",
+        "orcid": "0000-0002-9382-1574"
+      },
+      {
+        "name": "Zou, James",
+        "affiliation": "Stanford University"
+      },
+      {
+        "name": "Azizi, Elham",
+        "affiliation": "Columbia University"
+      },
+      {
+        "name": "Leong, Kam",
+        "affiliation": "Columbia University",
+        "orcid": "0000-0002-8133-4955"
+      }
+    ],
+    "dates": [
+      {
+        "type": "created"
+      }
+    ],
+    "resource_type": {
+      "title": "Software",
+      "type": "software"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "15061772"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Squidiff",
+  "links": {
+    "self": "https://zenodo.org/api/records/15061773",
+    "self_html": "https://zenodo.org/records/15061773",
+    "preview_html": "https://zenodo.org/records/15061773?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.15061773",
+    "self_doi": "https://doi.org/10.5281/zenodo.15061773",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15061773",
+    "reserve_doi": "https://zenodo.org/api/records/15061773/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/15061772",
+    "parent_html": "https://zenodo.org/records/15061772",
+    "parent_doi": "https://doi.org/10.5281/zenodo.15061772",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15061772",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15061773/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15061773/sequence/default",
+    "files": "https://zenodo.org/api/records/15061773/files",
+    "media_files": "https://zenodo.org/api/records/15061773/media-files",
+    "latest": "https://zenodo.org/api/records/15061773/versions/latest",
+    "latest_html": "https://zenodo.org/records/15061773/latest",
+    "versions": "https://zenodo.org/api/records/15061773/versions",
+    "draft": "https://zenodo.org/api/records/15061773/draft",
+    "access_links": "https://zenodo.org/api/records/15061773/access/links",
+    "access_grants": "https://zenodo.org/api/records/15061773/access/grants",
+    "access_users": "https://zenodo.org/api/records/15061773/access/users",
+    "access_request": "https://zenodo.org/api/records/15061773/access/request",
+    "access": "https://zenodo.org/api/records/15061773/access",
+    "communities": "https://zenodo.org/api/records/15061773/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15061773/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/15061773/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/15061773/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/15061773/quota-increase",
+    "requests": "https://zenodo.org/api/records/15061773/requests"
+  },
+  "updated": "2025-03-20T23:57:20.475673+00:00",
+  "recid": "15061773",
+  "revision": 4,
+  "files": [
+    {
+      "id": "a2952c71-6232-4225-8e1e-60fd49363c17",
+      "key": "plot_util.py",
+      "size": 7528,
+      "checksum": "md5:d67d47c00798131ad8fc0f6381ac931e",
+      "links": {
+        "self": "https://zenodo.org/api/records/15061773/files/plot_util.py/content"
+      }
+    },
+    {
+      "id": "c03fbcbd-e061-4ddb-b5bd-d6bb4233165b",
+      "key": "Squidiff.zip",
+      "size": 111460,
+      "checksum": "md5:e005616f97b0547c87aad7b35f459e0d",
+      "links": {
+        "self": "https://zenodo.org/api/records/15061773/files/Squidiff.zip/content"
+      }
+    },
+    {
+      "id": "39faacba-35a7-4bb8-a360-4f46c6dc67ba",
+      "key": "train_squidiff.py",
+      "size": 5642,
+      "checksum": "md5:f15b629592ec00cd7e14ee6b7f6f22cb",
+      "links": {
+        "self": "https://zenodo.org/api/records/15061773/files/train_squidiff.py/content"
+      }
+    },
+    {
+      "id": "0e8feec8-e098-42eb-a228-5b8f1bc2b5f4",
+      "key": "sample_squidiff.py",
+      "size": 6312,
+      "checksum": "md5:96c48b8f3d0b5e0cdf992d1125a0cf1a",
+      "links": {
+        "self": "https://zenodo.org/api/records/15061773/files/sample_squidiff.py/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "385075"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 605,
+    "unique_downloads": 586,
+    "views": 900,
+    "unique_views": 837,
+    "version_downloads": 605,
+    "version_unique_downloads": 586,
+    "version_unique_views": 837,
+    "version_views": 900
+  },
+  "state": "done",
+  "submitted": true
+}

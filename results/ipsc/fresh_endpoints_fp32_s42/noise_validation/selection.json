@@ -1,0 +1,70 @@
+{
+  "args": {
+    "run": "fresh_endpoints_fp32_s42",
+    "data_root": "data/research/fresh_endpoints"
+  },
+  "step": 100000,
+  "training_within_group_latent_rms": 0.4349779486656189,
+  "selection_metric": "Mean gene-wise Wasserstein across independent day0/day3 validation cells",
+  "sigma": 0.5437224358320236,
+  "selected": {
+    "sigma": 0.5437224358320236,
+    "sigma_over_training_latent_rms": 1.25,
+    "endpoint_validation_mean_gene_wasserstein": 0.5028501433548518,
+    "endpoint_validation_mean_mse": 0.11856675201314235,
+    "endpoint_validation_mean_r2": 0.9558788181383726
+  },
+  "middle_day_information_used_for_noise_selection": false,
+  "scope": "Inference adaptation; not the fixed-sigma released protocol",
+  "candidates": [
+    {
+      "sigma": 0.0,
+      "sigma_over_training_latent_rms": 0.0,
+      "endpoint_validation_mean_gene_wasserstein": 1.1140690166086133,
+      "endpoint_validation_mean_mse": 0.17743080496293023,
+      "endpoint_validation_mean_r2": 0.9314057362696329
+    },
+    {
+      "sigma": 0.21748897433280945,
+      "sigma_over_training_latent_rms": 0.5,
+      "endpoint_validation_mean_gene_wasserstein": 0.8530927868706415,
+      "endpoint_validation_mean_mse": 0.10640930997748205,
+      "endpoint_validation_mean_r2": 0.9586099830465731
+    },
+    {
+      "sigma": 0.3262334614992142,
+      "sigma_over_training_latent_rms": 0.75,
+      "endpoint_validation_mean_gene_wasserstein": 0.6919899025203815,
+      "endpoint_validation_mean_mse": 0.06805611050705852,
+      "endpoint_validation_mean_r2": 0.9735440868687019
+    },
+    {
+      "sigma": 0.4349779486656189,
+      "sigma_over_training_latent_rms": 1.0,
+      "endpoint_validation_mean_gene_wasserstein": 0.5656762008553762,
+      "endpoint_validation_mean_mse": 0.06566251369286384,
+      "endpoint_validation_mean_r2": 0.974960866223272
+    },
+    {
+      "sigma": 0.5437224358320236,
+      "sigma_over_training_latent_rms": 1.25,
+      "endpoint_validation_mean_gene_wasserstein": 0.5028501433548518,
+      "endpoint_validation_mean_mse": 0.11856675201314235,
+      "endpoint_validation_mean_r2": 0.9558788181383726
+    },
+    {
+      "sigma": 0.6524669229984283,
+      "sigma_over_training_latent_rms": 1.5,
+      "endpoint_validation_mean_gene_wasserstein": 0.6213769869105702,
+      "endpoint_validation_mean_mse": 0.32965307669355404,
+      "endpoint_validation_mean_r2": 0.8777867871824365
+    },
+    {
+      "sigma": 0.7,
+      "sigma_over_training_latent_rms": 1.6092769809306167,
+      "endpoint_validation_mean_gene_wasserstein": 0.8043229048825071,
+      "endpoint_validation_mean_mse": 0.5968472590561256,
+      "endpoint_validation_mean_r2": 0.77874594090263
+    }
+  ]
+}

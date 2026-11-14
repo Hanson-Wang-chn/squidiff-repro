@@ -1,0 +1,17 @@
+Obtaining file:///home/whs/squidiff/upstream/Squidiff
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: Squidiff
+  Building editable for Squidiff (pyproject.toml): started
+  Building editable for Squidiff (pyproject.toml): finished with status 'done'
+  Created wheel for Squidiff: filename=squidiff-1.0.8-0.editable-py3-none-any.whl size=6087 sha256=45574b3d9172407cf84890ab2b428b29554bd538367d2d7d6f87a1682dcc116d
+  Stored in directory: /tmp/pip-ephem-wheel-cache-ncphoz11/wheels/02/15/96/2087787e1067b0ba1d6784e5e30066eec69f7cc52a627f9d88
+Successfully built Squidiff
+Installing collected packages: Squidiff
+Successfully installed Squidiff-1.0.8

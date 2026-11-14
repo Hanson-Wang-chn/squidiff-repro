@@ -1,0 +1,159 @@
+{
+  "time": "2026-11-13 22:13:09 Asia/Shanghai",
+  "all_passed": true,
+  "new_runs": 15,
+  "runs": [
+    {
+      "dataset": "ipsc",
+      "run": "fp32_tf32_s42",
+      "step": 100000,
+      "genes": 203,
+      "model_variant": "source",
+      "train_data_sha256_matches": true,
+      "prediction_gene_order_and_finiteness": true,
+      "full_checkpoint_and_milestones_present": true
+    },
+    {
+      "dataset": "ipsc",
+      "run": "all_days_fp32_s42",
+      "step": 100000,
+      "genes": 203,
+      "model_variant": "source",
+      "train_data_sha256_matches": true,
+      "prediction_gene_order_and_finiteness": true,
+      "full_checkpoint_and_milestones_present": true
+    },
+    {
+      "dataset": "norman",
+      "run": "fp32_tf32_s42",
+      "step": 100000,
+      "genes": 206,
+      "model_variant": "source",
+      "train_data_sha256_matches": true,
+      "prediction_gene_order_and_finiteness": true,
+      "full_checkpoint_and_milestones_present": true
+    },
+    {
+      "dataset": "ipsc",
+      "run": "fp32_ieee_s42",
+      "step": 100000,
+      "genes": 203,
+      "model_variant": "source",
+      "train_data_sha256_matches": true,
+      "prediction_gene_order_and_finiteness": true,
+      "full_checkpoint_and_milestones_present": true
+    },
+    {
+      "dataset": "ipsc",
+      "run": "source_fp32_s42",
+      "step": 100000,
+      "genes": 203,
+      "model_variant": "source",
+      "train_data_sha256_matches": true,
+      "prediction_gene_order_and_finiteness": true,
+      "full_checkpoint_and_milestones_present": true
+    },
+    {
+      "dataset": "norman",
+      "run": "source_fp32_s42",
+      "step": 100000,
+      "genes": 203,
+      "model_variant": "source",
+      "train_data_sha256_matches": true,
+      "prediction_gene_order_and_finiteness": true,
+      "full_checkpoint_and_milestones_present": true
+    },
+    {
+      "dataset": "ipsc",
+      "run": "source_fp32_s43",
+      "step": 100000,
+      "genes": 203,
+      "model_variant": "source",
+      "train_data_sha256_matches": true,
+      "prediction_gene_order_and_finiteness": true,
+      "full_checkpoint_and_milestones_present": true
+    },
+    {
+      "dataset": "norman",
+      "run": "source_fp32_s43",
+      "step": 100000,
+      "genes": 203,
+      "model_variant": "source",
+      "train_data_sha256_matches": true,
+      "prediction_gene_order_and_finiteness": true,
+      "full_checkpoint_and_milestones_present": true
+    },
+    {
+      "dataset": "ipsc",
+      "run": "source_fp32_s44",
+      "step": 100000,
+      "genes": 203,
+      "model_variant": "source",
+      "train_data_sha256_matches": true,
+      "prediction_gene_order_and_finiteness": true,
+      "full_checkpoint_and_milestones_present": true
+    },
+    {
+      "dataset": "norman",
+      "run": "source_fp32_s44",
+      "step": 100000,
+      "genes": 203,
+      "model_variant": "source",
+      "train_data_sha256_matches": true,
+      "prediction_gene_order_and_finiteness": true,
+      "full_checkpoint_and_milestones_present": true
+    },
+    {
+      "dataset": "ipsc",
+      "run": "fresh_endpoints_fp32_s42",
+      "step": 100000,
+      "genes": 203,
+      "model_variant": "source",
+      "train_data_sha256_matches": true,
+      "prediction_gene_order_and_finiteness": true,
+      "full_checkpoint_and_milestones_present": true
+    },
+    {
+      "dataset": "norman",
+      "run": "source1000_fp32_s42",
+      "step": 100000,
+      "genes": 1000,
+      "model_variant": "source",
+      "train_data_sha256_matches": true,
+      "prediction_gene_order_and_finiteness": true,
+      "full_checkpoint_and_milestones_present": true
+    },
+    {
+      "dataset": "ipsc",
+      "run": "full_endpoints_fp32_s42",
+      "step": 100000,
+      "genes": 203,
+      "model_variant": "source",
+      "train_data_sha256_matches": true,
+      "prediction_gene_order_and_finiteness": true,
+      "full_checkpoint_and_milestones_present": true
+    },
+    {
+      "dataset": "norman",
+      "run": "balanced_fp32_s42",
+      "step": 100000,
+      "genes": 203,
+      "model_variant": "source",
+      "train_data_sha256_matches": true,
+      "prediction_gene_order_and_finiteness": true,
+      "full_checkpoint_and_milestones_present": true
+    },
+    {
+      "dataset": "norman",
+      "run": "source1000_epsres_s42",
+      "step": 100000,
+      "genes": 1000,
+      "model_variant": "epsilon_residual",
+      "train_data_sha256_matches": true,
+      "prediction_gene_order_and_finiteness": true,
+      "full_checkpoint_and_milestones_present": true
+    }
+  ],
+  "failed_wide_model_flagged_and_retained": true,
+  "note": "Generation failure and biological accuracy are separate from these integrity checks."
+}

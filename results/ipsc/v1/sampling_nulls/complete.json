@@ -1,0 +1,9 @@
+{
+  "args": {
+    "run": "v1",
+    "data_root": "data/processed",
+    "repeats": 1
+  },
+  "no_shift_null": "day=0 with sigma>0; same noisy centroid sampler without a differentiation shift",
+  "paired_noise": "identical seed at each day isolates the semantic shift"
+}

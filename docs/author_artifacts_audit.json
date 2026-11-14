@@ -1,0 +1,14 @@
+{
+  "checkpoint": "https://ndownloader.figshare.com/files/59494391",
+  "checkpoint_input_genes": 596,
+  "required_ipsc_genes": 203,
+  "required_norman_genes": 203,
+  "author_adata_shape": [
+    19028,
+    26820
+  ],
+  "author_adata_context": "Rad/CTL/Drug organoid cells; Major_type includes EC, Mural, Fibroblast",
+  "conclusion": "Public VO checkpoint and adata are BVO artifacts, not matching Fig2 iPSC or Norman. No matching weights found in three Figshare versions or GitHub releases.",
+  "removed_irrelevant_download": "data/raw/author_adata_norm.h5ad",
+  "removed_bytes": 2771843436
+}

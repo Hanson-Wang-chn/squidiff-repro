@@ -1,0 +1,1002 @@
+{
+  "time": "2026-11-13 22:11:14",
+  "scope": "Convert own generated gene-name metadata to Unicode; all numeric array payload hashes unchanged",
+  "files": [
+    {
+      "path": "results/audit_v1/oracle_ipsc_day2.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/full_endpoints_fp32_s42/research_eval/endpoint_validated_noise/centroid_sigma0.46175_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/full_endpoints_fp32_s42/research_eval/endpoint_validated_noise/centroid_sigma0.46175_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/full_endpoints_fp32_s42/research_eval/raw_controls/oracle_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/full_endpoints_fp32_s42/research_eval/raw_controls/cell_shift_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/full_endpoints_fp32_s42/research_eval/raw_controls/centroid_sigma0.7_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/full_endpoints_fp32_s42/research_eval/raw_controls/centroid_sigma0.5_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/full_endpoints_fp32_s42/research_eval/raw_controls/centroid_sigma0_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/full_endpoints_fp32_s42/research_eval/raw_controls/oracle_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/full_endpoints_fp32_s42/research_eval/raw_controls/cell_shift_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/full_endpoints_fp32_s42/research_eval/raw_controls/centroid_sigma0.7_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/full_endpoints_fp32_s42/research_eval/raw_controls/centroid_sigma0.5_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/full_endpoints_fp32_s42/research_eval/raw_controls/centroid_sigma0_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fp32_ieee_s42/research_eval/raw_controls/oracle_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fp32_ieee_s42/research_eval/raw_controls/cell_shift_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fp32_ieee_s42/research_eval/raw_controls/centroid_sigma0.7_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fp32_ieee_s42/research_eval/raw_controls/centroid_sigma0.5_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fp32_ieee_s42/research_eval/raw_controls/centroid_sigma0_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fp32_ieee_s42/research_eval/raw_controls/oracle_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fp32_ieee_s42/research_eval/raw_controls/cell_shift_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fp32_ieee_s42/research_eval/raw_controls/centroid_sigma0.7_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fp32_ieee_s42/research_eval/raw_controls/centroid_sigma0.5_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fp32_ieee_s42/research_eval/raw_controls/centroid_sigma0_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fp32_tf32_s42/research_eval/raw_controls/oracle_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fp32_tf32_s42/research_eval/raw_controls/cell_shift_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fp32_tf32_s42/research_eval/raw_controls/centroid_sigma0.7_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fp32_tf32_s42/research_eval/raw_controls/centroid_sigma0.5_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fp32_tf32_s42/research_eval/raw_controls/centroid_sigma0_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fp32_tf32_s42/research_eval/raw_controls/oracle_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fp32_tf32_s42/research_eval/raw_controls/cell_shift_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fp32_tf32_s42/research_eval/raw_controls/centroid_sigma0.7_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fp32_tf32_s42/research_eval/raw_controls/centroid_sigma0.5_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fp32_tf32_s42/research_eval/raw_controls/centroid_sigma0_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fresh_endpoints_fp32_s42/research_eval/endpoint_validated_noise/centroid_sigma0.543722_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fresh_endpoints_fp32_s42/research_eval/endpoint_validated_noise/centroid_sigma0.543722_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/all_days_fp32_s42/research_eval/step020000_controls/target_centroid_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/all_days_fp32_s42/research_eval/step020000_controls/oracle_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/all_days_fp32_s42/research_eval/step020000_controls/cell_shift_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/all_days_fp32_s42/research_eval/step020000_controls/centroid_sigma0.7_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/all_days_fp32_s42/research_eval/step020000_controls/centroid_sigma0.5_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/all_days_fp32_s42/research_eval/step020000_controls/centroid_sigma0_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/all_days_fp32_s42/research_eval/step020000_controls/target_centroid_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/all_days_fp32_s42/research_eval/step020000_controls/oracle_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/all_days_fp32_s42/research_eval/step020000_controls/cell_shift_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/all_days_fp32_s42/research_eval/step020000_controls/centroid_sigma0.7_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/all_days_fp32_s42/research_eval/step020000_controls/centroid_sigma0.5_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/all_days_fp32_s42/research_eval/step020000_controls/centroid_sigma0_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/all_days_fp32_s42/research_eval/raw_controls/target_centroid_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fresh_endpoints_fp32_s42/research_eval/raw_controls/oracle_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/all_days_fp32_s42/research_eval/raw_controls/oracle_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fresh_endpoints_fp32_s42/research_eval/raw_controls/cell_shift_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/all_days_fp32_s42/research_eval/raw_controls/cell_shift_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fresh_endpoints_fp32_s42/research_eval/raw_controls/centroid_sigma0.7_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/all_days_fp32_s42/research_eval/raw_controls/centroid_sigma0.7_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fresh_endpoints_fp32_s42/research_eval/raw_controls/centroid_sigma0.5_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/all_days_fp32_s42/research_eval/raw_controls/centroid_sigma0.5_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fresh_endpoints_fp32_s42/research_eval/raw_controls/centroid_sigma0_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/all_days_fp32_s42/research_eval/raw_controls/centroid_sigma0_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fresh_endpoints_fp32_s42/research_eval/raw_controls/oracle_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/all_days_fp32_s42/research_eval/raw_controls/target_centroid_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/all_days_fp32_s42/research_eval/raw_controls/oracle_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fresh_endpoints_fp32_s42/research_eval/raw_controls/cell_shift_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/all_days_fp32_s42/research_eval/raw_controls/cell_shift_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fresh_endpoints_fp32_s42/research_eval/raw_controls/centroid_sigma0.7_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/all_days_fp32_s42/research_eval/raw_controls/centroid_sigma0.7_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fresh_endpoints_fp32_s42/research_eval/raw_controls/centroid_sigma0.5_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/all_days_fp32_s42/research_eval/raw_controls/centroid_sigma0.5_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/fresh_endpoints_fp32_s42/research_eval/raw_controls/centroid_sigma0_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/all_days_fp32_s42/research_eval/raw_controls/centroid_sigma0_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/v1/research_eval/ema_controls/oracle_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/v1/research_eval/ema_controls/cell_shift_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/v1/research_eval/ema_controls/centroid_sigma0.7_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/v1/research_eval/ema_controls/centroid_sigma0.5_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/v1/research_eval/ema_controls/centroid_sigma0_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/v1/research_eval/ema_controls/oracle_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/v1/research_eval/ema_controls/cell_shift_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/v1/research_eval/ema_controls/centroid_sigma0.7_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/v1/research_eval/ema_controls/centroid_sigma0.5_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/v1/research_eval/ema_controls/centroid_sigma0_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/v1/research_eval/raw_controls/oracle_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/v1/research_eval/raw_controls/cell_shift_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/v1/research_eval/raw_controls/centroid_sigma0.7_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/v1/research_eval/raw_controls/centroid_sigma0.5_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/v1/research_eval/raw_controls/centroid_sigma0_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/v1/research_eval/raw_controls/centroid_sigma0.7_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/v1/research_eval/raw_controls/centroid_sigma0.5_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/v1/research_eval/raw_controls/centroid_sigma0_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/v1/research_eval/raw_controls/cell_shift_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/v1/research_eval/raw_controls/oracle_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/research_eval/endpoint_validated_noise/centroid_sigma0.424575_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/research_eval/endpoint_validated_noise/centroid_sigma0.424575_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/official_api/day2.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/official_api/day1.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/official_api/day0_no_shift_null.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/official_api/day3_from_day0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day3_rep2.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day2_rep2.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day1_rep2.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day0_rep2.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/sampling_nulls_source_repeats/source_endpoint_reconstruction_sigma0_day3_rep2.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/sampling_nulls_source_repeats/source_endpoint_reconstruction_sigma0_day0_rep2.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day3_rep1.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day2_rep1.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day1_rep1.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day0_rep1.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/sampling_nulls_source_repeats/source_endpoint_reconstruction_sigma0_day3_rep1.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/sampling_nulls_source_repeats/source_endpoint_reconstruction_sigma0_day0_rep1.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day3_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day0_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/sampling_nulls_source_repeats/source_endpoint_reconstruction_sigma0_day3_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/sampling_nulls_source_repeats/source_endpoint_reconstruction_sigma0_day0_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/research_eval/raw_controls/oracle_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/research_eval/raw_controls/cell_shift_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/research_eval/raw_controls/centroid_sigma0.7_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/research_eval/raw_controls/centroid_sigma0.5_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/research_eval/raw_controls/centroid_sigma0_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/research_eval/raw_controls/oracle_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/research_eval/raw_controls/cell_shift_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day3_rep2.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/research_eval/raw_controls/centroid_sigma0.7_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day2_rep2.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/research_eval/raw_controls/centroid_sigma0.5_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day1_rep2.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/research_eval/raw_controls/centroid_sigma0_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day0_rep2.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/sampling_nulls_source_repeats/source_endpoint_reconstruction_sigma0_day3_rep2.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/sampling_nulls_source_repeats/source_endpoint_reconstruction_sigma0_day0_rep2.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day3_rep1.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day2_rep1.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day1_rep1.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day0_rep1.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/sampling_nulls_source_repeats/source_endpoint_reconstruction_sigma0_day3_rep1.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/sampling_nulls_source_repeats/source_endpoint_reconstruction_sigma0_day0_rep1.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day3_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day0_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/sampling_nulls_source_repeats/source_endpoint_reconstruction_sigma0_day3_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/sampling_nulls_source_repeats/source_endpoint_reconstruction_sigma0_day0_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/ema_controls/oracle_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/ema_controls/cell_shift_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/ema_controls/centroid_sigma0.7_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/ema_controls/centroid_sigma0.5_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day3_rep2.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/ema_controls/centroid_sigma0_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/raw_controls/oracle_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day2_rep2.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/raw_controls/cell_shift_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day1_rep2.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/raw_controls/centroid_sigma0.7_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day0_rep2.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/raw_controls/centroid_sigma0.5_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/sampling_nulls_source_repeats/source_endpoint_reconstruction_sigma0_day3_rep2.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/ema_controls/oracle_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/raw_controls/centroid_sigma0_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/ema_controls/cell_shift_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/sampling_nulls_source_repeats/source_endpoint_reconstruction_sigma0_day0_rep2.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/raw_controls/oracle_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day3_rep1.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/ema_controls/centroid_sigma0.7_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/raw_controls/cell_shift_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/ema_controls/centroid_sigma0.5_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/raw_controls/centroid_sigma0.7_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day2_rep1.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/ema_controls/centroid_sigma0_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day1_rep1.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/raw_controls/centroid_sigma0.5_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day0_rep1.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/raw_controls/centroid_sigma0_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/sampling_nulls_source_repeats/source_endpoint_reconstruction_sigma0_day3_rep1.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source_fp32_s42/official_api/AB.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/sampling_nulls_source_repeats/source_endpoint_reconstruction_sigma0_day0_rep1.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day3_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/sampling_nulls_source_repeats/matched_centroid_and_noise_all_days_sigma0.7_day0_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/sampling_nulls_source_repeats/source_endpoint_reconstruction_sigma0_day3_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/sampling_nulls_source_repeats/source_endpoint_reconstruction_sigma0_day0_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/fp32_tf32_s42/research_eval/raw_controls/oracle_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/fp32_tf32_s42/research_eval/raw_controls/cell_shift_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/fp32_tf32_s42/research_eval/raw_controls/centroid_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/step050000_controls/oracle_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/step050000_controls/cell_shift_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/step050000_controls/centroid_sigma0.7_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/step050000_controls/centroid_sigma0.5_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/step050000_controls/centroid_sigma0_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/step050000_controls/centroid_sigma0.7_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/step050000_controls/centroid_sigma0.5_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/step050000_controls/centroid_sigma0_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/step050000_controls/cell_shift_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/step050000_controls/oracle_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/endpoint_validated_noise/centroid_sigma0.422741_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s42/research_eval/endpoint_validated_noise/centroid_sigma0.422741_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/v1/research_eval/inference_controls/oracle_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/v1/research_eval/inference_controls/literal_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/v1/research_eval/inference_controls/cell_shift_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/v1/research_eval/inference_controls/centroid_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source_fp32_s42/research_eval/raw_controls/cell_shift_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source_fp32_s42/research_eval/raw_controls/centroid_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source_fp32_s42/research_eval/raw_controls/literal_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source_fp32_s42/research_eval/raw_controls/oracle_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source_fp32_s42/research_eval/ema_controls/cell_shift_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source_fp32_s42/research_eval/ema_controls/literal_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source_fp32_s42/research_eval/ema_controls/oracle_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source_fp32_s42/research_eval/ema_controls/centroid_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source_fp32_s43/research_eval/all_control_cells/cell_shift_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source_fp32_s44/research_eval/raw_controls/oracle_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source_fp32_s44/research_eval/raw_controls/literal_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source_fp32_s44/research_eval/raw_controls/cell_shift_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source_fp32_s44/research_eval/raw_controls/centroid_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source1000_epsres_s42/research_eval/raw_controls/cell_shift_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source1000_epsres_s42/research_eval/raw_controls/centroid_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source1000_epsres_s42/research_eval/raw_controls/oracle_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source1000_epsres_s42/research_eval/raw_controls/literal_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source1000_epsres_s42/research_eval/all_control_cells/cell_shift_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source_fp32_s44/research_eval/all_control_cells/cell_shift_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source_fp32_s42/research_eval/step050000_controls/oracle_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source_fp32_s42/research_eval/step050000_controls/cell_shift_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source_fp32_s42/research_eval/step050000_controls/literal_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source_fp32_s42/research_eval/step050000_controls/centroid_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source_fp32_s42/research_eval/all_control_cells/cell_shift_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source_fp32_s43/research_eval/raw_controls/oracle_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/research_eval/endpoint_validated_noise/centroid_sigma0.428864_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source_fp32_s43/research_eval/raw_controls/literal_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/research_eval/endpoint_validated_noise/centroid_sigma0.428864_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source_fp32_s43/research_eval/raw_controls/cell_shift_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source_fp32_s43/research_eval/raw_controls/centroid_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/research_eval/raw_controls/oracle_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/research_eval/raw_controls/cell_shift_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/research_eval/raw_controls/centroid_sigma0.7_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/research_eval/raw_controls/centroid_sigma0.5_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/research_eval/raw_controls/centroid_sigma0_day1_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/research_eval/raw_controls/centroid_sigma0.7_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/research_eval/raw_controls/centroid_sigma0.5_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/research_eval/raw_controls/centroid_sigma0_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/research_eval/raw_controls/cell_shift_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/research_eval/raw_controls/oracle_day2_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source1000_fp32_s42/research_eval/raw_controls/cell_shift_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source1000_fp32_s42/research_eval/raw_controls/centroid_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source1000_fp32_s42/research_eval/raw_controls/literal_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source1000_fp32_s42/research_eval/raw_controls/oracle_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/source1000_fp32_s42/research_eval/all_control_cells/cell_shift_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/balanced_fp32_s42/research_eval/all_control_cells/cell_shift_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/balanced_fp32_s42/research_eval/raw_controls/oracle_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/balanced_fp32_s42/research_eval/raw_controls/literal_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/balanced_fp32_s42/research_eval/raw_controls/cell_shift_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    },
+    {
+      "path": "results/norman/balanced_fp32_s42/research_eval/raw_controls/centroid_AB_rep0.npz",
+      "prediction_numeric_payload_unchanged": true
+    }
+  ]
+}

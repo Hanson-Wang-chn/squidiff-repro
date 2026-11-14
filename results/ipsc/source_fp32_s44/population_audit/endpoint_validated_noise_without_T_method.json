@@ -1,0 +1,36 @@
+{
+  "classifier": "standardized multinomial logistic regression; C=1",
+  "reference_cells_per_day": 1200,
+  "reference_evaluation_overlap": 0,
+  "excluded_genes": [
+    "T"
+  ],
+  "real_heldout_accuracy": 0.9441666666666667,
+  "real_confusion_matrix": [
+    [
+      580,
+      10,
+      3,
+      7
+    ],
+    [
+      13,
+      569,
+      15,
+      3
+    ],
+    [
+      7,
+      16,
+      547,
+      30
+    ],
+    [
+      6,
+      1,
+      23,
+      570
+    ]
+  ],
+  "scope": "Post-hoc diagnostic classifier with reference labels; not a forecasting model or training signal"
+}

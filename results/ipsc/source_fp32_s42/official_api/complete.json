@@ -1,0 +1,11 @@
+{
+  "args": {
+    "dataset": "ipsc",
+    "run": "source_fp32_s42",
+    "data_root": "data/research/source"
+  },
+  "api": "Unmodified sample_squidiff.sampler.interp_with_direction",
+  "source_sha256": "3b524c9b6aea16cc4c8090794688756f5c8b48c0ba87bb4e2344a53a6176d986",
+  "includes_no_shift_null_and_forward_day3": true,
+  "purpose": "Confirm that local latent algebra and Gaussian sampling do not explain the qualitative failure; NumPy is used exactly as in the official method."
+}

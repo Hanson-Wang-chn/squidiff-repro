@@ -1,0 +1,2 @@
+dataset,run,mode,target,repeat,target_cells,unique_target_cells,generated_cells,bootstrap_repeats,fraction_bootstrap_mse_gain_positive,relative_mse_gain_p025,relative_mse_gain_p50,relative_mse_gain_p975,r2_p025,r2_p50,r2_p975,interaction_r2_p025,interaction_r2_p50,interaction_r2_p975
+norman,balanced_fp32_s42,cell_shift,AB,0,257,257,7353,1000,0.371,-0.06643725900740216,-0.008049386405415193,0.043167504506439684,0.9755269105206653,0.9809761634211445,0.9852594162936712,-0.07402900504103485,-0.018949633604254612,0.031523163201377866

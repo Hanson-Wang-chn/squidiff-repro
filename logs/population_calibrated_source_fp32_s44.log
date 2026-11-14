@@ -1,0 +1,10 @@
+/home/dataset-assist-0/whs/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+        kind                   mode target  cells  assigned_target_fraction  target_probability  assigned_day0  assigned_day1  assigned_day2  assigned_day3
+real_heldout                   real   day0    600                  0.966667            0.964434       0.966667       0.016667       0.005000       0.011667
+real_heldout                   real   day1    600                  0.948333            0.943849       0.021667       0.948333       0.025000       0.005000
+real_heldout                   real   day2    600                  0.911667            0.905945       0.011667       0.026667       0.911667       0.050000
+real_heldout                   real   day3    600                  0.950000            0.948093       0.010000       0.001667       0.038333       0.950000
+   generated centroid_sigma0.424575   day1    600                  0.000000            0.000524       0.710000       0.000000       0.023333       0.266667
+   generated centroid_sigma0.424575   day2    600                  0.030000            0.036477       0.328333       0.000000       0.030000       0.641667
+[2026-11-13 21:36:19] 群体状态诊断 ipsc/source_fp32_s44 完成；分类器仅用于事后评价，参考细胞与真实评估细胞不重合。

@@ -1,0 +1,6 @@
+ day  cells  donors     mean   median      p05      p95      max  fraction_above_0  fraction_above_1  fraction_above_3
+   0   9661     111 0.067940 0.000000 0.000000 0.000000 6.551855          0.034261          0.026084          0.007970
+   1   9443     111 6.258626 6.612034 2.465396 8.359400 9.928767          0.964842          0.959759          0.943768
+   2   8455     104 0.805194 0.000000 0.000000 4.284854 8.374305          0.260556          0.236428          0.136014
+   3   8485     108 0.261806 0.000000 0.000000 2.663965 6.827135          0.098055          0.086388          0.040542
+{'gene': {'original_gene_id': 'ENSG00000164458_T', 'gene_name': 'T'}, 'units': 'Original public log-normalized values; no rescaling', 'donor_threshold': 'At least 5 observed cells at each of day0/day1/day3', 'adequate_donors': 88, 'donors_with_positive_day1_T_excess': 88, 'donor_excess_median': 6.394667625427246, 'donor_excess_min': 3.7806973457336426, 'donor_excess_max': 7.667158126831055, 'scope': 'Observed-data robustness only, not an independent donor-held-out model test'}

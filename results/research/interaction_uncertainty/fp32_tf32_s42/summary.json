@@ -1,0 +1,36 @@
+{
+  "conditional_on_these_cells": true,
+  "not_biological_replicates": true,
+  "counts": {
+    "0": 6618,
+    "1": 175,
+    "2": 309,
+    "3": 257
+  },
+  "split_half_pearson_median": 0.6821970895548595,
+  "split_half_pearson_5_95": [
+    0.4805329649773077,
+    0.7962500332507055
+  ],
+  "fdr05_interaction_genes": 9,
+  "models": {
+    "centroid_AB_rep0": {
+      "interaction_r2_all_genes": 0.03095576205938544,
+      "interaction_pearson_all_genes": 0.23569893364641575,
+      "fdr05_genes": 9,
+      "interaction_r2_fdr05": -0.8308535578989074
+    },
+    "cell_shift_AB_rep0": {
+      "interaction_r2_all_genes": 0.006251411863956835,
+      "interaction_pearson_all_genes": 0.23484285144736278,
+      "fdr05_genes": 9,
+      "interaction_r2_fdr05": -0.688035232205255
+    },
+    "oracle_AB_rep0": {
+      "interaction_r2_all_genes": 0.9492671869452711,
+      "interaction_pearson_all_genes": 0.984293581854516,
+      "fdr05_genes": 9,
+      "interaction_r2_fdr05": 0.9902650652665912
+    }
+  }
+}

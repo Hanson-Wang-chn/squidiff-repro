@@ -1,0 +1,9 @@
+checkpoint,weights,input,timestep,epsilon_mse
+step_020000.pt,model,training_control,25,0.8165771961212158
+step_020000.pt,model,training_control,100,0.462053507566452
+step_020000.pt,model,training_control,500,0.00329299783334136
+step_020000.pt,model,training_control,999,0.00010604445560602471
+step_020000.pt,model,heldout_AB,25,0.8328235149383545
+step_020000.pt,model,heldout_AB,100,0.4752025604248047
+step_020000.pt,model,heldout_AB,500,0.004470054060220718
+step_020000.pt,model,heldout_AB,999,0.00013970911095384508

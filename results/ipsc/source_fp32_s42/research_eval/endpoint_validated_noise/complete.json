@@ -1,0 +1,31 @@
+{
+  "args": {
+    "dataset": "ipsc",
+    "run": "source_fp32_s42",
+    "data_root": "data/research/source",
+    "checkpoint": "latest.pt",
+    "weights": "model",
+    "tag": "endpoint_validated_noise",
+    "modes": "centroid",
+    "sigmas": "0.4227410852909088",
+    "repeats": 1,
+    "cells": 600,
+    "sample_steps": 1000,
+    "bn_recalibrate": false,
+    "inference_math": "ieee"
+  },
+  "checkpoint_step": 100000,
+  "summary": {
+    "('centroid_sigma0.422741', 'day1')": {
+      "pearson": 0.807708870816802,
+      "r2": 0.6471542796672771,
+      "relative_mse_gain": 0.04861933340423763
+    },
+    "('centroid_sigma0.422741', 'day2')": {
+      "pearson": 0.8872402869093128,
+      "r2": 0.7626538762374211,
+      "relative_mse_gain": 0.058228703994116726
+    }
+  },
+  "oracle_is_not_forecasting": "Real target expression is encoded for oracle diagnostic only"
+}

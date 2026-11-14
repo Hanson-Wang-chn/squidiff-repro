@@ -1,0 +1,5 @@
+{
+  "reason": "New positive-control preparation incorrectly used all 2000 middle-day sampled cells instead of 1200 discovery cells; 1200 evaluation cell IDs overlapped training. Exclude this run completely.",
+  "fix": "Use only first 1200 discovery IDs per day and assert disjoint train/test IDs; retrain from scratch.",
+  "time": "2026-11-13 19:00:32"
+}

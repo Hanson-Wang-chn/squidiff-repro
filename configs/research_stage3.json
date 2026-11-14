@@ -1,0 +1,9 @@
+[
+  {
+    "dataset": "ipsc",
+    "run": "full_endpoints_fp32_s42",
+    "data_root": "data/research/full_endpoints",
+    "math_mode": "ieee",
+    "question": "All available endpoint training cells excluding fixed v1 validation/test IDs; same v1 genes, targets and GPU/fused sampling as paired IEEE control"
+  }
+]

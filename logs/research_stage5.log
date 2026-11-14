@@ -1,0 +1,3 @@
+2026-11-13 21:35:56 ['scripts/train.py', 'norman', '--run', 'source1000_epsres_s42', '--precision', 'fp32', '--steps', '100000', '--seed', '42', '--data-root', 'data/research/source_1000_full', '--math-mode', 'ieee', '--sampler', 'native', '--optimizer', 'source', '--lr-timing', 'source', '--validation-source', 'training', '--model-variant', 'epsilon_residual', '--val-every', '10000', '--save-every', '5000']
+2026-11-13 21:52:46 ['scripts/research_evaluate.py', 'norman', '--run', 'source1000_epsres_s42', '--data-root', 'data/research/source_1000_full', '--tag', 'raw_controls', '--modes', 'centroid,cell_shift,literal,oracle', '--sigmas', '0,0.5,0.7', '--inference-math', 'ieee']
+Research queue complete configs/research_stage5.json

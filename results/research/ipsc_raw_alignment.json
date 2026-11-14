@@ -1,0 +1,9 @@
+{
+  "raw_csv_to_processed_max_error": {
+    "train": 0.0,
+    "val": 0.0,
+    "test": 0.0
+  },
+  "cells": 36044,
+  "genes": 11231
+}

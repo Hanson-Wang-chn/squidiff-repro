@@ -1,0 +1,28 @@
+{
+  "norman/PTPN12+ZBTB25": {
+    "baseline_r2_exact_mean": 0.9859013953107915,
+    "model_r2_first_sample": 0.9862840765595459,
+    "baseline_mse_exact_mean": 0.004115107889387303,
+    "model_mse_first_sample": 0.004003410692353663,
+    "relative_mse_reduction_first_sample": 0.027143200138616708,
+    "interaction_true_norm": 0.9207128896750519,
+    "interaction_pred_norm": 0.43375364671628314,
+    "interaction_r2": 0.012613331887090795,
+    "interaction_pearson": 0.23769199551274636,
+    "interaction_zero_baseline_r2": -0.014935258975006693
+  },
+  "ipsc/day1": {
+    "baseline_r2_exact_mean": 0.8254711791879683,
+    "model_r2_first_sample": 0.8259817709224123,
+    "baseline_mse_exact_mean": 0.533650680830753,
+    "model_mse_first_sample": 0.5320894623142646,
+    "relative_mse_reduction_first_sample": 0.00292554394207456
+  },
+  "ipsc/day2": {
+    "baseline_r2_exact_mean": 0.8732284901773145,
+    "model_r2_first_sample": 0.8648429807379541,
+    "baseline_mse_exact_mean": 0.35837848959012364,
+    "model_mse_first_sample": 0.3820840225724559,
+    "relative_mse_reduction_first_sample": -0.06614664013301752
+  }
+}

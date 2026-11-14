@@ -1,0 +1,7 @@
+[2026-11-13 19:00:45] 研究数据 all_days/ipsc 准备完成：train=(4800, 203), test=(2400, 203)，训练/测试重合细胞ID=0。
+/home/dataset-assist-0/whs/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/dataset-assist-0/whs/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+[2026-11-13 19:00:46] 研究数据 source/ipsc 准备完成：train=(2400, 203), test=(2400, 203)，训练/测试重合细胞ID=163。
+[2026-11-13 19:00:47] 研究数据 fresh_endpoints/ipsc 准备完成：train=(2400, 203), test=(2400, 203)，训练/测试重合细胞ID=0。

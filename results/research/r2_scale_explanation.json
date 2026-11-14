@@ -1,0 +1,6 @@
+{
+  "expression_mean_variance_across_genes": 0.2918805073339716,
+  "interaction_variance_across_genes": 0.00405455210369102,
+  "ratio_expression_to_interaction_variance": 71.98834787898302,
+  "identity": "The squared prediction error is identical for Y vs predicted_Y and I vs predicted_I; R2 differs because its denominator differs."
+}

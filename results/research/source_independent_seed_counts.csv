@@ -1,0 +1,12 @@
+dataset,mode,target,training_seed
+ipsc,cell_shift,day1,3
+ipsc,cell_shift,day2,3
+ipsc,centroid_sigma0,day1,3
+ipsc,centroid_sigma0,day2,3
+ipsc,centroid_sigma0.5,day1,3
+ipsc,centroid_sigma0.5,day2,3
+ipsc,centroid_sigma0.7,day1,3
+ipsc,centroid_sigma0.7,day2,3
+norman,cell_shift,AB,3
+norman,centroid,AB,3
+norman,literal,AB,3

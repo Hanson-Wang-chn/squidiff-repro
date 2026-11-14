@@ -1,0 +1,3 @@
+/home/dataset-assist-0/whs/conda-env/squidiff/lib/python3.10/site-packages/numba/np/ufunc/parallel.py:373: NumbaWarning: The TBB threading layer requires TBB version 2021 update 6 or later i.e., TBB_INTERFACE_VERSION >= 12060. Found TBB_INTERFACE_VERSION = 12050. The TBB threading layer is disabled.
+  warnings.warn(problem)
+[2026-11-13 13:02:57] norman 数据准备完成：{"train": {"shape": [7102, 206], "groups": {"0": 6618, "2": 309, "1": 175}}, "val": {"shape": [788, 206], "groups": {"0": 735, "2": 34, "1": 19}}, "test": {"shape": [257, 206], "groups": {"3": 257}}}

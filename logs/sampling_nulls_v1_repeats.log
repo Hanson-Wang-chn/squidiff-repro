@@ -1,0 +1,14 @@
+diffusion num of steps =  1000
+{"repeat": 0, "schema": "matched_centroid_and_noise_all_days", "sigma": 0.7, "day": 0, "predicted_T": 0.4868771433830261, "observed_T": 0.07679580897092819}
+{"repeat": 0, "schema": "matched_centroid_and_noise_all_days", "sigma": 0.7, "day": 1, "predicted_T": 0.496481716632843, "observed_T": 6.238280296325684}
+{"repeat": 0, "schema": "matched_centroid_and_noise_all_days", "sigma": 0.7, "day": 2, "predicted_T": 0.5288829803466797, "observed_T": 0.8116654753684998}
+{"repeat": 0, "schema": "matched_centroid_and_noise_all_days", "sigma": 0.7, "day": 3, "predicted_T": 0.5705504417419434, "observed_T": 0.2567284107208252}
+{"repeat": 1, "schema": "matched_centroid_and_noise_all_days", "sigma": 0.7, "day": 0, "predicted_T": 0.5101412534713745, "observed_T": 0.07679580897092819}
+{"repeat": 1, "schema": "matched_centroid_and_noise_all_days", "sigma": 0.7, "day": 1, "predicted_T": 0.5388638377189636, "observed_T": 6.238280296325684}
+{"repeat": 1, "schema": "matched_centroid_and_noise_all_days", "sigma": 0.7, "day": 2, "predicted_T": 0.581381618976593, "observed_T": 0.8116654753684998}
+{"repeat": 1, "schema": "matched_centroid_and_noise_all_days", "sigma": 0.7, "day": 3, "predicted_T": 0.6255415678024292, "observed_T": 0.2567284107208252}
+{"repeat": 2, "schema": "matched_centroid_and_noise_all_days", "sigma": 0.7, "day": 0, "predicted_T": 0.6141192317008972, "observed_T": 0.07679580897092819}
+{"repeat": 2, "schema": "matched_centroid_and_noise_all_days", "sigma": 0.7, "day": 1, "predicted_T": 0.6015273928642273, "observed_T": 6.238280296325684}
+{"repeat": 2, "schema": "matched_centroid_and_noise_all_days", "sigma": 0.7, "day": 2, "predicted_T": 0.6327365040779114, "observed_T": 0.8116654753684998}
+{"repeat": 2, "schema": "matched_centroid_and_noise_all_days", "sigma": 0.7, "day": 3, "predicted_T": 0.6753202676773071, "observed_T": 0.2567284107208252}
+[2026-11-13 19:14:25] 采样负对照 ipsc/v1 完成：统一四天的潜变量抽样方式，分离方向移动与额外潜变量噪声。

@@ -1,0 +1,11 @@
+{
+  "args": {
+    "dataset": "ipsc",
+    "data_root": "data/processed",
+    "repeats": 3,
+    "cells": 600
+  },
+  "train_sha256": "6a362b932b3b683bc3727fcbc2580dd81dfc0f70c52927e48c75c91cd7375a8e",
+  "protocol": "Training-only empirical cell draws. iPSC endpoints independently paired; Norman control cells shifted by full-training group means. No test information used to form predictions.",
+  "caveat": "Exact linear mean metrics are primary for mean prediction; finite sampled-cell metrics additionally assess distributions. Clipping changes the additive mean and is labelled separately."
+}

@@ -1,0 +1,4 @@
+2026-11-13 13:06:17 ['scripts/train.py', 'norman', '--steps', '100000']
+2026-11-13 13:17:33 ['scripts/evaluate.py', 'norman', '--sample-steps', '1000', '--repeats', '10']
+2026-11-13 13:18:03 ['scripts/train.py', 'ipsc', '--steps', '100000']
+2026-11-13 13:31:46 ['scripts/evaluate.py', 'ipsc', '--sample-steps', '1000', '--repeats', '6']

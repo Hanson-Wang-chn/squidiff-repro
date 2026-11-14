@@ -1,0 +1,18 @@
+{
+  "status": "staged investigation",
+  "purpose": "Distinguish local adaptation error from limitations of the released Squidiff protocol",
+  "frozen_reference": "results/*/v1",
+  "training_steps": 100000,
+  "primary_metrics": ["exact-linear-baseline MSE improvement", "Norman interaction residual R2", "iPSC transient peak excess and amplitude", "gene-wise Wasserstein"],
+  "checkpoint_policy": "Evaluate fixed final checkpoint and EMA; never select a seed/checkpoint using the desired T peak",
+  "sampling_policy": "Report fixed sigma=0.7 source setting and the prior validation-selected sigma separately",
+  "stages": [
+    {"id": "implementation_audit", "question": "Are equations, optimizer updates, sampler and checkpoint restore equivalent to public code?"},
+    {"id": "precision_control", "question": "Does removing BF16 or TF32 fix the failures?", "first_run": "ipsc/fp32_tf32_s42"},
+    {"id": "seed_control", "question": "Do conclusions persist over independent training seeds?", "seeds": [42, 43, 44]},
+    {"id": "data_protocol", "question": "Do published preprocessing, full training groups or the HVG scope explain the difference?"},
+    {"id": "positive_control", "question": "Can the same network recover transient states when intermediate training cells are provided?", "scope": "diagnostic; changes the information available and cannot count as endpoint-only success"}
+  ],
+  "test_use": "Existing tests are now diagnostic development benchmarks; any new method improvement needs fresh final holdout evaluation",
+  "disk_policy": "Keep raw data, source hashes, metrics, predictions, final weights and one complete latest optimizer state per active run; remove redundant checkpoints if free space falls below 20 GiB"
+}

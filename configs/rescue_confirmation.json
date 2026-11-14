@@ -1,0 +1,8 @@
+{
+  "purpose": "Confirm a substantial rescue with another independent training seed rather than selecting one favorable test run",
+  "norman_trigger": "An expanded-feature or balanced-training model reaches interaction residual R2 >= 0.3 on the same source203 target genes using all control cells",
+  "ipsc_trigger": "An endpoint-only extension recovers at least half of the observed day1 T excess, improves mean MSE >=10%, and retains a genuine day1 peak under matched endpoint/middle sampling",
+  "if_triggered": "Train at least one additional independent seed with exactly the same chosen training configuration; retain all results",
+  "if_not_triggered": "Finish all pre-specified data, numerical, inference, training and positive controls; do not run an unbounded test-tuned search",
+  "scope": "Operational confirmation rule for this local investigation, not a universal definition of biological accuracy"
+}

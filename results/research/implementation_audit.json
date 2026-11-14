@@ -1,0 +1,56 @@
+{
+  "native_vs_local_optimizer": [
+    {
+      "step": 1,
+      "native_loss": 1.1407614946365356,
+      "local_loss": 1.1407614946365356,
+      "max_parameter_and_buffer_error": 5.960464477539063e-08
+    },
+    {
+      "step": 2,
+      "native_loss": 1.143319845199585,
+      "local_loss": 1.143319845199585,
+      "max_parameter_and_buffer_error": 1.0239891707897186e-06
+    },
+    {
+      "step": 3,
+      "native_loss": 1.0787595510482788,
+      "local_loss": 1.0787595510482788,
+      "max_parameter_and_buffer_error": 1.9851140677928925e-06
+    },
+    {
+      "step": 4,
+      "native_loss": 1.051061749458313,
+      "local_loss": 1.051061749458313,
+      "max_parameter_and_buffer_error": 2.766493707895279e-06
+    },
+    {
+      "step": 5,
+      "native_loss": 1.0554434061050415,
+      "local_loss": 1.0554434061050415,
+      "max_parameter_and_buffer_error": 3.2690586522221565e-06
+    }
+  ],
+  "diffusion_algebra": {
+    "q_sample_max_error": 1.9688159227371216e-06,
+    "xstart_roundtrip_max_error": 3.528594970703125e-05,
+    "time_map_identity": true,
+    "beta_start": 9.999999999998899e-05,
+    "beta_end": 0.020000000000000018
+  },
+  "official_vs_local_sampler_max_error": 0.0,
+  "resume": {
+    "uninterrupted_losses": [
+      1.0249593257904053,
+      1.0051912069320679,
+      1.0271100997924805
+    ],
+    "resumed_losses": [
+      1.0249593257904053,
+      1.0051912069320679,
+      1.0271100997924805
+    ],
+    "max_state_error": 0.0
+  },
+  "checks_passed": true
+}

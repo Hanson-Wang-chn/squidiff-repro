@@ -1,0 +1,8 @@
+{
+  "source": "squidiff_on_genepertb.ipynb cells 20 and 21",
+  "issue": "indices2 is drawn over target cells, then reused to index control cells; it only accesses the first len(target) controls",
+  "control_cells": 7353,
+  "target_cells": 257,
+  "repeats": 100,
+  "scope": "Audit of reference construction; bootstrap does not measure independent training or biological replication"
+}

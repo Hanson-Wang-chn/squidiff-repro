@@ -1,0 +1,422 @@
+{
+  "files": [
+    {
+      "id": 50932284,
+      "name": "KS003_CTL.zip",
+      "size": 983379989,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/50932284",
+      "supplied_md5": "908bc31ace9e4ce8977469735fa08db3",
+      "computed_md5": "908bc31ace9e4ce8977469735fa08db3",
+      "mimetype": "application/zip"
+    },
+    {
+      "id": 50932290,
+      "name": "KS002_Drug.zip",
+      "size": 1002289890,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/50932290",
+      "supplied_md5": "e567ca2659b71f1924f586f2d736482b",
+      "computed_md5": "e567ca2659b71f1924f586f2d736482b",
+      "mimetype": "application/zip"
+    },
+    {
+      "id": 50932293,
+      "name": "KS001_RAD.zip",
+      "size": 868667434,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/50932293",
+      "supplied_md5": "d2f4b27cc70d2348a8f23b229aa2afad",
+      "computed_md5": "d2f4b27cc70d2348a8f23b229aa2afad",
+      "mimetype": "application/zip"
+    },
+    {
+      "id": 59494394,
+      "name": "log_normalised_counts.csv",
+      "size": 5388999889,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/59494394",
+      "supplied_md5": "98ab0c56756049b24179fef7f29a69a5",
+      "computed_md5": "98ab0c56756049b24179fef7f29a69a5",
+      "mimetype": "undefined"
+    },
+    {
+      "id": 59494382,
+      "name": "cell_metadata_cols.tsv",
+      "size": 40856728,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/59494382",
+      "supplied_md5": "c2e1fd0b1b268047bdcbdbb2f6dab0cb",
+      "computed_md5": "c2e1fd0b1b268047bdcbdbb2f6dab0cb",
+      "mimetype": "text/plain"
+    },
+    {
+      "id": 59494385,
+      "name": "adata_norm.h5ad",
+      "size": 2771843436,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/59494385",
+      "supplied_md5": "ae7866120e8cf6ed3bb358af3d366cb8",
+      "computed_md5": "ae7866120e8cf6ed3bb358af3d366cb8",
+      "mimetype": "application/x-hdf"
+    },
+    {
+      "id": 59494391,
+      "name": "VO_diff_model.pt",
+      "size": 218283868,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/59494391",
+      "supplied_md5": "b432c5bcbc46003e4cf9c7678aac5ea7",
+      "computed_md5": "b432c5bcbc46003e4cf9c7678aac5ea7",
+      "mimetype": "application/zip"
+    },
+    {
+      "id": 59494388,
+      "name": "VO_trained_adata.h5ad",
+      "size": 24731302,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/59494388",
+      "supplied_md5": "f10a17315e3dc0063695db2480af8202",
+      "computed_md5": "f10a17315e3dc0063695db2480af8202",
+      "mimetype": "application/x-hdf"
+    },
+    {
+      "id": 62994985,
+      "name": "loss_plot.pdf",
+      "size": 79056,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/62994985",
+      "supplied_md5": "60dbcaa5568fc8e8e12fc1c9d2ef54ce",
+      "computed_md5": "60dbcaa5568fc8e8e12fc1c9d2ef54ce",
+      "mimetype": "application/pdf"
+    },
+    {
+      "id": 62994994,
+      "name": "loss_plot.pdf",
+      "size": 111362,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/62994994",
+      "supplied_md5": "177567680695dbf73eb59354c40519c9",
+      "computed_md5": "177567680695dbf73eb59354c40519c9",
+      "mimetype": "application/pdf"
+    },
+    {
+      "id": 62994991,
+      "name": "loss_plot-checkpoint.pdf",
+      "size": 111362,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/62994991",
+      "supplied_md5": "177567680695dbf73eb59354c40519c9",
+      "computed_md5": "177567680695dbf73eb59354c40519c9",
+      "mimetype": "application/pdf"
+    },
+    {
+      "id": 62995000,
+      "name": "loss_plot.pdf",
+      "size": 79296,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/62995000",
+      "supplied_md5": "995a1aaba13b7a1df06e5077e6b4a174",
+      "computed_md5": "995a1aaba13b7a1df06e5077e6b4a174",
+      "mimetype": "application/pdf"
+    },
+    {
+      "id": 62995006,
+      "name": "loss_plot.pdf",
+      "size": 109909,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/62995006",
+      "supplied_md5": "67536d1e5a0ce33e70e0853be7ad95ab",
+      "computed_md5": "67536d1e5a0ce33e70e0853be7ad95ab",
+      "mimetype": "application/pdf"
+    },
+    {
+      "id": 62995012,
+      "name": "loss_plot.pdf",
+      "size": 110136,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/62995012",
+      "supplied_md5": "e0065042829e7b70d37ab3976105ed6d",
+      "computed_md5": "e0065042829e7b70d37ab3976105ed6d",
+      "mimetype": "application/pdf"
+    },
+    {
+      "id": 62995018,
+      "name": "loss_plot.pdf",
+      "size": 79058,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/62995018",
+      "supplied_md5": "ab3d47422039d99403fbe1e7d9818555",
+      "computed_md5": "ab3d47422039d99403fbe1e7d9818555",
+      "mimetype": "application/pdf"
+    },
+    {
+      "id": 62995021,
+      "name": "loss_plot-checkpoint.pdf",
+      "size": 79058,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/62995021",
+      "supplied_md5": "ab3d47422039d99403fbe1e7d9818555",
+      "computed_md5": "ab3d47422039d99403fbe1e7d9818555",
+      "mimetype": "application/pdf"
+    },
+    {
+      "id": 62995027,
+      "name": "loss_plot.pdf",
+      "size": 78577,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/62995027",
+      "supplied_md5": "9c87973a39f23998eac73bbd4c29835a",
+      "computed_md5": "9c87973a39f23998eac73bbd4c29835a",
+      "mimetype": "application/pdf"
+    },
+    {
+      "id": 62995033,
+      "name": "loss_plot.pdf",
+      "size": 78773,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/62995033",
+      "supplied_md5": "45d2736dee4a8df68174ea290830f85a",
+      "computed_md5": "45d2736dee4a8df68174ea290830f85a",
+      "mimetype": "application/pdf"
+    },
+    {
+      "id": 62995039,
+      "name": "loss_plot.pdf",
+      "size": 78233,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/62995039",
+      "supplied_md5": "da478546dbe1f9cfdf34223b8cef2567",
+      "computed_md5": "da478546dbe1f9cfdf34223b8cef2567",
+      "mimetype": "application/pdf"
+    }
+  ],
+  "folder_structure": {
+    "50932284": "",
+    "50932290": "",
+    "50932293": "",
+    "59494382": "",
+    "59494385": "",
+    "59494388": "",
+    "59494391": "",
+    "59494394": "",
+    "62994985": "checkpoints/sciplex_results_random_split_1",
+    "62994991": "checkpoints/single_drug/.ipynb_checkpoints",
+    "62994994": "checkpoints/single_drug",
+    "62995000": "checkpoints/sciplex_results_random_split_0",
+    "62995006": "checkpoints/single_drug3",
+    "62995012": "checkpoints/single_drug2",
+    "62995021": "checkpoints/sciplex_results_drug_split_0/.ipynb_checkpoints",
+    "62995018": "checkpoints/sciplex_results_drug_split_0",
+    "62995027": "checkpoints/sciplex_results_drug_split_1",
+    "62995033": "checkpoints/sciplex_results_random_split_2",
+    "62995039": "checkpoints/sciplex_results_drug_split_2"
+  },
+  "authors": [
+    {
+      "id": 17897192,
+      "full_name": "Siyu He",
+      "first_name": "Siyu",
+      "last_name": "He",
+      "is_active": true,
+      "url_name": "Siyu_He",
+      "orcid_id": "0000-0001-7187-3034"
+    },
+    {
+      "id": 20372257,
+      "full_name": "Yuefei Zhu",
+      "first_name": "Yuefei",
+      "last_name": "Zhu",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 19712434,
+      "full_name": "Naveed Tavakol",
+      "first_name": "Naveed",
+      "last_name": "Tavakol",
+      "is_active": true,
+      "url_name": "Naveed_Tavakol",
+      "orcid_id": ""
+    },
+    {
+      "id": 20372278,
+      "full_name": "Haotian Ye",
+      "first_name": "Haotian",
+      "last_name": "Ye",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 20372279,
+      "full_name": "Yeh-Hsing Lao",
+      "first_name": "Yeh-Hsing",
+      "last_name": "Lao",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 20372281,
+      "full_name": "Zixian Zhu",
+      "first_name": "Zixian",
+      "last_name": "Zhu",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 20372282,
+      "full_name": "Cong Xu",
+      "first_name": "Cong",
+      "last_name": "Xu",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 20372284,
+      "full_name": "Sharadha Chauhan",
+      "first_name": "Sharadha",
+      "last_name": "Chauhan",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 20372286,
+      "full_name": "Guy Garty",
+      "first_name": "Guy",
+      "last_name": "Garty",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 20372289,
+      "full_name": "Raju Tomer",
+      "first_name": "Raju",
+      "last_name": "Tomer",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 17263271,
+      "full_name": "Gordana Vunjak-Novakovic",
+      "first_name": "Gordana",
+      "last_name": "Vunjak-Novakovic",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 20372292,
+      "full_name": "James Zou",
+      "first_name": "James",
+      "last_name": "Zou",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 20372294,
+      "full_name": "Elham Azizi",
+      "first_name": "Elham",
+      "last_name": "Azizi",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 17696003,
+      "full_name": "Kam W. Leong",
+      "first_name": "Kam W.",
+      "last_name": "Leong",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    }
+  ],
+  "custom_fields": [],
+  "figshare_url": "https://figshare.com/articles/dataset/Squidiff_Predicting_cellular_development_and_responses_to_perturbations_using_a_diffusion_model/27948633",
+  "download_disabled": false,
+  "description": "<p dir=\"ltr\">We present <i>Squidiff</i>, an innovative conditional diffusion model designed to predict transcriptomic changes across diverse cell types under various environmental stimuli.</p>",
+  "funding": null,
+  "funding_list": [],
+  "version": 3,
+  "status": "public",
+  "size": 11300047356,
+  "created_date": "2026-03-21T23:45:54Z",
+  "modified_date": "2026-03-21T23:45:54Z",
+  "is_public": true,
+  "is_confidential": false,
+  "is_metadata_record": false,
+  "confidential_reason": "",
+  "metadata_reason": "",
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "tags": [
+    "blood vessel organoids",
+    "drug treatment approaches",
+    "radiation induced change"
+  ],
+  "keywords": [
+    "blood vessel organoids",
+    "drug treatment approaches",
+    "radiation induced change"
+  ],
+  "categories": [
+    {
+      "id": 24184,
+      "title": "Bioinformatic methods development",
+      "parent_id": 24181,
+      "path": "/24130/24181/24184",
+      "source_id": "310201",
+      "taxonomy_id": 100
+    },
+    {
+      "id": 26296,
+      "title": "Tissue engineering",
+      "parent_id": 26263,
+      "path": "/26212/26263/26296",
+      "source_id": "400311",
+      "taxonomy_id": 100
+    }
+  ],
+  "references": [],
+  "has_linked_file": false,
+  "citation": "He, Siyu; Zhu, Yuefei; Tavakol, Naveed; Ye, Haotian; Lao, Yeh-Hsing; Zhu, Zixian; et al. (2025). Squidiff: Predicting cellular development and responses to perturbations using a diffusion model. figshare. Dataset. https://doi.org/10.6084/m9.figshare.27948633.v3",
+  "related_materials": [],
+  "is_embargoed": false,
+  "embargo_date": null,
+  "embargo_type": null,
+  "embargo_title": "",
+  "embargo_reason": "",
+  "embargo_options": [],
+  "id": 27948633,
+  "title": "Squidiff: Predicting cellular development and responses to perturbations using a diffusion model",
+  "doi": "10.6084/m9.figshare.27948633.v3",
+  "handle": "",
+  "url": "https://api.figshare.com/v2/articles/27948633",
+  "published_date": "2026-03-21T23:45:54Z",
+  "thumb": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-previews/62995021/thumb.png",
+  "defined_type": 3,
+  "defined_type_name": "dataset",
+  "group_id": null,
+  "url_private_api": "https://api.figshare.com/v2/account/articles/27948633",
+  "url_public_api": "https://api.figshare.com/v2/articles/27948633",
+  "url_private_html": "https://figshare.com/account/articles/27948633",
+  "url_public_html": "https://figshare.com/articles/dataset/Squidiff_Predicting_cellular_development_and_responses_to_perturbations_using_a_diffusion_model/27948633",
+  "timeline": {
+    "posted": "2026-03-21T23:45:54",
+    "firstOnline": "2025-06-18"
+  },
+  "resource_title": null,
+  "resource_doi": null
+}

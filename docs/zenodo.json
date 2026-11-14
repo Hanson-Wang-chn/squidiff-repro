@@ -1,0 +1,135 @@
+{
+  "created": "2020-01-23T11:07:15.424981+00:00",
+  "modified": "2021-04-01T13:43:52.113729+00:00",
+  "id": 3625024,
+  "conceptrecid": "3625023",
+  "doi": "10.1101/630996",
+  "doi_url": "https://doi.org/10.1101/630996",
+  "metadata": {
+    "title": "Single-cell RNA-sequencing of iPS cells differentiating towards definitive endoderm",
+    "doi": "10.1101/630996",
+    "publication_date": "2020-01-22",
+    "description": "<p>Datasets associated with our paper &quot;Single-cell RNA-sequencing&nbsp;of differentiating iPS cells reveals dynamic genetic effects on gene expression&quot; (https://www.nature.com/articles/s41467-020-14457-z).</p>\n\n<p>Raw and normalised read (log) count matrices are available as two separate objects,&nbsp;and complemented by an additional object containing cell&nbsp;metadata (QC-filtered cells only).&nbsp;</p>\n\n<p>The corresponding single cell RNA-seq raw&nbsp;data are available under the accession numbers ERP016000 (ENA project) and EGAS00001002278, EGAD00001005741 (EGA project: study ID, dataset ID).</p>\n\n<p>For open-access lines only (from HipSci,&nbsp;<a href=\"http://www.hipsci.org/\">http://www.hipsci.org/</a>), we additionally share allele-specific expression (ASE) data. There are two files per donor - one for total counts for each variant, one for the number of counts from the alternative allele for each variant. The build is GRCh37, variant IDs are in the form chr_position_ref_alt. Not all variants are included for all donors - just heterozygous variants which had counts. The tables include all sequenced cells from these donors, so includes data for cells that did not end up passing QC and are therefore not included in the overall dataset provided on Zenodo.&nbsp;Cell IDs match those included in the other files.</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Cuomo, Anna SE",
+        "affiliation": "EMBL-EBI",
+        "orcid": "0000-0001-5168-6979"
+      }
+    ],
+    "version": "v1",
+    "language": "eng",
+    "resource_type": {
+      "title": "Preprint",
+      "type": "publication",
+      "subtype": "preprint"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "3625023"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Single-cell RNA-sequencing of iPS cells differentiating towards definitive endoderm",
+  "links": {
+    "self": "https://zenodo.org/api/records/3625024",
+    "self_html": "https://zenodo.org/records/3625024",
+    "preview_html": "https://zenodo.org/records/3625024?preview=1",
+    "doi": "https://doi.org/10.1101/630996",
+    "self_doi": "https://doi.org/10.1101/630996",
+    "self_doi_html": "https://zenodo.org/doi/10.1101/630996",
+    "reserve_doi": "https://zenodo.org/api/records/3625024/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/3625023",
+    "parent_html": "https://zenodo.org/records/3625023",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:3625024/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:3625024/sequence/default",
+    "files": "https://zenodo.org/api/records/3625024/files",
+    "media_files": "https://zenodo.org/api/records/3625024/media-files",
+    "latest": "https://zenodo.org/api/records/3625024/versions/latest",
+    "latest_html": "https://zenodo.org/records/3625024/latest",
+    "versions": "https://zenodo.org/api/records/3625024/versions",
+    "draft": "https://zenodo.org/api/records/3625024/draft",
+    "access_links": "https://zenodo.org/api/records/3625024/access/links",
+    "access_grants": "https://zenodo.org/api/records/3625024/access/grants",
+    "access_users": "https://zenodo.org/api/records/3625024/access/users",
+    "access_request": "https://zenodo.org/api/records/3625024/access/request",
+    "access": "https://zenodo.org/api/records/3625024/access",
+    "communities": "https://zenodo.org/api/records/3625024/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/3625024/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/3625024/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/3625024/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/3625024/quota-increase",
+    "requests": "https://zenodo.org/api/records/3625024/requests"
+  },
+  "updated": "2021-04-01T13:43:52.113729+00:00",
+  "recid": "3625024",
+  "revision": 9,
+  "files": [
+    {
+      "id": "291e6ea4-3e20-4869-92ca-8ac91dd207d3",
+      "key": "log_normalised_counts.csv.zip",
+      "size": 2484864847,
+      "checksum": "md5:4b1a8301fb0053c6f825aa3205b01938",
+      "links": {
+        "self": "https://zenodo.org/api/records/3625024/files/log_normalised_counts.csv.zip/content"
+      }
+    },
+    {
+      "id": "57c43f76-8475-4d52-a075-f11b7c221b6d",
+      "key": "raw_counts.csv.zip",
+      "size": 2543502178,
+      "checksum": "md5:86044a350cc08ec7c0ad4068206bda0e",
+      "links": {
+        "self": "https://zenodo.org/api/records/3625024/files/raw_counts.csv.zip/content"
+      }
+    },
+    {
+      "id": "54e8776a-98e1-478b-9c1e-816a8f5a10e6",
+      "key": "ase_aggregated_by_donor_open_access_lines.tar.gz",
+      "size": 844713352,
+      "checksum": "md5:bb2e523b113a884186d53ed6562df27a",
+      "links": {
+        "self": "https://zenodo.org/api/records/3625024/files/ase_aggregated_by_donor_open_access_lines.tar.gz/content"
+      }
+    },
+    {
+      "id": "f4c50d78-8935-4fc7-8dfa-c9a0820dd94e",
+      "key": "cell_metadata_cols.tsv",
+      "size": 40856728,
+      "checksum": "md5:c2e1fd0b1b268047bdcbdbb2f6dab0cb",
+      "links": {
+        "self": "https://zenodo.org/api/records/3625024/files/cell_metadata_cols.tsv/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "88793"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 8864,
+    "unique_downloads": 4348,
+    "views": 6810,
+    "unique_views": 6076,
+    "version_downloads": 8849,
+    "version_unique_downloads": 4342,
+    "version_unique_views": 6051,
+    "version_views": 6785
+  },
+  "state": "done",
+  "submitted": true
+}

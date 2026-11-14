@@ -1,0 +1,16 @@
+# Preserve archived file bytes and upstream Git-object verification hashes.
+* -text
+*.py diff
+*.sh diff
+*.md diff
+*.txt diff
+*.json diff
+*.jsonl diff
+*.csv diff
+*.yml diff
+*.yaml diff
+*.svg diff
+*.ipynb diff
+*.npz binary
+*.png binary
+*.pdf binary

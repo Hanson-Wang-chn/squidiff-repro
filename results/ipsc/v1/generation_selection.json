@@ -1,0 +1,276 @@
+{
+  "checkpoint": "best_generation.pt",
+  "original_checkpoint": "step_100000.pt",
+  "step": 100000,
+  "latent_noise": 0.5,
+  "endpoint_wasserstein": 0.5052030515865602,
+  "selection_data": "day0/day3 validation only; no day1/day2 test accessed",
+  "audit": [
+    {
+      "stage": "checkpoint_screen",
+      "checkpoint": "best.pt",
+      "step": 4000,
+      "day": 0,
+      "mean_mse": 30.576417922973633,
+      "wasserstein": 5.250735242609097,
+      "variance_mae": 60.87501525878906
+    },
+    {
+      "stage": "checkpoint_screen",
+      "checkpoint": "best.pt",
+      "step": 4000,
+      "day": 3,
+      "mean_mse": 41.08938217163086,
+      "wasserstein": 6.015533676686199,
+      "variance_mae": 79.9922866821289
+    },
+    {
+      "stage": "checkpoint_screen",
+      "checkpoint": "step_010000.pt",
+      "step": 10000,
+      "day": 0,
+      "mean_mse": 6.023331642150879,
+      "wasserstein": 2.2780052774803696,
+      "variance_mae": 14.334799766540527
+    },
+    {
+      "stage": "checkpoint_screen",
+      "checkpoint": "step_010000.pt",
+      "step": 10000,
+      "day": 3,
+      "mean_mse": 6.537814140319824,
+      "wasserstein": 2.382752584053831,
+      "variance_mae": 17.760290145874023
+    },
+    {
+      "stage": "checkpoint_screen",
+      "checkpoint": "step_020000.pt",
+      "step": 20000,
+      "day": 0,
+      "mean_mse": 0.7414673566818237,
+      "wasserstein": 0.8091181358409567,
+      "variance_mae": 1.6752649545669556
+    },
+    {
+      "stage": "checkpoint_screen",
+      "checkpoint": "step_020000.pt",
+      "step": 20000,
+      "day": 3,
+      "mean_mse": 1.0493108034133911,
+      "wasserstein": 0.9292771297722418,
+      "variance_mae": 2.1544463634490967
+    },
+    {
+      "stage": "checkpoint_screen",
+      "checkpoint": "step_050000.pt",
+      "step": 50000,
+      "day": 0,
+      "mean_mse": 0.07831528037786484,
+      "wasserstein": 0.41389204166491905,
+      "variance_mae": 0.7749772667884827
+    },
+    {
+      "stage": "checkpoint_screen",
+      "checkpoint": "step_050000.pt",
+      "step": 50000,
+      "day": 3,
+      "mean_mse": 0.139695405960083,
+      "wasserstein": 0.5624563844389527,
+      "variance_mae": 1.2357031106948853
+    },
+    {
+      "stage": "checkpoint_screen",
+      "checkpoint": "step_100000.pt",
+      "step": 100000,
+      "day": 0,
+      "mean_mse": 0.0130293108522892,
+      "wasserstein": 0.4175744662533052,
+      "variance_mae": 1.08211088180542
+    },
+    {
+      "stage": "checkpoint_screen",
+      "checkpoint": "step_100000.pt",
+      "step": 100000,
+      "day": 3,
+      "mean_mse": 0.02448001690208912,
+      "wasserstein": 0.5928338001053145,
+      "variance_mae": 1.8757762908935547
+    },
+    {
+      "stage": "checkpoint_confirm",
+      "checkpoint": "step_100000.pt",
+      "step": 100000,
+      "day": 0,
+      "mean_mse": 0.01320486981421709,
+      "wasserstein": 0.4168265900329062,
+      "variance_mae": 1.0781208276748657
+    },
+    {
+      "stage": "checkpoint_confirm",
+      "checkpoint": "step_100000.pt",
+      "step": 100000,
+      "day": 3,
+      "mean_mse": 0.024472523480653763,
+      "wasserstein": 0.5917469417883762,
+      "variance_mae": 1.8699768781661987
+    },
+    {
+      "stage": "checkpoint_confirm",
+      "checkpoint": "step_050000.pt",
+      "step": 50000,
+      "day": 0,
+      "mean_mse": 0.08067630231380463,
+      "wasserstein": 0.4142574212375706,
+      "variance_mae": 0.7637470364570618
+    },
+    {
+      "stage": "checkpoint_confirm",
+      "checkpoint": "step_050000.pt",
+      "step": 50000,
+      "day": 3,
+      "mean_mse": 0.14429496228694916,
+      "wasserstein": 0.562922975049018,
+      "variance_mae": 1.217394232749939
+    },
+    {
+      "stage": "latent_sigma",
+      "checkpoint": "step_100000.pt",
+      "step": 100000,
+      "day": 0,
+      "sigma": 0.0,
+      "mean_mse": 0.09275111556053162,
+      "wasserstein": 0.8971031546097686,
+      "variance_mae": 2.110355854034424
+    },
+    {
+      "stage": "latent_sigma",
+      "checkpoint": "step_100000.pt",
+      "step": 100000,
+      "day": 3,
+      "sigma": 0.0,
+      "mean_mse": 0.21830588579177856,
+      "wasserstein": 1.2782903211306875,
+      "variance_mae": 3.5978174209594727
+    },
+    {
+      "stage": "latent_sigma",
+      "checkpoint": "step_100000.pt",
+      "step": 100000,
+      "day": 0,
+      "sigma": 0.05,
+      "mean_mse": 0.08992485702037811,
+      "wasserstein": 0.8733496693397674,
+      "variance_mae": 2.0944809913635254
+    },
+    {
+      "stage": "latent_sigma",
+      "checkpoint": "step_100000.pt",
+      "step": 100000,
+      "day": 3,
+      "sigma": 0.05,
+      "mean_mse": 0.21323037147521973,
+      "wasserstein": 1.255051393271969,
+      "variance_mae": 3.5814623832702637
+    },
+    {
+      "stage": "latent_sigma",
+      "checkpoint": "step_100000.pt",
+      "step": 100000,
+      "day": 0,
+      "sigma": 0.1,
+      "mean_mse": 0.08210598677396774,
+      "wasserstein": 0.8217884143211696,
+      "variance_mae": 2.048095941543579
+    },
+    {
+      "stage": "latent_sigma",
+      "checkpoint": "step_100000.pt",
+      "step": 100000,
+      "day": 3,
+      "sigma": 0.1,
+      "mean_mse": 0.19830581545829773,
+      "wasserstein": 1.1985504762614538,
+      "variance_mae": 3.528351068496704
+    },
+    {
+      "stage": "latent_sigma",
+      "checkpoint": "step_100000.pt",
+      "step": 100000,
+      "day": 0,
+      "sigma": 0.2,
+      "mean_mse": 0.06011952459812164,
+      "wasserstein": 0.7029332516191098,
+      "variance_mae": 1.88212251663208
+    },
+    {
+      "stage": "latent_sigma",
+      "checkpoint": "step_100000.pt",
+      "step": 100000,
+      "day": 3,
+      "sigma": 0.2,
+      "mean_mse": 0.15964220464229584,
+      "wasserstein": 1.0434007505350213,
+      "variance_mae": 3.2920262813568115
+    },
+    {
+      "stage": "latent_sigma",
+      "checkpoint": "step_100000.pt",
+      "step": 100000,
+      "day": 0,
+      "sigma": 0.3,
+      "mean_mse": 0.041254524141550064,
+      "wasserstein": 0.5882706010680973,
+      "variance_mae": 1.6346126794815063
+    },
+    {
+      "stage": "latent_sigma",
+      "checkpoint": "step_100000.pt",
+      "step": 100000,
+      "day": 3,
+      "sigma": 0.3,
+      "mean_mse": 0.12632544338703156,
+      "wasserstein": 0.8794555622869372,
+      "variance_mae": 2.8989830017089844
+    },
+    {
+      "stage": "latent_sigma",
+      "checkpoint": "step_100000.pt",
+      "step": 100000,
+      "day": 0,
+      "sigma": 0.5,
+      "mean_mse": 0.07455624639987946,
+      "wasserstein": 0.42515452517707364,
+      "variance_mae": 0.8868063688278198
+    },
+    {
+      "stage": "latent_sigma",
+      "checkpoint": "step_100000.pt",
+      "step": 100000,
+      "day": 3,
+      "sigma": 0.5,
+      "mean_mse": 0.09910573065280914,
+      "wasserstein": 0.5852515779960467,
+      "variance_mae": 1.6911101341247559
+    },
+    {
+      "stage": "latent_sigma",
+      "checkpoint": "step_100000.pt",
+      "step": 100000,
+      "day": 0,
+      "sigma": 0.7,
+      "mean_mse": 0.5211196541786194,
+      "wasserstein": 0.7036483964238567,
+      "variance_mae": 2.030165433883667
+    },
+    {
+      "stage": "latent_sigma",
+      "checkpoint": "step_100000.pt",
+      "step": 100000,
+      "day": 3,
+      "sigma": 0.7,
+      "mean_mse": 0.3777773976325989,
+      "wasserstein": 0.6865419001915252,
+      "variance_mae": 2.0154566764831543
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+        kind              mode target  cells  assigned_target_fraction  target_probability  assigned_day0  assigned_day1  assigned_day2  assigned_day3
+real_heldout              real   day0    600                  0.921667            0.916800       0.921667       0.046667       0.021667       0.010000
+real_heldout              real   day1    600                  0.916667            0.904291       0.026667       0.916667       0.055000       0.001667
+real_heldout              real   day2    600                  0.885000            0.872168       0.010000       0.051667       0.885000       0.053333
+real_heldout              real   day3    600                  0.930000            0.927858       0.006667       0.003333       0.060000       0.930000
+   generated   centroid_sigma0   day1    600                  0.006667            0.014193       0.900000       0.006667       0.078333       0.015000
+   generated centroid_sigma0.5   day1    600                  0.073333            0.085414       0.410000       0.073333       0.245000       0.271667
+   generated centroid_sigma0.7   day1    600                  0.093333            0.097502       0.283333       0.093333       0.218333       0.405000
+   generated        cell_shift   day1    600                  0.061667            0.069036       0.645000       0.061667       0.165000       0.128333
+   generated            oracle   day1    600                  0.865000            0.860027       0.041667       0.865000       0.088333       0.005000
+   generated   target_centroid   day1    600                  1.000000            0.995247       0.000000       1.000000       0.000000       0.000000
+   generated   centroid_sigma0   day2    600                  0.446667            0.442087       0.041667       0.000000       0.446667       0.511667
+   generated centroid_sigma0.5   day2    600                  0.253333            0.257795       0.148333       0.038333       0.253333       0.560000
+   generated centroid_sigma0.7   day2    600                  0.208333            0.207482       0.133333       0.055000       0.208333       0.603333
+   generated        cell_shift   day2    600                  0.323333            0.323867       0.123333       0.033333       0.323333       0.520000
+   generated            oracle   day2    600                  0.861667            0.847574       0.020000       0.028333       0.861667       0.090000
+   generated   target_centroid   day2    600                  1.000000            0.996958       0.000000       0.000000       1.000000       0.000000
+[2026-11-13 19:24:49] 群体状态诊断 ipsc/all_days_fp32_s42 完成；分类器仅用于事后评价，参考细胞与真实评估细胞不重合。

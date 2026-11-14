@@ -1,0 +1,410 @@
+{
+  "data": [
+    {
+      "data_root": "data/processed",
+      "dataset": "ipsc",
+      "train_test_overlap": 0,
+      "overlap_intentional": false,
+      "train_validation_overlap": 0,
+      "feature_order_identical": true,
+      "partitions": {
+        "train": {
+          "shape": [
+            2400,
+            203
+          ],
+          "unique_cells": 2400,
+          "groups": {
+            "0": 1200,
+            "3": 1200
+          },
+          "sha256": "6a362b932b3b683bc3727fcbc2580dd81dfc0f70c52927e48c75c91cd7375a8e"
+        },
+        "val": {
+          "shape": [
+            400,
+            203
+          ],
+          "unique_cells": 400,
+          "groups": {
+            "0": 200,
+            "3": 200
+          },
+          "sha256": "6c1f6340a70d3778dbbd3f9aa2d5fd4906adc5049a0109612d5544c062d3483c"
+        },
+        "test": {
+          "shape": [
+            2400,
+            203
+          ],
+          "unique_cells": 2400,
+          "groups": {
+            "0": 600,
+            "1": 600,
+            "2": 600,
+            "3": 600
+          },
+          "sha256": "5586bc158903eed87ca4ebfddf64723f8da52647813c8c817c61e3c2c211bbe5"
+        }
+      }
+    },
+    {
+      "data_root": "data/processed",
+      "dataset": "norman",
+      "train_test_overlap": 0,
+      "overlap_intentional": false,
+      "train_validation_overlap": 0,
+      "feature_order_identical": true,
+      "partitions": {
+        "train": {
+          "shape": [
+            7102,
+            206
+          ],
+          "unique_cells": 7102,
+          "groups": {
+            "0": 6618,
+            "2": 309,
+            "1": 175
+          },
+          "sha256": "305e9aabf72007aafe79dd3538437451fcb62952504ad9a7978228597c03ec71"
+        },
+        "val": {
+          "shape": [
+            788,
+            206
+          ],
+          "unique_cells": 788,
+          "groups": {
+            "0": 735,
+            "2": 34,
+            "1": 19
+          },
+          "sha256": "8e9dd8910187bf53ddd61d62a00350b18baaa463b1d06293272c3c560b220459"
+        },
+        "test": {
+          "shape": [
+            257,
+            206
+          ],
+          "unique_cells": 257,
+          "groups": {
+            "3": 257
+          },
+          "sha256": "cee4055dd9a47932ad4402cf7ed07aac6aab872f2bbca32bcd09c1ecc09a036e"
+        }
+      }
+    },
+    {
+      "data_root": "data/research/source",
+      "dataset": "ipsc",
+      "train_test_overlap": 163,
+      "overlap_intentional": true,
+      "train_validation_overlap": 0,
+      "feature_order_identical": true,
+      "partitions": {
+        "train": {
+          "shape": [
+            2400,
+            203
+          ],
+          "unique_cells": 2237,
+          "groups": {
+            "3": 1200,
+            "0": 1200
+          },
+          "sha256": "cf6e2feddfb1a9ab257ddec6e5a9c35475b79e2af4b291d923e7195a4052ce61"
+        },
+        "val": {
+          "shape": [
+            400,
+            203
+          ],
+          "unique_cells": 400,
+          "groups": {
+            "0": 200,
+            "3": 200
+          },
+          "sha256": "05d47e20cdc78c223e99c1187d84366a110d52c32e6c81ee3cb018ca95b28390"
+        },
+        "test": {
+          "shape": [
+            2400,
+            203
+          ],
+          "unique_cells": 2322,
+          "groups": {
+            "1": 600,
+            "3": 600,
+            "0": 600,
+            "2": 600
+          },
+          "sha256": "0e3a47631cc3a994bebb081442e81e39fbd3de5299e5b9b42d98c267a2890b8c"
+        }
+      }
+    },
+    {
+      "data_root": "data/research/source_full",
+      "dataset": "norman",
+      "train_test_overlap": 0,
+      "overlap_intentional": false,
+      "train_validation_overlap": 788,
+      "feature_order_identical": true,
+      "partitions": {
+        "train": {
+          "shape": [
+            7890,
+            203
+          ],
+          "unique_cells": 7890,
+          "groups": {
+            "0": 7353,
+            "2": 343,
+            "1": 194
+          },
+          "sha256": "6444fb3c7d0d2f75a6dc54aa4face1dbb32dff8fe7ade4b1a6b808aa6bd0817f"
+        },
+        "val": {
+          "shape": [
+            788,
+            203
+          ],
+          "unique_cells": 788,
+          "groups": {
+            "0": 735,
+            "2": 34,
+            "1": 19
+          },
+          "sha256": "c011329dfdfb649dec0836c8a838dd4e2d197377c82b45adfea9558d5895af7c"
+        },
+        "test": {
+          "shape": [
+            257,
+            203
+          ],
+          "unique_cells": 257,
+          "groups": {
+            "3": 257
+          },
+          "sha256": "7da45a9e9d570802c475a59bc3728dd783b49db6ab196d86e342a7f2b4dd6029"
+        }
+      }
+    },
+    {
+      "data_root": "data/research/all_days",
+      "dataset": "ipsc",
+      "train_test_overlap": 0,
+      "overlap_intentional": false,
+      "train_validation_overlap": 0,
+      "feature_order_identical": true,
+      "partitions": {
+        "train": {
+          "shape": [
+            4800,
+            203
+          ],
+          "unique_cells": 4800,
+          "groups": {
+            "0": 1200,
+            "3": 1200,
+            "1": 1200,
+            "2": 1200
+          },
+          "sha256": "eb8f3eab2dba75db9e783d292d3e8e7b4fdaa871e3c4bc436c9bf7c845fd03cd"
+        },
+        "val": {
+          "shape": [
+            400,
+            203
+          ],
+          "unique_cells": 400,
+          "groups": {
+            "0": 200,
+            "3": 200
+          },
+          "sha256": "6c1f6340a70d3778dbbd3f9aa2d5fd4906adc5049a0109612d5544c062d3483c"
+        },
+        "test": {
+          "shape": [
+            2400,
+            203
+          ],
+          "unique_cells": 2400,
+          "groups": {
+            "0": 600,
+            "1": 600,
+            "2": 600,
+            "3": 600
+          },
+          "sha256": "5586bc158903eed87ca4ebfddf64723f8da52647813c8c817c61e3c2c211bbe5"
+        }
+      }
+    },
+    {
+      "data_root": "data/research/fresh_endpoints",
+      "dataset": "ipsc",
+      "train_test_overlap": 0,
+      "overlap_intentional": false,
+      "train_validation_overlap": 0,
+      "feature_order_identical": true,
+      "partitions": {
+        "train": {
+          "shape": [
+            2400,
+            203
+          ],
+          "unique_cells": 2400,
+          "groups": {
+            "0": 1200,
+            "3": 1200
+          },
+          "sha256": "fcef62e1d345c2541b801fd5f939c39bf630756b8be195988e9f7e60c529ae73"
+        },
+        "val": {
+          "shape": [
+            400,
+            203
+          ],
+          "unique_cells": 400,
+          "groups": {
+            "0": 200,
+            "3": 200
+          },
+          "sha256": "b1a95a75c99f63c4bb0397a414e39de9b43ff6772b8a60f462654ea083eaf0ce"
+        },
+        "test": {
+          "shape": [
+            2400,
+            203
+          ],
+          "unique_cells": 2400,
+          "groups": {
+            "0": 600,
+            "1": 600,
+            "2": 600,
+            "3": 600
+          },
+          "sha256": "b9319c323b7a4c4c8c0d884fd0ed801a7a6049635a5bfc9d1bdc7989ff78c4c7"
+        }
+      }
+    },
+    {
+      "data_root": "data/research/source_1000_full",
+      "dataset": "norman",
+      "train_test_overlap": 0,
+      "overlap_intentional": false,
+      "train_validation_overlap": 788,
+      "feature_order_identical": true,
+      "partitions": {
+        "train": {
+          "shape": [
+            7890,
+            1000
+          ],
+          "unique_cells": 7890,
+          "groups": {
+            "0": 7353,
+            "2": 343,
+            "1": 194
+          },
+          "sha256": "0d28f72a087c50b9cbe4c1e8aad0224e884e4dfa6b1f2a20e33f08c9d566e08f"
+        },
+        "val": {
+          "shape": [
+            788,
+            1000
+          ],
+          "unique_cells": 788,
+          "groups": {
+            "0": 735,
+            "2": 34,
+            "1": 19
+          },
+          "sha256": "d021098f6a12b70b52387bf7dc409a74e84a732c9aea5c81575395825d824d83"
+        },
+        "test": {
+          "shape": [
+            257,
+            1000
+          ],
+          "unique_cells": 257,
+          "groups": {
+            "3": 257
+          },
+          "sha256": "2363c57374e93a43860a5ca5789611cd9878fe460c6b8885747b33bb544881a3"
+        }
+      }
+    },
+    {
+      "data_root": "data/research/full_endpoints",
+      "dataset": "ipsc",
+      "train_test_overlap": 0,
+      "overlap_intentional": false,
+      "train_validation_overlap": 0,
+      "feature_order_identical": true,
+      "partitions": {
+        "train": {
+          "shape": [
+            16546,
+            203
+          ],
+          "unique_cells": 16546,
+          "groups": {
+            "0": 8861,
+            "3": 7685
+          },
+          "sha256": "25ff5aeea729dcd81f6c6c16dd8d4b8dce98de573018e23d7e32304e71fe0040"
+        },
+        "val": {
+          "shape": [
+            400,
+            203
+          ],
+          "unique_cells": 400,
+          "groups": {
+            "0": 200,
+            "3": 200
+          },
+          "sha256": "6c1f6340a70d3778dbbd3f9aa2d5fd4906adc5049a0109612d5544c062d3483c"
+        },
+        "test": {
+          "shape": [
+            2400,
+            203
+          ],
+          "unique_cells": 2400,
+          "groups": {
+            "0": 600,
+            "1": 600,
+            "2": 600,
+            "3": 600
+          },
+          "sha256": "5586bc158903eed87ca4ebfddf64723f8da52647813c8c817c61e3c2c211bbe5"
+        }
+      }
+    }
+  ],
+  "ipsc_preprocessing_execution": {
+    "6": {
+      "execution_count": 8,
+      "source": "adata_day0 = adata[(adata_copy.obs['leiden']=='2')&(adata_copy.obs['day']=='day0')]\nadata_day1 = adata[(adata_copy.obs['leiden']=='1')&(adata_copy.obs['day']=='day1')]\nadata_day2 = adata[(adata_copy.obs['leiden']=='0')&(adata_copy.obs['day']=='day2')]\nadata_day3 = adata[(adata_copy.obs['leiden']=='3')&(adata_copy.obs['day']=='day3')]\n\n\nnew_adata = sc.concat([adata_day0,adata_day1,adata_day2, adata_day3])\nnew_adata"
+    },
+    "7": {
+      "execution_count": 9,
+      "source": "new_adata = adata"
+    },
+    "8": {
+      "execution_count": 17,
+      "source": "import scanpy as sc\nimport numpy as np\n\n# Get unique groups\ngroups = new_adata.obs['day'].unique()\ntrain_adata_list = []\nval_adata_list = []\ntest_adata_list = []\n\n# Random sampling 3000 cells per group and splitting\nfor group in groups:\n    group_adata = new_adata[new_adata.obs['day'] == group]\n    \n    # Ensure there are at least 2000 cells in the group\n    if group_adata.shape[0] < 2000:\n        print(f\"Group {group} has less than 3000 cells. Sampling {group_adata.shape[0]} cells.\")\n        sampled_adata = group_adata\n    else:\n        sampled_indices = np.random.choice(group_adata.shape[0], 2000, replace=True)\n        sampled_adata = group_adata[sampled_indices, :]\n\n    # Shuffle the sampled data indices\n    total_indices = np.arange(sampled_adata.shape[0])\n    np.random.shuffle(total_indices)\n    \n    # Split into train, validation, and test datasets\n    train_size = int(0.6 * sampled_adata.shape[0])\n    val_size = int(0.1 * sampled_adata.shape[0])\n    \n    train_indices = total_indices[:train_size]\n    val_indices = total_indices[train_size:train_size + val_size]\n    test_indices = total_indices[train_size + val_size:]\n    \n    train_adata_list.append(sampled_adata[train_indices, :])\n    val_adata_list.append(sampled_adata[val_indices, :])\n    test_adata_list.append(sampled_adata[test_indices, :])\n\n# Concatenate all subsampled data\ntrain_adata = train_adata_list[0].concatenate(*train_adata_list[1:], batch_key=\"day\", batch_categories=groups)\nval_adata = val_adata_list[0].concatenate(*val_adata_list[1:], batch_key=\"day\", batch_categories=groups)\ntest_adata = test_adata_list[0].concatenate(*test_adata_list[1:], batch_key=\"day\", batch_categories=groups)\n\n# Modify variable names if needed\ntrain_adata.var_names = [i.split('_')[1] for i in train_adata.var_names]\nval_adata.var_names = [i.split('_')[1] for i in val_adata.var_names]\ntest_adata.var_names = [i.split('_')[1] for i in test_adata.var_names]\n\n\n# Identify the most highly variable genes\nsc.pp.highly_variable_genes(train_adata, n_top_genes=200)\nwnt_signaling = [\"ADAM17\",\n \"AXIN1\",\n \"AXIN2\",\n \"CCND2\",\n \"CSNK1E\",\n \"CTNNB1\",\n \"CUL1\",\n \"DKK1\",\n \"DKK4\",\n \"DLL1\",\n \"DVL2\",\n \"FRAT1\",\n \"FZD1\",\n \"FZD8\",\n \"GNAI1\",\n \"HDAC11\",\n \"HDAC2\",\n \"HDAC5\",\n \"HEY1\",\n \"HEY2\",\n \"JAG1\",\n \"JAG2\",\n \"KAT2A\",\n \"LEF1\",\n \"MAML1\",\n \"MYC\",\n \"NCOR2\",\n \"NCSTN\",\n \"NKD1\",\n \"NOTCH1\",\n \"NOTCH4\",\n \"NUMB\",\n \"PPARD\",\n \"PSEN2\",\n \"PTCH1\",\n \"RBPJ\",\n \"SKP2\",\n \"TCF7\",\n \"TP53\",\"WNT1\",\"WNT5B\",\"WNT6\"]\nBMP_signaling = [\"AHSG\",\"BAMBI\",\"BMP2\",\"BMP4\",\"BMP6\",\"BMP7\",\"BMPR1A\",\"BMPR1B\",\"BMPR2\",\"CER1\",\"CHRD\",\"CHRDL1\",\"CTDSP1\",\"CTDSP2\",\"CTDSPL\",\"FST\",\"GREM1\",\"GSK3B\",\"HJV\",\"MAP3K7\",\"MAPK1\",\"NOG\",\"NUP214\",\"PPM1A\",\"PPP1CA\",\"PPP1R15A\",\"RGMA\",\"RGMB\",\"SKI\",\"SMAD1\",\"SMAD4\",\"SMAD5\",\"SMAD6\",\"SMAD7\",\"SMAD9\",\"SMURF1\",\"SMURF2\",\"SOSTDC1\",\"TAB1\",\"TAB2\",\"XIAP\",\"ZFYVE16\"]\nothers  = ['NANOG','T','GATA6']\n\nfor i in others:\n    train_adata.var.highly_variable[i]=True\n\nvar_ = train_adata.var.highly_variable\ntrain_adata = train_adata[:, var_]\nval_adata = val_adata[:, var_]\ntest_adata = test_adata[:, var_]\n\n# Save datasets\ntrain_adata.write('diff_train_raw.h5ad')\nval_adata.write('val_adata_raw.h5ad')\ntest_adata.write('test_adata_raw.h5ad')\n\n# Print summary of each dataset\nprint(f\"Train dataset shape: {train_adata.shape}\")\nprint(f\"Validation dataset shape: {val_adata.shape}\")\nprint(f\"Test dataset shape: {test_adata.shape}\")\n"
+    }
+  },
+  "interpretation": {
+    "cluster_filter": "Released notebook executes new_adata=adata after the cluster filter; the filter is overwritten before sampling.",
+    "source_ipsc_overlap": "Replacement sampling creates endpoint train/test duplicates. Reproduced explicitly only in source runs; intermediate test IDs remain absent from model fitting.",
+    "source_norman_features": "Released prep currently requests 1000 HVGs, whereas evaluation loads 203-input weights. Both 200+marker and 1000-gene variants are tested.",
+    "r2_argument_order": "sample_squidiff.sampler.cal_metric passes prediction first to r2_score. Results retain both notebook_reverse_r2 and conventional truth-reference r2.",
+    "source_latent_sampling": "iPSC endpoint curves encode individual real endpoint cells; middle curves use mean(z_day0)+fraction*delta+0.7*N(0,I). Matched-sampler negative controls test this distinction.",
+    "source_norman_literal": "A 60-dimensional control centroid is passed as z_sem_origin; interp_with_direction takes its scalar mean, yielding a different expression than the intended vector equation.",
+    "checkpoint_limitation": "The exact trained fig2/Norman checkpoints, processed feature lists and original preprocessing seed were not located in the accessible public artifacts; this is a public-protocol reimplementation, not an exact-weight rerun."
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "population": "(1-t)*mean(train day0)+t*mean(train day3)",
+  "input_conditioned": "mean(observed source day0)+t*(mean(train day3)-mean(train day0))",
+  "purpose": "Both use no middle-day expression. The second gives the baseline the same observed day0 source population available to the neural forecast.",
+  "scope": "Mean-expression reference only; no clipping or test-target tuning."
+}

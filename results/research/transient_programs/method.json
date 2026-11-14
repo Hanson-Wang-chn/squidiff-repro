@@ -1,0 +1,6 @@
+{
+  "definition": "A gene is transient when its day1/day2 mean exceeds max(real training day0 mean, real training day3 mean) by the stated threshold.",
+  "scope": "Absolute expression excess, across all selected genes; not just recall on retrospectively chosen positive markers.",
+  "reference": "Real training endpoint means, held fixed for both true and generated transient calls.",
+  "note": "Oracle and all-days training remain diagnostic; source feature discovery itself includes intermediate-day expression."
+}

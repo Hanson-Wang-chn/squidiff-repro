@@ -1,0 +1,1 @@
+Logging to /home/whs/squidiff/logs/native_equivalence

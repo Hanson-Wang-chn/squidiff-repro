@@ -1,0 +1,26 @@
+{
+  "args": {
+    "dataset": "norman",
+    "run": "source_fp32_s43",
+    "data_root": "data/research/source_full",
+    "checkpoint": "latest.pt",
+    "weights": "model",
+    "tag": "all_control_cells",
+    "modes": "cell_shift",
+    "sigmas": "0,0.5,0.7",
+    "repeats": 1,
+    "cells": 7353,
+    "sample_steps": 1000,
+    "bn_recalibrate": false,
+    "inference_math": "ieee"
+  },
+  "checkpoint_step": 100000,
+  "summary": {
+    "('cell_shift', 'AB')": {
+      "pearson": 0.9918745261384097,
+      "r2": 0.9837992875738,
+      "relative_mse_gain": 0.09244484247299345
+    }
+  },
+  "oracle_is_not_forecasting": "Real target expression is encoded for oracle diagnostic only"
+}

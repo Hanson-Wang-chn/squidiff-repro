@@ -1,0 +1,45 @@
+/home/dataset-assist-0/whs/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/dataset-assist-0/whs/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/dataset-assist-0/whs/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/dataset-assist-0/whs/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/dataset-assist-0/whs/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/dataset-assist-0/whs/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/dataset-assist-0/whs/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/dataset-assist-0/whs/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/dataset-assist-0/whs/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/dataset-assist-0/whs/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/dataset-assist-0/whs/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/dataset-assist-0/whs/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+ hvg_sampling_seed target  genes  overlap_source42  overlap_v1  baseline_r2  baseline_mse  T_share_of_baseline_squared_error  expression_variance_across_genes
+                42   day1    203               203          91     0.629122      0.985236                           0.188584                          2.656498
+                42   day2    203               203          91     0.747979      0.545705                           0.004165                          2.165314
+                43   day1    203               111          96     0.791140      0.709900                           0.261726                          3.398933
+                43   day2    203               111          96     0.852494      0.450944                           0.005040                          3.057130
+                44   day1    203               145          92     0.617000      0.870385                           0.213468                          2.272547
+                44   day2    203               145          92     0.688666      0.586056                           0.003878                          1.882404
+                45   day1    203                87         128     0.748542      0.705151                           0.263489                          2.804248
+                45   day2    203                87         128     0.821854      0.468197                           0.004854                          2.628165
+                46   day1    203                90          83     0.744236      0.690522                           0.269071                          2.699847
+                46   day2    203                90          83     0.801294      0.466175                           0.004875                          2.346052
+                47   day1    203               119         119     0.665430      0.911001                           0.203951                          2.722898
+                47   day2    203               119         119     0.759783      0.564453                           0.004027                          2.349761
+                48   day1    203               114          97     0.661494      0.922531                           0.201402                          2.725303
+                48   day2    203               114          97     0.739337      0.574067                           0.003959                          2.202329
+                49   day1    203               115          98     0.605578      1.022198                           0.181765                          2.591637
+                49   day2    203               115          98     0.699064      0.633434                           0.003588                          2.104880
+                50   day1    203               119          97     0.689039      0.855364                           0.217217                          2.750715
+                50   day2    203               119          97     0.782846      0.505220                           0.004499                          2.326554
+                51   day1    203                83         102     0.813008      0.527526                           0.352209                          2.821115
+                51   day2    203                83         102     0.858932      0.345763                           0.006573                          2.451034

@@ -1,0 +1,12 @@
+{
+  "Squidiff": {
+    "commit": "abdfc27d84947dcccd745d1067c0840a41d32eb8",
+    "verified_source_files": 34,
+    "mismatches": []
+  },
+  "Squidiff_reproducibility": {
+    "commit": "7ce6d0291ee489d1fd89dda5abe8d4f993450d6e",
+    "verified_source_files": 15,
+    "mismatches": []
+  }
+}

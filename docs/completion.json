@@ -1,0 +1,35 @@
+{
+  "completed_at": "2026-11-13 22:14:19 Asia/Shanghai",
+  "status": "completed_with_scientific_reproduction_limits",
+  "engineering_complete": true,
+  "scientific_status": "Limited mean-expression benefits; accurate non-additive interaction and transient-state recovery not validated on the two audited tasks.",
+  "environment": "squidiff",
+  "gpu": "NVIDIA A100-PCIE-40GB",
+  "gpu_released": true,
+  "new_100000_step_training_runs": 15,
+  "v1_100000_step_models": 2,
+  "total_formal_models": 17,
+  "norman_full_control_interaction_r2_mean": 0.06228343179330306,
+  "norman_full_control_relative_mse_reduction_mean": 0.0722239625008446,
+  "ipsc_source_endpoint_validated_day1_T_mean": 0.222669,
+  "ipsc_source_observed_day1_T_mean": 6.250064,
+  "limits": [
+    "Exact original fig2/Norman checkpoints, original 203-gene feature list and preprocessing seed were not found in accessible artifacts.",
+    "Original 1000-gene generation failed even on training cells. The explicit epsilon-residual repair remains underfit; these extensions are not core biological evidence.",
+    "Cell bootstrap intervals are conditional; fresh cells are not donor-held-out biological replication."
+  ],
+  "plans": [
+    "configs/research_stage1.json",
+    "configs/research_stage2.json",
+    "configs/research_stage3.json",
+    "configs/research_stage4.json",
+    "configs/research_stage5.json"
+  ],
+  "evidence": "results/research/assessment.json",
+  "integrity": "results/research/final_integrity.json",
+  "summary_figure": "results/research/scientific_summary.png",
+  "readme": "README.md",
+  "v1_metrics_archive": "docs/completion_v1.json",
+  "full_readme_log": "logs/README_research_full_20261113.txt",
+  "workspace_free_gib": 47.462127685546875
+}

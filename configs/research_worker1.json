@@ -1,0 +1,44 @@
+[
+  {
+    "dataset": "ipsc",
+    "run": "all_days_fp32_s42",
+    "data_root": "data/research/all_days",
+    "steps": 20000,
+    "positive_control": true,
+    "modes": "centroid,cell_shift,oracle,target_centroid",
+    "question": "Capacity positive control; middle-day training examples deliberately provided"
+  },
+  {
+    "dataset": "ipsc",
+    "run": "source_fp32_s42",
+    "data_root": "data/research/source",
+    "sampler": "native",
+    "optimizer": "source",
+    "lr_timing": "source",
+    "question": "Released iPSC preprocessing with replacement; source-style training and fixed final model",
+    "math_mode": "ieee"
+  },
+  {
+    "dataset": "norman",
+    "run": "source_fp32_s43",
+    "seed": 43,
+    "data_root": "data/research/source_full",
+    "math_mode": "ieee",
+    "sampler": "native",
+    "optimizer": "source",
+    "lr_timing": "source",
+    "validation_source": "training",
+    "modes": "centroid,cell_shift,literal,oracle",
+    "question": "Independent source-protocol training seed 43"
+  },
+  {
+    "dataset": "ipsc",
+    "run": "fresh_endpoints_fp32_s42",
+    "data_root": "data/research/fresh_endpoints",
+    "math_mode": "ieee",
+    "sampler": "native",
+    "optimizer": "source",
+    "lr_timing": "source",
+    "question": "Fresh cells not among the original 8000; HVGs fit only on endpoint training cells"
+  }
+]

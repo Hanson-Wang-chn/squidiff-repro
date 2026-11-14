@@ -1,0 +1,3 @@
+/home/dataset-assist-0/whs/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+PASS 15 runs: data hashes, gene orders, finite outputs, final steps and checkpoint retention.

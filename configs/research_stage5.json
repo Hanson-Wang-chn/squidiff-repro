@@ -1,0 +1,15 @@
+[
+  {
+    "dataset": "norman",
+    "run": "source1000_epsres_s42",
+    "data_root": "data/research/source_1000_full",
+    "math_mode": "ieee",
+    "sampler": "native",
+    "optimizer": "source",
+    "lr_timing": "source",
+    "validation_source": "training",
+    "model_variant": "epsilon_residual",
+    "modes": "centroid,cell_shift,literal,oracle",
+    "question": "Explicit stability extension after original 1000-gene model fails even training-cell reconstruction: epsilon=x_t+f_theta, zero-initialized output correction; all data, hidden layers, latent size, sampling and optimization settings otherwise retained"
+  }
+]

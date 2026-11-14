@@ -1,0 +1,15 @@
+{
+  "args": {
+    "dataset": "ipsc",
+    "run": "fp32_tf32_s42",
+    "data_root": "data/processed",
+    "tag": "raw_controls",
+    "repeats": 1000
+  },
+  "assumptions": [
+    "Training cells, model weights and exact training-mean baseline are fixed.",
+    "Targets resampled by unique original cell ID to account for replacement duplicates.",
+    "Generated cells are independently resampled; targets and generated cells are unpaired.",
+    "Intervals describe cell sampling only, not donors, training-set uncertainty or biological replication."
+  ]
+}

@@ -1,0 +1,176 @@
+nature methods
+
+Supplementary information
+Article                         https://doi.org/10.1038/s41592-025-02877-y
+
+
+
+
+Squidiff: predicting cellular development
+and responses to perturbations using a
+diffusion model
+In the format provided by the
+authors and unedited
+Supplemental information
+
+Table S1, Figures S1-S10
+
+
+Supplementary tables
+
+Supplementary table 1 Hyper parameter of Squidiff model.
+
+
+        Hyper-parameter            Default value
+
+
+           Learning rate               1e-4
+
+
+          Diffusion steps              1000
+
+
+ Layer number of denoising model         3
+
+
+           Hidden size                 2048
+
+
+                𝛽!                    0.0001
+
+
+                𝛽"                     0.02
+
+
+    Drug embedding dimension           1024
+
+
+            Batch size                  64
+
+
+        Number of Epochs                1e5
+Supplementary figures
+
+
+
+
+Supplementary Fig. 1: Simulation of diffusion processes and training performance. a,
+Schematic of the residual connection architecture used in Squidiff for learning noise and the
+semantic encoder. The model processes initial inputs (𝑥! ) through linear layers and block modules
+to generate and learn noise. Each block consists of residual connection structures that help
+stabilize and refine the learning process. Semantic latent variables (𝑧#$% ) are integrated with a
+multilayer perceptron (MLP) conditioned on time (𝑡). The final output combines these features
+through additional layers to reconstruct the gene expression state. The semantic encoder is an
+MLP that encodes 𝑥! to 𝑧#$% . b, Training loss curve showing the training loss (light blue) and
+windowed mean loss (red) over 100,000 epochs. The decreasing trend in loss indicates
+successful model convergence during training. c, Visualization of the diffusion process at various
+time steps (𝑡 = 0, 100, 200, 400, 600, and 999). The diffusion model gradually introduces noise,
+transforming the distinct clusters (red, blue, yellow) into a more dispersed distribution until they
+resemble Gaussian noise at 𝑡 = 999. d, Correlation between reconstructed (𝑧#$% remains
+unchanged) and ground-truth gene expression. e, Density plots of log-transformed gene
+expression for original and generated cell types.
+
+
+
+
+Supplementary Fig. 2: Squidiff predicts cell differentiation from iPSCs to mesendoderm
+and definitive endoderm cells. a, Visualization of the diffusion process at various time steps (𝑡
+= 0, 200, 400, 600, 800 and 999). The model gradually introduces noise, transforming the distinct
+clusters (red, blue) into more dispersed distributions until they resemble Gaussian noise at 𝑡 =
+999. b, Training loss over 100,000 epochs, showing the convergence of the model. c, PCA of
+𝑧#$% from single-cell RNA-seq data of iPSCs differentiating to mesendoderm and definitive
+endoderm on day 0 (blue) and day 3 (red). Arrows indicate the assumed direction of differentiation
+𝛥𝑧#$% . d, Gene expression trends for key signaling pathways (WNT, T, BMP, SPP1) over
+pseudotime, visualized as scatter plots with corresponding gene expression levels and colored
+by experimental days.
+Supplementary Fig. 3: Squidiff predicts gene perturbation. a, UMAP projection of gene
+expression data for single-cell RNA-seq data perturbed by ZBTB25, PTPN12, the combination of
+ZBTB25 +PTPN12 and control. b, Training loss over 100,000 epochs, showing the convergence
+of the model. c, UMAP projections of semantic latent variables (𝑧#$% ) for the perturbed single-cell
+RNA-seq data. d, Expression levels of randomly selected 12 genes across different conditions,
+comparing experimental data with predictions from GEARS, scGen, and Squidiff. Bar plots
+indicate the mean (bar height) and 95% confidence interval (error bars) across four conditions
+(n=257 for Experiment, n=10 for GEARS, n=7353 for scGen, n=60 for Squidiff). One-way ANOVA
+test across methods was performed for each gene. 𝑃 < 10&'! for all tests. ∗∗∗∗𝑃 < 0.0001. NS,
+not significant. e, Bar plots comparing the prediction of ZBTB25 on control single-cell data with
+203 genes by Squidiff, scGen, and GEARS in terms of Pearson correlation, R2 values, and
+Maximum Mean Discrepancy (MMD). Bar plots indicate the mean (bar height) and 95%
+confidence interval (error bars), with individual data points (n=10) overlaid for each bar. Two-sided
+independent two-sample t-test was performed. 𝑃 = 2.49 × 10&() , 1.56 × 10&(* , 7.46 × 10&+ for
+Pearson correlation, = 4.15 × 10&(' , 1.01 × 10&(* , 2.94 × 10&"" for 𝑅( correlation, = 1.04 ×
+10&(" , 5.64 × 10&(( , 1.87 × 10&) for maximum Mean Discrepancy. ∗∗∗∗𝑃 < 0.0001. NS, not
+significant. f, Pearson correlation between predicted drug combinations (inferred from single-drug
+training) using Squidiff and the ground truth. Bar plots indicate the mean (bar height) and 95%
+confidence interval (error bars), with individual data points (n=3) overlaid for each bar.
+Supplementary Fig. 4: Squidiff predicts drug perturbation effects on tumor cells and
+oligodendrocytes. a, UMAP visualization of single-cell RNA-seq data colored by marker genes
+(CD14, PLP1, CD44, and VIM) in oligodendrocytes and tumor cells. b, Box plot comparing the
+Pearson correlation between predicted and ground-truth scRNA-seq data for oligodendrocytes
+and tumor cells. Box plots indicate the median (center lines), interquartile range (hinges) and 1.5×
+interquartile range (whiskers). n =7 drug types for both oligodendrocyte and tumor cells. c,
+Contour plots on UMAP visualizations with the density distribution of oligodendrocytes and tumor
+cells under different drug treatments. Each contour plot corresponds to a treatment condition.
+Supplementary Fig. 5: Squidiff predicts cell differentiation in blood vessel organoids
+(BVOs). a, UMAP visualization of single-cell RNA-seq data with the expression of marker genes
+(PECAM1, PDGFRB, COL1A1, CLDN5, ACTA2, LUM) in various cell types within BVOs. b,
+Training loss over 500,000 epochs, showing the convergence of the model. c, UMAP projections
+of semantic latent variables (𝑧#$% ) for single-cell RNA-seq data. The projections show distinct
+clusters for iPSCs, endothelial cells, mural cells, and fibroblasts in BVOs.
+Supplementary Fig. 6: Squidiff predicts cell differentiation processes in blood vessel
+organoids. a, Joint UMAPs of trained scRNA-seq data from day -1 and predicted data from days
+-1 to 17, highlighting marker expression, including pluripotency genes (MKI67), endothelial
+markers (SOX17), fibroblast and mural-specific markers (COL1A1, LUM). b, UMAP visualization
+of single-cell RNA-seq data predicted by scGen showing the differentiation trajectories of
+endothelial cells, fibroblasts, and mural cells within blood vessel organoids (BVOs) from day -1 to
+day 17. The blue dots represent the trained data at day -1, while the grey dots represent the
+predicted data from day -1 to day 17. c, Gene expression levels of key markers across different
+developmental stages in BVOs, as predicted by scGen. d, Joint UMAPs of trained scRNA-seq
+data from day -1 and predicted data from days -1 to 17, colored by cell types. e, Stepwise
+expression patterns of markers across days in fibroblasts, endothelial cells, and mural cells
+predicted by scGen. f, Heatmap showing differential gene expression analysis for clustering
+across joint trained and predicted scRNA-seq data. g, Stacked bar plot showing the number of
+cells by major cell types across different days within cell type clusters.
+Supplementary Fig. 7. Squidiff predicts the effects of neutron irradiation on blood vessel
+organoids. a, Training loss over 300,000 epochs, showing the convergence of the model. b,
+UMAP projections of semantic latent variables (𝑧#$% ). c, UMAP visualization comparing healthy
+cells (red) and irradiated cells (light red) within the blood vessel organoids. d, Density plots on
+UMAP visualizations highlighting the distribution of endothelial cells, fibroblasts, and mural cells
+under healthy and irradiated conditions. e, Temporal gene expression trends for key genes
+(MYCT1, ABCA1, GDF15, PRDM1, MDM2, CDKN1A) over the developmental timeline from day
+-1 to day 17, comparing healthy and irradiated conditions. f, Additional temporal gene expression
+trends for key genes (AK4, ASPM, HIST1H1D, PRC1, MKI67, L1TD1) over the same timeline.
+Supplementary Fig. 8: Gene ontology (GO) and pathway enrichment analysis of
+differentially expressed genes in blood vessel organoids (BVOs) following neutron
+irradiation. a, GO Biological Process enrichment analysis and b, Hallmark pathway enrichment
+analysis for endothelial cells, fibroblasts, and mural cells. The dot plots show the top enriched GO
+terms for each cell type. The size of the dots represents the percentage of genes in each term,
+and the color indicates the log-transformed adjusted p-value. The combined score represents the
+enrichment score of the GO term.
+Supplementary Fig. 9: Effects of neutron irradiation and G-CSF treatment on blood vessel
+organoids (BVOs). a, Representative images and size measurements of BVOs under control,
+neutron irradiation, and neutron irradiation with G-CSF treatment conditions. The scatter plot
+shows the size of BVOs in each group, and two-sided independent two-sample t-test was
+performed, with statistical significance indicated with p-values. b, Live/dead cell assay images of
+BVOs under control, neutron irradiation, and neutron irradiation with G-CSF treatment conditions.
+Green indicates live cells, and red indicates dead cells. c, Quantification of dead cell percentages
+in BVOs under control, neutron irradiation, and neutron irradiation with G-CSF treatment
+conditions. The scatter plot shows the percentage of dead cells in each group, and two-sided
+independent two-sample t-test was performed with statistical significance indicated with p-values.
+d, Bar plots showing the expression levels of key pathways over the developmental timeline (day
+-1 to day 17) in BVOs under different conditions. Bar plots indicate the mean (bar height) and
+95% confidence interval (error bars), n=1,000 cells for each bar.
+
+
+
+
+Supplementary Fig. 10: Effects of neutron irradiation and G-CSF treatment on blood vessel
+organoids (BVOs) a, UMAP projections of semantic latent variables for endothelial cells. b, Venn
+diagram showing overlap of differentially expressed genes among endothelial cells (EC, purple),
+fibroblasts (FB, yellow), and mural cells (green). c, Volcano plots of DE genes in endothelial cells,
+fibroblasts, and mural cells. Purple points denote upregulated genes, and blue points indicate
+downregulated genes post-G-CSF treatment. Two-sided Wilcoxon rank-sum tests were
+performed. P values were adjusted by the Benjamini-Hochberg method. d, Enriched biological
+processes across all cell types (left) and mural cells (right). Bubble size represents the percentage
+of genes, and color indicates statistical significance. Key pathways include TGF-β signaling,
+apoptosis, and mitotic processes.
+

@@ -1,0 +1,51 @@
+# Python / local environments / build products
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+# This directory is part of the hashed upstream source snapshot, not model weights.
+!/upstream/Squidiff/Squidiff/.ipynb_checkpoints/
+!/upstream/Squidiff/Squidiff/.ipynb_checkpoints/**
+.venv/
+venv/
+/upstream/Squidiff/build/
+
+# Keep dataset provenance, feature lists and split summaries, not data matrices.
+/data/**
+!/data/**/
+!/data/**/manifest.json
+/data/cache/
+
+# Model weights and optimizer states (also applies to author checkpoints).
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# Keep results (including prediction NPZs), figures and historical logs.
+# Only transient process state is excluded.
+*.pid
+*.lock
+*.tmp
+*.partial
+/logs/research_active.json
+/logs/research_child.json
+/logs/research_parallel.json
+
+# Local copies made before rerunning experiments, exports and credentials.
+/archive/
+/exports/
+.env
+.env.*
+!.env.example
+.git-credentials
+*.pem
+*.key
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

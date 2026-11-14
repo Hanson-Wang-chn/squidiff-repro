@@ -1,0 +1,41 @@
+{
+  "args": {
+    "dataset": "norman",
+    "run": "source_fp32_s43",
+    "data_root": "data/research/source_full",
+    "checkpoint": "latest.pt",
+    "weights": "model",
+    "tag": "raw_controls",
+    "modes": "centroid,cell_shift,literal,oracle",
+    "sigmas": "0,0.5,0.7",
+    "repeats": 1,
+    "cells": 600,
+    "sample_steps": 1000,
+    "bn_recalibrate": false,
+    "inference_math": "ieee"
+  },
+  "checkpoint_step": 100000,
+  "summary": {
+    "('cell_shift', 'AB')": {
+      "pearson": 0.9909393936840676,
+      "r2": 0.9819080006262395,
+      "relative_mse_gain": -0.01350403054360716
+    },
+    "('centroid', 'AB')": {
+      "pearson": 0.9913757714335821,
+      "r2": 0.982315328018635,
+      "relative_mse_gain": 0.00931422991589137
+    },
+    "('literal', 'AB')": {
+      "pearson": 0.9916239494437322,
+      "r2": 0.9821434185085249,
+      "relative_mse_gain": -0.0003160479647246195
+    },
+    "('oracle', 'AB')": {
+      "pearson": 0.9998101840057566,
+      "r2": 0.9994240513343752,
+      "relative_mse_gain": 0.9677356669134323
+    }
+  },
+  "oracle_is_not_forecasting": "Real target expression is encoded for oracle diagnostic only"
+}

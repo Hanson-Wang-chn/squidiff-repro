@@ -1,0 +1,3 @@
+diffusion num of steps =  1000
+{"checkpoint": "step_020000.pt", "step": 20000, "weights": "model", "sampling_steps": 1000, "input": "training_control", "latent_mean_norm": 3.180476427078247, "latent_std": 1.726600170135498, "observed_max": 5.977521896362305, "generated_max": 6.596419334411621, "generated_p99": 3.0880260682105956, "generated_mean": 0.3211309611797333, "mean_r2": 0.8710690205461916}
+{"checkpoint": "step_020000.pt", "step": 20000, "weights": "model", "sampling_steps": 1000, "input": "heldout_AB", "latent_mean_norm": 9.309542655944824, "latent_std": 1.9375978708267212, "observed_max": 6.735647201538086, "generated_max": 6.547684669494629, "generated_p99": 3.3064488506317087, "generated_mean": 0.3293118178844452, "mean_r2": 0.8787780487064936}

@@ -1,0 +1,14 @@
+{
+  "gene": {
+    "original_gene_id": "ENSG00000164458_T",
+    "gene_name": "T"
+  },
+  "units": "Original public log-normalized values; no rescaling",
+  "donor_threshold": "At least 5 observed cells at each of day0/day1/day3",
+  "adequate_donors": 88,
+  "donors_with_positive_day1_T_excess": 88,
+  "donor_excess_median": 6.394667625427246,
+  "donor_excess_min": 3.7806973457336426,
+  "donor_excess_max": 7.667158126831055,
+  "scope": "Observed-data robustness only, not an independent donor-held-out model test"
+}

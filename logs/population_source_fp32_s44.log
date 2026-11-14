@@ -1,0 +1,18 @@
+/home/dataset-assist-0/whs/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+        kind              mode target  cells  assigned_target_fraction  target_probability  assigned_day0  assigned_day1  assigned_day2  assigned_day3
+real_heldout              real   day0    600                  0.966667        9.644336e-01       0.966667       0.016667       0.005000       0.011667
+real_heldout              real   day1    600                  0.948333        9.438486e-01       0.021667       0.948333       0.025000       0.005000
+real_heldout              real   day2    600                  0.911667        9.059450e-01       0.011667       0.026667       0.911667       0.050000
+real_heldout              real   day3    600                  0.950000        9.480928e-01       0.010000       0.001667       0.038333       0.950000
+   generated   centroid_sigma0   day1    600                  0.000000        6.788132e-07       1.000000       0.000000       0.000000       0.000000
+   generated centroid_sigma0.5   day1    600                  0.001667        2.613482e-03       0.625000       0.001667       0.025000       0.348333
+   generated centroid_sigma0.7   day1    600                  0.011667        1.220342e-02       0.378333       0.011667       0.060000       0.550000
+   generated        cell_shift   day1    600                  0.000000        1.076004e-03       0.920000       0.000000       0.008333       0.071667
+   generated            oracle   day1    600                  0.108333        1.343275e-01       0.635000       0.108333       0.218333       0.038333
+   generated   centroid_sigma0   day2    600                  0.000000        7.458302e-03       0.685000       0.000000       0.000000       0.315000
+   generated centroid_sigma0.5   day2    600                  0.040000        4.438162e-02       0.295000       0.001667       0.040000       0.663333
+   generated centroid_sigma0.7   day2    600                  0.065000        6.307044e-02       0.200000       0.010000       0.065000       0.725000
+   generated        cell_shift   day2    600                  0.031667        4.493337e-02       0.365000       0.000000       0.031667       0.603333
+   generated            oracle   day2    600                  0.368333        3.668244e-01       0.118333       0.001667       0.368333       0.511667
+[2026-11-13 21:30:56] 群体状态诊断 ipsc/source_fp32_s44 完成；分类器仅用于事后评价，参考细胞与真实评估细胞不重合。

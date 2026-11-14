@@ -1,0 +1,71 @@
+{
+  "args": {
+    "dataset": "ipsc",
+    "run": "v1",
+    "data_root": "data/processed",
+    "checkpoint": "latest.pt",
+    "weights": "ema",
+    "tag": "ema_controls",
+    "modes": "centroid,cell_shift,oracle",
+    "sigmas": "0,0.5,0.7",
+    "repeats": 1,
+    "cells": 600,
+    "sample_steps": 1000,
+    "bn_recalibrate": false,
+    "inference_math": "tf32"
+  },
+  "checkpoint_step": 100000,
+  "summary": {
+    "('cell_shift', 'day1')": {
+      "pearson": 0.9086172737803505,
+      "r2": 0.821538829189812,
+      "relative_mse_gain": -0.022531235699984276
+    },
+    "('cell_shift', 'day2')": {
+      "pearson": 0.9238734086874518,
+      "r2": 0.8470905656749146,
+      "relative_mse_gain": -0.2061813773375325
+    },
+    "('centroid_sigma0', 'day1')": {
+      "pearson": 0.8901282112772668,
+      "r2": 0.7742150849110654,
+      "relative_mse_gain": -0.2936826940010435
+    },
+    "('centroid_sigma0', 'day2')": {
+      "pearson": 0.891749216242519,
+      "r2": 0.7756495773886847,
+      "relative_mse_gain": -0.7697227312754482
+    },
+    "('centroid_sigma0.5', 'day1')": {
+      "pearson": 0.9134458492538516,
+      "r2": 0.8276674651380435,
+      "relative_mse_gain": 0.012584087486848916
+    },
+    "('centroid_sigma0.5', 'day2')": {
+      "pearson": 0.9413946996471025,
+      "r2": 0.8666131988108272,
+      "relative_mse_gain": -0.052182792298838265
+    },
+    "('centroid_sigma0.7', 'day1')": {
+      "pearson": 0.8938567197869113,
+      "r2": 0.6948285460233984,
+      "relative_mse_gain": -0.748544753564069
+    },
+    "('centroid_sigma0.7', 'day2')": {
+      "pearson": 0.9382102960366228,
+      "r2": 0.7175459126286945,
+      "relative_mse_gain": -1.2280565070682847
+    },
+    "('oracle', 'day1')": {
+      "pearson": 0.9443114585349934,
+      "r2": 0.890938686374646,
+      "relative_mse_gain": 0.375110006943704
+    },
+    "('oracle', 'day2')": {
+      "pearson": 0.9778963290737905,
+      "r2": 0.9529723457386738,
+      "relative_mse_gain": 0.6290360955146514
+    }
+  },
+  "oracle_is_not_forecasting": "Real target expression is encoded for oracle diagnostic only"
+}

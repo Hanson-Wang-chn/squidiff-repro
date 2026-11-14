@@ -1,0 +1,21 @@
+{
+  "uninterrupted_losses": [
+    1.0255851745605469,
+    1.0167045593261719,
+    1.004830002784729,
+    0.9991816878318787,
+    1.0047414302825928
+  ],
+  "resumed_losses": [
+    1.0255851745605469,
+    1.0167045593261719,
+    1.004830002784729,
+    0.9991816878318787,
+    1.0047414302825928
+  ],
+  "max_state_error": 0.0,
+  "exact_match": true,
+  "loader": "Fresh shuffled CPU DataLoader iterator each step",
+  "timestep_sampler": "Original NumPy UniformSampler",
+  "optimizer": "Source non-fused AdamW; source LR timing; IEEE FP32"
+}

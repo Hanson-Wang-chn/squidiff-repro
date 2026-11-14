@@ -1,0 +1,42 @@
+[
+  {
+    "dataset": "norman",
+    "run": "fp32_tf32_s42",
+    "question": "BF16 removal on fixed v1 Norman data"
+  },
+  {
+    "dataset": "norman",
+    "run": "source_fp32_s42",
+    "data_root": "data/research/source_full",
+    "sampler": "native",
+    "optimizer": "source",
+    "lr_timing": "source",
+    "validation_source": "training",
+    "modes": "centroid,cell_shift,literal,oracle",
+    "question": "203 source-like features and all 7890 original training cells; compare literal notebook arithmetic and intended equation",
+    "math_mode": "ieee"
+  },
+  {
+    "dataset": "ipsc",
+    "run": "source_fp32_s44",
+    "seed": 44,
+    "data_root": "data/research/source",
+    "math_mode": "ieee",
+    "sampler": "native",
+    "optimizer": "source",
+    "lr_timing": "source",
+    "question": "Independent source-protocol training seed 44"
+  },
+  {
+    "dataset": "norman",
+    "run": "source1000_fp32_s42",
+    "data_root": "data/research/source_1000_full",
+    "math_mode": "ieee",
+    "sampler": "native",
+    "optimizer": "source",
+    "lr_timing": "source",
+    "validation_source": "training",
+    "modes": "centroid,cell_shift,literal,oracle",
+    "question": "Expanded 1000-gene variant explicitly present in the released preprocessing; same full source training cells"
+  }
+]

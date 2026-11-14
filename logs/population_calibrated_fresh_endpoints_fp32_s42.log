@@ -1,0 +1,8 @@
+        kind                   mode target  cells  assigned_target_fraction  target_probability  assigned_day0  assigned_day1  assigned_day2  assigned_day3
+real_heldout                   real   day0    600                  0.975000            0.974413       0.975000       0.010000       0.005000       0.010000
+real_heldout                   real   day1    600                  0.965000            0.955417       0.011667       0.965000       0.020000       0.003333
+real_heldout                   real   day2    600                  0.921667            0.917330       0.005000       0.015000       0.921667       0.058333
+real_heldout                   real   day3    600                  0.911667            0.905773       0.006667       0.003333       0.078333       0.911667
+   generated centroid_sigma0.543722   day1    600                  0.001667            0.003705       0.550000       0.001667       0.011667       0.436667
+   generated centroid_sigma0.543722   day2    600                  0.010000            0.016885       0.311667       0.000000       0.010000       0.678333
+[2026-11-13 21:36:30] 群体状态诊断 ipsc/fresh_endpoints_fp32_s42 完成；分类器仅用于事后评价，参考细胞与真实评估细胞不重合。

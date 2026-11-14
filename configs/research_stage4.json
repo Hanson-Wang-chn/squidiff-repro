@@ -1,0 +1,14 @@
+[
+  {
+    "dataset": "norman",
+    "run": "balanced_fp32_s42",
+    "data_root": "data/research/source_full",
+    "math_mode": "ieee",
+    "sampler": "balanced_native",
+    "optimizer": "source",
+    "lr_timing": "source",
+    "validation_source": "training",
+    "modes": "centroid,cell_shift,literal,oracle",
+    "question": "Training optimization: inverse-frequency condition sampling on the same 7890 cells and 203 genes; compare with original 93% control-cell training distribution"
+  }
+]

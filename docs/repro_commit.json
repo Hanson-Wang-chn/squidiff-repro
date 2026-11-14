@@ -1,0 +1,101 @@
+{
+  "sha": "7ce6d0291ee489d1fd89dda5abe8d4f993450d6e",
+  "node_id": "C_kwDOOD2hQ9oAKDdjZTZkMDI5MWVlNDg5ZDFmZDg5ZGRhNWFiZThkNGY5OTM0NTBkNmU",
+  "commit": {
+    "author": {
+      "name": "Siyu He",
+      "email": "53618666+siyuh@users.noreply.github.com",
+      "date": "2026-03-21T23:21:48Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-03-21T23:21:48Z"
+    },
+    "message": "Create README.md",
+    "tree": {
+      "sha": "9f309285f5fd49778286d7e9662b05ea3e6fa4a2",
+      "url": "https://api.github.com/repos/siyuh/Squidiff_reproducibility/git/trees/9f309285f5fd49778286d7e9662b05ea3e6fa4a2"
+    },
+    "url": "https://api.github.com/repos/siyuh/Squidiff_reproducibility/git/commits/7ce6d0291ee489d1fd89dda5abe8d4f993450d6e",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpvygMCRC1aQ7uu5UhlAAACsoQABENIiCNRBFaaATk/88umbcv\nggRQiMRWHWZtvV9TvCOkbg3rwjOIHml1ufDlPbZkYodFzbF6fC9xCxi0d7eyCQ15\nmFx3/G2DJ3FDQMrritf4Uq/PYknsu5U/Bm/I/kUVuyL83Hg6lmQ6fb27+uEUG0JD\ncaWYNAXD0kuuKL3/887moX1eX/R1pWKQF50qpea2JLpmKxmMLzWpuJyE2xrRDZrg\nH2wYBPVfbTXsIqm29DNq1xlz/XXo4edZfGWYJdqi1OZJE1fLy2oEM/l+EwPcGjil\nU1l0LrRpFkPxFAjaGSFm2x657qqyPHgasO3vEX87o9JFkTNV/vAk+esdD6tOuAsg\njTqTHR2QsyeWrYSYt3RppiAuUaj3BMkFfcleASqcC78m9ZpZQOiwRvC53+VnZq5U\n92flOT1HcfIalO4E6fAsEkPcCpC7dfzwm17k97cYvIf6dF3gE9g/OrDVX63blyvQ\nPV2HIFRwjsuSfaZMFCIYvR7UyFkgI5/kSL4A5atH0cBgMtUL4k02GrNI50eOrmCp\nRs+YKJ6A98cswdGnWLHL4AKhwmM4v2L6hVCrX2tnm/h6JkFXutMLn2fzi30IbeVE\nNfa6QNAL1JbvctCbjlZL+cHcQFELRivfvDzLcXCvZVbKRVCDu7YillC+37NpmLNR\nSWkRluUnt6+yKCvAXwgN\n=ra8i\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 9f309285f5fd49778286d7e9662b05ea3e6fa4a2\nparent 3f74a24d6fdb3c95c437d58256f69012dc32e109\nauthor Siyu He <53618666+siyuh@users.noreply.github.com> 1774135308 -0700\ncommitter GitHub <noreply@github.com> 1774135308 -0700\n\nCreate README.md",
+      "verified_at": "2026-03-21T23:21:49Z"
+    }
+  },
+  "url": "https://api.github.com/repos/siyuh/Squidiff_reproducibility/commits/7ce6d0291ee489d1fd89dda5abe8d4f993450d6e",
+  "html_url": "https://github.com/siyuh/Squidiff_reproducibility/commit/7ce6d0291ee489d1fd89dda5abe8d4f993450d6e",
+  "comments_url": "https://api.github.com/repos/siyuh/Squidiff_reproducibility/commits/7ce6d0291ee489d1fd89dda5abe8d4f993450d6e/comments",
+  "author": {
+    "login": "siyuh",
+    "id": 53618666,
+    "node_id": "MDQ6VXNlcjUzNjE4NjY2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/53618666?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/siyuh",
+    "html_url": "https://github.com/siyuh",
+    "followers_url": "https://api.github.com/users/siyuh/followers",
+    "following_url": "https://api.github.com/users/siyuh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/siyuh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/siyuh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/siyuh/subscriptions",
+    "organizations_url": "https://api.github.com/users/siyuh/orgs",
+    "repos_url": "https://api.github.com/users/siyuh/repos",
+    "events_url": "https://api.github.com/users/siyuh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/siyuh/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3f74a24d6fdb3c95c437d58256f69012dc32e109",
+      "url": "https://api.github.com/repos/siyuh/Squidiff_reproducibility/commits/3f74a24d6fdb3c95c437d58256f69012dc32e109",
+      "html_url": "https://github.com/siyuh/Squidiff_reproducibility/commit/3f74a24d6fdb3c95c437d58256f69012dc32e109"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 3,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "5d3f9c4ff971c307ba03abfff557f014ba0223a7",
+      "filename": "README.md",
+      "status": "added",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "blob_url": "https://github.com/siyuh/Squidiff_reproducibility/blob/7ce6d0291ee489d1fd89dda5abe8d4f993450d6e/README.md",
+      "raw_url": "https://github.com/siyuh/Squidiff_reproducibility/raw/7ce6d0291ee489d1fd89dda5abe8d4f993450d6e/README.md",
+      "contents_url": "https://api.github.com/repos/siyuh/Squidiff_reproducibility/contents/README.md?ref=7ce6d0291ee489d1fd89dda5abe8d4f993450d6e",
+      "patch": "@@ -0,0 +1,3 @@\n+The checkpoint for a few trained models in the paper have been released in figshare [https://doi.org/10.6084/m9.figshare.27948633]. \n+\n+Please send me email (siyuhe@stanford.edu) if I didn't reply to Github Issues in time. Thank you!"
+    }
+  ]
+}

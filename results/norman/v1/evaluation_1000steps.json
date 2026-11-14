@@ -1,0 +1,15 @@
+{
+  "checkpoint": "/home/whs/squidiff/results/norman/v1/best.pt",
+  "step": 100000,
+  "repeats": 10,
+  "sample_steps": 1000,
+  "metrics": {
+    "PTPN12+ZBTB25": {
+      "pearson": 0.9931650671584006,
+      "r2": 0.986260795777144,
+      "notebook_reverse_r2": 0.9862746464969312,
+      "delta_pearson": 0.9724452990150342,
+      "delta_r2": 0.9437721851688157
+    }
+  }
+}

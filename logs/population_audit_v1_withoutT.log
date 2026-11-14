@@ -1,0 +1,16 @@
+        kind              mode target  cells  assigned_target_fraction  target_probability  assigned_day0  assigned_day1  assigned_day2  assigned_day3
+real_heldout              real   day0    600                  0.921667            0.916800       0.921667       0.046667       0.021667       0.010000
+real_heldout              real   day1    600                  0.916667            0.904291       0.026667       0.916667       0.055000       0.001667
+real_heldout              real   day2    600                  0.885000            0.872168       0.010000       0.051667       0.885000       0.053333
+real_heldout              real   day3    600                  0.930000            0.927858       0.006667       0.003333       0.060000       0.930000
+   generated   centroid_sigma0   day1    600                  0.000000            0.000002       1.000000       0.000000       0.000000       0.000000
+   generated centroid_sigma0.5   day1    600                  0.008333            0.011912       0.540000       0.008333       0.041667       0.410000
+   generated centroid_sigma0.7   day1    600                  0.018333            0.020440       0.281667       0.018333       0.055000       0.645000
+   generated        cell_shift   day1    600                  0.000000            0.006383       0.891667       0.000000       0.040000       0.068333
+   generated            oracle   day1    600                  0.246667            0.251492       0.570000       0.246667       0.106667       0.076667
+   generated   centroid_sigma0   day2    600                  0.000000            0.029436       0.775000       0.000000       0.000000       0.225000
+   generated centroid_sigma0.5   day2    600                  0.033333            0.043400       0.268333       0.003333       0.033333       0.695000
+   generated centroid_sigma0.7   day2    600                  0.046667            0.049990       0.161667       0.010000       0.046667       0.781667
+   generated        cell_shift   day2    600                  0.078333            0.091293       0.365000       0.006667       0.078333       0.550000
+   generated            oracle   day2    600                  0.258333            0.276385       0.090000       0.011667       0.258333       0.640000
+[2026-11-13 19:18:14] 群体状态诊断 ipsc/v1 完成；分类器仅用于事后评价，参考细胞与真实评估细胞不重合。

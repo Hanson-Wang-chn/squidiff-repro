@@ -1,0 +1,7 @@
+{
+  "args": {
+    "run": "source1000_fp32_s42",
+    "data_root": "data/research/source_1000_full"
+  },
+  "purpose": "Only an implementation/stability diagnostic, not an interaction forecast benchmark"
+}

@@ -1,0 +1,3 @@
+diffusion num of steps =  1000
+dataset             run target  checkpoint_step  generated_cells  pearson       r2  notebook_reverse_r2  mean_mse  variance_mae  mean_gene_wasserstein  predicted_negative_fraction  notebook_mean_mmd  energy_distance  delta_pearson  delta_r2  opposite_direction_fraction  top20_delta_mse  top20_delta_pearson  relative_mse_gain
+ norman source_fp32_s42     AB           100000               60 0.991583 0.982676             0.981917    0.0045      0.074706               0.080101                          0.0           0.000009         1.689804       0.968115  0.932986                      0.64532         0.042066             0.965435           0.029494

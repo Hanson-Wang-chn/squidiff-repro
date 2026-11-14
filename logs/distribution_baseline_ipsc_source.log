@@ -1,0 +1,10 @@
+/home/dataset-assist-0/whs/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/dataset-assist-0/whs/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+                                                                   r2  mean_gene_wasserstein  energy_distance
+method                              target evaluation_scope                                                  
+expression_linear_independent_cells day1   all_genes         0.627780               0.733560         7.182634
+                                    day2   all_genes         0.744169               0.672481         3.790020
+no_change_day0_cells                day1   all_genes         0.582918               0.588298         6.865056
+                                    day2   all_genes         0.264626               0.857679         9.270704

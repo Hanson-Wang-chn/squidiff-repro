@@ -1,0 +1,1 @@
+{"pid": 137689, "command": ["/home/dataset-assist-0/whs/conda-env/squidiff/bin/python", "-u", "scripts/calibrate_research_noise.py", "--run", "fresh_endpoints_fp32_s42", "--data-root", "data/research/fresh_endpoints"]}

@@ -1,0 +1,28 @@
+{
+  "controlled_rows": 199,
+  "fixed_final_forecast_rows": 81,
+  "completed_training_runs": [
+    "ipsc/all_days_fp32_s42",
+    "ipsc/fp32_ieee_s42",
+    "ipsc/fp32_tf32_s42",
+    "ipsc/fresh_endpoints_fp32_s42",
+    "ipsc/full_endpoints_fp32_s42",
+    "ipsc/source_fp32_s42",
+    "ipsc/source_fp32_s43",
+    "ipsc/source_fp32_s44",
+    "ipsc/v1",
+    "norman/balanced_fp32_s42",
+    "norman/fp32_tf32_s42",
+    "norman/source1000_epsres_s42",
+    "norman/source1000_fp32_s42",
+    "norman/source_fp32_s42",
+    "norman/source_fp32_s43",
+    "norman/source_fp32_s44",
+    "norman/v1"
+  ],
+  "notes": [
+    "All modes and seeds retained; no test-best selection",
+    "Oracle and all-days training results are not endpoint-only forecasting",
+    "1000-gene experiments also reported on the shared 203-gene evaluation set"
+  ]
+}

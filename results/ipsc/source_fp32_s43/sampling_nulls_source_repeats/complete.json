@@ -1,0 +1,11 @@
+{
+  "args": {
+    "run": "source_fp32_s43",
+    "data_root": "data/research/source",
+    "repeats": 3,
+    "sigmas": "0.7",
+    "tag": "source_repeats"
+  },
+  "no_shift_null": "day=0 with sigma>0; same noisy centroid sampler without a differentiation shift",
+  "paired_noise": "identical seed at each day isolates the semantic shift"
+}

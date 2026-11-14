@@ -1,0 +1,20 @@
+[
+  {
+    "name": "ipsc_log_normalised_counts.csv",
+    "url": "https://ndownloader.figshare.com/files/59494394",
+    "md5": "98ab0c56756049b24179fef7f29a69a5",
+    "bytes": 5388999889
+  },
+  {
+    "name": "ipsc_cell_metadata_cols.tsv",
+    "url": "https://ndownloader.figshare.com/files/59494382",
+    "md5": "c2e1fd0b1b268047bdcbdbb2f6dab0cb",
+    "bytes": 40856728
+  },
+  {
+    "name": "norman.tar.gz",
+    "url": "https://dataverse.harvard.edu/api/access/datafile/6154020",
+    "md5": "cdc41d6050e619c37fd9dd44d440e2b4",
+    "bytes": 168758985
+  }
+]

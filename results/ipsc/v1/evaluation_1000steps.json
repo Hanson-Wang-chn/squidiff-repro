@@ -1,0 +1,37 @@
+{
+  "checkpoint": "/home/whs/squidiff/results/ipsc/v1/best_generation.pt",
+  "step": 100000,
+  "repeats": 6,
+  "sample_steps": 1000,
+  "latent_noise": 0.5,
+  "metrics": {
+    "day0": {
+      "pearson": 0.9989788410545618,
+      "r2": 0.9971314168141362,
+      "notebook_reverse_r2": 0.9970874488235446,
+      "delta_pearson": 0.3836710273372661,
+      "delta_r2": -0.9030673759910831
+    },
+    "day1": {
+      "pearson": 0.9131541020104175,
+      "r2": 0.8275476949311913,
+      "notebook_reverse_r2": 0.7953671544278643,
+      "delta_pearson": 0.4696385173137989,
+      "delta_r2": 0.180690056081931
+    },
+    "day2": {
+      "pearson": 0.9388926622506238,
+      "r2": 0.8626110752291433,
+      "notebook_reverse_r2": 0.8475495548349876,
+      "delta_pearson": 0.8525394541611048,
+      "delta_r2": 0.6661980773424321
+    },
+    "day3": {
+      "pearson": 0.9980534049562082,
+      "r2": 0.9948209349136485,
+      "notebook_reverse_r2": 0.9944288069996561,
+      "delta_pearson": 0.9968872038220017,
+      "delta_r2": 0.9905230520201935
+    }
+  }
+}

@@ -1,0 +1,15 @@
+repeat,schema,sigma,day,predicted_T,observed_T
+0,source_endpoint_reconstruction,0.0,0,0.18389220535755157,0.07679580897092819
+0,source_endpoint_reconstruction,0.0,3,0.41024062037467957,0.2567284107208252
+0,matched_centroid_and_noise_all_days,0.0,0,0.08366337418556213,0.07679580897092819
+0,matched_centroid_and_noise_all_days,0.0,1,0.06172021105885506,6.238280296325684
+0,matched_centroid_and_noise_all_days,0.0,2,0.20327357947826385,0.8116654753684998
+0,matched_centroid_and_noise_all_days,0.0,3,0.6735426187515259,0.2567284107208252
+0,matched_centroid_and_noise_all_days,0.5,0,0.23525449633598328,0.07679580897092819
+0,matched_centroid_and_noise_all_days,0.5,1,0.2770542800426483,6.238280296325684
+0,matched_centroid_and_noise_all_days,0.5,2,0.32358458638191223,0.8116654753684998
+0,matched_centroid_and_noise_all_days,0.5,3,0.3573612570762634,0.2567284107208252
+0,matched_centroid_and_noise_all_days,0.7,0,0.4868771433830261,0.07679580897092819
+0,matched_centroid_and_noise_all_days,0.7,1,0.496481716632843,6.238280296325684
+0,matched_centroid_and_noise_all_days,0.7,2,0.5288829803466797,0.8116654753684998
+0,matched_centroid_and_noise_all_days,0.7,3,0.5705504417419434,0.2567284107208252

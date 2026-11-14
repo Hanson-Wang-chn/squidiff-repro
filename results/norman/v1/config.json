@@ -1,0 +1,22 @@
+{
+  "dataset": "norman",
+  "run": "v1",
+  "steps": 100000,
+  "horizon": 100000,
+  "seed": 42,
+  "batch_size": 64,
+  "lr": 0.0001,
+  "ema": 0.9999,
+  "precision": "bf16",
+  "grad_clip": 0.0,
+  "save_every": 2000,
+  "val_every": 2000,
+  "log_every": 100,
+  "genes": 206,
+  "model": "upstream MLP 2048x3, latent 60",
+  "diffusion_steps": 1000,
+  "noise_schedule": "linear 0.0001 to 0.02",
+  "upstream_commit": "abdfc27d84947dcccd745d1067c0840a41d32eb8",
+  "train_cells": 7102,
+  "val_cells": 788
+}

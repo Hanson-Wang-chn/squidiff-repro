@@ -1,0 +1,9 @@
+scope,mode,pearson,best_possible_affine_r2,baseline_r2,oracle_affine_interaction_r2,NOT_forecasting
+all1000,cell_shift,0.9947701748360587,0.989567700743363,0.9938420955015955,-0.6978317451550002,Uses target means only to bound possible global amplitude correction
+all1000,centroid,0.9928837418731844,0.9858181248760964,0.9938420955015955,-1.3080662468409048,Uses target means only to bound possible global amplitude correction
+all1000,literal,0.9903931045290216,0.9808785014986338,0.9938420955015955,-2.1119781336697176,Uses target means only to bound possible global amplitude correction
+all1000,oracle,0.996107282880929,0.992229719008427,0.9938420955015955,-0.26459464128905297,Uses target means only to bound possible global amplitude correction
+source203,cell_shift,0.9890213771933447,0.9781632845454206,0.9821490602616977,-0.2363876809058214,Uses target means only to bound possible global amplitude correction
+source203,centroid,0.9876554971996342,0.9754633811486567,0.9821490602616977,-0.3892553274315955,Uses target means only to bound possible global amplitude correction
+source203,literal,0.9856891399909098,0.9715830806960196,0.9821490602616977,-0.60895666886423,Uses target means only to bound possible global amplitude correction
+source203,oracle,0.9939278587309015,0.987892588361395,0.9821490602616977,0.3144823163188807,Uses target means only to bound possible global amplitude correction

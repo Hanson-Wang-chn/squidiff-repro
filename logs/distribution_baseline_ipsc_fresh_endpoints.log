@@ -1,0 +1,6 @@
+                                                                   r2  mean_gene_wasserstein  energy_distance
+method                              target evaluation_scope                                                  
+expression_linear_independent_cells day1   all_genes         0.649642               0.685749         8.097589
+                                    day2   all_genes         0.815378               0.613321         3.468236
+no_change_day0_cells                day1   all_genes         0.552317               0.590579         8.825857
+                                    day2   all_genes         0.382462               0.797807         9.644851

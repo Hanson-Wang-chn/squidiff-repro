@@ -1,0 +1,5 @@
+                                                           r2  mean_gene_wasserstein  energy_distance
+method                      target evaluation_scope                                                  
+additive_cells_clipped_zero AB     all_genes         0.981965               0.036533         0.248448
+additive_cells_unclipped    AB     all_genes         0.982091               0.041227         0.234489
+no_change_cells             AB     all_genes         0.734899               0.068371         2.424018
