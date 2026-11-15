@@ -1,0 +1,18 @@
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+                                    r2  mean_gene_wasserstein  energy_distance
+panel   method           day                                                  
+log2hvg cell_linear      1    0.590455               0.934529         9.962720
+                         2    0.758867               0.856624         5.315591
+        endpoint_mixture 1    0.590094               0.838075         8.238441
+                         2    0.759125               0.699923         4.523437
+source  cell_linear      1    0.625915               0.735915         7.227192
+                         2    0.743368               0.673966         3.786323
+        endpoint_mixture 1    0.625623               0.624488         5.850300
+                         2    0.744625               0.504186         3.162337

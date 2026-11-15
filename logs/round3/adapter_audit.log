@@ -1,0 +1,6 @@
+diffusion num of steps =  1000
+diffusion num of steps =  1000
+diffusion num of steps =  1000
+diffusion num of steps =  1000
+diffusion num of steps =  1000
+ADAPTER_AUDIT_OK [{'steps': 100, 'original_x0_max_error': 160.31922912597656, 'corrected_x0_max_error': 0.0, 'final_ddim_error': 0.0, 'timestep_mapping_correct': True}, {'steps': 1000, 'original_x0_max_error': 175.51376342773438, 'corrected_x0_max_error': 0.0, 'final_ddim_error': 0.0, 'timestep_mapping_correct': True}]

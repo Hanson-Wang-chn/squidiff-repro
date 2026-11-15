@@ -1,0 +1,12 @@
+{
+  "within_group_rms": 0.977150022983551,
+  "endpoint_mean_distance": 1.9643852710723877,
+  "endpoint_distance_over_rms_radius": 0.25953133300755427,
+  "center_nearest_training_distance": {
+    "0.0": 6.574397087097168,
+    "0.3333333333333333": 6.585518836975098,
+    "0.6666666666666666": 6.4956512451171875,
+    "1.0": 6.394209861755371
+  },
+  "scope": "Descriptive encoder geometry; latent coordinates have reparameterization freedom"
+}

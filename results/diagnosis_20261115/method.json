@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-15",
+  "args": {
+    "latent": true,
+    "hvg": true
+  },
+  "scope": "Independent CPU reanalysis of frozen data/predictions; optional endpoint encoder geometry. No training.",
+  "script_sha256": "c44401e2def1d21b30480da551494d458acd2355b53836bddee8ad7ee8d89c18",
+  "warning": "All test-based diagnostics are explanatory, not newly validated forecasting improvements."
+}

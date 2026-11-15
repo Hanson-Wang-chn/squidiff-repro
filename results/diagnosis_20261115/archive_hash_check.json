@@ -1,0 +1,5 @@
+{
+  "checked_historical_files": 1029,
+  "errors": [],
+  "scope": "Direct SHA256 comparison to historical archive manifest; git unavailable in current shell. New report artifacts are outside the old manifest."
+}

@@ -1,0 +1,7 @@
+{
+  "scale": 2.0,
+  "max_encoder_scale_error": 0.0,
+  "max_noise_prediction_error": 0.0,
+  "fixed_sigma_after_scaling_equivalent_original_sigma": 0.35,
+  "scope": "Algebraic/one-forward-pass check; no retraining or full new DDIM trajectory"
+}

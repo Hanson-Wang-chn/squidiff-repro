@@ -1,0 +1,12 @@
+{
+  "selected": {
+    "mode": "empirical",
+    "sigma": 1.0,
+    "wasserstein": 0.48938704092022745,
+    "mse": 0.547703693560848
+  },
+  "within_latent_rms": 0.8538944125175476,
+  "checkpoint_step": 100000,
+  "criterion": "Independent endpoints only; wasserstein",
+  "middle_days_used": false
+}

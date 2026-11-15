@@ -1,0 +1,46 @@
+{
+  "args": {
+    "action": "evaluate",
+    "variant": "ln",
+    "seed": 42,
+    "steps": 100000,
+    "checkpoint": "final.pt",
+    "sample_steps": 1000,
+    "cells": 600,
+    "repeats": 1,
+    "full": false,
+    "signed": false,
+    "resume": false
+  },
+  "config": {
+    "panel": "source",
+    "transform": "ln",
+    "width": 2048,
+    "latent_noise": 0.0,
+    "wd": 0.0,
+    "variant": "ln",
+    "seed": 42,
+    "steps": 100000,
+    "batch_size": 64,
+    "lr": 0.0001,
+    "math": "IEEE FP32",
+    "sampling": "native CPU loader + NumPy timesteps",
+    "genes": 203,
+    "source_sha256": {
+      "train_util.py": "9ff72b49db4f87fb2c8ea72282dfe5e95dea1d2acea4ff5982a0f4ec53b963ab",
+      "MLPModel.py": "d99e09b3a3c7dd449b057287e707ea20879ce16d5016f9e82823083653acbaa9",
+      "diffusion.py": "a692901d79797703564efcdc984af3764596579bda7b31dad75e06a83354dd01"
+    },
+    "train_data_sha256": "cf6e2feddfb1a9ab257ddec6e5a9c35475b79e2af4b291d923e7195a4052ce61",
+    "parameters": 52142343,
+    "logging_norms_disabled": true,
+    "cuda_mps_pipe_directory": "/tmp/squidiff-round2-mps"
+  },
+  "selected": {
+    "mode": "empirical",
+    "sigma": 1.0,
+    "wasserstein": 0.5188729260740027,
+    "mse": 0.422558180703465
+  },
+  "rows": 4
+}

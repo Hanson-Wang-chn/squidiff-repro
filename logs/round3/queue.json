@@ -1,0 +1,19 @@
+{
+  "start": 1794722937.2714307,
+  "pids": {
+    "xstart": 332137,
+    "minsnr": 332138,
+    "epsres": 332139
+  },
+  "steps_each": 100000,
+  "variants": [
+    "xstart",
+    "minsnr",
+    "epsres"
+  ],
+  "authorization": "User explicitly requested retraining several variants",
+  "env": {
+    "CUDA_MPS_PIPE_DIRECTORY": "/tmp/squidiff-round3-mps",
+    "CUDA_MPS_LOG_DIRECTORY": "/home/whs/squidiff/logs/round3/mps"
+  }
+}

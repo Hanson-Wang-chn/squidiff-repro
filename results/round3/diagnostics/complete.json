@@ -1,0 +1,22 @@
+{
+  "replays": [
+    {
+      "variant": "xstart",
+      "selected_replay_max_error": 0.0
+    },
+    {
+      "variant": "minsnr",
+      "selected_replay_max_error": 0.0
+    },
+    {
+      "variant": "epsres",
+      "selected_replay_max_error": 0.0
+    }
+  ],
+  "rows": 9,
+  "cells": 600,
+  "sampling_steps": 1000,
+  "main_predictions_changed": false,
+  "target_rna_used_only_by_oracle": true,
+  "control": "Same selected residual distribution and xT; remove only alpha*mean_direction"
+}

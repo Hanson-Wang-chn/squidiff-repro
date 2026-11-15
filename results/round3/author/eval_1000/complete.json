@@ -1,0 +1,9 @@
+{
+  "cells": 300,
+  "steps": 1000,
+  "repeats": 1,
+  "rows": 16,
+  "checkpoint_sha256": "cd13872c8a398560ad77cecdc4522465d029fc0ac4f733219ab41d483f0b77f8",
+  "condition": "original author epsilon model and original reverse equations",
+  "temporal_generalization_tested": false
+}

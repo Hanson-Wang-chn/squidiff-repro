@@ -1,0 +1,1741 @@
+Nat Methods
+. Author manuscript; available in PMC: 2026 Feb 6.
+Published in final edited form as:
+Nat Methods. 2025 Nov 3;23(1):65–77. doi:
+10.1038/s41592-025-02877-y
+Search in PMC
+Search in PubMed
+View in NLM Catalog
+Add to search
+Squidiff: Predicting cellular development and responses to perturbations using a diffusion model
+Siyu He
+Siyu He
+1
+Department of Biomedical Engineering, Columbia University, NY.
+2
+Irving Institute for Cancer Dynamics, Columbia University, NY.
+3
+Department of Biomedical Data Science, Stanford University, CA.
+Find articles by
+Siyu He
+1,
+2,
+3,
+*
+,
+Yuefei Zhu
+Yuefei Zhu
+1
+Department of Biomedical Engineering, Columbia University, NY.
+Find articles by
+Yuefei Zhu
+1,
+*
+,
+Daniel Naveed Tavakol
+Daniel Naveed Tavakol
+1
+Department of Biomedical Engineering, Columbia University, NY.
+Find articles by
+Daniel Naveed Tavakol
+1,
+*
+,
+Haotian Ye
+Haotian Ye
+4
+Department of Computer Sciences, Stanford University, CA.
+Find articles by
+Haotian Ye
+4
+,
+Yeh-Hsing Lao
+Yeh-Hsing Lao
+1
+Department of Biomedical Engineering, Columbia University, NY.
+5
+Department of Pharmaceutical Sciences, University at Buffalo, NY.
+Find articles by
+Yeh-Hsing Lao
+1,
+5
+,
+Zixian Zhu
+Zixian Zhu
+1
+Department of Biomedical Engineering, Columbia University, NY.
+Find articles by
+Zixian Zhu
+1
+,
+Cong Xu
+Cong Xu
+1
+Department of Biomedical Engineering, Columbia University, NY.
+Find articles by
+Cong Xu
+1
+,
+Sharadha Chauhan
+Sharadha Chauhan
+6
+Department of Biological Sciences, Columbia University, NY.
+Find articles by
+Sharadha Chauhan
+6
+,
+Guy Garty
+Guy Garty
+7
+Center for Radiological Research, Columbia University, NY.
+Find articles by
+Guy Garty
+7
+,
+Raju Tomer
+Raju Tomer
+1
+Department of Biomedical Engineering, Columbia University, NY.
+6
+Department of Biological Sciences, Columbia University, NY.
+Find articles by
+Raju Tomer
+1,
+6
+,
+Gordana Vunjak-Novakovic
+Gordana Vunjak-Novakovic
+1
+Department of Biomedical Engineering, Columbia University, NY.
+8
+Herbert Irving Comprehensive Cancer Center, Columbia University, NY.
+Find articles by
+Gordana Vunjak-Novakovic
+1,
+8
+,
+James Zou
+James Zou
+3
+Department of Biomedical Data Science, Stanford University, CA.
+4
+Department of Computer Sciences, Stanford University, CA.
+9
+Department of Electrical Engineering, Stanford University, CA.
+Find articles by
+James Zou
+3,
+4,
+9,
+#
+,
+Elham Azizi
+Elham Azizi
+1
+Department of Biomedical Engineering, Columbia University, NY.
+2
+Irving Institute for Cancer Dynamics, Columbia University, NY.
+8
+Herbert Irving Comprehensive Cancer Center, Columbia University, NY.
+10
+Department of Computer Sciences, Columbia University, NY.
+11
+Data Science Institute, Columbia University, NY.
+Find articles by
+Elham Azizi
+1,
+2,
+8,
+10,
+11,
+#
+,
+Kam W Leong
+Kam W Leong
+1
+Department of Biomedical Engineering, Columbia University, NY.
+12
+Department of Systems Biology, Columbia University Irving Medical Center, NY.
+Find articles by
+Kam W Leong
+1,
+12,
+#
+Author information
+Article notes
+Copyright and License information
+1
+Department of Biomedical Engineering, Columbia University, NY.
+2
+Irving Institute for Cancer Dynamics, Columbia University, NY.
+3
+Department of Biomedical Data Science, Stanford University, CA.
+4
+Department of Computer Sciences, Stanford University, CA.
+5
+Department of Pharmaceutical Sciences, University at Buffalo, NY.
+6
+Department of Biological Sciences, Columbia University, NY.
+7
+Center for Radiological Research, Columbia University, NY.
+8
+Herbert Irving Comprehensive Cancer Center, Columbia University, NY.
+9
+Department of Electrical Engineering, Stanford University, CA.
+10
+Department of Computer Sciences, Columbia University, NY.
+11
+Data Science Institute, Columbia University, NY.
+12
+Department of Systems Biology, Columbia University Irving Medical Center, NY.
+*
+equal contribution
+Author Contributions Statement
+K.W.L., E.A. and J.Z. conceived the study and provided overall supervision of the study. S.H., Y.Z., D.N.T. designed the blood vessel organoids study and performed the experiments. S.H. and H.Y. designed and developed model. S.H., Y.Z., D.N.T., H.Y., Z.Z., C.X., S.C. analyzed and interpreted data. G. G. performed irradiation experiments. R.T. and G.V.N. provided additional supervision. S.H., Y.Z., D.N.T., H.Y., J.Z., E.A. and K.W.L. wrote the paper. All authors reviewed, contributed to and approved the paper.
+#
+correspondence:
+jamesz@stanford.edu
+;
+ea2690@columbia.edu
+;
+kam.leong@columbia.edu
+Issue date 2026 Jan.
+PMC Copyright notice
+PMCID: PMC12872408  NIHMSID: NIHMS2128263  PMID:
+41184550
+The publisher's version of this article is available at
+Nat Methods
+Previous version available:
+This article is based on a previously available preprint posted on bioRxiv on August 26, 2025: "
+Squidiff: Predicting cellular development and responses to perturbations using a diffusion model
+".
+Abstract
+Single-cell sequencing has revolutionized our understanding of cellular heterogeneity and responses to environmental stimuli. However, mapping transcriptomic changes across diverse cell types in response to various stimuli and elucidating underlying disease mechanisms remains challenging. Studies involving physical stimuli, such as radiotherapy, or chemical stimuli, like drug testing, demand labor-intensive experimentation, hindering mechanistic insight and drug discovery. Here we present Squidiff, a diffusion model-based generative framework that predicts transcriptomic changes across diverse cell types in response to environmental changes. We demonstrate Squidiff’s robustness across cell differentiation, gene perturbation, and drug response prediction. Through continuous denoising and semantic feature integration, Squidiff learns transient cell states and predicts high-resolution transcriptomic landscapes over time and conditions. Furthermore, we applied Squidiff to model blood vessel organoid development and cellular responses to neutron irradiation and growth factors. Our results demonstrate that Squidiff enables
+in silico
+screening of molecular landscapes, facilitating rapid hypothesis generation and providing valuable insights for precision medicine.
+Introduction
+Cells coordinate responses to environmental stimuli collectively, with variations driven by tissue heterogeneity and external cues
+1
+,
+2
+. Living cells function as complex, dissipative systems far from chemical equilibrium and often exhibit highly non-linear responses
+3
+. While single-cell sequencing enables unbiased characterization of cellular heterogeneity, predicting transcriptomic changes in responses to stimuli remains challenging. Exploring disease mechanisms and optimizing drug components require large-scale sequencing screens, which are laborious and expensive
+4
+,
+5
+.
+Several machine-learning-based models, including scGEN
+6
+, scVIDR
+7
+, CellOT
+8
+, GEARS
+9
+, and GenePert
+10
+, have been developed to predict single-cell perturbation using variational autoencoders (VAE)
+11
+, optimal transport
+8
+, and graph neural networks
+9
+and large language models. Despite their advances, these models face limitations in predicting high-resolution dynamic transcriptional responses, especially in transient states in organ development. Reconstructing smooth transitions of learned features remains challenging. Most models focus on specific tasks instead of a broad range of scenarios, and require both unperturbed and perturbed data as inputs, but do not fully leverage underlying biological knowledge, failing to interpolate cell states.
+Diffusion models show potential in data generation through iterative refinement and learning richer data distributions than VAEs
+12
+,
+13
+,
+14
+. Integrating diffusion models with VAEs or performing diffusion in latent space further enhances efficiency
+15
+–
+17
+. In fact, these models have been applied in generating high-fidelity single-cell transcriptomic data, such as scVAEDer, scDiffusion, and scDiff
+17
+–
+19
+. Variants of diffusion models, such as conditional diffusional models, can manipulate smooth feature transitions and capture complex latent cellular features
+19
+,
+20
+. Recent perspectives highlight their potential in creating virtual cells, establishing them as a promising AI approach
+21
+. However, their applications in predicting gene and drug perturbations or cell development remain unexplored. Here, we introduce Squidiff (Single-cell QUantitative Inference of stimuli responses by a DIFFusion model), a computational framework designed to predict transcriptomic responses of diverse cell types to a spectrum of environmental changes, including cell differentiation, gene perturbation, and drug treatment. Squidiff is a conditional denoising diffusion implicit model
+22
+generating new transcriptomes representing distinct cellular states. Squidiff also allows for the incorporation of drug compounds, including structures and dosage, when this information is available. It excels in predicting the differentiation of induced pluripotent stem cells (iPSCs) into the three germ layers, guided by stimuli vectors. Notably, Squidiff captures transient cellular states that other methods often miss. Moreover, it effectively predicts non-additive gene perturbation and cell-type-specific drug responses, as shown in glioblastoma and melanoma cells in response to novel drug combinations. The incorporation of unique drug compounds in Squidiff also enables the prediction of new drug treatment modalities.
+We applied Squidiff to investigate neovascularization and vasculopathy induction in blood vessel organoids (BVOs) exposed to high-linear energy transfer (LET) radiation, uncovering potential mechanisms related to radiation-induced changes in vascular differentiation trajectories. Organoid technologies, particularly blood vessel organoids derived from human iPSCs, have shown promise in disease modeling and as drug testing platforms, especially in the context of self-organizing models that can start from a single source of stem cells
+23
+. This platform is useful for understanding injury and identifying potential drug candidates in extreme conditions, such as high-LET radiation exposures. In particular, these models are critical for scenarios that cannot be feasibly tested with real patients, including the risks anticipated in deep space missions. Despite the benefits of 3D systems for modeling cell types
+in vitro
+, the complexity of organoids and the labor-intensive nature of drug testing have limited the widespread application of these models.
+To evaluate Squidiff’s capabilities in characterizing cellular dynamics in BVOs, probing the potential mechanisms of neutron radiation damage associated with secondary radiation sources in deep space, and facilitating candidate drug discovery, we applied Squidiff to predict molecular profiles of various cell compositions within BVOs throughout differentiation and development. These included endothelial cells, fibroblasts, and mural cells, the principal components of blood vessels. We validated Squidiff’s predictions with experimental single-cell sequencing data. Interestingly, Squidiff suggested a mural-to-endothelial developmental pathway consistent with recent time-series studies of vessel organoids
+24
+. Additionally, Squidiff predicted the effects of irradiation on various cell types by generating single-cell transcriptomic data upon irradiation, even with limited available information on irradiated cell types, and identified key affected signaling pathways at each stage of injury. Incorporating an FDA-approved radioprotective drug, G-CSF, Squidiff further predicted that G-CSF might have a protective effect by promoting vascular specification compared to irradiated groups. These findings provide a comprehensive assessment of cell heterogeneity and differentiation trajectories in vessel organoids exposed to radiation and G-CSF proteins. Squidiff thus shows the power of capturing high-resolution cell dynamics under environmental changes by leveraging the strengths of diffusion models.
+Results
+Squidiff predicts transcriptomic changes through denoising
+Squidiff is a diffusion model designed to predict single-cell transcriptomic changes in response to cell state changes such as cell differentiation, development, and exposure to various physical or chemical stimuli across different cell types (
+Fig. 1a
+). Leveraging a neural network architecture and continuous denoising process, Squidiff predicts future and past cell states when stimuli are specified, and can further predict the effects of multiple drug combinations as well as multiple gene perturbations.
+Figure 1. Overview of Squidiff and its performance on synthetic data.
+Open in a new tab
+a,
+Waddington’s landscape illustration depicting cell differentiation and transdifferentiation paths from a pluripotent cell to various states (State a, b, c, d1, and d2). Solid black lines represent differentiation, while dashed lines indicate state transitions due to external stimuli.
+b,
+Diagram of the Squidiff model architecture, based on diffusion autoencoders
+20
+. The model comprises a semantic encoder and a conditional denoising diffusion implicit model (DDIM). The semantic encoder maps single-cell RNA sequencing data into a semantic latent space
+z
+s
+e
+m
+. The conditional DDIM includes a diffusion process that incrementally adds noise to input data
+x
+0
+, transforming it into Gaussian noise
+x
+T
+after T steps, and a denoising process that decodes the latent variables
+z
+s
+e
+m
+,
+x
+T
+to generate gene expression profiles (See
+Methods
+for details).
+c,
+Principal component analysis (PCA) of latent representations:
+z
+s
+e
+m
+(left) shows clustering of cell types a, b, and c, while
+x
+T
+(right) displays stochastic variations across the same cell types.
+d,
+Visualization of the forward diffusion process (left) and reverse diffusion process (right) in gene space. Probability distributions
+p
+x
+0
+and
+p
+x
+T
+illustrate the transition from the original gene space to Gaussian noise and back to the gene space via denoising in the reverse process.
+e,
+Schematic of latent space manipulation for generating new cell states. Arrows represent direction vectors
+Δ
+z
+s
+e
+m
+used for interpolation and extrapolation between states, with the spherical structure indicating the semantic latent space.
+f
+, Top: Correlation between ground truth and reconstructed gene expression levels for cell type A and its perturbed state, showing high accuracy in predictions. Bottom: Density plot comparing the distribution of gene expression values between generated, original, and perturbed data, indicating successful reconstruction by Squidiff.
+g
+, PCA visualization of gene expression for cell types a and b, illustrating the temporal progression of interpolated states from
+t
+=
+0
+(original) to
+t
+=
+1
+(fully interpolated). Intermediate time points
+(
+t
+=
+0.25
+,
+t
+=
+0.5
+,
+t
+=
+0.75
+)
+show the gradual transition between cell types a and b in the latent space.
+Squidiff integrates a diffusion model for data generation and a semantic encoder for encoding latent representations
+11
+,
+25
+. This integration enables the generation of new transcriptomic data while modulating states via latent variables. Specifically, the semantic encoder maps single-cell transcriptomic data into a unified latent representation space comprising semantic variables
+z
+s
+e
+m
+, while the diffusion model generates target cell transcriptomes from denoising a Gaussian noise
+x
+T
+conditioned on
+z
+s
+e
+m
+via a standard denoising process (
+Fig. 1b
+,
+Supplementary Fig. 1a
+, see
+Methods
+for details). Overall, Squidiff is capable of generating transcriptomic data reflecting cell-type variations, cell-state transitions, and cell-type-specific responses to multiple stimuli such as drug and gene perturbations.
+To explain the Squidiff framework, we first show an application to synthetic single-cell RNA sequencing data generated using Splatter
+26
+(
+Supplementary Fig. 1b
+, see
+Methods
+), which simulated gene expression based on a gamma-poisson distribution. We simulated single-cell transcriptomics data for three distinct cell types. During the diffusion process, iterative noise addition gradually transformed the three cell types into Gaussian noise after 1000 steps (
+Supplementary Fig. 1c
+). The semantic latent variable
+z
+s
+e
+m
+captured biologically meaningful variations in gene expression associated with specific cell states or responses to stimuli, resulting in a clear separation between different conditions in the latent space (
+Fig. 1c
+). Meanwhile, the Gaussian noise
+x
+T
+, accounts for stochasticity in the generated single-cell data. The reverse diffusion process then denoises and reconstructs the data given the condition, successfully recovering the original transcriptomic profiles (
+Fig. 1d
+,
+Supplementary Fig. 1d
+-
+e
+), demonstrating the model’s ability to accurately capture and reproduce cellular states with complex gene expression distribution.
+To generate new single-cell gene expression data over time and in response to stimuli, Squidiff employs two methods of latent manipulation: interpolation and addition (
+Fig. 1e
+). Addition involves combining the original latent representation with a perturbed direction
+Δ
+z
+s
+e
+m
+. This results in a shift in the gene expression distribution, reflecting effects of the perturbation (
+Fig. 1f
+). Interpolation, on the other hand, primarily uses linear interpolation
+6
+, which computes intermediate points along a straight line between two vectors, offering computational efficiency. For instance, during interpolation, the blue-green cluster transitions gradually from the red to the blue cluster as time
+t
+increases, with linear interpolation providing a direct path (
+Fig. 1g
+). We further validated Squidiff’s performance across three biomedical scenarios, including cell differentiation or trans-differentiation, gene perturbations, and drug response predictions.
+Squidiff predicts cell differentiation
+Squidiff can predict transcriptomic profiles of specific cell states when the transcriptome of a starting point and the latent embedding learned by Squidiff for the applied stimuli are known. This capability is particularly useful for investigating the evolution of cells or missing intermediate states in cellular differentiation and development. The approach leverages the generative capabilities of the diffusion model and its manipulation of semantic latent variables.
+Applied to a public single-cell transcriptomics dataset of iPSC differentiation as an example
+27
+, Squidiff effectively captures the state changes from iPSCs to mesendoderm and definitive endoderm cells from day 0 to day 3 through diffusion (
+Supplementary Fig. 2a
+) and denoising processes. The model was trained on data only at day 0 and day 3 (
+Supplementary Fig. 2b
+). With the semantic encoder, the semantic latent variables
+z
+0
+s
+e
+m
+and
+z
+3
+s
+e
+m
+day 0 and day 3 represented distinct information for day 0 and day 3. The computing of
+Δ
+z
+s
+e
+m
+by subtracting
+z
+3
+s
+e
+m
+from day 3 and
+z
+0
+s
+e
+m
+from day 0 represents the direction vector for the averaged stimuli over the period (
+Fig. 2a
+,
+Supplementary Fig. 2c
+,
+Methods
+). Starting with the initial states at day 0 and applying the learned stimuli direction, Squidiff accurately predicts single-cell transcriptomics from day 1 to day 3 (
+Fig. 2b
+-
+c
+). Additionally, applying the stimuli vector to the predicted transcriptomics on day 1 also results in an accurate prediction of cell states on day 2 (
+Fig. 2c
+).
+Fig. 2: Squidiff predicts cell differentiation.
+Open in a new tab
+a
+, Schematic of cell differentiation or transdifferentiation prediction using Squidiff. The model extracts semantic latent variables (
+z
+1
+s
+e
+m
+and
+z
+2
+s
+e
+m
+) and computes the difference
+Δ
+z
+s
+e
+m
+to define the direction vector over the differentiation period.
+b
+, UMAP visualization of training datasets with iPSCs (day 0) and definitive endoderm (day 3) in blue and red, respectively. Combined training and testing datasets demonstrate differentiation from iPSCs to mesendoderm and definitive endoderm.
+c
+, Pearson correlation plots comparing model-predicted and ground-truth single-cell RNA-seq data across different days. High correlation coefficients indicate accurate predictions by Squidiff.
+d
+, Heatmap of the top 15 differentially expressed (DE) genes across days 0 to 3, illustrating the expression trends of key genes like
+NANOG
+and
+GATA6
+during differentiation.
+e
+, Pseudotime analysis showing cell density distributions along pseudotime (top), with changes in expression patterns of
+NANOG
+and
+GATA6
+(bottom). Comparison of inferred gene
+T
+expression across day 0 and 3. Box plots indicate the median (center lines), interquartile range (hinges) and 1.5× interquartile range (whiskers). n = 600 cells for each day. One-way ANOVA test was performed across days.
+P
+=
+6.6
+×
+1
+0
+-
+56
+.
+f
+, Dot plot showing the fraction of cells expressing
+T, GATA6
+and
+NANOG
+over different groups and days, reflecting their roles in cell state transitions.
+g
+, Bar plot of R-squared values and Pearson correlation comparing the prediction accuracy of Squidiff and scGen across all days. Bar plots indicate the mean (bar height) and 95% confidence interval (error bars) across six independent model runs (n=6), with individual replicate values overlaid. Two-sided independent two-sample t-test was performed.
+P
+=
+1.97
+×
+1
+0
+-
+35
+,
+1.48
+×
+1
+0
+-
+9
+,
+5.79
+×
+1
+0
+-
+7
+,
+3.6
+×
+1
+0
+-
+33
+sequentially for Pearson correlation and
+=
+3.97
+×
+1
+0
+-
+32
+,
+1.55
+×
+1
+0
+-
+1
+,
+3.93
+×
+1
+0
+-
+7
+,
+7.22
+×
+1
+0
+-
+35
+for R-squared values. ****
+P
+<
+0.0001
+. NS, not significant.
+h
+, Left: Spearman correlation between predicted cell orders from trajectory methods (PAGA, Monocle, Scorpius), random orders, and actual day-time points used in Squidiff. Right: Jaccard index of top differentially expressed genes from day 0 to day 3 across pseudotime series identified by PAGA, Monocle, Scorpius, random orders, and the actual time points used in Squidiff.
+To further assess the biological relevance of the model’s predictions, we conducted differential gene expression analysis, identifying day-specific genes with distinct signatures corresponding to mesendoderm and pre-definitive endoderm stages (
+Fig. 2d
+). For instance,
+NANOG
+expression emerged as a pluripotency marker at day 0
+28
+, with its expression diminishing over subsequent days. In contrast,
+GATA6
+, which encodes a key transcription factor involved in the transition towards both mesodermal and endodermal fates
+29
+, showed a progressive increase. By applying pseudotime analysis (
+Methods
+) to the combined input data from day 0 and the model-predicted data from days 1 to 3, we observed matched fluctuations in cell proportions, with a continuous decline in
+NANOG
+and a corresponding rise in
+GATA6
+expression and signaling pathways (
+Supplementary Fig. 2d
+). We further examined the gene
+T
+, a mesodermal marker
+30
+, which was enriched on days 1 and 2, indicating its role in early mesoderm differentiation (
+Fig. 2e
+-
+f
+). These findings underscore the nonlinearity of gene expression dynamics during developmental processes and show Squidiff learns gene relationships. Notably, the latent variable embeddings from the ground-truth data of day 2 and day 3 differ from the interpolated variables, likely due to the different growth factors applied each day in this experiment. This suggests that
+z
+s
+e
+m
+represents an averaged trajectory.
+Squidiff outperformed scGen
+6
+, a previous state-of-the-art model that combines variational autoencoders and latent space vectors for high-dimensional single-cell gene expression data (
+Fig. 2g
+). When trajectory inference methods such as PAGA
+31
+, Scorpius
+32
+, and Monocle
+33
+were applied to the Squidiff output transcriptomics, we observed successful reconstruction of the dataset along a continuous pseudotime that closely matched the real discrete timepoints (days), surpassing random baselines. Moreover, there was a significant overlap between the genes identified based on real-time conditions and those predicted by these trajectory models (
+Fig. 2h
+).
+Squidiff predicts gene and drug perturbation
+Squidiff also predicts cellular responses to gene perturbations and drug treatments. By leveraging vector operations, a trained Squidiff model generalizes single-cell transcriptomic data across conditions, accurately modeling complex cellular responses.
+For non-additive gene perturbations, where genes interact synergistically to produce effects beyond simple additive approaches, Squidiff assumes that perturbations involving two genes can be represented as the sum of two learned semantic variables (
+Fig. 3a
+), allowing prediction of transcriptomic changes in wild-type cells. Specifically, we tested Squidiff on K562 cells perturbed by
+ZBTB25
+and
+PTPN12
+34
+, a known non-additive case discussed by GEARS
+9
+(
+Supplementary Fig. 3a
+). Unlike GEARS, which uses graph-based prior knowledge, Squidiff requires no explicit graph structure, yet achieves highly accurate predictions (
+Fig. 3b
+,
+Supplementary Fig. 3b
+-
+d
+,
+Methods
+). Compared to GEARS and scGen, Squidiff consistently yields more robust and precise predictions (
+Fig. 3c
+,
+Supplementary Fig. 3e
+), showing its ability to capture gene perturbation effects and underlying molecular mechanisms.
+Fig. 3: Squidiff predicts gene and drug perturbation.
+Open in a new tab
+a
+, Schematic representation of Squidiff’s approach for predicting the effects of two-gene perturbations by leveraging semantic latent variables (
+z
+1
+s
+e
+m
+and
+z
+2
+s
+e
+m
+). This method enables the exploration of combined effects of gene perturbations, such as the combination of
+ZBTB25
+and
+PTPN12
+. The cell icons were created with
+BioRender.com
+.
+b
+, Comparison of mean gene expression between Squidiff’s predictions and real perturbed data, evaluated using
+R
+2
+values and Pearson correlation scores.
+c
+, Left: bar plots comparing the true expression changes induced by
+ZBTB25
++
+PTPN12
+perturbation on control single-cell data across all genes by Squidiff, scGen, and GEARS in terms of
+R
+2
+values. Right: fraction of genes where predicted expression changes are opposite to the ground truth. Bar plots indicate the mean (bar height) and 95% confidence interval (error bars), with individual data points (n=10) overlaid for each bar.
+d
+, Schematic representation of Squidiff’s approach to drug response prediction, where semantic latent variables
+z
+s
+e
+m
+are manipulated based on cell types and drug treatments to model transcriptomic changes.
+e
+, UMAP visualization of predicted drug responses, colored by three cell types, drug treatment, and training vs. test dataset.
+f,
+Mean gene expression between Squidiff predicted and experimentally perturbed data, assessed using Pearson correlation scores.
+g,
+Heatmap displaying the response of different cell types (myeloid cells, oligodendrocytes, and tumor cells) to various drug treatments. The intensity values indicate the number of differentially expressed genes identified in each condition.
+h,
+Schematic diagram of Squidiff integrated with drug-rescaled Functional Class Fingerprints (
+rFCFP
+).
+i,
+Performance (Pearson correlation and R-squared scores) of Squidiff and PRNet in out-of-distribution perturbation scenarios, including both unseen compound split and random split in the sci-plex datasets. Bar plots indicate the mean (bar height) and 95% confidence interval (error bars), with individual data points (n=3) overlaid for each bar. Results are shown across three independent data splits per condition, with statistical significance assessed using a one-sided t-test.
+P
+=
+3.58
+×
+1
+0
+-
+2
+,
+1.67
+×
+1
+0
+-
+2
+,
+9.96
+×
+1
+0
+-
+4
+,
+=
+7.46
+×
+1
+0
+-
+2
+, sequentially. ****
+P
+<
+0.0001
+. NS, not significant.
+Besides gene perturbations, we evaluated Squidiff on drug screening. Unlike gene targets, drug effects are often complex, involving influences on multiple genes concurrently and the regulation of associated pathways. Thus, a model predicting the overall cellular response to drugs is valuable for exploring drug mechanisms and identifying the most effective drugs with minimal side effects. We first tested Squidiff’s ability to predict the effects of two-drug combinations on cell transitions. The assumption is that the latent space captures additive or synergistic interactions implicitly. Due to the limited availability of single-cell RNA sequencing data related to drug combinations, we evaluated Squidiff on an alternative dataset 4i
+8
+, which profiles the molecular and morphological properties of melanoma cells treated with various drug compounds using a novel microscopic technology. We withheld drug combination data and trained Squidiff using only control cells and cells treated with single drugs, including trametinib, panobinostat, dabrafenib, erlotinib, and midostaurin. We then used Squidiff to generate single-cell data for drug combination treatments and compared the Pearson correlation between predicted and ground-truth responses from the 4i dataset. While 4i does not contain single-cell transcriptomic data and provides only ~50 features per condition, it serves as a validation of Squidiff’s ability to generalize to drug perturbations (
+Supplementary Fig. 3f
+). However, the limited cellular features in this dataset may impact Squidiff’s ability to fully capture complex drug interactions compared to transcriptomic data.
+We next applied Squidiff to a study investigating drug responses in glioblastoma, focusing on distinct effects of etoposide and panobinostat on tumor cells (
+Fig. 3d
+,
+Supplementary Fig. 4a
+). We trained the Squidiff model using a dataset consisting of randomly selected myeloid cells treated with six different drugs, as well as tumor cells and oligodendrocytes that were only exposed to etoposide (
+Fig. 3e
+,
+Supplementary Fig. 4b
+). Despite this constraint, Squidiff accurately predicted the effects of all six drugs on tumor cells and oligodendrocytes, demonstrating its ability to infer transcriptomic changes induced by drug treatments (
+Fig. 3f
+). Notably, Squidiff also identified panobinostat as having the most potent effect on tumor cells compared to other cell types among all screened drugs, consistent with the finding from the reference (
+Fig. 3g
+)
+35
+. Validating these predictions, we visualized the UMAP embedding of cells with and without treatment and observed the distinct effects of etoposide and panobinostat as previously reported (
+Supplementary Fig. 4c
+).
+When Squidiff encounters a completely unseen drug, prediction is limited. Unlike cell type transfer learning, where Squidiff can generalize across different cell types, predicting the response to an entirely new drug is challenging, as the model has never been exposed to its molecular characteristics during training. Therefore, we integrated a drug compound adapter inspired by PRNet
+36
+(
+Fig. 3h
+). Specifically, we incorporated the drug-rescaled Functional Class Fingerprints (
+rFCFP
+) from PRNet, which updates the Squidiff semantic latent variable from
+z
+s
+e
+m
+to
+z
+s
+e
+m
+′
+=
+E
+n
+c
+x
+0
+,
+r
+F
+C
+F
+P
+(
+Methods
+). This adaptation allows Squidiff to incorporate unseen drug information by leveraging its structural and functional properties, thereby enhancing its predictive capabilities beyond drugs included in the training set. We benchmarked Squidiff against PRNet on the sci-plex3 datasets
+37
+using both an unseen drug split and a random data split. Our results show that Squidiff performs comparably to or better than PRnet (
+Fig. 3i
+).
+Squidiff predicts blood vessel organoids differentiation
+To evaluate Squidiff’s prediction of the cascade of transcriptional programs during continuous cell state transitions and their alteration with stimuli, we employed organoid technology. Organoids, differentiated from human induced pluripotent stem cells, have emerged as unique 3D biomimetic systems for modeling human tissue development
+38
+, disease, and drug responses, including those for brain, liver, and lung organoids, among others
+39
+. However, as self-organized systems, organoids are inherently heterogeneous, and the interactions among cells within them are complex
+39
+. Single-cell and spatial RNA sequencing have profiled these heterogeneities in differentiation trajectories, but fully characterizing developmental processes at any given time point remains challenging. While pseudotime analysis of single-cell RNA sequencing provides snapshots of organoid development at specific stages, real-time profiling across organoids is challenging due to labor-intensive workflows and technical expertise requirements for manipulation of these engineered models
+39
+,
+40
+, in addition to the costly sequencing steps. Squidiff addresses these limitations by predicting cell transcriptomic changes during development and in response to stimuli.
+Using BVOs as a case study for applying Squidiff, organoids were differentiated from human iPSCs and guided toward endothelial and vascular lineages, forming vascular network-like structures as early as Day 6 (
+Supplementary Fig. 5a
+). BVOs show promise in modeling human vascular development and disease and serve as a powerful platform for drug discovery of human blood vessels
+24
+.
+The fate and state transition of cells in blood vessel organoids have been studied in real-time
+24
+, providing an ideal dataset for comparison. In these studies, progenitor states in early BVOs were observed to bifurcate into endothelial and mural fates, highlighting the potential of BVO mural cells to differentiate into endothelial lineages (
+Fig. 4a
+). To test if Squidiff could replicate these findings, we generated BVOs from healthy human iPSCs to create a training dataset. We fixed a subset of organoids, and with another dissociated the organoids into single cells, performing single-cell RNA sequencing on day 11. The BVOs were exposed to differentiation processes from day −1, and progressed to mesoderm aggregates from day 3 to day 5, with vascular formation starting on day 6. We identified fibroblasts, mural cells, endothelial cells, and progenitor cells in the organoids on day 11 (
+Fig. 4b
+,
+Supplementary Fig. 5a
+).
+Fig. 4: Squidiff predicts cell differentiation processes in blood vessel organoids.
+Open in a new tab
+a,
+Diagram for hypothesized differentiation processes of iPSC into cell components in BVOs.
+b,
+Embedding of single-cell RNA sequencing of blood vessel organoids on day 11, colored by subtypes of endothelial cells, fibroblasts, and mural cells.
+c,
+Joint UMAPs of trained scRNA-seq data on day −1, namely the iPSC cells and the predicted scRNA-seq data from day −1 to day 17, with two days intervals with the semantic meaning, which was learned by only endothelial cells at day −1 and day 11.
+d
+, Joint UMAPs of trained scRNA-seq data on day −1 and the predicted scRNA-seq data from day −1 to day 17, colored by the markers including pluripotent genes (
+NANOG
+,
+MKI67
+), endothelial genes (
+CLDN5
+, and
+SOX17
+), fibroblast and mural specific genes (
+COL1A1
+,
+LUM
+, and
+ACTA2
+), and the markers denoting differentiating into mesendoderm layer (
+GATA6
+).
+e,
+Stepwise expression of markers along with days in fibroblasts, endothelial cells, and mural cells.
+f,
+Joint UMAPs of trained scRNA-seq data on day −1 and the predicted scRNA-seq data from day −1 to day 17, colored by cell types.
+g,
+Heatmap of differential gene analysis for clustering of joint trained scRNA-seq data and predicted data.
+h,
+Stacked barplot of the number of cells colored by the major types and days across cell type clusters.
+i,
+Number of endothelial cell (EC) lineages in mural progenitor and mural cell clusters, comparing Squidiff and scGen. Bar plots indicate the mean (bar height) and 95% confidence interval (error bars), with individual data points (n=2 and 3 for Squidiff and scGen) overlaid for each bar. A two-sided independent two-sample t-test was performed.
+P
+=
+1.02
+×
+1
+0
+-
+3
+.
+To predict cell fates and states during blood vessel development, we combined single-cell RNA data from iPSCs and BVOs at day 11 and trained the Squidiff model on these datasets (
+Supplementary Fig. 5b
+-
+c
+). We then performed interpolation for days 1, 3, 5, 7, 9, 13, 15 and 17 using Squidiff. The predictions captured the differentiation and development trajectories of endothelial and mural cells from iPSCs, as shown in the distribution of marker gene expressions (
+Fig. 4d
+-
+d
+,
+Supplementary Fig. 6a
+). The predicted data revealed intermediate states where some endothelial cells exhibited properties akin to mural cells, while mural and fibroblast cells appeared to derive from mural progenitor cells, consistent with published findings that experimentally sequenced real-time BVOs (
+Fig. 4c
+). To quantify this, we tracked the expression of marker genes across days for endothelial, fibroblasts, and mural cells, identifying fluctuations in mural-specific genes, such as
+LUM
+and
+DLK1
+(
+Fig. 4d
+). These genes showed an increase before day 7 and a decrease after day 9, while they continued to rise in fibroblast and mural cells (
+Fig. 4e
+). A heatmap of differentially expressed genes across cell type clusters on the UMAP further confirmed cell type distinctions (
+Fig. 4f
+), and indicated the cell state transitions from iPSC to mature cell lineages (
+Fig. 4g
+). We observed a substantial proportion of endothelial cells in the mural progenitor population, which resembled the results of real single-cell RNA data
+24
+(
+Fig. 4h
+). The existence of differentiating EC cells from day 5 to day 9, shown as mural progenitors, suggests the potential of ECs differentiated from mural-like cells, a feature that scGEN methods failed to capture (
+Fig. 4i
+,
+Supplementary Fig. 6b
+-
+g
+). This underscores Squidiff’s enhanced capability in predicting cell heterogeneity and transient cell states, offering insights for in silico modeling.
+Neutron irradiation disrupts structure and metabolism
+After demonstrating Squidiff’s ability to predict gene and drug perturbations, we next evaluated its capacity to predict cellular response to physical perturbations, such as irradiation. Ionizing radiation, from radiotherapy, nuclear accidents, or deep space travel, poses serious health risks
+41
+, impacting not only cancerous but also non-cancerous cells, particularly endothelial, blood and immune, and local parenchymal cells within the radiated area
+42
+. High-energy particles like neutrons penetrate tissues and cause cellular and molecular damage
+43
+. Understanding radiation effects helps to develop effective countermeasures and treatments for radiation-induced damage
+44
+. Degenerative vascular changes are primary radiation health risks to astronaut crews on exploration missions
+45
+. Microvascular endothelial cells are susceptible to ionizing radiation, and radiation-induced alterations in endothelial cell function are critical factors in organ damage through endothelial cell activation, enhanced leukocyte-endothelial cell interactions, increased barrier permeability, and initiation of apoptotic pathways
+42
+,
+46
+. BVOs provide an excellent model for studying these effects.
+On day 5 of BVO development, we exposed the cultures to either neutron or photon radiation and continued BVO culture until day 11 (
+Fig. 5a
+). On day 11, single-cell RNA sequencing profiled both healthy and irradiated BVOs. We identified endothelial cells, mural cells, and fibroblasts. Reduced overlap between irradiated and control cells indicated substantial molecular alterations (
+Fig. 5b
+). Squidiff encoded radiation exposure as a vector in the semantic space, enabling the generation of perturbed transcriptomes for different cell states in response to radiation.
+Fig. 5: Structure damage and metabolic phenotypes alteration in blood vessel organoids induced by neutron irradiation.
+Open in a new tab
+a,
+Experimental workflow for differentiating BVOs from human pluripotent stem cells. Key steps include embryoid body (EB) formation, mesoderm induction, vascular induction, embedding into the gel, and subsequent neutron irradiation or G-CSF treatment. Imaging and single-cell RNA sequencing (scRNA-seq) were performed on day 11. The workflow was created with
+BioRender.com
+.
+b,
+UMAP visualization of single-cell RNA-seq data from BVOs on day 11, showing different cell types: healthy fibroblasts, irradiated fibroblasts, healthy endothelial cells, irradiated endothelial cells, healthy mural cells, and irradiated mural cells. Trained and untrained data sets are indicated.
+c,
+Scatter plots showing the correlation between ground-truth scRNA-seq data and Squidiff-predicted data for irradiated fibroblasts (top) and irradiated mural cells (bottom), with Pearson correlation coefficients and R-squared values.
+d,
+UMAP visualization of single-cell RNA-seq data from BVOs across different developmental days (day −1 to day 17), showing the distribution of healthy and irradiated cell types over time.
+e,
+Volcano plot of differential gene expression in BVOs after 4 Gy neutron irradiation (30,000 irradiated cells and 30,000 control cells across day −1 to 17). Two-sided Wilcoxon rank-sum tests were performed. P values were adjusted by the Benjamini-Hochberg method. Genes exceeding logFC > 2 or < –2.5 and adjusted p value < 1e–5 are highlighted and labeled.
+f,
+ELISA results showing the levels of IL-1β and TNF-α in the culture medium of BVOs at day 1 and day 6, under different irradiation conditions (0 Gy, 4 Gy). Bar plots indicate the mean (bar height) and standard error of the mean (error bars), with individual data points overlaid for each bar (n=2 biologically independent replicates per group).
+g,
+Left: 3D rendering of a CD31-stained BVO. Right: Immunofluorescence images of BVOs showing structural changes under control conditions, 1 Gy, and 4 Gy photon irradiation. CD31 (endothelial cell marker) in cyan, alpha-SMA (smooth muscle cell marker) in red, and DAPI (nuclear stain) in blue. Scale bar, 100
+μ
+m.
+For validation, we masked mural cells and fibroblasts entirely during Squidiff training, using only endothelial cells under irradiation and control conditions (
+Fig. 5b
+). The model successfully generated transcriptomic data under irradiation (
+Fig. 5c
+,
+Supplementary Fig. 7a
+-
+b
+). The model was then applied to interpolate irradiated transcriptomes for endothelial, mural, and fibroblasts from day −1 to day 17. UMAP indicated that early-stage cells were most affected (
+Fig. 5d
+,
+Supplementary Fig. 7c
+-
+d
+), likely due to immature tissue structure and weak cell interactions. The ranking of the most differentiated genes upon irradiation across cells varied across developmental stages (
+Supplementary Fig. 7e
+-
+f
+).
+Intriguingly, genes behaved differently over days and across cell types. For instance,
+MYCT1
+in endothelial cells decreased in the middle period and resumed at the latest stage of development, while
+MYCT1
+remained one of the most differentiated genes in mural cells and fibroblasts (
+Supplementary Fig. 7e
+). The most affected genes upon irradiation across all these cells included upregulation of genes such as
+CDKN1A
+,
+MDM2
+,
+GDF15
+,
+ACTA2
+,
+ABCA1
+,
+MMP14
+, and
+ITGA6
+, and downregulation of genes such as
+NNAT
+,
+HIST1H1D
+,
+TOP2A
+,
+HMGB2
+, and
+PRC1
+(
+Fig. 5e
+). These genes are involved in cellular responses to ionizing radiation, cell motility, DNA damage through P53 pathways, apoptosis, TNF-α signaling via NF-
+κ
+B, KRAS pathways, protein kinase B signaling, and inflammation responses (
+Supplementary Fig. 8a
+-
+b
+).
+Notably,
+CDKN1A
+encodes p21/WAF1/CIP1, known for its role in cell cycle regulation.
+MDM2
+encodes a protein functioning as a negative regulator of the p53 tumor suppressor, thus playing a critical role in controlling cell proliferation and apoptosis
+47
+. Live-dead assays showed that the percentage of dead cells was much higher in irradiated BVOs (
+Supplementary Fig. 9a
+-
+c
+), consistent with radiation-induced apoptosis. BVOs decreased in size after neutron irradiation. We found that the culture supernatant post-irradiated was enriched in IL1-β and TNF-alpha, indicating enhanced induction of inflammation (
+Fig. 5f
+), consistent with the increased expression of
+GDF15
+, a stress response gene associated with the regulation of inflammation and cell survival (
+Supplementary Fig. 9d
+). These metabolic changes overall resulted in downstream failures in vascular formation and abnormal distribution patterns in BVOs (
+Fig. 5g
+), causing earlier vascular sprouting in the radiation BVOs versus controls. Overall, Squidiff effectively generated data with biological relevance and predicted the complex molecular responses to radiation exposure.
+G-CSF mitigates radiation damage in blood vessel organoids
+Given disruption of vascular structures, apoptosis of cells triggered by the p53 pathways, and increased protein kinase B signaling, we tested whether the FDA-approved radioprotective drug, granulocyte colony-stimulating factor (G-CSF), could rescue defects in vasculogenesis
+in vitro
+. G-CSF is a glycoprotein that plays a crucial role in the production, differentiation, and function of granulocytes, a type of white blood cell essential for fighting infections
+48
+. It has been used in clinical settings to stimulate the bone marrow to produce more white blood cells, particularly after chemotherapy or bone marrow transplants. Recent studies suggest that G-CSF may also have protective effects on vascular tissues, promoting endothelial cell survival and enhancing tissue repair processes
+49
+. However, the study of the G-CSF effect on fibroblasts and mural cells in the vasculature remains limited. A known effect of G-CSF is its activation of MEK1/2, PI3K/Akt and NF-
+κ
+B pathways (
+Fig. 6a
+)
+50
+–
+52
+, consistent with findings on the regulation of NF-
+κ
+B and kinase B signaling on radiation injury (
+Supplementary Fig. 8a
+-
+b
+). Squidiff offers a way to predict G-CSF’s effect on other cell types when only one cell type (e.g., endothelial) responses are known. We sequenced the single-cell RNA expression in G-CSF-treated BVOs and considered it as ground truth data.
+Fig. 6: Treatment potentials of G-CSF in securing against radiation disruption in blood vessel organoids.
+Open in a new tab
+a,
+Schematic illustration of the signaling pathways activated by G-CSF treatment
+50
+. G-CSF binds to its receptor (G-CSF-R), triggering downstream signaling cascades involving MEK1/2, Erk1/2, PI3K, and Akt. This leads to the degradation of
+I
+κ
+B
+α
+and nuclear translocation of
+NF
+−
+κ
+B
+, promoting the expression of target genes such as
+MMP2
+,
+VEGF
+, and
+β
+1
+integrin, which are involved in cell survival, proliferation, and migration. The illustration was created with
+BioRender.com
+.
+b,
+UMAP visualization of single-cell RNA-seq data from BVOs on day 11, showing the distribution of healthy, irradiated, and G-CSF-treated cell types. The trained data includes healthy fibroblasts, endothelial cells, and mural cells. Provided data includes irradiated fibroblasts, endothelial cells, and mural cells. Data to predict includes irradiated and G-CSF-treated fibroblasts, endothelial cells, and mural cells.
+c,
+Scatter plots comparing ground-truth scRNA-seq data with Squidiff predicted data for irradiated fibroblasts (top) and irradiated mural cells (bottom) treated with G-CSF. The Pearson correlation and R-squared values indicate high prediction accuracy.
+d.
+Enriched biological processes found in fibroblasts and endothelial cells.
+Given the training data on endothelial cells only (
+Fig. 6b
+), Squidiff successfully generated predicted single-cell transcriptomic data for fibroblasts and mural cells (
+Fig. 6c
+,
+Supplementary Fig. 10a
+). To validate predictions, we conducted differential gene expression analysis comparing real irradiated data with predicted G-CSF-treated data. Notably, we identified distinct sets of differentially expressed (DE) genes for each cell type, with some genes shared across multiple types (
+Supplementary Fig. 10b
+-
+c
+). The biological processes identified for enriched genes revealed unique roles for each cell type in response to G-CSF treatment. Fibroblasts were associated with blood vessel morphogenesis and vasculogenesis, indicating their critical role in structural development (
+Fig. 6d
+,
+Supplementary Fig. 10d
+). Endothelial cells showed enrichment in pathways regulating apoptosis and the cell cycle, highlighting their involvement in maintaining cell survival and proliferation (
+Fig. 6d
+). Mural cells, in contrast, were linked to pathways related to genomic stability, cell cycle progression, and mitosis, indicating their role in maintaining genomic integrity. This aligned with reduced cell death percentages in G-CSF-treated samples versus irradiated samples (
+Supplementary Fig. 9b
+). Collectively, this study demonstrates Squidiff’s capability to predict cell-type-specific responses to drug treatments and reveals the effects of G-CSF on irradiated blood vessel systems.
+Discussion
+In this study, we introduce Squidiff, a conditional diffusion model with a semantic encoder designed to predict transcriptomic changes across diverse cell types in response to a spectrum of environmental changes. Squidiff provides a robust framework for modeling cell development and responses on single-cell transcriptomic data, offering insights into cell differentiation and therapeutic responses, and positioning itself as a valuable tool in precision medicine. Its conditional design allows flexible control of experimental factors, while the integration of rFCFP embeddings enables prediction for previously unseen drugs.
+We applied Squidiff to blood vessel organoids to investigate the effects of neutron irradiation and G-CSF treatment, a radioprotective intervention. As vascular integrity plays a central role in maintaining blood flow, nutrient distribution, and metabolic homeostasis, radiation-induced endothelial damage poses major risks in deep space missions
+53
+–
+55
+. A key advantage of Squidiff is its ability to infer dynamic, cell-type-specific responses from single timepoint datasets, thus circumventing the high costs and sample heterogeneity challenges with multi-timepoint single-cell sequencing. Despite sequencing being performed one week post-irradiation, Squidiff reconstructed early injury-phase transcriptomic changes, identifying temporal gene responses as potential radioprotective targets. Our analysis also highlights G-CSF’s therapeutic potential in vascular protection, providing insights into strategies to enhance its delivery efficacy and therapeutic index
+in vivo
+. These findings open avenues for future studies exploring other protective agents in space medicine and related fields.
+Despite these promising results, Squidiff has several limitations. The training process involves introducing Gaussian noise into the data, resulting in prolonged training times. Furthermore, diffusion models generally require more computational resources compared to other generative frameworks, such as VAEs or generative adversarial networks. These challenges underscore the need for optimizing training protocols and more efficient implementations. Additionally, the current assumption of linearity in semantic variables may only provide approximate predictions in highly complex scenarios, requiring future refinement.
+In the future, improving Squidiff’s scalability and computational efficiency will be essential to broadening applications to large-scale datasets and to establishing Squidiff as a more generalizable foundation model. While Squidiff has demonstrated strong performance in identifying cell-state transitions and perturbation responses, further validation using
+in vivo
+models would strengthen its translational potential. Moreover, extending Squidiff to integrate multi-modal omics data, including proteomics, epigenomics, and spatial information, may further enhance its predictive capabilities and enable the discovery of novel regulatory mechanisms governing cell fate decisions.
+Supplementary Material
+Supplementary Methods
+NIHMS2128263-supplement-Supplementary_Methods.docx
+(3.4MB, docx)
+Supplementary data
+NIHMS2128263-supplement-Supplementary_data.docx
+(6.4MB, docx)
+Acknowledgments
+We thank Stephen Quake and Konpat Preechakul for insightful discussions on virtual cells and the diffusion model, and Sabrina Wang, Jong Ha Lee, and Rayna Batya-Leia Berris for their assistance with single-cell RNA sequencing analysis and cell culture. We also appreciate the staff at Columbia’s Center for Radiological Research for their support in operating ionizing radiation equipment. This study utilized resources from the Herbert Irving Comprehensive Cancer Center Confocal, Specialized Microscopy Shared Resource, the Genomics and High Throughput Screening Shared Resource, partially funded by the NIH/NCI Cancer Center Support Grant P30CA013696. The Columbia IND Neutron Facility was developed under NIAID Grant U19 AI067773. We gratefully acknowledge funding support from the Translational Research Institute for Space Health (TRISH/NASA) (RAD0104 and NNX16A069A to G.V.-N. and K.W.L.).
+Footnotes
+Competing Interests Statement.
+The authors do not have any personal or financial relationships that would constitute a conflict of interest.
+References
+1.
+Schneider G, Schmidt-Supprian M, Rad R. & Saur D. Tissue-specific tumorigenesis: context matters. Nat. Rev. Cancer
+17, 239–253 (2017).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+2.
+Potente M. & Mäkinen T. Vascular heterogeneity and specialization in development and disease. Nat. Rev. Mol. Cell Biol
+18, 477–494 (2017).
+[
+DOI
+] [
+PubMed
+] [
+Google Scholar
+]
+3.
+Rafelski SM & Theriot JA
+Establishing a conceptual framework for holistic cell states and state transitions. Cell
+187, 2633–2651 (2024).
+[
+DOI
+] [
+PubMed
+] [
+Google Scholar
+]
+4.
+Next generation sequencing in clinical medicine: Challenges and lessons for pathology and biomedical informatics. J. Pathol. Inform
+3, 40 (2012).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+5.
+Atanasov AG, Zotchev SB, Dirsch VM & Supuran CT
+Natural products in drug discovery: advances and opportunities. Nat. Rev. Drug Discov
+20, 200–216 (2021).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+6.
+Lotfollahi M, Wolf FA & Theis FJ
+scGen predicts single-cell perturbation responses. Nat. Methods
+16, 715–721 (2019).
+[
+DOI
+] [
+PubMed
+] [
+Google Scholar
+]
+7.
+Kana O. et al. 
+Generative modeling of single-cell gene expression for dose-dependent chemical perturbations. Patterns (N Y)
+4, 100817 (2023).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+8.
+Bunne C. et al. 
+Learning single-cell perturbation responses using neural optimal transport. Nat. Methods
+20, 1759–1768 (2023).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+9.
+Roohani Y, Huang K. & Leskovec J. Predicting transcriptional outcomes of novel multigene perturbations with GEARS. Nat. Biotechnol
+42, 927–935 (2023).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+10.
+Chen Y. & Zou J. GenePert: Leveraging GenePT Embeddings for Gene Perturbation Prediction. bioRxiv 2024.10.27.620513 (2024) doi: 10.1101/2024.10.27.620513.
+[
+DOI
+] [
+Google Scholar
+]
+11.
+Kingma DP & Welling M. Auto-Encoding Variational Bayes. (2013).
+[
+Google Scholar
+]
+12.
+Ling Yang & Ming-Hsuan Yang. Diffusion Models: A Comprehensive Survey of Methods and Applications. ACM Computing Surveys (2023) doi: 10.1145/3626235.
+[
+DOI
+] [
+Google Scholar
+]
+13.
+Ho J, Jain A. & Abbeel P. Denoising Diffusion Probabilistic Models. (2020).
+[
+Google Scholar
+]
+14.
+Guo Z. et al. 
+Diffusion models in bioinformatics and computational biology. Nature Reviews Bioengineering
+2, 136–154 (2023).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+15.
+Rombach R, Blattmann A, Lorenz D, Esser P. & Ommer B. High-Resolution Image Synthesis With Latent Diffusion Models. in Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition
+10684–10695 (2022).
+[
+Google Scholar
+]
+16.
+Pandey K, Mukherjee A, Rai P. & Kumar A. VAEs meet Diffusion Models: Efficient and High-Fidelity Generation. in NeurIPS 2021 Workshop on Deep Generative Models and Downstream Applications (2021).
+[
+Google Scholar
+]
+17.
+Sadria M. & Layton A. scVAEDer: integrating deep diffusion models and variational autoencoders for single-cell transcriptomics analysis. Genome Biology
+26, 1–17 (2025).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+18.
+Luo E, Hao M, Wei L. & Zhang X. scDiffusion: conditional generation of high-quality single-cell data using diffusion model. Bioinformatics
+40, (2024).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+19.
+Tang W. et al. 
+A General Single-Cell Analysis Framework via Conditional Diffusion Generative Models. bioRxiv 2023.10.13.562243 (2023) doi: 10.1101/2023.10.13.562243.
+[
+DOI
+] [
+Google Scholar
+]
+20.
+Preechakul K, Chatthee N, Wizadwongsa S. & Suwajanakorn S. Diffusion Autoencoders: Toward a Meaningful and Decodable Representation. (2021).
+[
+Google Scholar
+]
+21.
+Bunne C. et al. 
+How to build the virtual cell with artificial intelligence: Priorities and opportunities. Cell
+187, 7045–7063 (2024).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+22.
+Song J, Meng C. & Ermon S. Denoising Diffusion Implicit Models. (2020).
+[
+Google Scholar
+]
+23.
+Yahaya BH
+Organoid Technology for Disease Modelling and Personalized Treatment. (Springer Nature, 2022).
+[
+Google Scholar
+]
+24.
+Nikolova MT
+et al. 
+Fate and state transitions during human blood vessel organoid development. bioRxiv 2022.03.23.485329 (2022) doi: 10.1101/2022.03.23.485329.
+[
+DOI
+] [
+Google Scholar
+]
+25.
+Ho J, Jain A. & Abbeel P. Denoising Diffusion Probabilistic Models. Adv. Neural Inf. Process. Syst
+33, 6840–6851 (2020).
+[
+Google Scholar
+]
+26.
+Zappia L, Phipson B. & Oshlack A. Splatter: simulation of single-cell RNA sequencing data. Genome Biol. 18, 1–15 (2017).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+27.
+Cuomo ASE
+et al. 
+Single-cell RNA-sequencing of differentiating iPS cells reveals dynamic genetic effects on gene expression. Nat. Commun
+11, 1–14 (2020).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+28.
+Chambers I. et al. 
+Nanog safeguards pluripotency and mediates germline development. Nature
+450, 1230–1234 (2007).
+[
+DOI
+] [
+PubMed
+] [
+Google Scholar
+]
+29.
+Schrode N, Saiz N, Di Talia S. & Hadjantonakis A-K
+GATA6 levels modulate primitive endoderm cell fate choice and timing in the mouse blastocyst. Dev Cell
+29, 454–467 (2014).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+30.
+Wilson V. & Beddington R. Expression of T protein in the primitive streak is necessary and sufficient for posterior mesoderm movement and somite differentiation. Dev Biol
+192, 45–58 (1997).
+[
+DOI
+] [
+PubMed
+] [
+Google Scholar
+]
+31.
+Wolf FA
+et al. 
+PAGA: graph abstraction reconciles clustering with trajectory inference through a topology preserving map of single cells. Genome Biol
+20, 59 (2019).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+32.
+Cannoodt R. et al. 
+SCORPIUS improves trajectory inference and identifies novel modules in dendritic cell development. bioRxiv 079509 (2016) doi: 10.1101/079509.
+[
+DOI
+] [
+Google Scholar
+]
+33.
+Qiu X. et al. 
+Reversed graph embedding resolves complex single-cell trajectories. Nat Methods
+14, 979–982 (2017).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+34.
+Norman TM
+et al. 
+Exploring genetic interaction manifolds constructed from rich single-cell phenotypes. Science
+365, 786–793 (2019).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+35.
+Zhao W. et al. 
+Deconvolution of cell type-specific drug responses in human tumor tissue with single-cell RNA-seq. Genome Med. 13, 1–15 (2021).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+36.
+Qi X. et al. 
+Predicting transcriptional responses to novel chemical perturbations using deep generative model for drug discovery. Nature Communications
+15, 1–19 (2024).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+37.
+Srivatsan SR
+et al. 
+Massively multiplex chemical transcriptomics at single-cell resolution. Science (2020) doi: 10.1126/science.aax6234.
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+38.
+Hofer M. & Lutolf MP
+Engineering organoids. Nature Reviews Materials
+6, 402–420 (2021).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+39.
+Yang S. et al. 
+Organoids: The current status and biomedical applications. MedComm (2020)
+4, e274 (2023).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+40.
+Huang Y. et al. 
+Deciphering the impact of aging on splenic endothelial cell heterogeneity and immunosenescence through single-cell RNA sequencing analysis. Immun. Ageing
+21, 48 (2024).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+41.
+Mettler FA Jr & Voelz GL
+Major Radiation Exposure — What to Expect and How to Respond. (2002) doi: 10.1056/NEJMra000365.
+[
+DOI
+] [
+PubMed
+] [
+Google Scholar
+]
+42.
+Kameni LE
+et al. 
+A Review of Radiation-Induced Vascular Injury and Clinical Impact. Ann. Plast. Surg
+92, 181–185 (2024).
+[
+DOI
+] [
+PubMed
+] [
+Google Scholar
+]
+43.
+Durante M. New challenges in high-energy particle radiobiology. Br. J. Radiol
+87, 20130626 (2014).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+44.
+Tavakol DN
+et al. 
+Modeling and countering the effects of cosmic radiation using bioengineered human tissues. Biomaterials
+301, 122267 (2023).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+45.
+Chancellor JC, Scott GBI & Sutton JP
+Space Radiation: The Number One Risk to Astronaut Health beyond Low Earth Orbit. Life : Open Access Journal
+4, 491 (2014).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+46.
+Wijerathne H. et al. 
+Mechanisms of radiation-induced endothelium damage: Emerging models and technologies. Radiother. Oncol
+158, 21–32 (2021).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+47.
+Oliner JD, Saiki AY & Caenepeel S. The Role of MDM2 Amplification and Overexpression in Tumorigenesis. Cold Spring Harb. Perspect. Med
+6, (2016).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+48.
+Ruef C. & Coleman DL
+Granulocyte-macrophage colony-stimulating factor: pleiotropic cytokine with potential clinical usefulness. Rev. Infect. Dis
+12, 41–62 (1990).
+[
+DOI
+] [
+PubMed
+] [
+Google Scholar
+]
+49.
+Ping S, Qiu X, Gonzalez-Toledo ME, Liu X. & Zhao L-R
+Stem Cell Factor in Combination with Granulocyte Colony-Stimulating Factor reduces Cerebral Capillary Thrombosis in a Mouse Model of CADASIL. Cell Transplant. 27, 637–647 (2018).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+50.
+Furmento VA, Marino J, Blank VC & Roguin LP
+The granulocyte colony-stimulating factor (G-CSF) upregulates metalloproteinase-2 and VEGF through PI3K/Akt and Erk1/2 activation in human trophoblast Swan 71 cells. Placenta
+35, 937–946 (2014).
+[
+DOI
+] [
+PubMed
+] [
+Google Scholar
+]
+51.
+Boneberg EM & Hartung T. Molecular aspects of anti-inflammatory action of G-CSF. Inflamm Res
+51, 119–128 (2002).
+[
+DOI
+] [
+PubMed
+] [
+Google Scholar
+]
+52.
+Magné N. et al. 
+NF-kappaB modulation and ionizing radiation: mechanisms and future directions for cancer treatment. Cancer Lett
+231, 158–168 (2006).
+[
+DOI
+] [
+PubMed
+] [
+Google Scholar
+]
+53.
+Hughson RL, Helm A. & Durante M. Heart in space: effect of the extraterrestrial environment on the cardiovascular system. Nat Rev Cardiol
+15, 167–180 (2018).
+[
+DOI
+] [
+PubMed
+] [
+Google Scholar
+]
+54.
+Delp MD, Charvat JM, Limoli CL, Globus RK & Ghosh P. Apollo Lunar Astronauts Show Higher Cardiovascular Disease Mortality: Possible Deep Space Radiation Effects on the Vascular Endothelium. Sci Rep
+6, 29901 (2016).
+[
+DOI
+] [
+PMC free article
+] [
+PubMed
+] [
+Google Scholar
+]
+55.
+Concepts and challenges in cancer risk prediction for the space radiation environment. Life Sciences in Space Research
+6, 92–103 (2015).
+[
+DOI
+] [
+PubMed
+] [
+Google Scholar
+]
+Associated Data
+This section collects any data citations, data availability statements, or supplementary materials included in this article.
+Supplementary Materials
+Supplementary Methods
+NIHMS2128263-supplement-Supplementary_Methods.docx
+(3.4MB, docx)
+Supplementary data
+NIHMS2128263-supplement-Supplementary_data.docx
+(6.4MB, docx)

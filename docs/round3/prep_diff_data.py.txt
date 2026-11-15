@@ -1,0 +1,111 @@
+CELL 0
+import sys
+import os
+
+import pandas as pd
+import scanpy as sc
+import numpy as np
+import warnings
+
+import torch
+import torch.nn.functional as F
+import torch.nn as nn
+
+from torch.utils.data import DataLoader, TensorDataset
+from torch.nn import DataParallel
+import matplotlib.pyplot as plt
+from matplotlib.pyplot import rc_context
+import anndata
+import seaborn as sns
+import matplotlib.font_manager
+from matplotlib import rcParams
+
+font_list = []
+fpaths = matplotlib.font_manager.findSystemFonts()
+for i in fpaths:
+    try:
+        f = matplotlib.font_manager.get_font(i)
+        font_list.append(f.family_name)
+    except RuntimeError:
+        pass
+
+font_list = set(font_list)
+plot_font = 'Helvetica' if 'Helvetica' in font_list else 'FreeSans'
+rcParams['font.family'] = plot_font
+rcParams.update({'font.size': 10})
+rcParams.update({'figure.dpi': 300})
+rcParams.update({'figure.figsize': (3,3)})
+rcParams.update({'savefig.dpi': 500})
+warnings.filterwarnings('ignore')
+
+%load_ext autoreload
+%autoreload 2
+import os
+os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
+
+CELL 1
+data_dir = 'datasets'
+train_adata = sc.read_h5ad(os.path.join(data_dir,'diff_train_raw.h5ad'))
+val_adata   = sc.read_h5ad(os.path.join(data_dir,'diff_val_raw.h5ad'))
+test_adata  = sc.read_h5ad(os.path.join(data_dir,'diff_test_raw.h5ad'))
+
+
+CELL 2
+train_adata
+
+CELL 3
+train_adata.obs['train_data'] = 1
+test_adata.obs['train_data'] = 0
+train_adata = train_adata[train_adata.obs['day'].isin(['day0','day3'])]
+
+combined_adata = sc.concat([train_adata,test_adata])
+sc.tl.pca(combined_adata, svd_solver='arpack')
+sc.pp.neighbors(combined_adata, n_neighbors=30, n_pcs=50)
+sc.tl.umap(combined_adata,min_dist=0.6)
+
+train_adata.obs = train_adata.obs[['day']]
+
+train_adata.obs['day'] = train_adata.obs['day'].map({
+'day0':0,
+'day1':1,
+'day2':2,
+'day3':3                                    
+                             })
+
+test_adata.obs = test_adata.obs[['day']]
+
+test_adata.obs['day'] = test_adata.obs['day'].map(
+    {'day0':0,
+     'day1':1,
+     'day2':2,
+     'day3':3,
+})
+
+val_adata.obs  = val_adata.obs[['day']]
+val_adata.obs['day'] = val_adata.obs['day'].map(
+    {'day0':0,
+     'day1':1,
+     'day2':2,
+     'day3':3,
+})
+
+
+
+CELL 4
+train_adata
+
+CELL 5
+train_adata_ = anndata.AnnData(train_adata.X)
+train_adata_.var_names = train_adata.var_names
+train_adata_.obs_names = train_adata.obs_names
+train_adata_.obs['Group'] = train_adata.obs['day']
+train_adata_.write('datasets/diff_train.h5ad')
+
+CELL 6
+test_adata_ = anndata.AnnData(test_adata.X)
+test_adata_.var_names = test_adata.var_names
+test_adata_.obs_names = test_adata.obs_names
+test_adata_.obs['Group'] = test_adata.obs['day']
+test_adata_.write('datasets/diff_test.h5ad')
+
+CELL 7

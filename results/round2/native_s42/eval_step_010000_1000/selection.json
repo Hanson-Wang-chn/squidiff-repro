@@ -1,0 +1,12 @@
+{
+  "selected": {
+    "mode": "isotropic",
+    "sigma": 0.0,
+    "wasserstein": 1.550722820570474,
+    "mse": 3.005650199690348
+  },
+  "within_latent_rms": 0.43467995524406433,
+  "checkpoint_step": 10000,
+  "criterion": "Independent endpoints only; mean gene Wasserstein",
+  "middle_days_used": false
+}

@@ -1,0 +1,21 @@
+{
+  "url": "https://raw.githubusercontent.com/single-cell-genetics/singlecell_endodiff_paper/main/merging_and_qc/merge_sce.ipynb",
+  "cells": [
+    {
+      "cell": 48,
+      "source": "pca = prcomp(t(logcounts(sce)))"
+    },
+    {
+      "cell": 76,
+      "source": "pca_filt = prcomp(t(logcounts(sce_filt)))\nsummary(pca_filt)"
+    },
+    {
+      "cell": 93,
+      "source": "# sce$pc2 = prcomp(t(logcounts(sce)))$x[,2]\n# sce$pc3 = prcomp(t(logcounts(sce)))$x[,3]\n# sce$pc4 = prcomp(t(logcounts(sce)))$x[,4]\n\noptions(repr.plot.width = 8, repr.plot.height = 5) \n#df = as.data.frame(cbind(sce$experiment, sce$day, sce$pc1_top500hvg, sce$pc2, sce$pc3, sce$pc4))\n#colnames(df) = c(\"expt\",\"day\",\"pseudotime\",\"pc2\",\"pc3\",\"pc4\")\n\ndf = as.data.frame(cbind(sce$experiment, sce$day, reducedDim(sce)[,1:4]))\ncolnames(df) = c(\"expt\",\"day\",\"pseudotime\",\"pc2\",\"pc3\",\"pc4\")\n# head(df)\ndf$expt_day = paste0(df$expt,\"-\",df$day)\ndf0 = df %>% group_by(expt_day) %>% \n            summarise(mean_pseudo = mean(as.numeric(pseudotime)), \n                      mean_pc2 = mean(as.numeric(pc2)),\n                     mean_pc3 = mean(as.numeric(pc3)),\n                     mean_pc4 = mean(as.numeric(pc4)))\ndf0$expt = gsub(\"*-.*\",\"\",df0$expt_day)\ndf0$day = gsub(\".*-\",\"\",df0$expt_day)\nggplot(df0, aes(x = mean_pseudo, y = mean_pc2)) +\n        geom_point() +\n        geom_point(aes(x = mean_pseudo, y = mean_pc2), colour = \"red\",\n              data = dplyr::filter(df0, expt == \"expt_27\")) +\n        facet_wrap( ~ day)\nggplot(df0, aes(x = mean_pseudo, y = mean_pc3)) +\n        geom_point() +\n        geom_point(aes(x = mean_pseudo, y = mean_pc3), colour = \"red\",\n              data = dplyr::filter(df0, expt == \"expt_27\")) +\n        facet_wrap( ~ day)\nggplot(df0, aes(x = mean_pseudo, y = mean_pc4)) +\n        geom_point() +\n        geom_point(aes(x = mean_pseudo, y = mean_pc4), colour = \"red\",\n              data = dplyr::filter(df0, expt == \"expt_27\")) +\n        facet_wrap( ~ day)"
+    },
+    {
+      "cell": 165,
+      "source": "library(scran)\nsce_filt <- normalize(sce_filt)\ndesign <- model.matrix(~experiment, data = colData(sce_filt))\nalt.fit <- trendVar(sce_filt, design = design, use.spikes = FALSE)\nalt.decomp <- decomposeVar(sce_filt, alt.fit)"
+    }
+  ]
+}

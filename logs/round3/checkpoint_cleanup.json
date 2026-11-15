@@ -1,0 +1,26 @@
+[
+  {
+    "path": "results/ipsc/v1/previous.pt",
+    "bytes": 834411506,
+    "sha256": "36b00424a15826ae75f211ab3523af1ce52740914eb65e238c780060468325b7",
+    "reason": "Obsolete previous optimizer snapshot; completed latest resume state and identical final weights retained",
+    "retained": [
+      "latest.pt",
+      "best.pt",
+      "step_100000.pt"
+    ],
+    "final_step": 100000
+  },
+  {
+    "path": "results/norman/v1/previous.pt",
+    "bytes": 834706610,
+    "sha256": "1a39693fdefb0f2d3cbf984fb7a21ddf9a7405b244ca4f094420e7f719d7f398",
+    "reason": "Obsolete previous optimizer snapshot; completed latest resume state and identical final weights retained",
+    "retained": [
+      "latest.pt",
+      "best.pt",
+      "step_100000.pt"
+    ],
+    "final_step": 100000
+  }
+]

@@ -1,0 +1,9 @@
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+diffusion num of steps =  1000
+RESUMED 1
+{"step": 1000, "loss": 0.783882737159729, "steps_per_second": 62.39131604565059}
+{"step": 2000, "loss": 0.6161551475524902, "steps_per_second": 63.55718947625005, "val_loss": 0.6738715270534158}
+TRAINED /home/whs/squidiff/results/round2/compact_s7777

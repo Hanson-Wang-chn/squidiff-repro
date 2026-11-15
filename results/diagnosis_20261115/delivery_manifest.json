@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-15",
+  "files": {
+    "report.md": {
+      "bytes": 36039,
+      "sha256": "ebd14c19b501542c77bbb9325ade9dc7b786d11ed806f3cc0c7cd4fcf23fc026"
+    },
+    "scripts/diagnose_day1.py": {
+      "bytes": 16907,
+      "sha256": "c44401e2def1d21b30480da551494d458acd2355b53836bddee8ad7ee8d89c18"
+    },
+    "results/diagnosis_20261115/recomputed_metrics.csv": {
+      "bytes": 66409,
+      "sha256": "fffa850e77e93911aabcc52a509a904bf667b998b252b39431bb783cc7cb941c"
+    },
+    "results/diagnosis_20261115/day1_error_genes.csv": {
+      "bytes": 33375,
+      "sha256": "724f819a8627e4d2ba16fff0d3a17cab838ed9d74e049babdaff25ce2ce6e5bc"
+    },
+    "results/diagnosis_20261115/prediction_integrity.json": {
+      "bytes": 34078,
+      "sha256": "47131f14ed2f327f9f2b53c2c80be62fa2e31157d2d62c8b710120f709429b50"
+    },
+    "results/diagnosis_20261115/T_support.csv": {
+      "bytes": 2811,
+      "sha256": "a073c6c0ce0b70e85f99693c293a41856e6efc5c0d36a425c4176ed37d9d1297"
+    },
+    "results/diagnosis_20261115/expression_clock_oracle.csv": {
+      "bytes": 1816,
+      "sha256": "f57e2eaeb339f53b62cd39b6bf766c5bf57ff266d5a25be3013d5fb5461a88d8"
+    },
+    "results/diagnosis_20261115/latent_scale_invariance.json": {
+      "bytes": 242,
+      "sha256": "938ca247d5e781a80178b4dc8346dc73dc9448d3d84fbc99360f535cfe600efb"
+    },
+    "results/diagnosis_20261115/latent_geometry.csv": {
+      "bytes": 3202,
+      "sha256": "19577afc85ee279bb2412050c1d27099af9baa01be69580a898244e4c2ca7d67"
+    },
+    "results/diagnosis_20261115/latent_covariance_eigenvalues.csv": {
+      "bytes": 12176,
+      "sha256": "f8599e67b869b7af92186c5382aae5fc236cb478e615377e06b357f9a7f361e7"
+    },
+    "results/diagnosis_20261115/hvg_log_base_genes.json": {
+      "bytes": 9631,
+      "sha256": "dcbb8f60179cd68be04821acb161ef0f80d0c1da1117b5f70292533a5e78e002"
+    },
+    "results/diagnosis_20261115/hvg_log_base.csv": {
+      "bytes": 315,
+      "sha256": "3054157e0fba3438409f4981efcf3c309b05b62ae95bad3aeedc637646f67e1c"
+    },
+    "results/diagnosis_20261115/diagnosis.png": {
+      "bytes": 233970,
+      "sha256": "c4fdd5fd86ab4283d36b70ba92526ad27e66bcfad5de4687b54f99774c49ca7a"
+    },
+    "results/diagnosis_20261115/method.json": {
+      "bytes": 390,
+      "sha256": "bb03c8abe45b358cf5ef3af4b2fc5d4f22e9624e5c87729ed0c2e8e372d3226a"
+    },
+    "results/diagnosis_20261115/archive_hash_check.json": {
+      "bytes": 210,
+      "sha256": "0bf7f7f2cdcc9be35efa181564165e3bf5eb211a14c7cc199ff3b547c35c5ab1"
+    },
+    "docs/diagnosis_20261115/paper_author_manuscript.txt": {
+      "bytes": 64253,
+      "sha256": "1766ce6244bf668f95a83d0cac3feba609498d27aa2202d9ea2484688d412374"
+    },
+    "docs/diagnosis_20261115/peer_review.pdf": {
+      "bytes": 855825,
+      "sha256": "c77da95da3ed0440e902feff6695834e0e1fed17fd6aaae1202c38dc28232577"
+    },
+    "docs/diagnosis_20261115/peer_review.txt": {
+      "bytes": 97399,
+      "sha256": "70c1111041e739c2d9eabaffef9382f56075fab51f87adc4d08719587a1aa230"
+    },
+    "docs/diagnosis_20261115/cuomo_normalization_cells.json": {
+      "bytes": 2325,
+      "sha256": "267b13514ca7bd9a24b4d81bc12ce8c804ca4045f5c75264bcbc8148ae5f97c5"
+    },
+    "docs/diagnosis_20261115/sources.json": {
+      "bytes": 2212,
+      "sha256": "5a5d6a9adbe5a6016701f4222bacef04588d3574f164c0b056e03a7b11687655"
+    }
+  }
+}

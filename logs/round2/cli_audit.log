@@ -1,0 +1,6 @@
+{
+  "steps": 2000,
+  "seed": 7777,
+  "full_cli_resume_max_parameter_buffer_error": 0.0,
+  "official_experiment": false
+}

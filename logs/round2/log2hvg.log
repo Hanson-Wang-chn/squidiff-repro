@@ -1,0 +1,110 @@
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+diffusion num of steps =  1000
+{"step": 1000, "loss": 0.49540266394615173, "steps_per_second": 53.52608956669449}
+{"step": 2000, "loss": 0.36570337414741516, "steps_per_second": 55.14618390470316}
+{"step": 3000, "loss": 0.3253670930862427, "steps_per_second": 55.88054113505397}
+{"step": 4000, "loss": 0.305659681558609, "steps_per_second": 55.822400317871654}
+{"step": 5000, "loss": 0.2862882912158966, "steps_per_second": 55.432633793098105}
+{"step": 6000, "loss": 0.2731129825115204, "steps_per_second": 55.410414353368964}
+{"step": 7000, "loss": 0.2595454156398773, "steps_per_second": 56.44542442853742}
+{"step": 8000, "loss": 0.24807044863700867, "steps_per_second": 56.68360375419753}
+{"step": 9000, "loss": 0.238705575466156, "steps_per_second": 56.32575457459154}
+{"step": 10000, "loss": 0.23290182650089264, "steps_per_second": 56.419431181165926, "val_loss": 0.5238186657847836}
+{"step": 11000, "loss": 0.2225315421819687, "steps_per_second": 51.66436185939191}
+{"step": 12000, "loss": 0.21741342544555664, "steps_per_second": 57.14146931586207}
+{"step": 13000, "loss": 0.2118130326271057, "steps_per_second": 56.71172339591336}
+{"step": 14000, "loss": 0.20512278378009796, "steps_per_second": 57.162327902902454}
+{"step": 15000, "loss": 0.20190641283988953, "steps_per_second": 56.102762602883516}
+{"step": 16000, "loss": 0.19522269070148468, "steps_per_second": 57.13564237034112}
+{"step": 17000, "loss": 0.1932346522808075, "steps_per_second": 54.598503969433324}
+{"step": 18000, "loss": 0.18751169741153717, "steps_per_second": 42.66357371055635}
+{"step": 19000, "loss": 0.18420231342315674, "steps_per_second": 42.958866657505915}
+{"step": 20000, "loss": 0.1821499615907669, "steps_per_second": 42.604394256246245, "val_loss": 0.6010294002286779}
+{"step": 21000, "loss": 0.17703130841255188, "steps_per_second": 40.318121417288}
+{"step": 22000, "loss": 0.17482823133468628, "steps_per_second": 42.02311153765622}
+{"step": 23000, "loss": 0.17303159832954407, "steps_per_second": 41.6538446896742}
+{"step": 24000, "loss": 0.1682334989309311, "steps_per_second": 41.948213371561785}
+{"step": 25000, "loss": 0.16689996421337128, "steps_per_second": 42.136392073763616}
+{"step": 26000, "loss": 0.16404111683368683, "steps_per_second": 42.15499197334967}
+{"step": 27000, "loss": 0.16052120923995972, "steps_per_second": 52.25724920825754}
+{"step": 28000, "loss": 0.1595446765422821, "steps_per_second": 56.25505815116385}
+{"step": 29000, "loss": 0.15798404812812805, "steps_per_second": 55.62208739135288}
+{"step": 30000, "loss": 0.15535582602024078, "steps_per_second": 56.02831687760466, "val_loss": 0.6856845895891699}
+{"step": 31000, "loss": 0.1520155668258667, "steps_per_second": 54.789176238875065}
+{"step": 32000, "loss": 0.15053150057792664, "steps_per_second": 56.567737849179345}
+{"step": 33000, "loss": 0.14841829240322113, "steps_per_second": 56.10526996562892}
+{"step": 34000, "loss": 0.1472485363483429, "steps_per_second": 56.33153765060577}
+{"step": 35000, "loss": 0.14457683265209198, "steps_per_second": 56.12122800138637}
+{"step": 36000, "loss": 0.14438118040561676, "steps_per_second": 55.71831433405748}
+{"step": 37000, "loss": 0.14177903532981873, "steps_per_second": 56.230916644788174}
+{"step": 38000, "loss": 0.14004363119602203, "steps_per_second": 55.72941098422654}
+{"step": 39000, "loss": 0.13718725740909576, "steps_per_second": 55.84880410035807}
+{"step": 40000, "loss": 0.1363687813282013, "steps_per_second": 56.95973135607888, "val_loss": 0.7734563141149313}
+{"step": 41000, "loss": 0.1352732628583908, "steps_per_second": 52.310555389217924}
+{"step": 42000, "loss": 0.13414566218852997, "steps_per_second": 55.82376800714738}
+{"step": 43000, "loss": 0.1329774409532547, "steps_per_second": 55.90858806568122}
+{"step": 44000, "loss": 0.13023227453231812, "steps_per_second": 55.862570851107684}
+{"step": 45000, "loss": 0.12947608530521393, "steps_per_second": 55.61095001085063}
+{"step": 46000, "loss": 0.12743613123893738, "steps_per_second": 56.360235966632516}
+{"step": 47000, "loss": 0.12580227851867676, "steps_per_second": 55.57068787601731}
+{"step": 48000, "loss": 0.1235566958785057, "steps_per_second": 54.414969990679765}
+{"step": 49000, "loss": 0.12320589274168015, "steps_per_second": 55.73485658744729}
+{"step": 50000, "loss": 0.12185023725032806, "steps_per_second": 56.70890940361852, "val_loss": 0.8467530913996355}
+{"step": 51000, "loss": 0.1218397244811058, "steps_per_second": 51.695583575946415}
+{"step": 52000, "loss": 0.12167227268218994, "steps_per_second": 55.32089358657901}
+{"step": 53000, "loss": 0.1189822107553482, "steps_per_second": 55.48430043087387}
+{"step": 54000, "loss": 0.11862017214298248, "steps_per_second": 56.44063212750903}
+{"step": 55000, "loss": 0.11563963443040848, "steps_per_second": 56.53471166692617}
+{"step": 56000, "loss": 0.11539889872074127, "steps_per_second": 56.324545806968096}
+{"step": 57000, "loss": 0.11484631896018982, "steps_per_second": 56.1765198710562}
+{"step": 58000, "loss": 0.11251410841941833, "steps_per_second": 55.88587106418365}
+{"step": 59000, "loss": 0.11079742759466171, "steps_per_second": 56.66352866132319}
+{"step": 60000, "loss": 0.11091195046901703, "steps_per_second": 57.74205738781676, "val_loss": 0.9256206916722779}
+{"step": 61000, "loss": 0.10985634475946426, "steps_per_second": 53.55542705702026}
+{"step": 62000, "loss": 0.10878728330135345, "steps_per_second": 56.53324878525345}
+{"step": 63000, "loss": 0.10684666782617569, "steps_per_second": 56.15554449554017}
+{"step": 64000, "loss": 0.10679225623607635, "steps_per_second": 56.380333244795175}
+{"step": 65000, "loss": 0.1065264493227005, "steps_per_second": 56.599169303709644}
+{"step": 66000, "loss": 0.10328531265258789, "steps_per_second": 56.27487292525153}
+{"step": 67000, "loss": 0.10315582901239395, "steps_per_second": 56.51534570290342}
+{"step": 68000, "loss": 0.10195255279541016, "steps_per_second": 48.89416955526752}
+{"step": 69000, "loss": 0.10051233321428299, "steps_per_second": 43.856173740131275}
+{"step": 70000, "loss": 0.0995110496878624, "steps_per_second": 44.35538259186132, "val_loss": 0.9947052410221658}
+{"step": 71000, "loss": 0.0987594947218895, "steps_per_second": 41.74908965445993}
+{"step": 72000, "loss": 0.09746625274419785, "steps_per_second": 44.07803206549218}
+{"step": 73000, "loss": 0.09613930433988571, "steps_per_second": 43.82884132809557}
+{"step": 74000, "loss": 0.09549976885318756, "steps_per_second": 43.97916014890294}
+{"step": 75000, "loss": 0.0950736477971077, "steps_per_second": 43.7790581812461}
+{"step": 76000, "loss": 0.09496567398309708, "steps_per_second": 44.129112115490756}
+{"step": 77000, "loss": 0.09376029670238495, "steps_per_second": 43.656465929063245}
+{"step": 78000, "loss": 0.09133012592792511, "steps_per_second": 44.493023334759634}
+{"step": 79000, "loss": 0.09163164347410202, "steps_per_second": 43.89718747792497}
+{"step": 80000, "loss": 0.08911261707544327, "steps_per_second": 45.74027614777711, "val_loss": 1.0619624432867083}
+{"step": 81000, "loss": 0.08798220008611679, "steps_per_second": 41.592914760751704}
+{"step": 82000, "loss": 0.08838395774364471, "steps_per_second": 43.650841387434}
+{"step": 83000, "loss": 0.0880158543586731, "steps_per_second": 43.39285265352817}
+{"step": 84000, "loss": 0.08671347796916962, "steps_per_second": 43.41013918209093}
+{"step": 85000, "loss": 0.0858428031206131, "steps_per_second": 47.394553471580615}
+{"step": 86000, "loss": 0.08497215807437897, "steps_per_second": 47.93970675604612}
+{"step": 87000, "loss": 0.08345601707696915, "steps_per_second": 47.81933454108234}
+{"step": 88000, "loss": 0.08207974582910538, "steps_per_second": 47.87489528788936}
+{"step": 89000, "loss": 0.0817180946469307, "steps_per_second": 48.31030370758585}
+{"step": 90000, "loss": 0.08007048070430756, "steps_per_second": 47.68447583666068, "val_loss": 1.1355361797701335}
+{"step": 91000, "loss": 0.07924986630678177, "steps_per_second": 46.49198200618284}
+{"step": 92000, "loss": 0.07954403758049011, "steps_per_second": 48.76506265577928}
+{"step": 93000, "loss": 0.0778922289609909, "steps_per_second": 48.844327679418846}
+{"step": 94000, "loss": 0.07801573723554611, "steps_per_second": 49.07949867656219}
+{"step": 95000, "loss": 0.07631281018257141, "steps_per_second": 48.580567651983415}
+{"step": 96000, "loss": 0.07521935552358627, "steps_per_second": 49.09978838366455}
+{"step": 97000, "loss": 0.07436327636241913, "steps_per_second": 49.021140264445584}
+{"step": 98000, "loss": 0.07468914985656738, "steps_per_second": 49.185613055143435}
+{"step": 99000, "loss": 0.07358942180871964, "steps_per_second": 49.09675651027133}
+{"step": 100000, "loss": 0.0718112513422966, "steps_per_second": 49.70989196562957, "val_loss": 1.1715027150393387}
+TRAINED /home/whs/squidiff/results/round2/log2hvg_s42

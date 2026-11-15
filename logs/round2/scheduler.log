@@ -1,0 +1,20 @@
+START native 300946
+START compact 300947
+START ln 300948
+START log2hvg 300949
+Traceback (most recent call last):
+  File "/home/whs/squidiff/scripts/round2_schedule.py", line 78, in <module>
+    if __name__=='__main__':
+  File "/home/whs/squidiff/scripts/round2_schedule.py", line 66, in main
+    if p.returncode:raise RuntimeError(f'{v} exited {p.returncode}')
+RuntimeError: native exited 1
+START native 301979
+START compact 301980
+START ln 301981
+START log2hvg 301982
+DONE compact
+START zscore 308005
+DONE log2hvg
+DONE ln
+DONE native
+DONE zscore

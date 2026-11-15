@@ -5,12 +5,21 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.cache/
+.coverage
+htmlcov/
 .ipynb_checkpoints/
 # This directory is part of the hashed upstream source snapshot, not model weights.
 !/upstream/Squidiff/Squidiff/.ipynb_checkpoints/
 !/upstream/Squidiff/Squidiff/.ipynb_checkpoints/**
 .venv/
 venv/
+.conda/
+/env/
+/envs/
+/conda-env/
+/build/
+/dist/
 /upstream/Squidiff/build/
 
 # Keep dataset provenance, feature lists and split summaries, not data matrices.
@@ -18,6 +27,12 @@ venv/
 !/data/**/
 !/data/**/manifest.json
 /data/cache/
+/datasets/
+*.h5ad
+*.h5
+*.hdf5
+*.loom
+*.zarr/
 
 # Model weights and optimizer states (also applies to author checkpoints).
 *.pt
@@ -25,6 +40,13 @@ venv/
 *.ckpt
 *.safetensors
 *.onnx
+*.pt.*
+*.pth.*
+*.ckpt.*
+*.safetensors.*
+checkpoints/
+pytorch_model*.bin
+optimizer*.bin
 
 # Keep results (including prediction NPZs), figures and historical logs.
 # Only transient process state is excluded.

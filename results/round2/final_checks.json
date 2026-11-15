@@ -1,0 +1,93 @@
+{
+  "models": [
+    {
+      "variant": "native",
+      "step": 100000,
+      "batch_norm_updates": {
+        "encoder.bn1.num_batches_tracked": 100000,
+        "encoder.bn2.num_batches_tracked": 100000
+      },
+      "all_weights_finite": true,
+      "data_and_upstream_hashes_match": true,
+      "final_sha256": "2b7871b573dab05d216fd81aa55a1979c5983a57866b2bbea1f36299b61019f4"
+    },
+    {
+      "variant": "ln",
+      "step": 100000,
+      "batch_norm_updates": {
+        "encoder.bn1.num_batches_tracked": 100000,
+        "encoder.bn2.num_batches_tracked": 100000
+      },
+      "all_weights_finite": true,
+      "data_and_upstream_hashes_match": true,
+      "final_sha256": "85d5c253581084693be95cec32771fd33d349b3759c4cb8893f290c8d1dd0c8f"
+    },
+    {
+      "variant": "log2hvg",
+      "step": 100000,
+      "batch_norm_updates": {
+        "encoder.bn1.num_batches_tracked": 100000,
+        "encoder.bn2.num_batches_tracked": 100000
+      },
+      "all_weights_finite": true,
+      "data_and_upstream_hashes_match": true,
+      "final_sha256": "58d04964eeee16ddac36f4cc8bdded59750b69cf2391e7843817c17d00167393"
+    },
+    {
+      "variant": "compact",
+      "step": 100000,
+      "batch_norm_updates": {
+        "encoder.bn1.num_batches_tracked": 100000,
+        "encoder.bn2.num_batches_tracked": 100000
+      },
+      "all_weights_finite": true,
+      "data_and_upstream_hashes_match": true,
+      "final_sha256": "e883a11e98a498406478550a44426b74efeacfd10ff0c179b54480256b5c02ff"
+    },
+    {
+      "variant": "zscore",
+      "step": 100000,
+      "batch_norm_updates": {
+        "encoder.bn1.num_batches_tracked": 100000,
+        "encoder.bn2.num_batches_tracked": 100000
+      },
+      "all_weights_finite": true,
+      "data_and_upstream_hashes_match": true,
+      "final_sha256": "f348fe8dd1d90d7ef4326875afda3fa2f66c69dfacd91b7efcc2c579c34b2ccc"
+    }
+  ],
+  "data": [
+    {
+      "panel": "source",
+      "partition": "train",
+      "max_raw_cache_error": 0.0
+    },
+    {
+      "panel": "source",
+      "partition": "val",
+      "max_raw_cache_error": 0.0
+    },
+    {
+      "panel": "source",
+      "partition": "test",
+      "max_raw_cache_error": 0.0
+    },
+    {
+      "panel": "log2hvg",
+      "partition": "train",
+      "max_raw_cache_error": 0.0
+    },
+    {
+      "panel": "log2hvg",
+      "partition": "val",
+      "max_raw_cache_error": 0.0
+    },
+    {
+      "panel": "log2hvg",
+      "partition": "test",
+      "max_raw_cache_error": 0.0
+    }
+  ],
+  "old_archive_files_verified": 1029,
+  "all_old_archive_hashes_unchanged": true
+}

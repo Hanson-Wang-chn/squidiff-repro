@@ -1,0 +1,39 @@
+[
+  {
+    "event": "initial workers",
+    "native_pid": 297208,
+    "compact_pid": 297415,
+    "ln_pid": 297750
+  },
+  {
+    "event": "compact restarted to avoid synchronous norm logging",
+    "new_pid": 299054,
+    "excluded_directory": "results/round2/compact_aborted_preflight"
+  },
+  {
+    "event": "MPS transition",
+    "native_checkpoint_step": 20001,
+    "compact_checkpoint_step": 20001,
+    "ln_checkpoint_step": 1,
+    "note": "Updates after last full snapshots were replayed; raw logs retain the discarded portions"
+  },
+  {
+    "event": "first resume failed before optimization",
+    "reason": "train_data_sha256 was checked before construction",
+    "fix": "Moved check after hash calculation"
+  },
+  {
+    "event": "successful resumed MPS workers",
+    "native_pid": 301979,
+    "compact_pid": 301980,
+    "ln_pid": 301981,
+    "log2hvg_pid": 301982
+  },
+  {
+    "event": "real CLI interruption audit",
+    "seed": 7777,
+    "updates": 2000,
+    "max_parameter_buffer_error": 0.0,
+    "formal_experiment": false
+  }
+]

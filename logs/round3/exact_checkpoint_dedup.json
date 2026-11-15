@@ -1,0 +1,107 @@
+[
+  {
+    "source": "results/round2/native_s42/final.pt",
+    "target": "results/round2/native_s42/step_100000.pt",
+    "bytes_reclaimed": 208623452,
+    "sha256": "2b7871b573dab05d216fd81aa55a1979c5983a57866b2bbea1f36299b61019f4",
+    "all_file_names_and_bytes_preserved": true
+  },
+  {
+    "source": "results/round2/native_s42/best.pt",
+    "target": "results/round2/native_s42/step_010000.pt",
+    "bytes_reclaimed": 208623388,
+    "sha256": "53a7b0a40385d3d1bcd9e30841ac6e12e862f9467183ad35f9d95d1e5171ce1d",
+    "all_file_names_and_bytes_preserved": true
+  },
+  {
+    "source": "results/round2/ln_s42/final.pt",
+    "target": "results/round2/ln_s42/step_100000.pt",
+    "bytes_reclaimed": 208623516,
+    "sha256": "85d5c253581084693be95cec32771fd33d349b3759c4cb8893f290c8d1dd0c8f",
+    "all_file_names_and_bytes_preserved": true
+  },
+  {
+    "source": "results/round2/ln_s42/best.pt",
+    "target": "results/round2/ln_s42/step_010000.pt",
+    "bytes_reclaimed": 208623516,
+    "sha256": "8147c1b357e5720c6efecb9822fc5fcb382d10b02d52becf7a61934f96a3c1a5",
+    "all_file_names_and_bytes_preserved": true
+  },
+  {
+    "source": "results/round2/compact_s42/final.pt",
+    "target": "results/round2/compact_s42/step_100000.pt",
+    "bytes_reclaimed": 14423964,
+    "sha256": "e883a11e98a498406478550a44426b74efeacfd10ff0c179b54480256b5c02ff",
+    "all_file_names_and_bytes_preserved": true
+  },
+  {
+    "source": "results/round2/log2hvg_s42/final.pt",
+    "target": "results/round2/log2hvg_s42/step_100000.pt",
+    "bytes_reclaimed": 208598940,
+    "sha256": "58d04964eeee16ddac36f4cc8bdded59750b69cf2391e7843817c17d00167393",
+    "all_file_names_and_bytes_preserved": true
+  },
+  {
+    "source": "results/round2/log2hvg_s42/best.pt",
+    "target": "results/round2/log2hvg_s42/step_010000.pt",
+    "bytes_reclaimed": 208598940,
+    "sha256": "69808aa5137205445672952f5cfc74bdb380d132146cbb11904ec264210520b8",
+    "all_file_names_and_bytes_preserved": true
+  },
+  {
+    "source": "results/round2/zscore_s42/final.pt",
+    "target": "results/round2/zscore_s42/step_100000.pt",
+    "bytes_reclaimed": 208627228,
+    "sha256": "f348fe8dd1d90d7ef4326875afda3fa2f66c69dfacd91b7efcc2c579c34b2ccc",
+    "all_file_names_and_bytes_preserved": true
+  },
+  {
+    "source": "results/round2/zscore_s42/best.pt",
+    "target": "results/round2/zscore_s42/step_010000.pt",
+    "bytes_reclaimed": 208627228,
+    "sha256": "acf1e4edb961da85ffd11e30c114b02dd0b6d96c4352bea9540ff90b4df84d1e",
+    "all_file_names_and_bytes_preserved": true
+  },
+  {
+    "source": "results/round3/minsnr_s42/final.pt",
+    "target": "results/round3/minsnr_s42/step_100000.pt",
+    "bytes_reclaimed": 208624028,
+    "sha256": "74638c2ba5b60e78af1d3140477cd5a75dec35d0d56760c21272111cee35dcd4",
+    "all_file_names_and_bytes_preserved": true
+  },
+  {
+    "source": "results/round3/minsnr_s42/best.pt",
+    "target": "results/round3/minsnr_s42/step_010000.pt",
+    "bytes_reclaimed": 208624028,
+    "sha256": "21f09ac05cc8808e26fc61bdfcd91933cf95051378ddd0fd40d01b05c97231b3",
+    "all_file_names_and_bytes_preserved": true
+  },
+  {
+    "source": "results/round3/epsres_s42/final.pt",
+    "target": "results/round3/epsres_s42/step_100000.pt",
+    "bytes_reclaimed": 208624028,
+    "sha256": "f4aac43b0fec7a0d51019e38e6829d10e91ec100e88b7f290d4ff592d1a7ed3d",
+    "all_file_names_and_bytes_preserved": true
+  },
+  {
+    "source": "results/round3/epsres_s42/best.pt",
+    "target": "results/round3/epsres_s42/step_010000.pt",
+    "bytes_reclaimed": 208624028,
+    "sha256": "37000ad555c09e27902d303a63abd55f14e1ff9104f036026b6bf01bd8e45af5",
+    "all_file_names_and_bytes_preserved": true
+  },
+  {
+    "source": "results/round3/xstart_s42/final.pt",
+    "target": "results/round3/xstart_s42/step_100000.pt",
+    "bytes_reclaimed": 208624028,
+    "sha256": "03c6f3d53d26dd2eee638d78a994fbc08028af3a8d5f0e05f612f3185d997554",
+    "all_file_names_and_bytes_preserved": true
+  },
+  {
+    "source": "results/round3/xstart_s42/best.pt",
+    "target": "results/round3/xstart_s42/step_010000.pt",
+    "bytes_reclaimed": 208624028,
+    "sha256": "e0e935ec30625792e8785c17f2f9a7e0b1487fb4a091976e91fbb589055e2a2c",
+    "all_file_names_and_bytes_preserved": true
+  }
+]

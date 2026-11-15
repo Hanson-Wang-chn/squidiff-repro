@@ -1,0 +1,15 @@
+{
+  "stopped_pids": [],
+  "reason": "Avoid independent CUDA context switching; full RNG+optimizer resume",
+  "variants": [
+    "native",
+    "compact",
+    "ln",
+    "log2hvg",
+    "zscore"
+  ],
+  "env": {
+    "CUDA_MPS_PIPE_DIRECTORY": "/tmp/squidiff-round2-mps",
+    "CUDA_MPS_LOG_DIRECTORY": "/home/whs/squidiff/logs/round2/mps"
+  }
+}

@@ -1,0 +1,97 @@
+[2026-11-15 14:09:00.661 Other 332375] Startup
+[2026-11-15 14:09:00.661 Other 332375] Connecting to control daemon on socket: /tmp/squidiff-round3-mps/control
+[2026-11-15 14:09:00.661 Other 332375] Initializing server process
+[2026-11-15 14:09:00.739 Server 332375] Creating server context on device 0 (NVIDIA A100-PCIE-40GB)
+[2026-11-15 14:09:00.814 Server 332375] Created anonymous shared memory region mps.shm.1001.332375
+[2026-11-15 14:09:00.814 Server 332375] CUDA MPS Server for Linux/Unix. Binary version: 13000
+[2026-11-15 14:09:00.814 Server 332375] Display Driver version: 580
+[2026-11-15 14:09:00.814 Server 332375] Active Threads Percentage set to 100.0
+[2026-11-15 14:09:00.814 Server 332375] Server Priority set to 0
+[2026-11-15 14:09:00.814 Server 332375] Server has started
+[2026-11-15 14:09:00.814 Server 332375] Received new client request for {PID: 0, Context ID: 0}
+[2026-11-15 14:09:00.814 Server 332375] Client {PID: 332138, Context ID: 0} connected
+[2026-11-15 14:09:00.814 Server 332375] Creating worker thread for client {PID: 332138, Context ID: 0}
+[2026-11-15 14:09:00.814 Server 332375] Received new client request for {PID: 332138, Context ID: 0}
+[2026-11-15 14:09:00.814 Server 332375] Client {PID: 332139, Context ID: 0} connected
+[2026-11-15 14:09:00.814 Server 332375] Creating worker thread for client {PID: 332139, Context ID: 0}
+[2026-11-15 14:09:00.814 Server 332375] Received new client request for {PID: 332139, Context ID: 0}
+[2026-11-15 14:09:00.814 Server 332375] Client {PID: 332137, Context ID: 0} connected
+[2026-11-15 14:09:00.814 Server 332375] Creating worker thread for client {PID: 332137, Context ID: 0}
+[2026-11-15 14:09:00.911 Server 332375] Received new client request for {PID: 332137, Context ID: 0}
+[2026-11-15 14:09:00.919 Server 332375] Client {PID: 332137, Context ID: 1} connected
+[2026-11-15 14:09:00.919 Server 332375] Creating worker thread for client {PID: 332137, Context ID: 1}
+[2026-11-15 14:09:00.919 Server 332375] Device NVIDIA A100-PCIE-40GB (uuid GPU-63fdaf69-408b-1661-35d7-c4c99bf5bddf) is associated
+[2026-11-15 14:09:00.919 Server 332375] Status of client {PID: 332137, Context ID: 1} is ACTIVE
+[2026-11-15 14:09:00.919 Server 332375] Received new client request for {PID: 332137, Context ID: 1}
+[2026-11-15 14:09:00.919 Server 332375] Client {PID: 332139, Context ID: 1} connected
+[2026-11-15 14:09:00.919 Server 332375] Creating worker thread for client {PID: 332139, Context ID: 1}
+[2026-11-15 14:09:00.919 Server 332375] Device NVIDIA A100-PCIE-40GB (uuid GPU-63fdaf69-408b-1661-35d7-c4c99bf5bddf) is associated
+[2026-11-15 14:09:00.919 Server 332375] Status of client {PID: 332139, Context ID: 1} is ACTIVE
+[2026-11-15 14:09:00.919 Server 332375] Received new client request for {PID: 332139, Context ID: 1}
+[2026-11-15 14:09:00.919 Server 332375] Client {PID: 332138, Context ID: 1} connected
+[2026-11-15 14:09:00.919 Server 332375] Creating worker thread for client {PID: 332138, Context ID: 1}
+[2026-11-15 14:09:00.919 Server 332375] Device NVIDIA A100-PCIE-40GB (uuid GPU-63fdaf69-408b-1661-35d7-c4c99bf5bddf) is associated
+[2026-11-15 14:09:00.919 Server 332375] Status of client {PID: 332138, Context ID: 1} is ACTIVE
+[2026-11-15 14:11:10.713 Server 332375] Received new client request for {PID: 332138, Context ID: 1}
+[2026-11-15 14:11:10.713 Server 332375] Client {PID: 333045, Context ID: 0} connected
+[2026-11-15 14:11:10.713 Server 332375] Creating worker thread for client {PID: 333045, Context ID: 0}
+[2026-11-15 14:11:10.772 Server 332375] Received new client request for {PID: 333045, Context ID: 0}
+[2026-11-15 14:11:10.772 Server 332375] Client {PID: 333045, Context ID: 1} connected
+[2026-11-15 14:11:10.772 Server 332375] Creating worker thread for client {PID: 333045, Context ID: 1}
+[2026-11-15 14:11:10.772 Server 332375] Device NVIDIA A100-PCIE-40GB (uuid GPU-63fdaf69-408b-1661-35d7-c4c99bf5bddf) is associated
+[2026-11-15 14:11:10.772 Server 332375] Status of client {PID: 333045, Context ID: 1} is ACTIVE
+[2026-11-15 14:11:19.869 Server 332375] Server failed to recevie command with status 806, assuming client {PID: 333045, Context ID: 1} exit
+[2026-11-15 14:11:19.869 Server 332375] Client {PID: 333045, Context ID: 1} exiting. Number of active client contexts is 3.
+[2026-11-15 14:11:19.974 Server 332375] Server failed to recevie command with status 806, assuming client {PID: 333045, Context ID: 0} exit
+[2026-11-15 14:11:19.974 Server 332375] Client process 333045 disconnected
+[2026-11-15 14:38:54.209 Server 332375] Server failed to recevie command with status 806, assuming client {PID: 332137, Context ID: 1} exit
+[2026-11-15 14:38:54.209 Server 332375] Client {PID: 332137, Context ID: 1} exiting. Number of active client contexts is 2.
+[2026-11-15 14:38:54.308 Server 332375] Server failed to recevie command with status 806, assuming client {PID: 332137, Context ID: 0} exit
+[2026-11-15 14:38:54.308 Server 332375] Client process 332137 disconnected
+[2026-11-15 14:39:48.946 Server 332375] Server failed to recevie command with status 806, assuming client {PID: 332139, Context ID: 1} exit
+[2026-11-15 14:39:48.946 Server 332375] Client {PID: 332139, Context ID: 1} exiting. Number of active client contexts is 1.
+[2026-11-15 14:39:49.045 Server 332375] Server failed to recevie command with status 806, assuming client {PID: 332139, Context ID: 0} exit
+[2026-11-15 14:39:49.045 Server 332375] Client process 332139 disconnected
+[2026-11-15 14:40:02.245 Server 332375] Server failed to recevie command with status 806, assuming client {PID: 332138, Context ID: 1} exit
+[2026-11-15 14:40:02.245 Server 332375] Client {PID: 332138, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-15 14:40:02.339 Server 332375] Server failed to recevie command with status 806, assuming client {PID: 332138, Context ID: 0} exit
+[2026-11-15 14:40:02.339 Server 332375] Client process 332138 disconnected
+[2026-11-15 14:40:08.878 Server 332375] Received new client request for {PID: 333045, Context ID: 1}
+[2026-11-15 14:40:08.878 Server 332375] Client {PID: 340060, Context ID: 0} connected
+[2026-11-15 14:40:08.878 Server 332375] Creating worker thread for client {PID: 340060, Context ID: 0}
+[2026-11-15 14:40:08.928 Server 332375] Received new client request for {PID: 340060, Context ID: 0}
+[2026-11-15 14:40:08.929 Server 332375] Client {PID: 340060, Context ID: 1} connected
+[2026-11-15 14:40:08.929 Server 332375] Creating worker thread for client {PID: 340060, Context ID: 1}
+[2026-11-15 14:40:08.929 Server 332375] Device NVIDIA A100-PCIE-40GB (uuid GPU-63fdaf69-408b-1661-35d7-c4c99bf5bddf) is associated
+[2026-11-15 14:40:08.929 Server 332375] Status of client {PID: 340060, Context ID: 1} is ACTIVE
+[2026-11-15 14:41:56.792 Server 332375] Server failed to recevie command with status 806, assuming client {PID: 340060, Context ID: 1} exit
+[2026-11-15 14:41:56.792 Server 332375] Client {PID: 340060, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-15 14:41:56.860 Server 332375] Server failed to recevie command with status 806, assuming client {PID: 340060, Context ID: 0} exit
+[2026-11-15 14:41:56.860 Server 332375] Client process 340060 disconnected
+[2026-11-15 14:42:00.264 Server 332375] Received new client request for {PID: 340060, Context ID: 1}
+[2026-11-15 14:42:00.264 Server 332375] Client {PID: 340410, Context ID: 0} connected
+[2026-11-15 14:42:00.264 Server 332375] Creating worker thread for client {PID: 340410, Context ID: 0}
+[2026-11-15 14:42:00.316 Server 332375] Received new client request for {PID: 340410, Context ID: 0}
+[2026-11-15 14:42:00.316 Server 332375] Client {PID: 340410, Context ID: 1} connected
+[2026-11-15 14:42:00.316 Server 332375] Creating worker thread for client {PID: 340410, Context ID: 1}
+[2026-11-15 14:42:00.316 Server 332375] Device NVIDIA A100-PCIE-40GB (uuid GPU-63fdaf69-408b-1661-35d7-c4c99bf5bddf) is associated
+[2026-11-15 14:42:00.316 Server 332375] Status of client {PID: 340410, Context ID: 1} is ACTIVE
+[2026-11-15 14:43:48.624 Server 332375] Server failed to recevie command with status 806, assuming client {PID: 340410, Context ID: 1} exit
+[2026-11-15 14:43:48.624 Server 332375] Client {PID: 340410, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-15 14:43:48.686 Server 332375] Server failed to recevie command with status 806, assuming client {PID: 340410, Context ID: 0} exit
+[2026-11-15 14:43:48.686 Server 332375] Client process 340410 disconnected
+[2026-11-15 14:43:52.435 Server 332375] Received new client request for {PID: 340410, Context ID: 1}
+[2026-11-15 14:43:52.435 Server 332375] Client {PID: 340687, Context ID: 0} connected
+[2026-11-15 14:43:52.436 Server 332375] Creating worker thread for client {PID: 340687, Context ID: 0}
+[2026-11-15 14:43:52.485 Server 332375] Received new client request for {PID: 340687, Context ID: 0}
+[2026-11-15 14:43:52.485 Server 332375] Client {PID: 340687, Context ID: 1} connected
+[2026-11-15 14:43:52.485 Server 332375] Creating worker thread for client {PID: 340687, Context ID: 1}
+[2026-11-15 14:43:52.485 Server 332375] Device NVIDIA A100-PCIE-40GB (uuid GPU-63fdaf69-408b-1661-35d7-c4c99bf5bddf) is associated
+[2026-11-15 14:43:52.485 Server 332375] Status of client {PID: 340687, Context ID: 1} is ACTIVE
+[2026-11-15 14:45:40.862 Server 332375] Server failed to recevie command with status 806, assuming client {PID: 340687, Context ID: 1} exit
+[2026-11-15 14:45:40.862 Server 332375] Client {PID: 340687, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-15 14:45:40.913 Server 332375] Server failed to recevie command with status 806, assuming client {PID: 340687, Context ID: 0} exit
+[2026-11-15 14:45:40.913 Server 332375] Client process 340687 disconnected
+[2026-11-15 14:45:40.984 Server 332375] Server has been notified to shutdown
+[2026-11-15 14:45:40.984 Server 332375] Waiting for current clients to finish
+[2026-11-15 14:45:40.984 Server 332375] Exiting

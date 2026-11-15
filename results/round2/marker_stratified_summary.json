@@ -1,0 +1,44 @@
+[
+  {
+    "stratifier": "donor",
+    "gene": "DKK1",
+    "strata": 69,
+    "positive_excess": 65,
+    "median_excess": 4.3412933349609375
+  },
+  {
+    "stratifier": "donor",
+    "gene": "DKK4",
+    "strata": 69,
+    "positive_excess": 45,
+    "median_excess": 2.2396295070648193
+  },
+  {
+    "stratifier": "donor",
+    "gene": "T",
+    "strata": 69,
+    "positive_excess": 69,
+    "median_excess": 6.239458084106445
+  },
+  {
+    "stratifier": "experiment",
+    "gene": "DKK1",
+    "strata": 18,
+    "positive_excess": 18,
+    "median_excess": 4.2679173946380615
+  },
+  {
+    "stratifier": "experiment",
+    "gene": "DKK4",
+    "strata": 18,
+    "positive_excess": 11,
+    "median_excess": 2.2561192512512207
+  },
+  {
+    "stratifier": "experiment",
+    "gene": "T",
+    "strata": 18,
+    "positive_excess": 18,
+    "median_excess": 6.158424615859985
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "request": {
+      "repository_full_name": "siyuh/Squidiff_reproducibility",
+      "path": "preprocess_fig2_data.ipynb"
+    },
+    "status": "fulfilled",
+    "data": {
+      "encoding": "utf-8",
+      "sha": "b61537da5b8d93b4f817933c0e89faa295b5e40c",
+      "display_url": "https://github.com/siyuh/Squidiff_reproducibility/blob/main/preprocess_fig2_data.ipynb",
+      "display_title": "preprocess_fig2_data.ipynb"
+    },
+    "local_git_blob_sha1": "b61537da5b8d93b4f817933c0e89faa295b5e40c",
+    "local_matches_current_main": true
+  },
+  {
+    "request": {
+      "repository_full_name": "siyuh/Squidiff_reproducibility",
+      "path": "squidiff_on_differentiation.ipynb"
+    },
+    "status": "fulfilled",
+    "data": {
+      "encoding": "utf-8",
+      "sha": "fdcef14d9fc6d2a2771aaf698a4fafdda5766468",
+      "display_url": "https://github.com/siyuh/Squidiff_reproducibility/blob/main/squidiff_on_differentiation.ipynb",
+      "display_title": "squidiff_on_differentiation.ipynb"
+    },
+    "local_git_blob_sha1": "fdcef14d9fc6d2a2771aaf698a4fafdda5766468",
+    "local_matches_current_main": true
+  },
+  {
+    "request": {
+      "repository_full_name": "siyuh/Squidiff",
+      "path": "Squidiff/diffusion.py"
+    },
+    "status": "fulfilled",
+    "data": {
+      "encoding": "utf-8",
+      "sha": "e93db250c1d594e9310a3743a0467996548a769d",
+      "display_url": "https://github.com/siyuh/Squidiff/blob/main/Squidiff/diffusion.py",
+      "display_title": "diffusion.py"
+    },
+    "local_git_blob_sha1": "e93db250c1d594e9310a3743a0467996548a769d",
+    "local_matches_current_main": true
+  },
+  {
+    "request": {
+      "repository_full_name": "siyuh/Squidiff_reproducibility",
+      "path": "fig4_VO_reproducibility.ipynb"
+    },
+    "status": "fulfilled",
+    "data": {
+      "sha": "348f632e00f4cd7ddc6daee3e48c39a1a7bd15cd"
+    },
+    "local_git_blob_sha1": "348f632e00f4cd7ddc6daee3e48c39a1a7bd15cd",
+    "local_matches_current_main": true
+  }
+]

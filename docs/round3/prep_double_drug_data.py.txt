@@ -1,0 +1,70 @@
+CELL 0
+import scanpy as sc
+adata = sc.read_h5ad('datasets/4i/8h.h5ad')
+adata.obs['Group']=adata.obs['drug']
+
+CELL 1
+#adata = adata[:,[not i.startswith('morphology') for i in adata.var_names]]
+
+CELL 2
+adata[adata.obs['drug'].isin(
+    ['trametinib', 
+     'midostaurin', 
+     'erlotinib',
+     'dabrafenib',
+     'panobinostat',
+     'control'
+    ]
+)].obs['Group']
+
+CELL 3
+adata1 = adata[adata.obs['drug'].isin(
+    ['trametinib', 
+     'midostaurin', 
+     'erlotinib',
+     'dabrafenib',
+     'panobinostat',
+     'control'
+    ]
+)].copy()
+
+del adata1.obs
+del adata1.var
+del adata1.uns
+adata1.obs['Group'] = adata[adata.obs['drug'].isin(
+    ['trametinib', 
+     'midostaurin', 
+     'erlotinib',
+     'dabrafenib',
+     'panobinostat',
+     'control'
+    ]
+)].obs['Group']
+adata1.write('datasets/single_drug.h5ad')
+
+adata2 = adata[adata.obs['drug'].isin(
+    ['trametinib_panobinostat', 
+     'trametinib_midostaurin', 
+     'trametinib_erlotinib',
+     'trametinib_dabrafenib',
+    ]
+)].copy()
+del adata2.obs
+del adata2.var
+del adata2.uns
+adata2.obs['Group'] = adata[adata.obs['drug'].isin(
+    ['trametinib_panobinostat', 
+     'trametinib_midostaurin', 
+     'trametinib_erlotinib',
+     'trametinib_dabrafenib',
+    ]
+)].obs['Group']
+adata2.write('datasets/comb_drug.h5ad')
+
+CELL 4
+sc.read_h5ad('datasets/single_drug.h5ad')
+
+CELL 5
+
+
+CELL 6

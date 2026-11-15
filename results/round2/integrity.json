@@ -1,0 +1,603 @@
+{
+  "status": [
+    {
+      "variant": "native",
+      "step": 100000,
+      "target": 100000,
+      "status": "trained",
+      "pid": 301979,
+      "seconds": 2355.6237908676267,
+      "best_val": 0.5213172670345133
+    },
+    {
+      "variant": "ln",
+      "step": 100000,
+      "target": 100000,
+      "status": "trained",
+      "pid": 301981,
+      "seconds": 1988.8210230330005,
+      "best_val": 0.4464782219651776
+    },
+    {
+      "variant": "log2hvg",
+      "step": 100000,
+      "target": 100000,
+      "status": "trained",
+      "pid": 301982,
+      "seconds": 1973.893855554983,
+      "best_val": 0.5238186657847836
+    },
+    {
+      "variant": "compact",
+      "step": 100000,
+      "target": 100000,
+      "status": "trained",
+      "pid": 301980,
+      "seconds": 1253.4080234300345,
+      "best_val": 0.441738224728809
+    },
+    {
+      "variant": "zscore",
+      "step": 100000,
+      "target": 100000,
+      "status": "trained",
+      "pid": 308005,
+      "seconds": 1757.2018140722066,
+      "best_val": 0.4441219329019077
+    }
+  ],
+  "predictions": [
+    {
+      "file": "results/round2/native_s42/eval_best_1000/fixed_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "11fafc2e74dc8a967d457f94dbad5eac03653d2a6a088e4bce126224c4159be3"
+    },
+    {
+      "file": "results/round2/native_s42/eval_best_1000/fixed_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "a37773fcac79d32fcc56f6df6a9f1359e19ca1b5f85be02e08e9a6db0f7377bb"
+    },
+    {
+      "file": "results/round2/native_s42/eval_best_1000/selected_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "422b88c9b1363e5d7c537884ccf67116f7439787443ff39ef90385d64facee2f"
+    },
+    {
+      "file": "results/round2/native_s42/eval_best_1000/selected_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "0013337ea97eed9ac4e9bbe133af98db5dc616847d2be41f0cc6a8e6d0bd3c9a"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/fixed_day0_rep0.npz",
+      "max_mse_error": 1.1102230246251565e-16,
+      "sha256": "12b796f3b56342ae91b6b9c11aaf800e692117085bea7f400b8df20f7e0332e4"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/fixed_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "051e22273830bdc2029b1ab2af0d98c43d7dbb82b3ae4f3fcab9079830e4ab3b"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/fixed_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "9633be351eb29d199b67f265043cbfcf24e21dfe0d204d23bbb77e4d5c64f956"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/fixed_day3_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "3be28b41647837bbb9bfc473350ec88f96b193395b919d381050c9beedd78d10"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/selected_day0_rep0.npz",
+      "max_mse_error": 5.204170427930421e-17,
+      "sha256": "7c106d611c9b9a2abf3021dd8d6ba4bb361552c80eea2bda957b55f8bfea05dc"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/selected_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "d79af28de8599f084494643742d1c4f1da0b779d72a5ee92de5ce30804411c2c"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/selected_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "dfd89890a22e1e74219e85198ba64b552335f1648fdb800872067bef9ef2c744"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/selected_day3_rep0.npz",
+      "max_mse_error": 6.591949208711867e-17,
+      "sha256": "2eb2a382efe7cefdf59c3303398502c9b671d518d280ce9e6d38146e19fe9740"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/empirical_day0_rep0.npz",
+      "max_mse_error": 5.204170427930421e-17,
+      "sha256": "7c106d611c9b9a2abf3021dd8d6ba4bb361552c80eea2bda957b55f8bfea05dc"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/empirical_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "d79af28de8599f084494643742d1c4f1da0b779d72a5ee92de5ce30804411c2c"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/empirical_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "dfd89890a22e1e74219e85198ba64b552335f1648fdb800872067bef9ef2c744"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/empirical_day3_rep0.npz",
+      "max_mse_error": 6.591949208711867e-17,
+      "sha256": "2eb2a382efe7cefdf59c3303398502c9b671d518d280ce9e6d38146e19fe9740"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/paired_day0_rep0.npz",
+      "max_mse_error": 7.806255641895632e-18,
+      "sha256": "37546a6808b52b528757613acba42ccdbea3c0f397c6910a811ab3d158ce163b"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/paired_day1_rep0.npz",
+      "max_mse_error": 1.1102230246251565e-16,
+      "sha256": "c8c4c6ddcd20af79c960f7a9666385f4a32aa0ccf0c22d56190ad737369eebc9"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/paired_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "4b81639652180e013f5dc171d76edcc9de472c608e1acbd8b2a2887254483951"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/paired_day3_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "6836a5e11925175b1a4418656885f09be5a8b41a0c374e781ac8d25853d438ed"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/ot_day0_rep0.npz",
+      "max_mse_error": 7.806255641895632e-18,
+      "sha256": "37546a6808b52b528757613acba42ccdbea3c0f397c6910a811ab3d158ce163b"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/ot_day1_rep0.npz",
+      "max_mse_error": 1.1102230246251565e-16,
+      "sha256": "c7d6d95fa894845d665a42e43482dffe5f6a178bb95e3e874028e981458b8984"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/ot_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "7b799e0f3c995412c181e054e7db439cda86d4270617c4f599a2b7abcf609697"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/ot_day3_rep0.npz",
+      "max_mse_error": 9.71445146547012e-17,
+      "sha256": "3b78c8d47f4d0fc1bc1afe6067f52e899910b73199ee71be353f2b3375c7fe7e"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/inversion_day0_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "149b58718f26aecb9550e96b3b3f6743bbbf97a6c79c457061aee3aba8ae2742"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/inversion_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "371830c7ae6b4ebd2747b1a108dd6c21a737d6dc4d020f196ba4d7815f26b051"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/inversion_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "bc51daa7514430cc2ad6b33d2e4e01875d38b413ac0781d74e9b62b3b313e93e"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/inversion_day3_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "c2041ef31ec40ea6241d77034aff6e0d4b425fa5056048187c967b0f6d7617c6"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/no_direction_day0_rep0.npz",
+      "max_mse_error": 5.204170427930421e-17,
+      "sha256": "7c106d611c9b9a2abf3021dd8d6ba4bb361552c80eea2bda957b55f8bfea05dc"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/no_direction_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "7c106d611c9b9a2abf3021dd8d6ba4bb361552c80eea2bda957b55f8bfea05dc"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/no_direction_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "7c106d611c9b9a2abf3021dd8d6ba4bb361552c80eea2bda957b55f8bfea05dc"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/no_direction_day3_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "7c106d611c9b9a2abf3021dd8d6ba4bb361552c80eea2bda957b55f8bfea05dc"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/oracle_day0_rep0.npz",
+      "max_mse_error": 7.806255641895632e-18,
+      "sha256": "37546a6808b52b528757613acba42ccdbea3c0f397c6910a811ab3d158ce163b"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/oracle_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "8a67564d304f7713c3a5b26bc0e1829e331e9a260707fb72c2d6b55e67e8fab6"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/oracle_day2_rep0.npz",
+      "max_mse_error": 5.551115123125783e-17,
+      "sha256": "fbc25ffc052d7f2c698bfa009857fd355af15a5f50ab9b693af327bc3a0cffec"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000/oracle_day3_rep0.npz",
+      "max_mse_error": 8.673617379884035e-17,
+      "sha256": "a8d948d1b03e8c0176a79b74807852f843a7b0ca8391f7784a69f30d9a341fd4"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000_mse/selected_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "4fd3d9e38b969d565e0714961074b2a104cda550cf2f63d0cc07829fdc7f3558"
+    },
+    {
+      "file": "results/round2/native_s42/eval_final_1000_mse/selected_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "48b128ebcd2eb6b7547aa5c92fa051ca0ed81d355dee7957c40e46ffc6e3e402"
+    },
+    {
+      "file": "results/round2/native_s42/eval_step_010000_100/fixed_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "0eb1599e669bfd664d84826634f96ce699a3429764695e1291dc7938bc2fd642"
+    },
+    {
+      "file": "results/round2/native_s42/eval_step_010000_100/fixed_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "f7b474081b30f0b848bbf537c79c3f6d0cf580f9461630ab3d1671d5cd96e010"
+    },
+    {
+      "file": "results/round2/native_s42/eval_step_010000_100/selected_day1_rep0.npz",
+      "max_mse_error": 4.440892098500626e-16,
+      "sha256": "98125372de6e3ece529c9d2fff4fd62c1d966649c5fea1f7c126a76475922aa7"
+    },
+    {
+      "file": "results/round2/native_s42/eval_step_010000_100/selected_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "453929b260abb06d8a3723574178eb366b149107a007e42c0205c7b9e661b780"
+    },
+    {
+      "file": "results/round2/native_s42/eval_step_010000_1000/fixed_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "11fafc2e74dc8a967d457f94dbad5eac03653d2a6a088e4bce126224c4159be3"
+    },
+    {
+      "file": "results/round2/native_s42/eval_step_010000_1000/fixed_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "a37773fcac79d32fcc56f6df6a9f1359e19ca1b5f85be02e08e9a6db0f7377bb"
+    },
+    {
+      "file": "results/round2/native_s42/eval_step_010000_1000/selected_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "422b88c9b1363e5d7c537884ccf67116f7439787443ff39ef90385d64facee2f"
+    },
+    {
+      "file": "results/round2/native_s42/eval_step_010000_1000/selected_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "0013337ea97eed9ac4e9bbe133af98db5dc616847d2be41f0cc6a8e6d0bd3c9a"
+    },
+    {
+      "file": "results/round2/ln_s42/eval_best_1000/fixed_day1_rep0.npz",
+      "max_mse_error": 7.105427357601002e-15,
+      "sha256": "5873bab18278804e41c5caab41b4591d6d4e37c1852bc96667f2516f49669f87"
+    },
+    {
+      "file": "results/round2/ln_s42/eval_best_1000/fixed_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "ff9575fcc683815c9db9caefd532349c4aa80a33bef241fcd43ed6f5e5589984"
+    },
+    {
+      "file": "results/round2/ln_s42/eval_best_1000/selected_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "cc1b2a81e56221372cefb73fc440cd2bacbd6143b47534e0ec522fd86be7384a"
+    },
+    {
+      "file": "results/round2/ln_s42/eval_best_1000/selected_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "b2a352ae53a125dac624eb091ee6556de68ef71b7ac8e10cc86359b785c70187"
+    },
+    {
+      "file": "results/round2/ln_s42/eval_final_1000/fixed_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "dc30095b5d344992ab26021b916ed22e032d0b7f34cde167747e4d421521046e"
+    },
+    {
+      "file": "results/round2/ln_s42/eval_final_1000/fixed_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "c032efde014e82ad1156165f583685dfd03b1edfb5ef07de12e08d1854af3b33"
+    },
+    {
+      "file": "results/round2/ln_s42/eval_final_1000/selected_day1_rep0.npz",
+      "max_mse_error": 1.1102230246251565e-16,
+      "sha256": "272b1129c6c7f55daa5e49d9f26620d36635d25012b6c3865e6a337aa8fedd6f"
+    },
+    {
+      "file": "results/round2/ln_s42/eval_final_1000/selected_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "bebc964c9cddb840311e6d460e1173a16b6e55230d22352b882a2cffac52af47"
+    },
+    {
+      "file": "results/round2/ln_s42/eval_final_1000_mse/selected_day1_rep0.npz",
+      "max_mse_error": 1.1102230246251565e-16,
+      "sha256": "b03aa8d948bc9b52a263c46ce21478b763bdc51027e4352e80bb634d859b51e4"
+    },
+    {
+      "file": "results/round2/ln_s42/eval_final_1000_mse/selected_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "91185cf461ed814913b6ce19bc02f3a4bb8c496cd0c2fbc81a8e078c2f0bf9b1"
+    },
+    {
+      "file": "results/round2/log2hvg_s42/eval_final_1000/fixed_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "8642fb77864f54de947b5c305603294b3e89ce46a946f5637c88255ec659d9c3"
+    },
+    {
+      "file": "results/round2/log2hvg_s42/eval_final_1000/fixed_day2_rep0.npz",
+      "max_mse_error": 2.220446049250313e-16,
+      "sha256": "c207aa8e26fe1319800746d63b490616cc87dc965821cf765daa8c3a15aa8615"
+    },
+    {
+      "file": "results/round2/log2hvg_s42/eval_final_1000/selected_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "ae05505fd06db39c3a70a6b597eb16344f47e58a79be3cc900fbd3a150da2231"
+    },
+    {
+      "file": "results/round2/log2hvg_s42/eval_final_1000/selected_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "7a83ee9077bd3a2b74a8d948b1d77ee7a200bda533f89eb59d6d77e00c3b789d"
+    },
+    {
+      "file": "results/round2/log2hvg_s42/eval_final_1000_mse/selected_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "14bb0f718478a1c5ffdd6f7debc7bdfb75b41e29eb4251c4ae35b3d8a5bd7c37"
+    },
+    {
+      "file": "results/round2/log2hvg_s42/eval_final_1000_mse/selected_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "48b9941a731f4a58eb37aaee255690b108d90e0131009d8f6915ee007ab97509"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_best_1000/fixed_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "4a26e181915214f959aea2827307f51d271c6bd0bca172929f31c2e64c58d280"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_best_1000/fixed_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "075599ae3b9ebe397b5cb7541fce47d6c322c49de7a3363a456864d44701121b"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_best_1000/selected_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "5328c6de44320db8e90e172ada92cbcce19bf06e0774153ee2bb4a0d172ea0bd"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_best_1000/selected_day2_rep0.npz",
+      "max_mse_error": 4.440892098500626e-16,
+      "sha256": "c7dbbf818b28948b44e2f3d6afae8e36692c5da593c89bcaeb47554b160a815a"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/fixed_day0_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "71120c2a722ed34a9fbc5db615b0aa0061f516d0b23b9f328c154418a0cbaaa6"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/fixed_day1_rep0.npz",
+      "max_mse_error": 4.440892098500626e-16,
+      "sha256": "db2478e2dba19fecfee7443ee760d76413401207c1a554e585f4377cce3747a9"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/fixed_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "acf3d9fff7b8b7f73390043b39dc75f5581bcef75a5a734a6bc167bfe3fd004b"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/fixed_day3_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "5c797514500c92b520e95f71a0674dcb0b5c058ca71b4d560e8ab2ae00b63ad5"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/selected_day0_rep0.npz",
+      "max_mse_error": 8.326672684688674e-17,
+      "sha256": "ddc4606904237d913572a974a4cffecb06d0a0f3135a3bb055c4d3609e9b3e3a"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/selected_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "93a999daea44812b14fc3208f1b36e6e423c5b1e894588fd30f0b82d52c391c8"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/selected_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "c5e4df546906f8d6f950e7923da1535bb05f3ffc796df1c9ba3def530059d6a4"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/selected_day3_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "1393b5c7cf89c731214f8384e32e6b70d0679e75379cbcb1a733791149102d1e"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/empirical_day0_rep0.npz",
+      "max_mse_error": 5.551115123125783e-17,
+      "sha256": "2daaba1cc2d4ad25d05e374dc697ebbe6a6865117a8843ad7e7716b2306538a3"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/empirical_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "e1c0859132c2ffbbb059e7737571e46207259ee8248e8486f43431d258c23675"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/empirical_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "bcf806cb0a0fe223630d6cf53fcd7504e7b425f3d8a65977c2492c737dcb470b"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/empirical_day3_rep0.npz",
+      "max_mse_error": 5.551115123125783e-17,
+      "sha256": "6eccaff7c817b9efcfb6f7b2f6333edf1519bd9e83fb239b0ea04a7c2ed871d4"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/paired_day0_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "c128bd303aebba1ac0e1378034106dca6ce3910e81107708aa9dc7b1601c2b31"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/paired_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "76629a0ad35f64e4133e2893123d08985a70eba167970b7eaf8551f44e39db97"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/paired_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "0986b6072a15105717592774e3f5651ab60adf456695e85d5e489c3c41c6f2e6"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/paired_day3_rep0.npz",
+      "max_mse_error": 5.551115123125783e-17,
+      "sha256": "203038925823cf36613143948ca03aa40766f0cef6e6aa112abb5a9a34d4be8b"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/ot_day0_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "c128bd303aebba1ac0e1378034106dca6ce3910e81107708aa9dc7b1601c2b31"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/ot_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "1f67047ab56b5409fea9cf33b253f4e3981b447ca6c095f7c8f3ead0de38f1a7"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/ot_day2_rep0.npz",
+      "max_mse_error": 1.1102230246251565e-16,
+      "sha256": "13b2d6d7ee987d6b56ee8b42747236715d314c1cddbf9094a68760a80ce591f3"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/ot_day3_rep0.npz",
+      "max_mse_error": 5.551115123125783e-17,
+      "sha256": "120ac064560437367ff0b718ce23c65e4b66a6fa2b3c807176569705fc54c1be"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/inversion_day0_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "142c60bcd3b7ea7a4df0c03475cdc6695bc0fb5044122384a8eee4d0c6ba87d6"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/inversion_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "99a3f73cbd262acf4c454f73d87a7250d14f952109d34e847ea2e4809c4601c0"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/inversion_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "6c9f13a2aa9c833d31c73227daabea5308aa31ddc8457c98898c39919107b6ff"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/inversion_day3_rep0.npz",
+      "max_mse_error": 2.220446049250313e-16,
+      "sha256": "929780161f8d756cb61a8708b94722d6fb4e626548541cb23a411926886d9dfa"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/no_direction_day0_rep0.npz",
+      "max_mse_error": 8.326672684688674e-17,
+      "sha256": "ddc4606904237d913572a974a4cffecb06d0a0f3135a3bb055c4d3609e9b3e3a"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/no_direction_day1_rep0.npz",
+      "max_mse_error": 2.220446049250313e-16,
+      "sha256": "ddc4606904237d913572a974a4cffecb06d0a0f3135a3bb055c4d3609e9b3e3a"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/no_direction_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "ddc4606904237d913572a974a4cffecb06d0a0f3135a3bb055c4d3609e9b3e3a"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/no_direction_day3_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "ddc4606904237d913572a974a4cffecb06d0a0f3135a3bb055c4d3609e9b3e3a"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/oracle_day0_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "c128bd303aebba1ac0e1378034106dca6ce3910e81107708aa9dc7b1601c2b31"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/oracle_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "2c71bd22e079d3ab45c7fe7381bbde4464401ce59da4e5c24a725dcb35d075ab"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/oracle_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "3c75e91a4f53cee9f0459d1e2d1649dd36aeb6ee2102d0df25e48aced07835fa"
+    },
+    {
+      "file": "results/round2/compact_s42/eval_final_1000/oracle_day3_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "5d4936cd3f2366bda2fad54e7670dfec55a1a9ce0289c01aeefc2dbdc9b641cd"
+    },
+    {
+      "file": "results/round2/zscore_s42/eval_final_1000/fixed_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "cb746864d7906952d36d116f8623408a8b3e1ead0a09ffeb13cbd20ad600c3e8"
+    },
+    {
+      "file": "results/round2/zscore_s42/eval_final_1000/fixed_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "180fae2ec4115262b7d55283235335bf1349d7d08bec22cf5fe2c55bb4350584"
+    },
+    {
+      "file": "results/round2/zscore_s42/eval_final_1000/selected_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "8c8d04001f7b5e17db7f2969382befc4b00bc9c8481938ad2c93f2764c5c53de"
+    },
+    {
+      "file": "results/round2/zscore_s42/eval_final_1000/selected_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "da2ae8eb262a34662a981a73ac3abb8ceddb477b810d794365bf6e8c97f1ceae"
+    },
+    {
+      "file": "results/round2/zscore_s42/eval_final_1000_mse/selected_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "226216f3eabd0c448fd779c2a66f099241acd8a773e81215e418bfed739b4da6"
+    },
+    {
+      "file": "results/round2/zscore_s42/eval_final_1000_mse/selected_day2_rep0.npz",
+      "max_mse_error": 1.1102230246251565e-16,
+      "sha256": "381e438667665fa8ce671420bdf0eec8a0ac56927e8943c97ab3c34e84a3b2d0"
+    },
+    {
+      "file": "results/round2/zscore_s42/eval_final_1000_signed/fixed_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "4f808b8b7a9bb4b580f7d25b015dba1c6f226d11fab0f102e8d0583e8d74d521"
+    },
+    {
+      "file": "results/round2/zscore_s42/eval_final_1000_signed/fixed_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "466455289ca181f85541b70a0b95add7f824c96002b4a99cc7e2018890a7f77b"
+    },
+    {
+      "file": "results/round2/zscore_s42/eval_final_1000_signed/selected_day1_rep0.npz",
+      "max_mse_error": 1.1102230246251565e-16,
+      "sha256": "eda7a591a179f1df9b47e8f2d0607914c27c4dc95099e0a0dd1b6872478abf3d"
+    },
+    {
+      "file": "results/round2/zscore_s42/eval_final_1000_signed/selected_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "5b898044732d6bc07625acbaf65426cb4f1630555325a4b0d378d6fab0118a1f"
+    },
+    {
+      "file": "results/round2/zscore_s42/eval_final_1000_signed_mse/selected_day1_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "155f041d49349d9c73c391ffe262b798dde082b6ef8f4c84218a2deb6f5d332a"
+    },
+    {
+      "file": "results/round2/zscore_s42/eval_final_1000_signed_mse/selected_day2_rep0.npz",
+      "max_mse_error": 0.0,
+      "sha256": "75aee23254bb5ab58ac661ff38fd0fb483c339ce4a88e103600b7f378b4cc6e2"
+    }
+  ],
+  "count": 110,
+  "all_source_training_complete": true
+}

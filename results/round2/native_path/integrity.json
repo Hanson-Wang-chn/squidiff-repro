@@ -1,0 +1,20 @@
+[
+  {
+    "file": "results/round2/native_path/alpha_0.166667.npz",
+    "sha256": "5a8a9ba2b69490ee89d394a14be7e29e708d6fb3ec0cf1d3bab4e10ba3a240c6",
+    "all_finite": true,
+    "genes_aligned": true
+  },
+  {
+    "file": "results/round2/native_path/alpha_0.500000.npz",
+    "sha256": "e33ee264a71338862e09b8a52cb29a0ea7bfbdb229193e0a1ed6c8fa72787bb8",
+    "all_finite": true,
+    "genes_aligned": true
+  },
+  {
+    "file": "results/round2/native_path/alpha_0.833333.npz",
+    "sha256": "00a43e650f206492d69e1344e5fb3d12f0aec01b4d37a3b3defff4f3e699c687",
+    "all_finite": true,
+    "genes_aligned": true
+  }
+]

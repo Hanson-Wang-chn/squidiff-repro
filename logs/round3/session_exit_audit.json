@@ -1,0 +1,13 @@
+{
+  "outer_gpu_queue_tool_session": 75579,
+  "outer_gpu_queue_exit_code": 143,
+  "independent_finalization_tool_session": 32710,
+  "independent_finalization_exit_code": 0,
+  "queue_children_exit_codes_checked_by_subprocess": true,
+  "training_complete": true,
+  "evaluation_complete": true,
+  "independent_integrity_passed": true,
+  "mps_shutdown_record_present": true,
+  "no_training_evaluation_or_mps_processes_remaining": true,
+  "cause_of_outer_SIGTERM": "Not determined from available logs; no claim of a zero outer-session exit"
+}

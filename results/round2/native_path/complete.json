@@ -1,0 +1,8 @@
+{
+  "diagnostic_only": true,
+  "forecast_alpha_remains": 0.3333333333333333,
+  "points": 7,
+  "max_T_on_sampled_grid": 0.31389819925801327,
+  "observed_day1_T": 6.2500641773144405,
+  "warning": "A finite grid is not a proof about every continuous interpolation fraction"
+}

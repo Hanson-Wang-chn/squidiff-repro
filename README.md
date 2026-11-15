@@ -1,6 +1,15 @@
 # Squidiff 本地复现与可靠性检查
 
-> **GitHub 归档版（2026-11-14）**：保留代码、文档、评估表、图、预测 NPZ 和历史日志；不包含数据集、缓存与 checkpoint。克隆后可直接查看结果；新的模型推理需要重训。上传、迁移环境、重建数据与训练步骤见 [归档与复用指南](docs/ARCHIVE_AND_REUSE.md)。仅验证归档可运行 `python scripts/verify_archive.py`，无需数据、GPU 或第三方 Python 包。
+> **GitHub 归档版（2026-11-15 更新）**：保留三轮实验的代码、文档、评估表、图、预测 NPZ 和历史日志；不包含数据集、缓存与 checkpoint。完整工作区文件约 310 MiB，预算上限 350 MiB，单文件不超过 25 MiB。克隆后可直接查看结果；新的模型推理需要重训。上传、迁移环境、重建数据与训练步骤见 [归档与复用指南](docs/ARCHIVE_AND_REUSE.md)。仅验证归档可运行 `python scripts/verify_archive.py`，无需数据、GPU 或第三方 Python 包。
+
+## 后续实验与报告索引
+
+- [day1 专项诊断](report.md)：预测复算、瞬态表达、潜变量与 HVG 对数底检查；证据位于 `results/diagnosis_20261115/`。
+- [第二轮报告](report-2.md)：原生 TrainLoop 长程对照、五个训练版本、采样与插值时钟诊断；完整输出位于 `results/round2/`。
+- [第三轮报告](report-3.md)：作者公开 VO 权重审计，以及 xstart、min-SNR、epsilon 残差三个训练版本；完整输出位于 `results/round3/`。
+- 相应代码位于 `scripts/`，来源与环境快照位于 `docs/round2/`、`docs/round3/`，历史过程位于 `logs/round2/`、`logs/round3/`。数据下载信息、基因名单和划分说明随 `data/**/manifest.json` 保留。
+
+下文保留第一轮实验的摘要和边界；后续实验结论以对应报告为准。报告与完成标记描述原机器的历史状态，其中提及的数据和模型权重按归档规则排除。
 
 在本地 **A100 40GB**、独立 conda 环境 **`squidiff`** 中完成。使用作者公开模型与扩散代码、适配后的训练入口从头训练；本轮新增 **15 次各 100000 步的正式训练**，保留第一轮 v1 两个模型及全部失败记录。训练/评估完成于 **2026-11-13 21:56（北京时间）**。
 

@@ -1,0 +1,16 @@
+{
+  "reason": "Regenerable pip download cache only; retain installed packages, datasets and all research weights",
+  "removed": [
+    {
+      "path": "/home/whs/.cache/pip/http-v2/d/2/0/a/7/d20a7f754076057ca7360a3c888f7f46959045e141c525dac5ed0ca5.body",
+      "package": "torch-2.5.1+cu121.dist-info",
+      "bytes": 780429430
+    },
+    {
+      "path": "/home/whs/.cache/pip/http-v2/b/9/1/6/2/b9162090f0ba16a3e8f598fde84e0bd2d9b2a8216de84dcb3ca471aa.body",
+      "package": "nvidia_cudnn_cu12-9.1.0.70.dist-info",
+      "bytes": 664752741
+    }
+  ],
+  "total_bytes": 1445182171
+}

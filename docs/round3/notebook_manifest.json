@@ -1,0 +1,86 @@
+[
+  {
+    "path": "upstream/Squidiff_reproducibility/fig4_VO_reproducibility.ipynb",
+    "sha256": "f865b4f4687d8800947fc53da19124f3aafb3fac091ac7896d86246219003ed7",
+    "code_cells": 75,
+    "code_export": "docs/round3/fig4_VO_reproducibility.py.txt"
+  },
+  {
+    "path": "upstream/Squidiff_reproducibility/prep_diff_data.ipynb",
+    "sha256": "70fc1b5f807d6eb8af3bfed37d5b259d1b5963c748c6ad15ce6beafaef617774",
+    "code_cells": 8,
+    "code_export": "docs/round3/prep_diff_data.py.txt"
+  },
+  {
+    "path": "upstream/Squidiff_reproducibility/prep_double_drug_data.ipynb",
+    "sha256": "55399c50372b3510f7f23c4d7548acea749210cc47c9731cd549eda7bb010325",
+    "code_cells": 7,
+    "code_export": "docs/round3/prep_double_drug_data.py.txt"
+  },
+  {
+    "path": "upstream/Squidiff_reproducibility/prep_drug_screen_data.ipynb",
+    "sha256": "8051a6b2fb1d4e9b755490d6d1bbff048abade4b3736a2ddebcb3b779281f508",
+    "code_cells": 9,
+    "code_export": "docs/round3/prep_drug_screen_data.py.txt"
+  },
+  {
+    "path": "upstream/Squidiff_reproducibility/prep_pertb_data.ipynb",
+    "sha256": "d80cdb15a223eaa3b11b2e8c246357e8d7c6e0ecef9cf4b0c051d5abf89b8b69",
+    "code_cells": 15,
+    "code_export": "docs/round3/prep_pertb_data.py.txt"
+  },
+  {
+    "path": "upstream/Squidiff_reproducibility/prep_sciplex_data.ipynb",
+    "sha256": "c08eff7390ee1537ae2d26ab3c6ae33bb52de1b8fa14313cfa05ce86c459975d",
+    "code_cells": 28,
+    "code_export": "docs/round3/prep_sciplex_data.py.txt"
+  },
+  {
+    "path": "upstream/Squidiff_reproducibility/prep_simu_data.ipynb",
+    "sha256": "616a9a8c98ce60ce7811b60072a6f2729b3f6d9a529966f3175d3c8ef12d32e3",
+    "code_cells": 16,
+    "code_export": "docs/round3/prep_simu_data.py.txt"
+  },
+  {
+    "path": "upstream/Squidiff_reproducibility/preprocess_fig2_data.ipynb",
+    "sha256": "04c3ee5bbaa317cd9ff15a413d3f442247bab1bc17b61359e275d613673709b6",
+    "code_cells": 8,
+    "code_export": "docs/round3/preprocess_fig2_data.py.txt"
+  },
+  {
+    "path": "upstream/Squidiff_reproducibility/squidiff_on_combdrug.ipynb",
+    "sha256": "71da4ca3be5cdc41f55fd634995f1be8af3b80e4a58cab930f6003f83a50e721",
+    "code_cells": 13,
+    "code_export": "docs/round3/squidiff_on_combdrug.py.txt"
+  },
+  {
+    "path": "upstream/Squidiff_reproducibility/squidiff_on_differentiation.ipynb",
+    "sha256": "69b6d13cc39d78d7d69eeda6d65951e77e240da3a4d45d27f787c697471be300",
+    "code_cells": 21,
+    "code_export": "docs/round3/squidiff_on_differentiation.py.txt"
+  },
+  {
+    "path": "upstream/Squidiff_reproducibility/squidiff_on_gbm.ipynb",
+    "sha256": "b67938589f51b7ab1baa88e7eea9ddf83e329e8bdf02d336d5ebc7d584245062",
+    "code_cells": 1,
+    "code_export": "docs/round3/squidiff_on_gbm.py.txt"
+  },
+  {
+    "path": "upstream/Squidiff_reproducibility/squidiff_on_genepertb.ipynb",
+    "sha256": "cb3372a76fc4991be41732eefa3de368113f41bb54fc62b93364dad6f3eb7ab3",
+    "code_cells": 22,
+    "code_export": "docs/round3/squidiff_on_genepertb.py.txt"
+  },
+  {
+    "path": "upstream/Squidiff_reproducibility/squidiff_on_sciplex.ipynb",
+    "sha256": "f99b235021313a95e436209dedd33907e682a2a3b7c4c5ae99b9a2d4f4590b7e",
+    "code_cells": 12,
+    "code_export": "docs/round3/squidiff_on_sciplex.py.txt"
+  },
+  {
+    "path": "upstream/Squidiff_reproducibility/squidiff_on_simulated_data.ipynb",
+    "sha256": "92441fc1798ccfc89cd5503cdb446e917b85e6b2cf39a48f98d4ce8f9ff7048a",
+    "code_cells": 8,
+    "code_export": "docs/round3/squidiff_on_simulated_data.py.txt"
+  }
+]

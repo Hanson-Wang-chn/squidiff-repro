@@ -1,0 +1,43 @@
+{
+  "review_date": "2026-11-15",
+  "paper": {
+    "publisher": "https://www.nature.com/articles/s41592-025-02877-y",
+    "author_manuscript": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12872408/",
+    "note": "Saved older paper_published.txt contains paywall/front matter rather than the full article. New author manuscript and peer review were read."
+  },
+  "peer_review_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41592-025-02877-y/MediaObjects/41592_2025_2877_MOESM3_ESM.pdf",
+  "model_latest_commit_confirmed": "abdfc27d84947dcccd745d1067c0840a41d32eb8",
+  "notebook_latest_commit_confirmed": "7ce6d0291ee489d1fd89dda5abe8d4f993450d6e",
+  "figshare": {
+    "url": "https://api.figshare.com/v2/articles/27948633",
+    "version_confirmed": 3,
+    "matching_fig2_checkpoint_found": false
+  },
+  "log_base_evidence": {
+    "same_data_analysis_by_data_authors": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9380406/",
+    "scanpy_implementation": "https://github.com/scverse/scanpy/blob/1.10.4/src/scanpy/preprocessing/_highly_variable_genes.py",
+    "qualification": "Original raw CSV export chain not completely reconstructed. The log2-aware HVG calculation is a sensitivity analysis, not an established rescue."
+  },
+  "new_execution_environment": {
+    "python": "3.12.12",
+    "torch_device": "CPU",
+    "purpose": "Independent arithmetic, frozen encoder geometry and feature-selection sensitivity only; no retraining",
+    "packages": {
+      "torch": "2.5.1+cpu",
+      "numpy": "1.26.4",
+      "pandas": "2.2.3",
+      "scipy": "1.14.1",
+      "scanpy": "1.10.4",
+      "anndata": "0.10.9",
+      "scikit-learn": "1.5.2",
+      "h5py": "3.12.1",
+      "matplotlib": "3.9.4"
+    }
+  },
+  "files": {
+    "docs/diagnosis_20261115/paper_author_manuscript.txt": "1766ce6244bf668f95a83d0cac3feba609498d27aa2202d9ea2484688d412374",
+    "docs/diagnosis_20261115/peer_review.pdf": "c77da95da3ed0440e902feff6695834e0e1fed17fd6aaae1202c38dc28232577",
+    "docs/diagnosis_20261115/peer_review.txt": "70c1111041e739c2d9eabaffef9382f56075fab51f87adc4d08719587a1aa230",
+    "docs/diagnosis_20261115/cuomo_normalization_cells.json": "267b13514ca7bd9a24b4d81bc12ce8c804ca4045f5c75264bcbc8148ae5f97c5"
+  }
+}

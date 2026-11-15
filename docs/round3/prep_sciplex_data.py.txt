@@ -1,0 +1,314 @@
+CELL 0
+import sys
+import os
+
+import pandas as pd
+import scanpy as sc
+import numpy as np
+import warnings
+
+import torch
+import torch.nn.functional as F
+import torch.nn as nn
+
+from torch.utils.data import DataLoader, TensorDataset
+from torch.nn import DataParallel
+import matplotlib.pyplot as plt
+from matplotlib.pyplot import rc_context
+import anndata
+import seaborn as sns
+import matplotlib.font_manager
+from matplotlib import rcParams
+
+font_list = []
+fpaths = matplotlib.font_manager.findSystemFonts()
+for i in fpaths:
+    try:
+        f = matplotlib.font_manager.get_font(i)
+        font_list.append(f.family_name)
+    except RuntimeError:
+        pass
+
+font_list = set(font_list)
+plot_font = 'Helvetica' if 'Helvetica' in font_list else 'FreeSans'
+rcParams['font.family'] = plot_font
+rcParams.update({'font.size': 10})
+rcParams.update({'figure.dpi': 300})
+rcParams.update({'figure.figsize': (3,3)})
+rcParams.update({'savefig.dpi': 500})
+warnings.filterwarnings('ignore')
+
+%load_ext autoreload
+%autoreload 2
+import os
+os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
+
+CELL 1
+adata = sc.read_h5ad('../Squidiff_project/PRnet/dataset/Sci_Plex.h5ad')
+
+CELL 2
+sc.pp.normalize_total(adata)
+sc.pp.log1p(adata)
+sc.pp.highly_variable_genes(adata, n_top_genes=200)
+# Filter the dataset to keep only these genes
+adata = adata[:, adata.var.highly_variable]
+adata_control = adata[np.array(adata.obs['paired_control_index'].values)].copy()
+
+CELL 3
+adata_raw = sc.read_h5ad('../Squidiff_project/PRnet/dataset/Sci_Plex.h5ad')
+
+
+CELL 4
+ind_all =[]
+for i in adata.var_names:
+    ind_all.append(np.where(adata_raw.var_names==i)[0][0])
+
+CELL 5
+np.save('index_all.npy',ind_all)
+
+CELL 6
+adata.obs['cell_type']
+
+CELL 7
+adata.obs['cell_split_0'] = 'train'
+adata.obs[adata.obs['cell_type']=='A549']['cell_split_0'] = 'test'
+
+adata.obs['cell_split_1'] = 'train'
+adata.obs[adata.obs['cell_type']=='K562']['cell_split_1'] = 'test'
+
+adata.obs['cell_split_2'] = 'train'
+adata.obs[adata.obs['cell_type']=='MCF7']['cell_split_2'] = 'test'
+
+CELL 8
+adata.write('../Squidiff_project/PRnet/dataset/Sci_Plex_new.h5ad')
+
+CELL 9
+adata_cut = adata[adata.obs['cell_split_0']=='train'].copy()
+sci_plex_train= anndata.AnnData(adata_cut.X)
+sci_plex_train.obs_names=adata_cut.obs_names
+sci_plex_train.var_names=adata_cut.var_names
+sci_plex_train.obs['Group']=adata_cut.obs['cov_drug_dose_name']
+sci_plex_train.obs['dose']=adata_cut.obs['dose']
+sci_plex_train.obs['SMILES']=adata_cut.obs['SMILES']
+
+sci_plex_train.write('datasets/sci_plex_train_cell_split_0.h5ad')
+sci_plex_train_control = adata_control[adata.obs['cell_split_0']=='train'].copy()
+sci_plex_train_control.write('datasets/sci_plex_train_cell_split_0_control.h5ad')
+
+CELL 10
+adata_cut = adata[adata.obs['cell_split_1']=='train'].copy()
+sci_plex_train= anndata.AnnData(adata_cut.X)
+sci_plex_train.obs_names=adata_cut.obs_names
+sci_plex_train.var_names=adata_cut.var_names
+sci_plex_train.obs['Group']=adata_cut.obs['cov_drug_dose_name']
+sci_plex_train.obs['dose']=adata_cut.obs['dose']
+sci_plex_train.obs['SMILES']=adata_cut.obs['SMILES']
+
+sci_plex_train.write('datasets/sci_plex_train_cell_split_1.h5ad')
+sci_plex_train_control = adata_control[adata.obs['cell_split_1']=='train'].copy()
+sci_plex_train_control.write('datasets/sci_plex_train_cell_split_1_control.h5ad')
+
+CELL 11
+adata_cut = adata[adata.obs['cell_split_2']=='train'].copy()
+sci_plex_train= anndata.AnnData(adata_cut.X)
+sci_plex_train.obs_names=adata_cut.obs_names
+sci_plex_train.var_names=adata_cut.var_names
+sci_plex_train.obs['Group']=adata_cut.obs['cov_drug_dose_name']
+sci_plex_train.obs['dose']=adata_cut.obs['dose']
+sci_plex_train.obs['SMILES']=adata_cut.obs['SMILES']
+
+sci_plex_train.write('datasets/sci_plex_train_cell_split_2.h5ad')
+sci_plex_train_control = adata_control[adata.obs['cell_split_2']=='train'].copy()
+sci_plex_train_control.write('datasets/sci_plex_train_cell_split_2_control.h5ad')
+
+CELL 12
+adata_cut = adata[adata.obs['random_split_0']=='train'].copy()
+sci_plex_train= anndata.AnnData(adata_cut.X)
+sci_plex_train.obs_names=adata_cut.obs_names
+sci_plex_train.var_names=adata_cut.var_names
+sci_plex_train.obs['Group']=adata_cut.obs['cov_drug_dose_name']
+sci_plex_train.obs['dose']=adata_cut.obs['dose']
+sci_plex_train.obs['SMILES']=adata_cut.obs['SMILES']
+
+sci_plex_train.write('datasets/sci_plex_train_random_split_0.h5ad')
+sci_plex_train_control = adata_control[adata.obs['random_split_0']=='train'].copy()
+sci_plex_train_control.write('datasets/sci_plex_train_random_split_0_control.h5ad')
+
+CELL 13
+adata_cut = adata[adata.obs['random_split_1']=='train'].copy()
+sci_plex_train= anndata.AnnData(adata_cut.X)
+sci_plex_train.obs_names=adata_cut.obs_names
+sci_plex_train.var_names=adata_cut.var_names
+sci_plex_train.obs['Group']=adata_cut.obs['cov_drug_dose_name']
+sci_plex_train.obs['dose']=adata_cut.obs['dose']
+sci_plex_train.obs['SMILES']=adata_cut.obs['SMILES']
+
+sci_plex_train.write('datasets/sci_plex_train_random_split_1.h5ad')
+sci_plex_train_control = adata_control[adata.obs['random_split_1']=='train'].copy()
+sci_plex_train_control.write('datasets/sci_plex_train_random_split_1_control.h5ad')
+
+CELL 14
+adata_cut = adata[adata.obs['random_split_2']=='train'].copy()
+sci_plex_train= anndata.AnnData(adata_cut.X)
+sci_plex_train.obs_names=adata_cut.obs_names
+sci_plex_train.var_names=adata_cut.var_names
+sci_plex_train.obs['Group']=adata_cut.obs['cov_drug_dose_name']
+sci_plex_train.obs['dose']=adata_cut.obs['dose']
+sci_plex_train.obs['SMILES']=adata_cut.obs['SMILES']
+
+sci_plex_train.write('datasets/sci_plex_train_random_split_2.h5ad')
+sci_plex_train_control = adata_control[adata.obs['random_split_2']=='train'].copy()
+sci_plex_train_control.write('datasets/sci_plex_train_random_split_2_control.h5ad')
+
+CELL 15
+adata_cut = adata[adata.obs['random_split_4']=='train'].copy()
+sci_plex_train= anndata.AnnData(adata_cut.X)
+sci_plex_train.obs_names=adata_cut.obs_names
+sci_plex_train.var_names=adata_cut.var_names
+sci_plex_train.obs['Group']=adata_cut.obs['cov_drug_dose_name']
+sci_plex_train.obs['dose']=adata_cut.obs['dose']
+sci_plex_train.obs['SMILES']=adata_cut.obs['SMILES']
+
+sci_plex_train.write('datasets/sci_plex_train_random_split_4.h5ad')
+sci_plex_train_control = adata_control[adata.obs['random_split_4']=='train'].copy()
+sci_plex_train_control.write('datasets/sci_plex_train_random_split_4_control.h5ad')
+
+CELL 16
+sci_plex_train
+
+CELL 17
+adata_cut = adata[adata.obs['drug_split_0']=='train'].copy()
+sci_plex_train= anndata.AnnData(adata_cut.X)
+sci_plex_train.obs_names=adata_cut.obs_names
+sci_plex_train.var_names=adata_cut.var_names
+sci_plex_train.obs['Group']=adata_cut.obs['cov_drug_dose_name']
+sci_plex_train.obs['dose']=adata_cut.obs['dose']
+sci_plex_train.obs['SMILES']=adata_cut.obs['SMILES']
+
+sci_plex_train.write('datasets/sci_plex_train_drug_split_0.h5ad')
+sci_plex_train_control = adata_control[adata.obs['drug_split_0']=='train'].copy()
+sci_plex_train_control.write('datasets/sci_plex_train_drug_split_0_control.h5ad')
+
+CELL 18
+adata_cut = adata[adata.obs['drug_split_1']=='train'].copy()
+sci_plex_train= anndata.AnnData(adata_cut.X)
+sci_plex_train.obs_names=adata_cut.obs_names
+sci_plex_train.var_names=adata_cut.var_names
+sci_plex_train.obs['Group']=adata_cut.obs['cov_drug_dose_name']
+sci_plex_train.obs['dose']=adata_cut.obs['dose']
+sci_plex_train.obs['SMILES']=adata_cut.obs['SMILES']
+
+sci_plex_train.write('datasets/sci_plex_train_drug_split_1.h5ad')
+sci_plex_train_control = adata_control[adata.obs['drug_split_1']=='train'].copy()
+sci_plex_train_control.write('datasets/sci_plex_train_drug_split_1_control.h5ad')
+
+CELL 19
+adata_cut = adata[adata.obs['drug_split_2']=='train'].copy()
+sci_plex_train= anndata.AnnData(adata_cut.X)
+sci_plex_train.obs_names=adata_cut.obs_names
+sci_plex_train.var_names=adata_cut.var_names
+sci_plex_train.obs['Group']=adata_cut.obs['cov_drug_dose_name']
+sci_plex_train.obs['dose']=adata_cut.obs['dose']
+sci_plex_train.obs['SMILES']=adata_cut.obs['SMILES']
+
+sci_plex_train.write('datasets/sci_plex_train_drug_split_2.h5ad')
+sci_plex_train_control = adata_control[adata.obs['drug_split_2']=='train'].copy()
+sci_plex_train_control.write('datasets/sci_plex_train_drug_split_2_control.h5ad')
+
+CELL 20
+adata_cut = adata[adata.obs['drug_split_0']=='test'].copy()
+sci_plex_test= anndata.AnnData(adata_cut.X)
+sci_plex_test.obs_names=adata_cut.obs_names
+sci_plex_test.var_names=adata_cut.var_names
+sci_plex_test.obs['Group']=adata_cut.obs['cov_drug_dose_name']
+sci_plex_test.obs['dose']=adata_cut.obs['dose']
+sci_plex_test.obs['SMILES']=adata_cut.obs['SMILES']
+sci_plex_test.write('datasets/sci_plex_test_drug_split_0.h5ad')
+sci_plex_test_control = adata_control[adata.obs['drug_split_0']=='test'].copy()
+sci_plex_test_control.write('datasets/sci_plex_test_drug_split_0_control.h5ad')
+
+CELL 21
+adata_cut = adata[adata.obs['drug_split_1']=='test'].copy()
+sci_plex_test= anndata.AnnData(adata_cut.X)
+sci_plex_test.obs_names=adata_cut.obs_names
+sci_plex_test.var_names=adata_cut.var_names
+sci_plex_test.obs['Group']=adata_cut.obs['cov_drug_dose_name']
+sci_plex_test.obs['dose']=adata_cut.obs['dose']
+sci_plex_test.obs['SMILES']=adata_cut.obs['SMILES']
+sci_plex_test.write('datasets/sci_plex_test_drug_split_1.h5ad')
+sci_plex_test_control = adata_control[adata.obs['drug_split_1']=='test'].copy()
+sci_plex_test_control.write('datasets/sci_plex_test_drug_split_1_control.h5ad')
+
+CELL 22
+adata_cut = adata[adata.obs['drug_split_2']=='test'].copy()
+sci_plex_test= anndata.AnnData(adata_cut.X)
+sci_plex_test.obs_names=adata_cut.obs_names
+sci_plex_test.var_names=adata_cut.var_names
+sci_plex_test.obs['Group']=adata_cut.obs['cov_drug_dose_name']
+sci_plex_test.obs['dose']=adata_cut.obs['dose']
+sci_plex_test.obs['SMILES']=adata_cut.obs['SMILES']
+sci_plex_test.write('datasets/sci_plex_test_drug_split_2.h5ad')
+sci_plex_test_control = adata_control[adata.obs['drug_split_2']=='test'].copy()
+sci_plex_test_control.write('datasets/sci_plex_test_drug_split_2_control.h5ad')
+
+CELL 23
+adata_cut = adata[adata.obs['random_split_0']=='test'].copy()
+sci_plex_test= anndata.AnnData(adata_cut.X)
+sci_plex_test.obs_names=adata_cut.obs_names
+sci_plex_test.var_names=adata_cut.var_names
+sci_plex_test.obs['Group']=adata_cut.obs['cov_drug_dose_name']
+sci_plex_test.obs['dose']=adata_cut.obs['dose']
+sci_plex_test.obs['SMILES']=adata_cut.obs['SMILES']
+sci_plex_test.write('datasets/sci_plex_test_random_split_0.h5ad')
+sci_plex_test_control = adata_control[adata.obs['random_split_0']=='test'].copy()
+sci_plex_test_control.write('datasets/sci_plex_test_random_split_0_control.h5ad')
+
+CELL 24
+adata_cut = adata[adata.obs['random_split_2']=='test'].copy()
+sci_plex_test= anndata.AnnData(adata_cut.X)
+sci_plex_test.obs_names=adata_cut.obs_names
+sci_plex_test.var_names=adata_cut.var_names
+sci_plex_test.obs['Group']=adata_cut.obs['cov_drug_dose_name']
+sci_plex_test.obs['dose']=adata_cut.obs['dose']
+sci_plex_test.obs['SMILES']=adata_cut.obs['SMILES']
+sci_plex_test.write('datasets/sci_plex_test_random_split_2.h5ad')
+sci_plex_test_control = adata_control[adata.obs['random_split_2']=='test'].copy()
+sci_plex_test_control.write('datasets/sci_plex_test_random_split_2_control.h5ad')
+
+CELL 25
+adata_cut = adata[adata.obs['random_split_4']=='test'].copy()
+sci_plex_test= anndata.AnnData(adata_cut.X)
+sci_plex_test.obs_names=adata_cut.obs_names
+sci_plex_test.var_names=adata_cut.var_names
+sci_plex_test.obs['Group']=adata_cut.obs['cov_drug_dose_name']
+sci_plex_test.obs['dose']=adata_cut.obs['dose']
+sci_plex_test.obs['SMILES']=adata_cut.obs['SMILES']
+sci_plex_test.write('datasets/sci_plex_test_random_split_4.h5ad')
+sci_plex_test_control = adata_control[adata.obs['random_split_4']=='test'].copy()
+sci_plex_test_control.write('datasets/sci_plex_test_random_split_4_control.h5ad')
+
+CELL 26
+adata_cut = adata[adata.obs['random_split_1']=='test'].copy()
+sci_plex_test= anndata.AnnData(adata_cut.X)
+sci_plex_test.obs_names=adata_cut.obs_names
+sci_plex_test.var_names=adata_cut.var_names
+sci_plex_test.obs['Group']=adata_cut.obs['cov_drug_dose_name']
+sci_plex_test.obs['dose']=adata_cut.obs['dose']
+sci_plex_test.obs['SMILES']=adata_cut.obs['SMILES']
+sci_plex_test.write('datasets/sci_plex_test_random_split_1.h5ad')
+sci_plex_test_control = adata_control[adata.obs['random_split_1']=='test'].copy()
+sci_plex_test_control.write('datasets/sci_plex_test_random_split_1_control.h5ad')
+
+CELL 27
+adata_cut = adata[adata.obs['random_split_4']=='test'].copy()
+sci_plex_test= anndata.AnnData(adata_cut.X)
+sci_plex_test.obs_names=adata_cut.obs_names
+sci_plex_test.var_names=adata_cut.var_names
+sci_plex_test.obs['Group']=adata_cut.obs['cov_drug_dose_name']
+sci_plex_test.obs['dose']=adata_cut.obs['dose']
+sci_plex_test.obs['SMILES']=adata_cut.obs['SMILES']
+sci_plex_test = sci_plex_test[:5,:]
+sci_plex_test.write('datasets/sci_plex_test_random_split_4.h5ad')
+sci_plex_test_control = adata_control[adata.obs['random_split_4']=='test'].copy()
+sci_plex_test_control = sci_plex_test_control[:5,:]
+sci_plex_test_control.write('datasets/sci_plex_test_random_split_4_control.h5ad')

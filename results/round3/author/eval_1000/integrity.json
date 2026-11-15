@@ -1,0 +1,70 @@
+{
+  "predictions": [
+    {
+      "path": "results/round3/author/eval_1000/encoded_group0_rep0.npz",
+      "sha256": "40fb20a367518885b543444675a0530dd299e4eab426fc0160e1a10e85b1da3d"
+    },
+    {
+      "path": "results/round3/author/eval_1000/center_group0_rep0.npz",
+      "sha256": "0a495156b99a60401ae9be5d97e9935d2e07713ec68724dca130ae25e34e2cd4"
+    },
+    {
+      "path": "results/round3/author/eval_1000/gaussian_0.2_group0_rep0.npz",
+      "sha256": "003b227989c7ee5feb3dadb20877dbefb491419bcf3e3c1c74da369898eba2e8"
+    },
+    {
+      "path": "results/round3/author/eval_1000/wrong_class_group0_rep0.npz",
+      "sha256": "d58bb850ec5639986c8a279e42970b160aea01ea8c32f69b95645d9e635f827a"
+    },
+    {
+      "path": "results/round3/author/eval_1000/encoded_group1_rep0.npz",
+      "sha256": "3dc2bff27f01cbc1148504ff321c8eb413369d85489b5cbf63ab2f0ea1f90b9d"
+    },
+    {
+      "path": "results/round3/author/eval_1000/center_group1_rep0.npz",
+      "sha256": "99c75c4b34af41812204a85296a1f622671ff6e1fceedb1feb0eef08f3a2fcfe"
+    },
+    {
+      "path": "results/round3/author/eval_1000/gaussian_0.2_group1_rep0.npz",
+      "sha256": "6b981dc1c5782ae20f4dd3d9b4611cd14c52d61625d5848b9edeafc433770952"
+    },
+    {
+      "path": "results/round3/author/eval_1000/wrong_class_group1_rep0.npz",
+      "sha256": "e3661646d550ed3f4e58028aacd74bbf69cc11a7d721ac927568696066aa7915"
+    },
+    {
+      "path": "results/round3/author/eval_1000/encoded_group2_rep0.npz",
+      "sha256": "c986d8408385db459c1ea90f6010e5099d281b8531ecdafe2bb33fd20941e5da"
+    },
+    {
+      "path": "results/round3/author/eval_1000/center_group2_rep0.npz",
+      "sha256": "5e33db031647317f49f5422b3a3f3a89c2bb25cdd3a2f317a62f9ee1610e296a"
+    },
+    {
+      "path": "results/round3/author/eval_1000/gaussian_0.2_group2_rep0.npz",
+      "sha256": "388ebe8152188e0c4bcc9bdab28c9f62b894883e94756d671e0a34813c8bc264"
+    },
+    {
+      "path": "results/round3/author/eval_1000/wrong_class_group2_rep0.npz",
+      "sha256": "4f8b32b4766487e57e9ea7238d37131ca663dcb0da6078b3ac5a331d96c8ed18"
+    },
+    {
+      "path": "results/round3/author/eval_1000/encoded_group3_rep0.npz",
+      "sha256": "af4cb12786febf11f7ba3cce1da63e965118a3ccd819116d5e0914f9cd5d0fe0"
+    },
+    {
+      "path": "results/round3/author/eval_1000/center_group3_rep0.npz",
+      "sha256": "105d85483ab152b885751de083de58cc2d1d5789663ea22129db5c20bed6af6e"
+    },
+    {
+      "path": "results/round3/author/eval_1000/gaussian_0.2_group3_rep0.npz",
+      "sha256": "0d11e3ce5e43ff8489e9f678ea46716932355344ae11953f60e8159227f312b1"
+    },
+    {
+      "path": "results/round3/author/eval_1000/wrong_class_group3_rep0.npz",
+      "sha256": "ace7745b3bf29feecfc5ad93962531112c4eea47937c2313a7603b30d44b3c63"
+    }
+  ],
+  "count": 16,
+  "all_means_recomputed": true
+}

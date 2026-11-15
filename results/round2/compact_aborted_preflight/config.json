@@ -1,0 +1,22 @@
+{
+  "panel": "source",
+  "transform": "identity",
+  "width": 512,
+  "latent_noise": 0.1,
+  "wd": 0.0001,
+  "variant": "compact",
+  "seed": 42,
+  "steps": 100000,
+  "batch_size": 64,
+  "lr": 0.0001,
+  "math": "IEEE FP32",
+  "sampling": "native CPU loader + NumPy timesteps",
+  "genes": 203,
+  "source_sha256": {
+    "train_util.py": "9ff72b49db4f87fb2c8ea72282dfe5e95dea1d2acea4ff5982a0f4ec53b963ab",
+    "MLPModel.py": "d99e09b3a3c7dd449b057287e707ea20879ce16d5016f9e82823083653acbaa9",
+    "diffusion.py": "a692901d79797703564efcdc984af3764596579bda7b31dad75e06a83354dd01"
+  },
+  "train_data_sha256": "cf6e2feddfb1a9ab257ddec6e5a9c35475b79e2af4b291d923e7195a4052ce61",
+  "parameters": 3598599
+}

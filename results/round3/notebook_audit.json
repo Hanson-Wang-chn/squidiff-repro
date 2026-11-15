@@ -1,0 +1,40 @@
+{
+  "bvo_interface": {
+    "load_cell": 54,
+    "indexing_cell": 56,
+    "sample_cell": 57,
+    "complete_shape": [
+      6838,
+      596
+    ],
+    "literal_data0_shape": [
+      1,
+      596
+    ],
+    "first_cell_major_type": 1,
+    "literal_data0_ipsc_cells": 0,
+    "consequence": "Encoder receives one cell; semantic vector broadcasts during 6838-cell generation; later iPSC subset is empty",
+    "repair": "Use whole AnnData consistently, as author_checkpoint_audit.py does"
+  },
+  "fig2_filename_mismatch": {
+    "written": [
+      "diff_train_raw.h5ad",
+      "val_adata_raw.h5ad",
+      "test_adata_raw.h5ad"
+    ],
+    "next_notebook_reads": [
+      "datasets/diff_train_raw.h5ad",
+      "datasets/diff_val_raw.h5ad",
+      "datasets/diff_test_raw.h5ad"
+    ],
+    "repair": "Local data preparation uses explicit stable paths and validates cell/gene identity"
+  },
+  "fig2_replication": {
+    "model_load_cell": 1,
+    "repeat_cell": 8,
+    "sampling_repeats": 6,
+    "model_retraining_inside_repeat": false,
+    "consequence": "Six draws from one loaded model are not six independent model-training runs"
+  },
+  "fig2_checkpoint_path": "../Squidiff_project/saved_model/fig2_model.pt"
+}

@@ -1,0 +1,19 @@
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+diffusion num of steps =  1000
+diffusion num of steps =  1000
+diffusion num of steps =  1000
+diffusion num of steps =  1000
+diffusion num of steps =  1000
+diffusion num of steps =  1000
+{
+  "validation_observer_parameter_max_error": 0.0,
+  "native_optimizer_rng_resume_parameter_max_error": 0.0,
+  "cpu_cuda_numpy_rng_restored": true,
+  "standardized_floor_reduces_to_source_max_error": 0.0,
+  "full_source_run_loop_preserved": true,
+  "full_source_run_step_preserved": true,
+  "full_source_forward_backward_preserved": true
+}

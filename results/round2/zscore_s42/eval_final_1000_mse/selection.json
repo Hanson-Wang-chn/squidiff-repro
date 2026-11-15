@@ -1,0 +1,12 @@
+{
+  "selected": {
+    "mode": "isotropic",
+    "sigma": 0.2082468420267105,
+    "wasserstein": 1.2269992595520107,
+    "mse": 1.041645315795657
+  },
+  "within_latent_rms": 0.416493684053421,
+  "checkpoint_step": 100000,
+  "criterion": "Independent endpoints only; mse",
+  "middle_days_used": false
+}

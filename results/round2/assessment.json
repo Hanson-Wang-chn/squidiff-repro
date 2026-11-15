@@ -1,0 +1,16 @@
+{
+  "completed_at": "2026-11-15T12:22:16.856085+08:00",
+  "status": "complete",
+  "scientific_outcome": "Accurate day1 transient-state reproduction not achieved",
+  "formal_training_versions": 5,
+  "updates_per_model": 100000,
+  "total_formal_trajectory_updates": 500000,
+  "metric_records": 110,
+  "clock_grid_points": 7,
+  "new_clock_predictions": 3,
+  "old_archive_unchanged": true,
+  "gpu_work_finished": true,
+  "report": "report-2.md",
+  "primary_metrics": "results/round2/all_metrics.csv",
+  "checks": "results/round2/final_checks.json"
+}

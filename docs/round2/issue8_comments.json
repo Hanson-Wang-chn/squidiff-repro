@@ -1,0 +1,118 @@
+{
+  "comments": [
+    {
+      "url": "https://github.com/siyuh/Squidiff/issues/8#issuecomment-3604329031",
+      "body": "Thank you for your questions! I apologize for late response due to the busy schedule these days. I will get you back in 1-2 weeks with code and instructions. Thanks for waiting!",
+      "user": {
+        "login": "siyuh",
+        "name": "siyuh",
+        "email": null,
+        "avatar_url": "https://avatars.githubusercontent.com/u/53618666?v=4",
+        "id": 53618666
+      },
+      "id": 3604329031,
+      "pull_request_review_id": null,
+      "in_reply_to_id": null,
+      "created_at": null,
+      "updated_at": null,
+      "review": null,
+      "side": null,
+      "line": null,
+      "start_line": null,
+      "path": null,
+      "body_html": "<p dir=\"auto\">Thank you for your questions! I apologize for late response due to the busy schedule these days. I will get you back in 1-2 weeks with code and instructions. Thanks for waiting!</p>"
+    },
+    {
+      "url": "https://github.com/siyuh/Squidiff/issues/8#issuecomment-3615129056",
+      "body": "Hello! That's a great question!\nI noticed that neither your preprocessing pipeline nor the one described in the paper mentions z-score scaling. Therefore, before reproducing Figure 2, I wondered if this step was actually required but overlooked and unmentioned in the paper—and since you didn’t perform it either, it might have led to a significant deviation in the evaluation scores.\nInitially, I hypothesized that applying scaling would be necessary to achieve the results reported in the paper, and the suboptimal performance you encountered was due to omitting this step. To investigate the root cause, I prepared two sets of datasets during preprocessing:\n\n1. One set with z-score scaling applied to both the training and test datasets;\n\n2. The other set without z-score scaling for both the training and test datasets.\n\nI trained two models separately using these datasets and conducted predictions, but the results were completely opposite to my expectations!The dataset with scaling yielded evaluation results similar to what you observed, while the dataset without scaling produced results consistent with those in the original paper.\nThus, I now wonder if the preprocessing steps in the paper are rigorous and scaling is truly unnecessary—and could it be that you actually applied scaling?",
+      "user": {
+        "login": "baldmk",
+        "name": "baldmk",
+        "email": null,
+        "avatar_url": "https://avatars.githubusercontent.com/u/77619748?v=4",
+        "id": 77619748
+      },
+      "id": 3615129056,
+      "pull_request_review_id": null,
+      "in_reply_to_id": null,
+      "created_at": null,
+      "updated_at": null,
+      "review": null,
+      "side": null,
+      "line": null,
+      "start_line": null,
+      "path": null,
+      "body_html": "<p dir=\"auto\">Hello! That's a great question!<br>\nI noticed that neither your preprocessing pipeline nor the one described in the paper mentions z-score scaling. Therefore, before reproducing Figure 2, I wondered if this step was actually required but overlooked and unmentioned in the paper—and since you didn’t perform it either, it might have led to a significant deviation in the evaluation scores.<br>\nInitially, I hypothesized that applying scaling would be necessary to achieve the results reported in the paper, and the suboptimal performance you encountered was due to omitting this step. To investigate the root cause, I prepared two sets of datasets during preprocessing:</p>\n<ol dir=\"auto\">\n<li>\n<p dir=\"auto\">One set with z-score scaling applied to both the training and test datasets;</p>\n</li>\n<li>\n<p dir=\"auto\">The other set without z-score scaling for both the training and test datasets.</p>\n</li>\n</ol>\n<p dir=\"auto\">I trained two models separately using these datasets and conducted predictions, but the results were completely opposite to my expectations!The dataset with scaling yielded evaluation results similar to what you observed, while the dataset without scaling produced results consistent with those in the original paper.<br>\nThus, I now wonder if the preprocessing steps in the paper are rigorous and scaling is truly unnecessary—and could it be that you actually applied scaling?</p>"
+    },
+    {
+      "url": "https://github.com/siyuh/Squidiff/issues/8#issuecomment-3716963175",
+      "body": "Hello there @siyuh, I wonder if there is any update regarding the code for reproducing the Fig. 2. I also encounter similarly low performance using the default training code (and I wasn't applying scaling but maybe it might be different in splitting/filtering as well?), it would be great if there are available code to reproduce this experiment.\n\nThank you for looking into this matter\n",
+      "user": {
+        "login": "Jiram-Kin",
+        "name": "Jiram-Kin",
+        "email": null,
+        "avatar_url": "https://avatars.githubusercontent.com/u/94770072?v=4",
+        "id": 94770072
+      },
+      "id": 3716963175,
+      "pull_request_review_id": null,
+      "in_reply_to_id": null,
+      "created_at": null,
+      "updated_at": null,
+      "review": null,
+      "side": null,
+      "line": null,
+      "start_line": null,
+      "path": null,
+      "body_html": "<p dir=\"auto\">Hello there <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/siyuh/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/siyuh\">@siyuh</a>, I wonder if there is any update regarding the code for reproducing the Fig. 2. I also encounter similarly low performance using the default training code (and I wasn't applying scaling but maybe it might be different in splitting/filtering as well?), it would be great if there are available code to reproduce this experiment.</p>\n<p dir=\"auto\">Thank you for looking into this matter</p>"
+    },
+    {
+      "url": "https://github.com/siyuh/Squidiff/issues/8#issuecomment-3810141441",
+      "body": "I’m also seeing a similar lack of predictive signal on my datasets, with the model showing almost no fitting capability. It would be super helpful if you could share the reproduction scripts or some guidance when you have a moment. Thanks for looking into this!",
+      "user": {
+        "login": "pizouinghua",
+        "name": "pizouinghua",
+        "email": null,
+        "avatar_url": "https://avatars.githubusercontent.com/u/253451176?v=4",
+        "id": 253451176
+      },
+      "id": 3810141441,
+      "pull_request_review_id": null,
+      "in_reply_to_id": null,
+      "created_at": null,
+      "updated_at": null,
+      "review": null,
+      "side": null,
+      "line": null,
+      "start_line": null,
+      "path": null,
+      "body_html": "<p dir=\"auto\">I’m also seeing a similar lack of predictive signal on my datasets, with the model showing almost no fitting capability. It would be super helpful if you could share the reproduction scripts or some guidance when you have a moment. Thanks for looking into this!</p>"
+    },
+    {
+      "url": "https://github.com/siyuh/Squidiff/issues/8#issuecomment-4104914471",
+      "body": "Hi, I have released the data preparation for fig2 as well as the checkpoints, please check https://github.com/siyuh/Squidiff_reproducibility for more details. I have train and run the model several times to confirm reproducing the results. If you still have issue to reproduce, please let me know. Thanks!",
+      "user": {
+        "login": "siyuh",
+        "name": "siyuh",
+        "email": null,
+        "avatar_url": "https://avatars.githubusercontent.com/u/53618666?v=4",
+        "id": 53618666
+      },
+      "id": 4104914471,
+      "pull_request_review_id": null,
+      "in_reply_to_id": null,
+      "created_at": null,
+      "updated_at": null,
+      "review": null,
+      "side": null,
+      "line": null,
+      "start_line": null,
+      "path": null,
+      "body_html": "<p dir=\"auto\">Hi, I have released the data preparation for fig2 as well as the checkpoints, please check <a href=\"https://github.com/siyuh/Squidiff_reproducibility\">https://github.com/siyuh/Squidiff_reproducibility</a> for more details. I have train and run the model several times to confirm reproducing the results. If you still have issue to reproduce, please let me know. Thanks!</p>"
+    }
+  ],
+  "url": "https://github.com/siyuh/Squidiff/issues/8",
+  "title": "siyuh/Squidiff Issue #8 comments",
+  "display_url": "https://github.com/siyuh/Squidiff/issues/8",
+  "display_title": "siyuh/Squidiff Issue #8 comments"
+}

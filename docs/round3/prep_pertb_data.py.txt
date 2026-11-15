@@ -1,0 +1,131 @@
+CELL 0
+import sys
+import os
+
+import pandas as pd
+import scanpy as sc
+import numpy as np
+import warnings
+
+import torch
+import torch.nn.functional as F
+import torch.nn as nn
+
+from torch.utils.data import DataLoader, TensorDataset
+from torch.nn import DataParallel
+import matplotlib.pyplot as plt
+from matplotlib.pyplot import rc_context
+import anndata
+import seaborn as sns
+import matplotlib.font_manager
+from matplotlib import rcParams
+
+font_list = []
+fpaths = matplotlib.font_manager.findSystemFonts()
+for i in fpaths:
+    try:
+        f = matplotlib.font_manager.get_font(i)
+        font_list.append(f.family_name)
+    except RuntimeError:
+        pass
+
+font_list = set(font_list)
+plot_font = 'Helvetica' if 'Helvetica' in font_list else 'FreeSans'
+rcParams['font.family'] = plot_font
+rcParams.update({'font.size': 10})
+rcParams.update({'figure.dpi': 300})
+rcParams.update({'figure.figsize': (3,3)})
+rcParams.update({'savefig.dpi': 500})
+warnings.filterwarnings('ignore')
+
+%load_ext autoreload
+%autoreload 2
+import os
+os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
+
+CELL 1
+adata_raw = sc.read_h5ad('/hpc/mydata/siyu.he/Siyu_projects/squidward_study/perturb/data/norman/perturb_processed.h5ad')
+#adata = adata[adata.obs['condition']=='ctrl'].copy()#anndata.AnnData(count)
+adata_raw.obs['Group']=adata_raw.obs['condition']
+adata_raw = adata_raw[adata_raw.obs['Group'].isin(['ctrl',
+                                                       'PTPN12+ZBTB25',
+                                                       'ZBTB25+ctrl',
+                                                       'PTPN12+ctrl'])].copy()
+
+CELL 2
+adata = adata_raw.copy()
+condi_df = adata.obs['Group'].map({'ctrl':0,
+                                     'PTPN12+ctrl':1,
+                                     'ZBTB25+ctrl':2,
+                                     'PTPN12+ZBTB25':3
+                             })
+del adata.obs
+adata.obs['Group'] = condi_df
+
+CELL 3
+sc.tl.pca(adata, svd_solver='arpack')
+sc.pp.neighbors(adata, n_neighbors=30, n_pcs=50)
+sc.tl.umap(adata,min_dist=0.005)
+
+CELL 4
+import matplotlib.colors as mcolors
+hex_colors = ['#D4CB92', '#395C6B', '#80A4ED','#BCD3F2']
+rgb_colors = [mcolors.to_rgb(color) for color in hex_colors]
+cmap = mcolors.LinearSegmentedColormap.from_list("custom_cmap", rgb_colors)
+fig,axs=plt.subplots(1,1,figsize=(3,3),dpi=800)
+for i in range(4):
+    g=axs.scatter(adata.obsm['X_umap'][adata.obs['Group']==i,0],
+                adata.obsm['X_umap'][adata.obs['Group']==i,1],
+                #c=adata.obs['condition'],
+                #cmap=cmap,
+                  c=hex_colors[i],
+                s=1,
+                alpha=0.8
+               )
+#plt.colorbar(g)
+plt.axis('off')
+
+CELL 5
+sc.pp.highly_variable_genes(adata, n_top_genes=1000)
+
+for i in ['ALAS2',
+          'HBA1',
+          'HBA2',
+          'HIST1H1C',
+          'GYPB',
+          'SLC25A37',
+          #'DYNLRB1',
+          'LGALS1',
+          #'TUFM',
+          #'PKM'
+         ]:
+    adata.var.highly_variable[list(adata.var['gene_name']).index(i)]=True
+adata = adata[:, adata.var.highly_variable].copy()
+
+CELL 6
+adata
+
+CELL 7
+adata.X = adata.X.toarray()
+
+CELL 8
+adata_ctl = adata[adata.obs['Group'].isin([0,1,2])].copy()
+adata_val = adata[adata.obs['Group'].isin([3])].copy()
+
+CELL 9
+adata_val
+
+CELL 10
+adata_ctl
+
+CELL 11
+adata_ctl.write('datasets/gears_train_data_2000.h5ad')
+adata_val.write('datasets/gears_test_data_2000.h5ad')
+
+CELL 12
+sc.read_h5ad('datasets/gears_train_data.h5ad')
+
+CELL 13
+adata_ctl.to_df()
+
+CELL 14

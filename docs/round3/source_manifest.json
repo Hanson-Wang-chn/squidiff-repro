@@ -1,0 +1,70 @@
+[
+  {
+    "path": "scripts/author_checkpoint_audit.py",
+    "sha256": "f5e697a74776b6f7d5acc3fbafe59f9701c602b2e8636a632bc72728fc9ed7ff"
+  },
+  {
+    "path": "scripts/diffusion_adapter.py",
+    "sha256": "cb54ee4aada9700a689220096e69a10f83a4caef62c3a5a58b38ce5424dae31f"
+  },
+  {
+    "path": "scripts/round3.py",
+    "sha256": "1c00d407b729027e796c92e91bd2420b7fd0717662e6e0b4f156d8b71cd79457"
+  },
+  {
+    "path": "scripts/round3_adapter_audit.py",
+    "sha256": "9b21580e2e4973a2566ff883ba51832dfb919891c4ef937512582bf14921467f"
+  },
+  {
+    "path": "scripts/round3_author_summary.py",
+    "sha256": "eb2654db395d1cbabb9d0eeb6355d345bf64d0338f3738aeb04b76f24ea5467a"
+  },
+  {
+    "path": "scripts/round3_author_unseen.py",
+    "sha256": "04ac633a387181ee03fdcdccacfa3d37a11157878f8390d7272bb8f9e8316cc7"
+  },
+  {
+    "path": "scripts/round3_deduplicate.py",
+    "sha256": "2f95f061240808ef6706de0d5f379475498f67aea0ed1c7a437c85a2ab314a52"
+  },
+  {
+    "path": "scripts/round3_diagnostics.py",
+    "sha256": "d97aed7170871fff4c1e90e24024128341d5074386abe4e5b3c45d5f45538e1f"
+  },
+  {
+    "path": "scripts/round3_integrity.py",
+    "sha256": "d835b974a20c35ff5f6feb6e9babdab8e7a0d22848fbf9c25637c85b92bea8de"
+  },
+  {
+    "path": "scripts/round3_notebook_audit.py",
+    "sha256": "8373cb5da43dc5d1dca6ef00944b744451c711f3d1a6952b4ec670d4ce011115"
+  },
+  {
+    "path": "scripts/round3_prediction_summary.py",
+    "sha256": "9d55888a2b498b404305124cf9c32f69c0eb672d5e230d848d680e38da619b3c"
+  },
+  {
+    "path": "scripts/round3_queue.py",
+    "sha256": "9f86d1bd0cc74f294232f56b8b63371ba17041e6f48523dabea3584227467924"
+  },
+  {
+    "path": "scripts/round3_report.py",
+    "sha256": "20e843b8c0a2d4752d9400f3ea09dc27cb1c47cf0276a05aa7b6dac4fdda1622"
+  },
+  {
+    "path": "docs/round3/training_sources/round3.py.txt",
+    "sha256": "1c00d407b729027e796c92e91bd2420b7fd0717662e6e0b4f156d8b71cd79457"
+  },
+  {
+    "path": "docs/round3/training_sources/diffusion_adapter.py.txt",
+    "sha256": "cb54ee4aada9700a689220096e69a10f83a4caef62c3a5a58b38ce5424dae31f"
+  },
+  {
+    "path": "docs/round3/training_sources/round2.py.txt",
+    "sha256": "787dc9c88c2a95b2757de77b468a97357d532b54194fcf341abf090e5a9ef246"
+  },
+  {
+    "path": "docs/round3/training_sources/common.py.txt",
+    "sha256": "17fdeeb95a053d42791a1e6b171dbb2b76864c91c3d4239390f3c0f69887e535"
+  }
+]

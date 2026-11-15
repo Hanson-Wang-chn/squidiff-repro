@@ -1,0 +1,5 @@
+{
+  "source": "results/round2/native_s42/eval_step_010000_1000",
+  "all_parameters_and_buffers_bitwise_equal": true,
+  "new_sampling_performed": false
+}

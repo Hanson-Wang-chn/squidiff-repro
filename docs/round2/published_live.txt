@@ -1,0 +1,939 @@
+Squidiff: predicting cellular development and responses to perturbations using a diffusion model | Nature Methods
+Skip to main content
+Thank you for visiting nature.com. You are using a browser version with limited support for CSS. To obtain
+            the best experience, we recommend you use a more up to date browser (or turn off compatibility mode in
+            Internet Explorer). In the meantime, to ensure continued support, we are displaying the site without styles
+            and JavaScript.
+Advertisement
+View all journals
+Saved research
+Search
+Log in
+Content
+Explore content
+About
+the journal
+Publish
+with us
+Subscribe
+Sign up for alerts
+RSS feed
+nature
+nature methods
+articles
+article
+Article
+Published:
+03 November 2025
+Squidiff: predicting cellular development and responses to perturbations using a diffusion model
+Siyu He
+1
+,
+2
+,
+3
+na1
+,
+Yuefei Zhu
+ORCID:
+orcid.org/0000-0001-7684-2448
+1
+na1
+,
+Daniel Naveed Tavakol
+1
+na1
+,
+Haotian Ye
+4
+,
+Yeh-Hsing Lao
+ORCID:
+orcid.org/0000-0002-7990-199X
+1
+,
+5
+,
+Zixian Zhu
+1
+,
+Cong Xu
+1
+,
+Shradha Chauhan
+6
+,
+Guy Garty
+7
+,
+Raju Tomer
+ORCID:
+orcid.org/0000-0002-4229-2860
+1
+,
+6
+,
+Gordana Vunjak-Novakovic
+ORCID:
+orcid.org/0000-0002-9382-1574
+1
+,
+8
+,
+James Zou
+ORCID:
+orcid.org/0000-0001-8880-4764
+3
+,
+4
+,
+9
+,
+Elham Azizi
+ORCID:
+orcid.org/0000-0001-5059-6971
+1
+,
+2
+,
+8
+,
+10
+,
+11
+&
+…
+Kam W. Leong
+ORCID:
+orcid.org/0000-0002-8133-4955
+1
+,
+12
+Show authors
+Nature Methods
+volume
+23
+,
+pages
+65–77 (
+2026
+)
+Cite this article
+Save article
+View saved research
+36k
+Accesses
+62
+Citations
+100
+Altmetric
+Metrics
+details
+Abstract
+Single-cell sequencing has revolutionized our understanding of cellular heterogeneity and responses to environmental stimuli. However, mapping transcriptomic changes across diverse cell types in response to various stimuli and elucidating underlying disease mechanisms remains challenging. Here we present Squidiff, a diffusion model-based generative framework that predicts transcriptomic changes across diverse cell types in response to environmental changes. We demonstrate the robustness of Squidiff across cell differentiation, gene perturbation and drug response prediction. Through continuous denoising and semantic feature integration, Squidiff learns transient cell states and predicts high-resolution transcriptomic landscapes over time and conditions. Furthermore, we applied Squidiff to model blood vessel organoid development and cellular responses to neutron irradiation and growth factors. Our results demonstrate that Squidiff enables in silico screening of molecular landscapes and cellular state transitions, facilitating rapid hypothesis generation and providing valuable insights into the regulatory principles of cell fate decisions.
+This is a preview of subscription content,
+access via your institution
+Access options
+Access through your institution
+Access Nature and 54 other Nature Portfolio journals
+Get Nature+, our best-value online-access subscription
+$39.99
+/ 30 days
+cancel any time
+Learn more
+Subscribe to this journal
+Receive 12 print issues and online access
+$259.00
+per year
+only $21.58 per issue
+Learn more
+Buy this article
+Purchase on SpringerLink
+Instant access to the full article PDF.
+USD 39.95
+Prices may be subject to local taxes which are calculated during checkout
+Additional access options:
+Log in
+Learn about institutional subscriptions
+Read our FAQs
+Contact customer support
+Fig. 1: Overview of Squidiff and its performance on synthetic data.
+Fig. 2: Squidiff predicts cell differentiation.
+Fig. 3: Squidiff predicts gene and drug perturbation.
+Fig. 4: Squidiff predicts cell differentiation processes in BVOs.
+Fig. 5: Structural damage and metabolic phenotype alteration in BVOs induced by neutron irradiation.
+Fig. 6: Treatment potential of G-CSF in securing against radiation disruption in BVOs.
+Similar content being viewed by others
+Learning cell dynamics with neural differential equations
+Article
+18 December 2025
+scPower accelerates and optimizes the design of multi-sample single cell transcriptomic studies
+Article
+Open access
+16 November 2021
+High-throughput robust single-cell DNA methylation profiling with sciMETv2
+Article
+Open access
+09 December 2022
+Explore related subjects
+Discover the latest articles and news in related subjects.
+Biotechnology
+Computational models
+Machine learning
+Stem-cell differentiation
+Gene Expression Analysis in Cancer Genomics
+Data availability
+The public dataset of scRNA-seq of iPSCs differentiating toward endoderm
+27
+was downloaded from Zenodo (
+https://zenodo.org/records/3625024#.Xil-0y2cZ0s
+)
+66
+. The dataset for nonadditive gene perturbation
+34
+was downloaded from
+GSE133344
+. The dataset for drug treatment of melanoma cells
+8
+was downloaded from
+https://www.research-collection.ethz.ch/handle/20.500.11850/609681
+. The public dataset of drug screening in glioblastoma
+35
+was downloaded from accession
+GSE148842
+. The sci-Plex3 dataset
+37
+was downloaded from
+GSM4150378
+. The raw single-cell sequencing data of BVOs are available on figshare (
+https://doi.org/10.6084/m9.figshare.27948633
+)
+67
+.
+Source data
+are provided with this paper.
+Code availability
+The Squidiff package and code to reproduce the results in this study are available on the GitHub repositories:
+https://github.com/siyuh/Squidiff
+and
+https://github.com/siyuh/Squidiff_reproducibility
+. The code is also deposited at Zenodo (
+https://doi.org/10.5281/zenodo.15061773
+)
+65
+.
+References
+Schneider, G., Schmidt-Supprian, M., Rad, R. & Saur, D. Tissue-specific tumorigenesis: context matters.
+Nat. Rev. Cancer
+17
+, 239–253 (2017).
+PubMed
+PubMed Central
+Google Scholar
+Potente, M. & Mäkinen, T. Vascular heterogeneity and specialization in development and disease.
+Nat. Rev. Mol. Cell Biol.
+18
+, 477–494 (2017).
+PubMed
+Google Scholar
+Rafelski, S. M. & Theriot, J. A. Establishing a conceptual framework for holistic cell states and state transitions.
+Cell
+187
+, 2633–2651 (2024).
+PubMed
+Google Scholar
+Gullapalli, R. R., Desai, K. V., Santana-Santos, L., Kant, J. A. & Becich, M. J. Next generation sequencing in clinical medicine: challenges and lessons for pathology and biomedical informatics.
+J. Pathol. Inform.
+3
+, 40 (2012).
+PubMed
+PubMed Central
+Google Scholar
+Atanasov, A. G., Zotchev, S. B., Dirsch, V. M. & Supuran, C. T. Natural products in drug discovery: advances and opportunities.
+Nat. Rev. Drug Discov.
+20
+, 200–216 (2021).
+PubMed
+PubMed Central
+Google Scholar
+Lotfollahi, M., Wolf, F. A. & Theis, F. J. scGen predicts single-cell perturbation responses.
+Nat. Methods
+16
+, 715–721 (2019).
+PubMed
+Google Scholar
+Kana, O. et al. Generative modeling of single-cell gene expression for dose-dependent chemical perturbations.
+Patterns
+4
+, 100817 (2023).
+PubMed
+PubMed Central
+Google Scholar
+Bunne, C. et al. Learning single-cell perturbation responses using neural optimal transport.
+Nat. Methods
+20
+, 1759–1768 (2023).
+PubMed
+PubMed Central
+Google Scholar
+Roohani, Y., Huang, K. & Leskovec, J. Predicting transcriptional outcomes of novel multigene perturbations with GEARS.
+Nat. Biotechnol.
+42
+, 927–935 (2023).
+PubMed
+PubMed Central
+Google Scholar
+Chen, Y. & Zou, J. Simple and effective embedding model for single-cell biology built from ChatGPT.
+Nat. Biomed. Eng.
+9
+, 483–493 (2025).
+PubMed
+Google Scholar
+Kingma, D. P. & Welling, M. Auto-encoding variational Bayes. In
+2nd International Conference on Learning Representations (ICLR 2014)
+(eds Bengio, Y. & LeCun, Y.) (OpenReview, 2014).
+Yang, L. et al. Diffusion models: a comprehensive survey of methods and applications.
+ACM Comput. Surv.
+56
+, 1–39 (2023).
+Google Scholar
+Ho, J., Jain, A. & Abbeel, P. Denoising diffusion probabilistic models. In
+Advances in Neural Information Processing Systems 33
+(NeurIPS 2020)
+(eds Larochelle, H. et al.) 6840–6851 (Curran Associates, 2020).
+Guo, Z. et al. Diffusion models in bioinformatics and computational biology.
+Nat. Rev. Bioeng.
+2
+, 136–154 (2023).
+PubMed
+PubMed Central
+Google Scholar
+Rombach, R., Blattmann, A., Lorenz, D., Esser, P. & Ommer, B. High-resolution image synthesis with latent diffusion models. In
+Proc. IEEE/CVF Conference on Computer Vision and Pattern Recognition
+10684–10695 (IEEE, 2022).
+Pandey, K., Mukherjee, A., Rai, P. & Kumar, A. VAEs meet diffusion models: efficient and high-fidelity generation. In
+NeurIPS 2021 Workshop on Deep Generative Models and Downstream Applications
+(OpenReview, 2021);
+https://openreview.net/pdf?id=-J8dM4ed_92
+Sadria, M. & Layton, A. scVAEDer: integrating deep diffusion models and variational autoencoders for single-cell transcriptomics analysis.
+Genome Biol.
+26
+, 64 (2025).
+PubMed
+PubMed Central
+Google Scholar
+Luo, E., Hao, M., Wei, L. & Zhang, X. scDiffusion: conditional generation of high-quality single-cell data using diffusion model.
+Bioinformatics
+40
+, btae518 (2024).
+PubMed
+PubMed Central
+Google Scholar
+Tang, W. et al. A general single-cell analysis framework via conditional diffusion generative models. Preprint at
+bioRxiv
+https://doi.org/10.1101/2023.10.13.562243
+(2023).
+Preechakul, K., Chatthee, N., Wizadwongsa, S. & Suwajanakorn, S. Diffusion autoencoders: toward a meaningful and decodable representation. In
+2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
+10619–10629 (IEEE, 2022).
+Bunne, C. et al. How to build the virtual cell with artificial intelligence: priorities and opportunities.
+Cell
+187
+, 7045–7063 (2024).
+PubMed
+PubMed Central
+Google Scholar
+Song, J., Meng, C. & Ermon, S. Denoising diffusion implicit models. In
+9th International Conference on Learning Representations (ICLR 2021)
+(OpenReview, 2021);
+https://openreview.net/pdf?id=St1giarCHLP
+Yahaya, B. H.
+Organoid Technology for Disease Modelling and Personalized Treatment
+(Springer Nature, 2022).
+Nikolova, M. T. et al. Fate and state transitions during human blood vessel organoid development.
+Cell
+188
+, 3329–3348.e31 (2025).
+PubMed
+Google Scholar
+Ho, J., Jain, A. & Abbeel, P. Denoising diffusion probabilistic models.
+Adv. Neural Inf. Process. Syst.
+33
+, 6840–6851 (2020).
+Google Scholar
+Zappia, L., Phipson, B. & Oshlack, A. Splatter: simulation of single-cell RNA sequencing data.
+Genome Biol.
+18
+, 174 (2017).
+PubMed
+PubMed Central
+Google Scholar
+Cuomo, A. S. E., et al. Single-cell RNA-sequencing of differentiating iPS cells reveals dynamic genetic effects on gene expression.
+Nat. Commun.
+11
+, 810 (2020).
+PubMed
+PubMed Central
+Google Scholar
+Chambers, I. et al. Nanog safeguards pluripotency and mediates germline development.
+Nature
+450
+, 1230–1234 (2007).
+PubMed
+Google Scholar
+Schrode, N., Saiz, N., Di Talia, S. & Hadjantonakis, A.-K. GATA6 levels modulate primitive endoderm cell fate choice and timing in the mouse blastocyst.
+Dev. Cell
+29
+, 454–467 (2014).
+PubMed
+PubMed Central
+Google Scholar
+Wilson, V. & Beddington, R. Expression of T protein in the primitive streak is necessary and sufficient for posterior mesoderm movement and somite differentiation.
+Dev. Biol.
+192
+, 45–58 (1997).
+PubMed
+Google Scholar
+Wolf, F. A. et al. PAGA: graph abstraction reconciles clustering with trajectory inference through a topology preserving map of single cells.
+Genome Biol.
+20
+, 59 (2019).
+PubMed
+PubMed Central
+Google Scholar
+Cannoodt, R. et al. SCORPIUS improves trajectory inference and identifies novel modules in dendritic cell development. Preprint at
+bioRxiv
+https://doi.org/10.1101/079509
+(2016).
+Qiu, X. et al. Reversed graph embedding resolves complex single-cell trajectories.
+Nat. Methods
+14
+, 979–982 (2017).
+PubMed
+PubMed Central
+Google Scholar
+Norman, T. M. et al. Exploring genetic interaction manifolds constructed from rich single-cell phenotypes.
+Science
+365
+, 786–793 (2019).
+PubMed
+PubMed Central
+Google Scholar
+Zhao, W., et al. Deconvolution of cell type-specific drug responses in human tumor tissue with single-cell RNA-seq.
+Genome Med.
+13
+, 82 (2021).
+PubMed
+PubMed Central
+Google Scholar
+Qi, X., et al. Predicting transcriptional responses to novel chemical perturbations using deep generative model for drug discovery.
+Nat. Commun.
+15
+, 9256 (2024).
+PubMed
+PubMed Central
+Google Scholar
+Srivatsan, S. R., et al. Massively multiplex chemical transcriptomics at single-cell resolution.
+Science
+367
+, 45–51 (2020).
+PubMed
+Google Scholar
+Hofer, M. & Lutolf, M. P. Engineering organoids.
+Nat. Rev. Mater.
+6
+, 402–420 (2021).
+PubMed
+PubMed Central
+Google Scholar
+Yang, S. et al. Organoids: the current status and biomedical applications.
+MedComm
+4
+, e274 (2023).
+PubMed
+PubMed Central
+Google Scholar
+Huang, Y. et al. Deciphering the impact of aging on splenic endothelial cell heterogeneity and immunosenescence through single-cell RNA sequencing analysis.
+Immun. Ageing
+21
+, 48 (2024).
+PubMed
+PubMed Central
+Google Scholar
+Mettler, F. A. Jr & Voelz, G. L. Major radiation exposure — what to expect and how to respond.
+N. Engl. J. Med.
+346
+, 1554–1561 (2002).
+PubMed
+Google Scholar
+Kameni, L. E. et al. A review of radiation-induced vascular injury and clinical impact.
+Ann. Plast. Surg.
+92
+, 181–185 (2024).
+PubMed
+Google Scholar
+Durante, M. New challenges in high-energy particle radiobiology.
+Br. J. Radiol.
+87
+, 20130626 (2014).
+PubMed
+PubMed Central
+Google Scholar
+Tavakol, D. N. et al. Modeling and countering the effects of cosmic radiation using bioengineered human tissues.
+Biomaterials
+301
+, 122267 (2023).
+PubMed
+PubMed Central
+Google Scholar
+Chancellor, J. C., Scott, G. B. I. & Sutton, J. P. Space radiation: the number one risk to astronaut health beyond low earth orbit.
+Life
+4
+, 491–510 (2014).
+PubMed
+PubMed Central
+Google Scholar
+Wijerathne, H. et al. Mechanisms of radiation-induced endothelium damage: emerging models and technologies.
+Radiother. Oncol.
+158
+, 21–32 (2021).
+PubMed
+PubMed Central
+Google Scholar
+Oliner, J. D., Saiki, A. Y. & Caenepeel, S. The role of
+MDM2
+amplification and overexpression in tumorigenesis.
+Cold Spring Harb. Perspect. Med.
+6
+, a026336 (2016).
+PubMed
+PubMed Central
+Google Scholar
+Ruef, C. & Coleman, D. L. Granulocyte–macrophage colony-stimulating factor: pleiotropic cytokine with potential clinical usefulness.
+Rev. Infect. Dis.
+12
+, 41–62 (1990).
+PubMed
+Google Scholar
+Ping, S., Qiu, X., Gonzalez-Toledo, M. E., Liu, X. & Zhao, L.-R. Stem cell factor in combination with granulocyte colony-stimulating factor reduces cerebral capillary thrombosis in a mouse model of CADASIL.
+Cell Transplant.
+27
+, 637–647 (2018).
+PubMed
+PubMed Central
+Google Scholar
+Furmento, V. A., Marino, J., Blank, V. C. & Roguin, L. P. The granulocyte colony-stimulating factor (G-CSF) upregulates metalloproteinase-2 and VEGF through PI
+3
+K/Akt and Erk1/2 activation in human trophoblast Swan 71 cells.
+Placenta
+35
+, 937–946 (2014).
+PubMed
+Google Scholar
+Boneberg, E. M. & Hartung, T. Molecular aspects of anti-inflammatory action of G-CSF.
+Inflamm. Res.
+51
+, 119–128 (2002).
+PubMed
+Google Scholar
+Magné, N. et al. NF-κB modulation and ionizing radiation: mechanisms and future directions for cancer treatment.
+Cancer Lett.
+231
+, 158–168 (2006).
+PubMed
+Google Scholar
+Hughson, R. L., Helm, A. & Durante, M. Heart in space: effect of the extraterrestrial environment on the cardiovascular system.
+Nat. Rev. Cardiol.
+15
+, 167–180 (2018).
+PubMed
+Google Scholar
+Delp, M. D., Charvat, J. M., Limoli, C. L., Globus, R. K. & Ghosh, P. Apollo lunar astronauts show higher cardiovascular disease mortality: possible deep space radiation effects on the vascular endothelium.
+Sci. Rep.
+6
+, 29901 (2016).
+PubMed
+PubMed Central
+Google Scholar
+Barcellos-Hoff, M. H., et al. Concepts and challenges in cancer risk prediction for the space radiation environment.
+Life Sci. Space Res.
+6
+, 92–103 (2015).
+Google Scholar
+Ho, J. et al. Video diffusion models.
+Adv. Neural Inf. Process. Syst.
+35
+, 8633–8646 (2022).
+Google Scholar
+Wu, K. E. et al. Protein structure generation via folding diffusion.
+Nat. Commun.
+15
+, 1059 (2024).
+PubMed
+PubMed Central
+Google Scholar
+Virshup, I. et al. The scverse project provides a computational ecosystem for single-cell omics data analysis.
+Nat. Biotechnol.
+41
+, 604–606 (2023).
+PubMed
+Google Scholar
+Werschler, N. & Penninger, J. Generation of human blood vessel organoids from pluripotent stem cells.
+J. Vis. Exp.
+https://doi.org/10.3791/64715
+(2023).
+Article
+PubMed
+Google Scholar
+Tomer, R. et al. SPED light sheet microscopy: fast mapping of biological system structure and function.
+Cell
+163
+, 1796–1806 (2015).
+PubMed
+PubMed Central
+Google Scholar
+Xu, Y. et al. Accelerator-based biological irradiation facility simulating neutron exposure from an improvised nuclear device.
+Radiat. Res.
+184
+, 404–410 (2015).
+PubMed
+PubMed Central
+Google Scholar
+Xu, Y. Broad energy range neutron spectroscopy using a liquid scintillator and a proportional counter: application to a neutron spectrum similar to that from an improvised nuclear device.
+Nucl. Instrum. Methods Phys. Res. A
+794
+, 234–239 (2015).
+PubMed
+PubMed Central
+Google Scholar
+Tavakol, D. N. et al. Modeling the effects of protracted cosmic radiation in a human organ-on-chip platform.
+Adv. Sci.
+11
+, 2401415 (2024).
+Google Scholar
+Holden, S. et al. Effects of acute and chronic exposure to a mixed field of neutrons and photons and single or fractionated simulated galactic cosmic ray exposure on behavioral and cognitive performance in mice.
+Radiat. Res.
+196
+, 31–39 (2021).
+PubMed
+PubMed Central
+Google Scholar
+He, S. et al. Squidiff.
+Zenodo
+https://doi.org/10.5281/zenodo.15061773
+(2025).
+Cuomo, A. S. E. Single-cell RNA-sequencing of iPS cells differentiating towards definitive endoderm.
+Zenodo
+https://zenodo.org/records/3625024#.Xil-0y2cZ0s
+(2020).
+He, S. et al. Squidiff: predicting cellular development and responses to perturbations using a diffusion model.
+figshare
+https://doi.org/10.6084/m9.figshare.27948633
+(2025).
+Download references
+Acknowledgements
+We thank S. Quake and K. Preechakul for insightful discussions on virtual cells and the diffusion model; and S. Wang, J. H. Lee and R.B.-L. Berris for their assistance with scRNA-seq analysis and cell culture. We also appreciate the staff at Columbia’s Center for Radiological Research for their support in operating ionizing radiation equipment. This study used resources from the Herbert Irving Comprehensive Cancer Center Confocal, Specialized Microscopy Shared Resource and the Genomics and High Throughput Screening Shared Resource, partially funded by NIH/NCI Cancer Center Support Grant P30CA013696. The Columbia IND Neutron Facility was developed under NIAID grant U19 AI067773. We gratefully acknowledge funding support from the Translational Research Institute for Space Health (TRISH/NASA) (RAD0104 and NNX16A069A to G.V.-N. and K.W.L.).
+Author information
+Author notes
+These authors contributed equally: Siyu He, Yuefei Zhu, Daniel Naveed Tavakol.
+Authors and Affiliations
+Department of Biomedical Engineering, Columbia University, New York, NY, USA
+Siyu He, Yuefei Zhu, Daniel Naveed Tavakol, Yeh-Hsing Lao, Zixian Zhu, Cong Xu, Raju Tomer, Gordana Vunjak-Novakovic, Elham Azizi & Kam W. Leong
+Irving Institute for Cancer Dynamics, Columbia University, New York, NY, USA
+Siyu He & Elham Azizi
+Department of Biomedical Data Science, Stanford University, Stanford, CA, USA
+Siyu He & James Zou
+Department of Computer Sciences, Stanford University, Stanford, CA, USA
+Haotian Ye & James Zou
+Department of Pharmaceutical Sciences, University at Buffalo, Buffalo, NY, USA
+Yeh-Hsing Lao
+Department of Biological Sciences, Columbia University, New York, NY, USA
+Shradha Chauhan & Raju Tomer
+Center for Radiological Research, Columbia University, New York, NY, USA
+Guy Garty
+Herbert Irving Comprehensive Cancer Center, Columbia University, New York, NY, USA
+Gordana Vunjak-Novakovic & Elham Azizi
+Department of Electrical Engineering, Stanford University, Stanford, CA, USA
+James Zou
+Department of Computer Sciences, Columbia University, New York, NY, USA
+Elham Azizi
+Data Science Institute, Columbia University, New York, NY, USA
+Elham Azizi
+Department of Systems Biology, Columbia University Irving Medical Center, New York, NY, USA
+Kam W. Leong
+Authors
+Siyu He
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Yuefei Zhu
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Daniel Naveed Tavakol
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Haotian Ye
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Yeh-Hsing Lao
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Zixian Zhu
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Cong Xu
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Shradha Chauhan
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Guy Garty
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Raju Tomer
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Gordana Vunjak-Novakovic
+View author publications
+Search author on:
+PubMed
+Google Scholar
+James Zou
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Elham Azizi
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Kam W. Leong
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Contributions
+K.W.L., E.A. and J.Z. conceived the study and provided overall supervision of the study. S.H., Y.Z. and D.N.T. designed the BVO study and performed experiments. S.H. and H.Y. designed and developed the model. S.H., Y.Z., D.N.T., H.Y., Z.Z., C.X. and S.C. analyzed and interpreted data. G.G. performed irradiation experiments. R.T. and G.V.-N. provided additional supervision. S.H., Y.Z., D.N.T., H.Y., J.Z., E.A. and K.W.L. wrote the paper. All authors reviewed, contributed to and approved the paper.
+Corresponding authors
+Correspondence to
+James Zou
+,
+Elham Azizi
+or
+Kam W. Leong
+.
+Ethics declarations
+Competing interests
+The authors declare no competing interests.
+Peer review
+Peer review information
+Nature Methods
+thanks Sudin Bhattacharya, Qing Nie and the other, anonymous, reviewer(s) for their contribution to the peer review of this work.
+Peer reviewer reports
+are available. Primary Handling Editor: Madhura Mukhopadhyay, in collaboration with the
+Nature Methods
+team.
+Additional information
+Publisher’s note
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+Supplementary information
+Supplementary Information (download PDF
+)
+Supplementary Table 1 and Figs. 1–10.
+Reporting Summary (download PDF
+)
+Peer Review File (download PDF
+)
+Supplementary Video 1 (download AVI
+)
+3D rending of one CD31-stained blood vessel organoid.
+Source data
+Source Data Fig. 5 (download ZIP
+)
+Multichannel confocal imaging for BVOs.
+Rights and permissions
+Springer Nature or its licensor (e.g. a society or other partner) holds exclusive rights to this article under a publishing agreement with the author(s) or other rightsholder(s); author self-archiving of the accepted manuscript version of this article is solely governed by the terms of such publishing agreement and applicable law.
+Reprints and permissions
+About this article
+Cite this article
+He, S., Zhu, Y., Tavakol, D.N.
+et al.
+Squidiff: predicting cellular development and responses to perturbations using a diffusion model.
+Nat Methods
+23
+, 65–77 (2026). https://doi.org/10.1038/s41592-025-02877-y
+Download citation
+Received
+:
+16 November 2024
+Accepted
+:
+18 September 2025
+Published
+:
+03 November 2025
+Version of record
+:
+03 November 2025
+Issue date
+:
+January 2026
+DOI
+:
+https://doi.org/10.1038/s41592-025-02877-y
+Share this article
+Anyone you share the following link with will be able to read this content:
+Get shareable link
+Sorry, a shareable link is not currently available for this article.
+Copy shareable link to clipboard
+Provided by the Springer Nature SharedIt content-sharing initiative
+Access through your institution
+Buy or subscribe
+Associated content
+Predicting cellular responses with conditional diffusion models
+Nature Methods
+Research Briefing
+03 Nov 2025
+Advertisement
+Explore content
+Research articles
+Reviews & Analysis
+News & Comment
+Current issue
+Collections
+Follow us on X
+Subscribe
+Sign up for alerts
+RSS feed
+About the journal
+Aims & Scope
+Journal Information
+Editors
+Journal Metrics
+Our publishing models
+Research Cross-Journal Editorial Team
+Reviews Cross-Journal Editorial Team
+Editorial Values Statement
+Editorial Policies
+Content Types
+Web Feeds
+Contact
+Publish with us
+Submission Guidelines
+For Reviewers
+Language editing services
+Open access funding
+Submit manuscript
+Search
+Search articles by subject, keyword or author
+Show results from
+All journals
+This journal
+Search
+Advanced search
+Quick links
+Explore articles by subject
+Find a job
+Guide to authors
+Editorial policies
+Nature Methods
+(
+Nat Methods
+)
+ISSN
+1548-7105
+(online)
+ISSN
+1548-7091
+(print)
+nature.com footer links
+About Nature Portfolio
+About us
+Press releases
+Press office
+Contact us
+Discover content
+Journals A-Z
+Articles by subject
+protocols.io
+Nature Index
+Publishing policies
+Nature portfolio policies
+Open access
+Author & Researcher services
+Reprints & permissions
+Research data
+Language editing
+Scientific editing
+Nature Masterclasses
+Research Solutions
+Libraries & institutions
+Librarian service & tools
+Librarian portal
+Open research
+Recommend to library
+Advertising & partnerships
+Advertising
+Partnerships & Services
+Media kits
+Branded
+                        content
+Professional development
+Nature Awards
+Nature Careers
+Nature
+Conferences
+Regional websites
+Nature Africa
+Nature China
+Nature India
+Nature Japan
+Nature Middle East
+Privacy
+                Policy
+Use
+                of cookies
+Your privacy choices/Manage cookies
+Legal
+                notice
+Accessibility
+                statement
+Terms & Conditions
+Your US state privacy rights
+© 2026 Springer Nature Limited
+Close banner
+Close
+Sign up for the
+Nature Briefing: Translational Research
+newsletter — top stories in biotechnology, drug discovery and pharma.
+Email address
+Sign up
+I agree my information will be processed in accordance with the
+Nature
+and Springer Nature Limited
+Privacy Policy
+.
+Close banner
+Close
+Get what matters in translational research, free to your inbox weekly.
+Sign up for Nature Briefing: Translational Research
