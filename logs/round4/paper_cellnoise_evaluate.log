@@ -1,0 +1,23 @@
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+diffusion num of steps =  1000
+VALIDATE paper_cellnoise {"mode": "paired_noise", "sigma": 0.0, "wasserstein": 0.7033808739624811, "mse": 0.38800393256376586}
+VALIDATE paper_cellnoise {"mode": "paired_noise", "sigma": 0.21141943335533142, "wasserstein": 0.6661750767294299, "mse": 0.43281970353392396}
+VALIDATE paper_cellnoise {"mode": "paired_noise", "sigma": 0.42283886671066284, "wasserstein": 0.7219891060071071, "mse": 0.6446137427051134}
+VALIDATE paper_cellnoise {"mode": "paired_noise", "sigma": 0.7, "wasserstein": 2.0412024579064036, "mse": 3.9387010209563016}
+TEST paper_cellnoise fixed 0 -0.2483403259536041 1.8479916965800416 0 153
+TEST paper_cellnoise fixed 1 -0.34730806775542833 1.6419472100608983 10 142
+TEST paper_cellnoise fixed 2 -0.5675737381045767 1.5979280206370943 5 153
+TEST paper_cellnoise fixed 3 0.03309458180686797 1.6442772074552097 0 170
+TEST paper_cellnoise selected 0 0.9933528795627783 0.1873709221834239 0 0
+TEST paper_cellnoise selected 1 0.6462199401284459 0.23075841285744295 0 0
+TEST paper_cellnoise selected 2 0.7325275595575498 0.31073371795027926 0 0
+TEST paper_cellnoise selected 3 0.9626031424828492 0.3602190648257965 0 0
+DIAGNOSTIC paper_cellnoise mean_direction_removed 0.6090354011214871 0.18737091380976684
+DIAGNOSTIC paper_cellnoise target_rna_oracle 0.7930732820045624 0.3600721374762361

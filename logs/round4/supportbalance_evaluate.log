@@ -1,0 +1,26 @@
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+diffusion num of steps =  1000
+VALIDATE supportbalance {"mode": "fixed", "sigma": 0.7, "wasserstein": 1.965016419602604, "mse": 3.9140233807695015}
+VALIDATE supportbalance {"mode": "isotropic", "sigma": 0.0, "wasserstein": 1.0682427971753357, "mse": 0.43468820044541884}
+VALIDATE supportbalance {"mode": "isotropic", "sigma": 0.1886497288942337, "wasserstein": 0.8857934123565905, "mse": 0.39719379521022735}
+VALIDATE supportbalance {"mode": "isotropic", "sigma": 0.3772994577884674, "wasserstein": 0.6941939663695849, "mse": 0.46303993774420665}
+VALIDATE supportbalance {"mode": "empirical", "sigma": 1.0, "wasserstein": 0.5334355191916644, "mse": 0.4473877085983107}
+VALIDATE supportbalance {"mode": "paired", "sigma": 1.0, "wasserstein": 0.7326712914626274, "mse": 0.3996257124519536}
+VALIDATE supportbalance {"mode": "ot", "sigma": 1.0, "wasserstein": 0.5786794186402264, "mse": 0.41164160752414847}
+TEST supportbalance fixed 0 -0.006614871497957475 1.0904796594310164 0 151
+TEST supportbalance fixed 1 -0.27526330924521436 1.0704418468317212 12 135
+TEST supportbalance fixed 2 -0.5528819322246665 1.1053090707111792 4 153
+TEST supportbalance fixed 3 0.11234155207738239 1.1733430095077104 0 163
+TEST supportbalance selected 0 0.9929099497629789 0.13168148283216094 0 0
+TEST supportbalance selected 1 0.6426101529726992 0.20226861718222305 0 0
+TEST supportbalance selected 2 0.7457034432642546 0.34170209811010865 0 0
+TEST supportbalance selected 3 0.9923223781519749 0.3490462570810147 0 0
+DIAGNOSTIC supportbalance mean_direction_removed 0.5977230398486042 0.15631927265261766
+DIAGNOSTIC supportbalance target_rna_oracle 0.7913242408209382 0.36777194764785237

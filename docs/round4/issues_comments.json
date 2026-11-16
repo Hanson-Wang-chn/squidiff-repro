@@ -1,0 +1,649 @@
+[
+  {
+    "number": 1,
+    "comments": [
+      {
+        "url": "https://github.com/siyuh/Squidiff/issues/1#issuecomment-2671417537",
+        "body": "Hi, thank you for your interest and patience! I will provide all related codes and more details in the following days.",
+        "user": {
+          "login": "siyuh",
+          "name": "siyuh",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/53618666?v=4",
+          "id": 53618666
+        },
+        "id": 2671417537,
+        "pull_request_review_id": null,
+        "in_reply_to_id": null,
+        "created_at": null,
+        "updated_at": null,
+        "review": null,
+        "side": null,
+        "line": null,
+        "start_line": null,
+        "path": null,
+        "body_html": "<p dir=\"auto\">Hi, thank you for your interest and patience! I will provide all related codes and more details in the following days.</p>"
+      }
+    ],
+    "url": "https://github.com/siyuh/Squidiff/issues/1",
+    "title": "siyuh/Squidiff Issue #1 comments",
+    "display_url": "https://github.com/siyuh/Squidiff/issues/1",
+    "display_title": "siyuh/Squidiff Issue #1 comments"
+  },
+  {
+    "number": 2,
+    "comments": [
+      {
+        "url": "https://github.com/siyuh/Squidiff/issues/2#issuecomment-2711838269",
+        "body": "Hi, thanks for your interest. I am working on the installation instructions and read.me file. It should be uploaded in a week.",
+        "user": {
+          "login": "siyuh",
+          "name": "siyuh",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/53618666?v=4",
+          "id": 53618666
+        },
+        "id": 2711838269,
+        "pull_request_review_id": null,
+        "in_reply_to_id": null,
+        "created_at": null,
+        "updated_at": null,
+        "review": null,
+        "side": null,
+        "line": null,
+        "start_line": null,
+        "path": null,
+        "body_html": "<p dir=\"auto\">Hi, thanks for your interest. I am working on the installation instructions and read.me file. It should be uploaded in a week.</p>"
+      }
+    ],
+    "url": "https://github.com/siyuh/Squidiff/issues/2",
+    "title": "siyuh/Squidiff Issue #2 comments",
+    "display_url": "https://github.com/siyuh/Squidiff/issues/2",
+    "display_title": "siyuh/Squidiff Issue #2 comments"
+  },
+  {
+    "number": 3,
+    "comments": [
+      {
+        "url": "https://github.com/siyuh/Squidiff/issues/3#issuecomment-2760409130",
+        "body": "hi, could you please let me know what drug data you have? Squidiff could take drug structure as input to predict unseen drug responses or just single-cell transcriptomics. The implement is slightly different.",
+        "user": {
+          "login": "siyuh",
+          "name": "siyuh",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/53618666?v=4",
+          "id": 53618666
+        },
+        "id": 2760409130,
+        "pull_request_review_id": null,
+        "in_reply_to_id": null,
+        "created_at": null,
+        "updated_at": null,
+        "review": null,
+        "side": null,
+        "line": null,
+        "start_line": null,
+        "path": null,
+        "body_html": "<p dir=\"auto\">hi, could you please let me know what drug data you have? Squidiff could take drug structure as input to predict unseen drug responses or just single-cell transcriptomics. The implement is slightly different.</p>"
+      },
+      {
+        "url": "https://github.com/siyuh/Squidiff/issues/3#issuecomment-2761402118",
+        "body": "Thank you for your response. \nI aim to predict the perturbation effects of small-molecule drugs. When predicting the response to a specific drug, do we need to input only the molecular information, or must we also include transcriptomic data? If transcriptomic data is required, does it come from control group cells?",
+        "user": {
+          "login": "ChangxiChi",
+          "name": "ChangxiChi",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/149665261?v=4",
+          "id": 149665261
+        },
+        "id": 2761402118,
+        "pull_request_review_id": null,
+        "in_reply_to_id": null,
+        "created_at": null,
+        "updated_at": null,
+        "review": null,
+        "side": null,
+        "line": null,
+        "start_line": null,
+        "path": null,
+        "body_html": "<p dir=\"auto\">Thank you for your response.<br>\nI aim to predict the perturbation effects of small-molecule drugs. When predicting the response to a specific drug, do we need to input only the molecular information, or must we also include transcriptomic data? If transcriptomic data is required, does it come from control group cells?</p>"
+      },
+      {
+        "url": "https://github.com/siyuh/Squidiff/issues/3#issuecomment-2971543302",
+        "body": "hi sorry for my late response. Yes, both molecular information and transcriptomic data from control group are needed to learn both drug and cell type info. ",
+        "user": {
+          "login": "siyuh",
+          "name": "siyuh",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/53618666?v=4",
+          "id": 53618666
+        },
+        "id": 2971543302,
+        "pull_request_review_id": null,
+        "in_reply_to_id": null,
+        "created_at": null,
+        "updated_at": null,
+        "review": null,
+        "side": null,
+        "line": null,
+        "start_line": null,
+        "path": null,
+        "body_html": "<p dir=\"auto\">hi sorry for my late response. Yes, both molecular information and transcriptomic data from control group are needed to learn both drug and cell type info.</p>"
+      }
+    ],
+    "url": "https://github.com/siyuh/Squidiff/issues/3",
+    "title": "siyuh/Squidiff Issue #3 comments",
+    "display_url": "https://github.com/siyuh/Squidiff/issues/3",
+    "display_title": "siyuh/Squidiff Issue #3 comments"
+  },
+  {
+    "number": 4,
+    "comments": [
+      {
+        "url": "https://github.com/siyuh/Squidiff/issues/4#issuecomment-2971539655",
+        "body": "Hi Layne,\n\nThanks for your question! Z-sem is mostly the compressed information for a group of x_0, or saying semantic variable is more accurate as it could include other things like the drug added and so on, thus z-sem is more like an embedding space for the conditions. In a simple case, if we get z_sem from x_0, and use z_sem to reconstruct x_0, yes the information is leaky, but the major task here is to learn the z-sem space, and manipulate/interpolate/extrapolate the z_sem space which could let the diffusion model generating the new data other than x_0. Hope this answer your questions!",
+        "user": {
+          "login": "siyuh",
+          "name": "siyuh",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/53618666?v=4",
+          "id": 53618666
+        },
+        "id": 2971539655,
+        "pull_request_review_id": null,
+        "in_reply_to_id": null,
+        "created_at": null,
+        "updated_at": null,
+        "review": null,
+        "side": null,
+        "line": null,
+        "start_line": null,
+        "path": null,
+        "body_html": "<p dir=\"auto\">Hi Layne,</p>\n<p dir=\"auto\">Thanks for your question! Z-sem is mostly the compressed information for a group of x_0, or saying semantic variable is more accurate as it could include other things like the drug added and so on, thus z-sem is more like an embedding space for the conditions. In a simple case, if we get z_sem from x_0, and use z_sem to reconstruct x_0, yes the information is leaky, but the major task here is to learn the z-sem space, and manipulate/interpolate/extrapolate the z_sem space which could let the diffusion model generating the new data other than x_0. Hope this answer your questions!</p>"
+      }
+    ],
+    "url": "https://github.com/siyuh/Squidiff/issues/4",
+    "title": "siyuh/Squidiff Issue #4 comments",
+    "display_url": "https://github.com/siyuh/Squidiff/issues/4",
+    "display_title": "siyuh/Squidiff Issue #4 comments"
+  },
+  {
+    "number": 5,
+    "comments": [
+      {
+        "url": "https://github.com/siyuh/Squidiff/issues/5#issuecomment-3821393851",
+        "body": "Hi, \n\nI am really for my late reply. Please check https://doi.org/10.6084/m9.figshare.27948633 for the pretrained model parameters. To note, these parameters are used for the relative datasets only, and would not suggest to directly use for other cases. ",
+        "user": {
+          "login": "siyuh",
+          "name": "siyuh",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/53618666?v=4",
+          "id": 53618666
+        },
+        "id": 3821393851,
+        "pull_request_review_id": null,
+        "in_reply_to_id": null,
+        "created_at": null,
+        "updated_at": null,
+        "review": null,
+        "side": null,
+        "line": null,
+        "start_line": null,
+        "path": null,
+        "body_html": "<p dir=\"auto\">Hi,</p>\n<p dir=\"auto\">I am really for my late reply. Please check <a href=\"https://doi.org/10.6084/m9.figshare.27948633\" rel=\"nofollow\">https://doi.org/10.6084/m9.figshare.27948633</a> for the pretrained model parameters. To note, these parameters are used for the relative datasets only, and would not suggest to directly use for other cases.</p>"
+      }
+    ],
+    "url": "https://github.com/siyuh/Squidiff/issues/5",
+    "title": "siyuh/Squidiff Issue #5 comments",
+    "display_url": "https://github.com/siyuh/Squidiff/issues/5",
+    "display_title": "siyuh/Squidiff Issue #5 comments"
+  },
+  {
+    "number": 6,
+    "comments": [
+      {
+        "url": "https://github.com/siyuh/Squidiff/issues/6#issuecomment-3501115161",
+        "body": "Hi thank you for your interests in our work! \n\nSquidiff is not a foundation model so the checkpoints only work for a limited set of related datasets, if you have your own datasets, it's better to pretrain it without many GPUs.\n\nWe will also release our checkpoints for the study we discussed in the paper in the following days.  ",
+        "user": {
+          "login": "siyuh",
+          "name": "siyuh",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/53618666?v=4",
+          "id": 53618666
+        },
+        "id": 3501115161,
+        "pull_request_review_id": null,
+        "in_reply_to_id": null,
+        "created_at": null,
+        "updated_at": null,
+        "review": null,
+        "side": null,
+        "line": null,
+        "start_line": null,
+        "path": null,
+        "body_html": "<p dir=\"auto\">Hi thank you for your interests in our work!</p>\n<p dir=\"auto\">Squidiff is not a foundation model so the checkpoints only work for a limited set of related datasets, if you have your own datasets, it's better to pretrain it without many GPUs.</p>\n<p dir=\"auto\">We will also release our checkpoints for the study we discussed in the paper in the following days.</p>"
+      },
+      {
+        "url": "https://github.com/siyuh/Squidiff/issues/6#issuecomment-3515188152",
+        "body": "> Hi thank you for your interests in our work!\n> \n> Squidiff is not a foundation model so the checkpoints only work for a limited set of related datasets, if you have your own datasets, it's better to pretrain it without many GPUs.\n> \n> We will also release our checkpoints for the study we discussed in the paper in the following days.\n\nHi Siyu,\n\nI see~ \n\nThanks for the swift reply, we're currently preparing a new large scale drug perturbation dataset (somewhat similar to LINCS), this would be beneficial for evaluating the OOD ability of other models that specifically developed for drug perturbations, and we are trying to build our own prediction model based on these data. \n\nCongratulation again and looking forward to your future work or potential collaborations.",
+        "user": {
+          "login": "michaelgmz",
+          "name": "michaelgmz",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/40167570?v=4",
+          "id": 40167570
+        },
+        "id": 3515188152,
+        "pull_request_review_id": null,
+        "in_reply_to_id": null,
+        "created_at": null,
+        "updated_at": null,
+        "review": null,
+        "side": null,
+        "line": null,
+        "start_line": null,
+        "path": null,
+        "body_html": "<blockquote>\n<p dir=\"auto\">Hi thank you for your interests in our work!</p>\n<p dir=\"auto\">Squidiff is not a foundation model so the checkpoints only work for a limited set of related datasets, if you have your own datasets, it's better to pretrain it without many GPUs.</p>\n<p dir=\"auto\">We will also release our checkpoints for the study we discussed in the paper in the following days.</p>\n</blockquote>\n<p dir=\"auto\">Hi Siyu,</p>\n<p dir=\"auto\">I see~</p>\n<p dir=\"auto\">Thanks for the swift reply, we're currently preparing a new large scale drug perturbation dataset (somewhat similar to LINCS), this would be beneficial for evaluating the OOD ability of other models that specifically developed for drug perturbations, and we are trying to build our own prediction model based on these data.</p>\n<p dir=\"auto\">Congratulation again and looking forward to your future work or potential collaborations.</p>"
+      },
+      {
+        "url": "https://github.com/siyuh/Squidiff/issues/6#issuecomment-3821397837",
+        "body": "Hi Michael, \n\nPlease check https://doi.org/10.6084/m9.figshare.27948633 for some of the model checkpoints shared. Thanks for your interests!",
+        "user": {
+          "login": "siyuh",
+          "name": "siyuh",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/53618666?v=4",
+          "id": 53618666
+        },
+        "id": 3821397837,
+        "pull_request_review_id": null,
+        "in_reply_to_id": null,
+        "created_at": null,
+        "updated_at": null,
+        "review": null,
+        "side": null,
+        "line": null,
+        "start_line": null,
+        "path": null,
+        "body_html": "<p dir=\"auto\">Hi Michael,</p>\n<p dir=\"auto\">Please check <a href=\"https://doi.org/10.6084/m9.figshare.27948633\" rel=\"nofollow\">https://doi.org/10.6084/m9.figshare.27948633</a> for some of the model checkpoints shared. Thanks for your interests!</p>"
+      }
+    ],
+    "url": "https://github.com/siyuh/Squidiff/issues/6",
+    "title": "siyuh/Squidiff Issue #6 comments",
+    "display_url": "https://github.com/siyuh/Squidiff/issues/6",
+    "display_title": "siyuh/Squidiff Issue #6 comments"
+  },
+  {
+    "number": 7,
+    "comments": [
+      {
+        "url": "https://github.com/siyuh/Squidiff/issues/7#issuecomment-3520961449",
+        "body": "Hi, thank you for your interests in our work! \n\nI have just shared the fig4_VO_reproducibility.ipynb in Squidiff_reproducibility. I also updated figshare, including the corresponding datasets and checkpoint \"VO_diff_model.pt\" needed in reproducing the results. I just double check and it should run smoothly. I should all preprocessing details related to your questions in the jupyter notebook (apologize if the code is not elegant).  Please let me know if you have further questions.\n\n",
+        "user": {
+          "login": "siyuh",
+          "name": "siyuh",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/53618666?v=4",
+          "id": 53618666
+        },
+        "id": 3520961449,
+        "pull_request_review_id": null,
+        "in_reply_to_id": null,
+        "created_at": null,
+        "updated_at": null,
+        "review": null,
+        "side": null,
+        "line": null,
+        "start_line": null,
+        "path": null,
+        "body_html": "<p dir=\"auto\">Hi, thank you for your interests in our work!</p>\n<p dir=\"auto\">I have just shared the fig4_VO_reproducibility.ipynb in Squidiff_reproducibility. I also updated figshare, including the corresponding datasets and checkpoint \"VO_diff_model.pt\" needed in reproducing the results. I just double check and it should run smoothly. I should all preprocessing details related to your questions in the jupyter notebook (apologize if the code is not elegant).  Please let me know if you have further questions.</p>"
+      },
+      {
+        "url": "https://github.com/siyuh/Squidiff/issues/7#issuecomment-3521838586",
+        "body": "Thanks so much for the quick update! \nI’ll run through the notebook and datasets to reproduce Fig. 4—really appreciate you sharing the full pipeline.",
+        "user": {
+          "login": "jhxu003",
+          "name": "jhxu003",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/144009546?v=4",
+          "id": 144009546
+        },
+        "id": 3521838586,
+        "pull_request_review_id": null,
+        "in_reply_to_id": null,
+        "created_at": null,
+        "updated_at": null,
+        "review": null,
+        "side": null,
+        "line": null,
+        "start_line": null,
+        "path": null,
+        "body_html": "<p dir=\"auto\">Thanks so much for the quick update!<br>\nI’ll run through the notebook and datasets to reproduce Fig. 4—really appreciate you sharing the full pipeline.</p>"
+      }
+    ],
+    "url": "https://github.com/siyuh/Squidiff/issues/7",
+    "title": "siyuh/Squidiff Issue #7 comments",
+    "display_url": "https://github.com/siyuh/Squidiff/issues/7",
+    "display_title": "siyuh/Squidiff Issue #7 comments"
+  },
+  {
+    "number": 8,
+    "comments": [
+      {
+        "url": "https://github.com/siyuh/Squidiff/issues/8#issuecomment-3604329031",
+        "body": "Thank you for your questions! I apologize for late response due to the busy schedule these days. I will get you back in 1-2 weeks with code and instructions. Thanks for waiting!",
+        "user": {
+          "login": "siyuh",
+          "name": "siyuh",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/53618666?v=4",
+          "id": 53618666
+        },
+        "id": 3604329031,
+        "pull_request_review_id": null,
+        "in_reply_to_id": null,
+        "created_at": null,
+        "updated_at": null,
+        "review": null,
+        "side": null,
+        "line": null,
+        "start_line": null,
+        "path": null,
+        "body_html": "<p dir=\"auto\">Thank you for your questions! I apologize for late response due to the busy schedule these days. I will get you back in 1-2 weeks with code and instructions. Thanks for waiting!</p>"
+      },
+      {
+        "url": "https://github.com/siyuh/Squidiff/issues/8#issuecomment-3615129056",
+        "body": "Hello! That's a great question!\nI noticed that neither your preprocessing pipeline nor the one described in the paper mentions z-score scaling. Therefore, before reproducing Figure 2, I wondered if this step was actually required but overlooked and unmentioned in the paper—and since you didn’t perform it either, it might have led to a significant deviation in the evaluation scores.\nInitially, I hypothesized that applying scaling would be necessary to achieve the results reported in the paper, and the suboptimal performance you encountered was due to omitting this step. To investigate the root cause, I prepared two sets of datasets during preprocessing:\n\n1. One set with z-score scaling applied to both the training and test datasets;\n\n2. The other set without z-score scaling for both the training and test datasets.\n\nI trained two models separately using these datasets and conducted predictions, but the results were completely opposite to my expectations!The dataset with scaling yielded evaluation results similar to what you observed, while the dataset without scaling produced results consistent with those in the original paper.\nThus, I now wonder if the preprocessing steps in the paper are rigorous and scaling is truly unnecessary—and could it be that you actually applied scaling?",
+        "user": {
+          "login": "baldmk",
+          "name": "baldmk",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/77619748?v=4",
+          "id": 77619748
+        },
+        "id": 3615129056,
+        "pull_request_review_id": null,
+        "in_reply_to_id": null,
+        "created_at": null,
+        "updated_at": null,
+        "review": null,
+        "side": null,
+        "line": null,
+        "start_line": null,
+        "path": null,
+        "body_html": "<p dir=\"auto\">Hello! That's a great question!<br>\nI noticed that neither your preprocessing pipeline nor the one described in the paper mentions z-score scaling. Therefore, before reproducing Figure 2, I wondered if this step was actually required but overlooked and unmentioned in the paper—and since you didn’t perform it either, it might have led to a significant deviation in the evaluation scores.<br>\nInitially, I hypothesized that applying scaling would be necessary to achieve the results reported in the paper, and the suboptimal performance you encountered was due to omitting this step. To investigate the root cause, I prepared two sets of datasets during preprocessing:</p>\n<ol dir=\"auto\">\n<li>\n<p dir=\"auto\">One set with z-score scaling applied to both the training and test datasets;</p>\n</li>\n<li>\n<p dir=\"auto\">The other set without z-score scaling for both the training and test datasets.</p>\n</li>\n</ol>\n<p dir=\"auto\">I trained two models separately using these datasets and conducted predictions, but the results were completely opposite to my expectations!The dataset with scaling yielded evaluation results similar to what you observed, while the dataset without scaling produced results consistent with those in the original paper.<br>\nThus, I now wonder if the preprocessing steps in the paper are rigorous and scaling is truly unnecessary—and could it be that you actually applied scaling?</p>"
+      },
+      {
+        "url": "https://github.com/siyuh/Squidiff/issues/8#issuecomment-3716963175",
+        "body": "Hello there @siyuh, I wonder if there is any update regarding the code for reproducing the Fig. 2. I also encounter similarly low performance using the default training code (and I wasn't applying scaling but maybe it might be different in splitting/filtering as well?), it would be great if there are available code to reproduce this experiment.\n\nThank you for looking into this matter\n",
+        "user": {
+          "login": "Jiram-Kin",
+          "name": "Jiram-Kin",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/94770072?v=4",
+          "id": 94770072
+        },
+        "id": 3716963175,
+        "pull_request_review_id": null,
+        "in_reply_to_id": null,
+        "created_at": null,
+        "updated_at": null,
+        "review": null,
+        "side": null,
+        "line": null,
+        "start_line": null,
+        "path": null,
+        "body_html": "<p dir=\"auto\">Hello there <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/siyuh/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/siyuh\">@siyuh</a>, I wonder if there is any update regarding the code for reproducing the Fig. 2. I also encounter similarly low performance using the default training code (and I wasn't applying scaling but maybe it might be different in splitting/filtering as well?), it would be great if there are available code to reproduce this experiment.</p>\n<p dir=\"auto\">Thank you for looking into this matter</p>"
+      },
+      {
+        "url": "https://github.com/siyuh/Squidiff/issues/8#issuecomment-3810141441",
+        "body": "I’m also seeing a similar lack of predictive signal on my datasets, with the model showing almost no fitting capability. It would be super helpful if you could share the reproduction scripts or some guidance when you have a moment. Thanks for looking into this!",
+        "user": {
+          "login": "pizouinghua",
+          "name": "pizouinghua",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/253451176?v=4",
+          "id": 253451176
+        },
+        "id": 3810141441,
+        "pull_request_review_id": null,
+        "in_reply_to_id": null,
+        "created_at": null,
+        "updated_at": null,
+        "review": null,
+        "side": null,
+        "line": null,
+        "start_line": null,
+        "path": null,
+        "body_html": "<p dir=\"auto\">I’m also seeing a similar lack of predictive signal on my datasets, with the model showing almost no fitting capability. It would be super helpful if you could share the reproduction scripts or some guidance when you have a moment. Thanks for looking into this!</p>"
+      },
+      {
+        "url": "https://github.com/siyuh/Squidiff/issues/8#issuecomment-4104914471",
+        "body": "Hi, I have released the data preparation for fig2 as well as the checkpoints, please check https://github.com/siyuh/Squidiff_reproducibility for more details. I have train and run the model several times to confirm reproducing the results. If you still have issue to reproduce, please let me know. Thanks!",
+        "user": {
+          "login": "siyuh",
+          "name": "siyuh",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/53618666?v=4",
+          "id": 53618666
+        },
+        "id": 4104914471,
+        "pull_request_review_id": null,
+        "in_reply_to_id": null,
+        "created_at": null,
+        "updated_at": null,
+        "review": null,
+        "side": null,
+        "line": null,
+        "start_line": null,
+        "path": null,
+        "body_html": "<p dir=\"auto\">Hi, I have released the data preparation for fig2 as well as the checkpoints, please check <a href=\"https://github.com/siyuh/Squidiff_reproducibility\">https://github.com/siyuh/Squidiff_reproducibility</a> for more details. I have train and run the model several times to confirm reproducing the results. If you still have issue to reproduce, please let me know. Thanks!</p>"
+      }
+    ],
+    "url": "https://github.com/siyuh/Squidiff/issues/8",
+    "title": "siyuh/Squidiff Issue #8 comments",
+    "display_url": "https://github.com/siyuh/Squidiff/issues/8",
+    "display_title": "siyuh/Squidiff Issue #8 comments"
+  },
+  {
+    "number": 9,
+    "comments": [
+      {
+        "url": "https://github.com/siyuh/Squidiff/issues/9#issuecomment-3604324539",
+        "body": "Hi Yes Squidiff is a framework and need datasets to train. We are actually working on a new and pretrained model, and will release a preprint in the following months.",
+        "user": {
+          "login": "siyuh",
+          "name": "siyuh",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/53618666?v=4",
+          "id": 53618666
+        },
+        "id": 3604324539,
+        "pull_request_review_id": null,
+        "in_reply_to_id": null,
+        "created_at": null,
+        "updated_at": null,
+        "review": null,
+        "side": null,
+        "line": null,
+        "start_line": null,
+        "path": null,
+        "body_html": "<p dir=\"auto\">Hi Yes Squidiff is a framework and need datasets to train. We are actually working on a new and pretrained model, and will release a preprint in the following months.</p>"
+      }
+    ],
+    "url": "https://github.com/siyuh/Squidiff/issues/9",
+    "title": "siyuh/Squidiff Issue #9 comments",
+    "display_url": "https://github.com/siyuh/Squidiff/issues/9",
+    "display_title": "siyuh/Squidiff Issue #9 comments"
+  },
+  {
+    "number": 10,
+    "comments": [
+      {
+        "url": "https://github.com/siyuh/Squidiff/issues/10#issuecomment-3709407727",
+        "body": "Once again, I truly appreciate your work in advancing the field of virtual cells. I have been learning about diffusion models and wrote a conditional diffusion model code myself. However, since diffusion models only predict the noise added at each step, in practice I am unable to ensure that the final generated expression profiles follow a distribution at the same scale. For example, when I input log-normalized expression profiles (with all expression values greater than 0), the model outputs expression profiles distributed across a very wide range, including negative values. Therefore, I would still like to ask you about normalization-related issues.\n\nLooking forward to your reply. I’m not sure when you will see this message, but I wish you a Happy Chinese New Year in advance!",
+        "user": {
+          "login": "Zijiang8",
+          "name": "Zijiang8",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/132424394?v=4",
+          "id": 132424394
+        },
+        "id": 3709407727,
+        "pull_request_review_id": null,
+        "in_reply_to_id": null,
+        "created_at": null,
+        "updated_at": null,
+        "review": null,
+        "side": null,
+        "line": null,
+        "start_line": null,
+        "path": null,
+        "body_html": "<p dir=\"auto\">Once again, I truly appreciate your work in advancing the field of virtual cells. I have been learning about diffusion models and wrote a conditional diffusion model code myself. However, since diffusion models only predict the noise added at each step, in practice I am unable to ensure that the final generated expression profiles follow a distribution at the same scale. For example, when I input log-normalized expression profiles (with all expression values greater than 0), the model outputs expression profiles distributed across a very wide range, including negative values. Therefore, I would still like to ask you about normalization-related issues.</p>\n<p dir=\"auto\">Looking forward to your reply. I’m not sure when you will see this message, but I wish you a Happy Chinese New Year in advance!</p>"
+      },
+      {
+        "url": "https://github.com/siyuh/Squidiff/issues/10#issuecomment-3821671450",
+        "body": "Dear Zijiang, \n\nI am very sorry for my late response due to my super crazy schedule these two months. Thank you very much for your kind words and for taking the time to carefully read our paper and watch the talk. These are excellent questions, and here are my own opinions:\n\n1. choice of log-normalized expression as input: You are absolutely right that there is no single \"standard\" choice here, and different generative models make different trade-offs. In Squidiff, we chose log-normalized expression primarily for numerical stability. The log-normalization will reduce the dynamic range and decrease the sparsity of the data, which helps stabilize diffusion training rather than discrete counts. However, there might be batch effect issues for Squidiff when training large scale of the datasets across different experiments. Thus a preprocessing and normalization of the whole training datsets would be required. Also since Squidiff is not a foundation model, we didn't consider the batch effect here. Actually, raw-count could work too in diffusion model too as long as the output being processed during the optimization. \n\n2. normalization of biological data for diffusion models: you are correct that diffusion model were orignally developed for images with bounded ranges. In scRNA data, we do not require strict normalization to [-1, 1], but log-normalization can restrict large dispersion of gene expression to a smaller range. Also, the diffusion model is learning to predict noise rather than raw expression values, there is no strict requirement that the data be range-bounded. \n\n3. The diffusion model itself is not constrained to produce non-negative outputs at every denoising step, especially we use SiLU to learn the noise which is actually have negative values. \n\n4. For your experience with model outputs expression profiles distributed across a very wide range, I have met with similar issues too in some of the cases. I feel it usually indicate a failure of training due to multiple reasons, maybe could you provide more details of your issue? \n\n\nAlso could you send me email if you have further questions but I didn't answer timely? I check github less frequently than email. Thanks! ",
+        "user": {
+          "login": "siyuh",
+          "name": "siyuh",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/53618666?v=4",
+          "id": 53618666
+        },
+        "id": 3821671450,
+        "pull_request_review_id": null,
+        "in_reply_to_id": null,
+        "created_at": null,
+        "updated_at": null,
+        "review": null,
+        "side": null,
+        "line": null,
+        "start_line": null,
+        "path": null,
+        "body_html": "<p dir=\"auto\">Dear Zijiang,</p>\n<p dir=\"auto\">I am very sorry for my late response due to my super crazy schedule these two months. Thank you very much for your kind words and for taking the time to carefully read our paper and watch the talk. These are excellent questions, and here are my own opinions:</p>\n<ol dir=\"auto\">\n<li>\n<p dir=\"auto\">choice of log-normalized expression as input: You are absolutely right that there is no single \"standard\" choice here, and different generative models make different trade-offs. In Squidiff, we chose log-normalized expression primarily for numerical stability. The log-normalization will reduce the dynamic range and decrease the sparsity of the data, which helps stabilize diffusion training rather than discrete counts. However, there might be batch effect issues for Squidiff when training large scale of the datasets across different experiments. Thus a preprocessing and normalization of the whole training datsets would be required. Also since Squidiff is not a foundation model, we didn't consider the batch effect here. Actually, raw-count could work too in diffusion model too as long as the output being processed during the optimization.</p>\n</li>\n<li>\n<p dir=\"auto\">normalization of biological data for diffusion models: you are correct that diffusion model were orignally developed for images with bounded ranges. In scRNA data, we do not require strict normalization to [-1, 1], but log-normalization can restrict large dispersion of gene expression to a smaller range. Also, the diffusion model is learning to predict noise rather than raw expression values, there is no strict requirement that the data be range-bounded.</p>\n</li>\n<li>\n<p dir=\"auto\">The diffusion model itself is not constrained to produce non-negative outputs at every denoising step, especially we use SiLU to learn the noise which is actually have negative values.</p>\n</li>\n<li>\n<p dir=\"auto\">For your experience with model outputs expression profiles distributed across a very wide range, I have met with similar issues too in some of the cases. I feel it usually indicate a failure of training due to multiple reasons, maybe could you provide more details of your issue?</p>\n</li>\n</ol>\n<p dir=\"auto\">Also could you send me email if you have further questions but I didn't answer timely? I check github less frequently than email. Thanks!</p>"
+      }
+    ],
+    "url": "https://github.com/siyuh/Squidiff/issues/10",
+    "title": "siyuh/Squidiff Issue #10 comments",
+    "display_url": "https://github.com/siyuh/Squidiff/issues/10",
+    "display_title": "siyuh/Squidiff Issue #10 comments"
+  },
+  {
+    "number": 11,
+    "comments": [
+      {
+        "url": "https://github.com/siyuh/Squidiff/issues/11#issuecomment-3821688646",
+        "body": "Hi, thank you for your question! I am so sorry for my late response due to busy schedule in December and January. Technically there are no strict requirement for the cell number. In our example, we have around 2400 cells for each day. But too few cells might lead to low learning performance or overfitting for the model. Please be careful when you training the model. ",
+        "user": {
+          "login": "siyuh",
+          "name": "siyuh",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/53618666?v=4",
+          "id": 53618666
+        },
+        "id": 3821688646,
+        "pull_request_review_id": null,
+        "in_reply_to_id": null,
+        "created_at": null,
+        "updated_at": null,
+        "review": null,
+        "side": null,
+        "line": null,
+        "start_line": null,
+        "path": null,
+        "body_html": "<p dir=\"auto\">Hi, thank you for your question! I am so sorry for my late response due to busy schedule in December and January. Technically there are no strict requirement for the cell number. In our example, we have around 2400 cells for each day. But too few cells might lead to low learning performance or overfitting for the model. Please be careful when you training the model.</p>"
+      }
+    ],
+    "url": "https://github.com/siyuh/Squidiff/issues/11",
+    "title": "siyuh/Squidiff Issue #11 comments",
+    "display_url": "https://github.com/siyuh/Squidiff/issues/11",
+    "display_title": "siyuh/Squidiff Issue #11 comments"
+  },
+  {
+    "number": 12,
+    "comments": [
+      {
+        "url": "https://github.com/siyuh/Squidiff/issues/12#issuecomment-3849433575",
+        "body": "Hi, \n\nThanks for your questions! Sorry for my late responses. \n\nI realized that I didn't upload the preprocessing file for fig2 data, and please check [here] for details(https://github.com/siyuh/Squidiff_reproducibility/blob/main/preprocess_fig2_data.ipynb).  \n\nAnd please check the following detailed answers for your questions: \n1.&2 ​Specific Number 203 and selection strategy:​​ we are focused on iPSC development, so to simply the discovery and have efficient training, we just got top 200 variable genes, and we added a list of wnt signaling genes, which turned out only 3 genes are not there. \n\n3. No, it could handle more than thousand genes but the training definitely harder and slower. So I selected limited focused high variable gene lists for several studies. \n\nHope that answered your questions. \n\n",
+        "user": {
+          "login": "siyuh",
+          "name": "siyuh",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/53618666?v=4",
+          "id": 53618666
+        },
+        "id": 3849433575,
+        "pull_request_review_id": null,
+        "in_reply_to_id": null,
+        "created_at": null,
+        "updated_at": null,
+        "review": null,
+        "side": null,
+        "line": null,
+        "start_line": null,
+        "path": null,
+        "body_html": "<p dir=\"auto\">Hi,</p>\n<p dir=\"auto\">Thanks for your questions! Sorry for my late responses.</p>\n<p dir=\"auto\">I realized that I didn't upload the preprocessing file for fig2 data, and please check [here] for details(<a href=\"https://github.com/siyuh/Squidiff_reproducibility/blob/main/preprocess_fig2_data.ipynb\">https://github.com/siyuh/Squidiff_reproducibility/blob/main/preprocess_fig2_data.ipynb</a>).</p>\n<p dir=\"auto\">And please check the following detailed answers for your questions:<br>\n1.&amp;2 ​Specific Number 203 and selection strategy:​​ we are focused on iPSC development, so to simply the discovery and have efficient training, we just got top 200 variable genes, and we added a list of wnt signaling genes, which turned out only 3 genes are not there.</p>\n<ol start=\"3\" dir=\"auto\">\n<li>No, it could handle more than thousand genes but the training definitely harder and slower. So I selected limited focused high variable gene lists for several studies.</li>\n</ol>\n<p dir=\"auto\">Hope that answered your questions.</p>"
+      }
+    ],
+    "url": "https://github.com/siyuh/Squidiff/issues/12",
+    "title": "siyuh/Squidiff Issue #12 comments",
+    "display_url": "https://github.com/siyuh/Squidiff/issues/12",
+    "display_title": "siyuh/Squidiff Issue #12 comments"
+  },
+  {
+    "number": 13,
+    "comments": [
+      {
+        "url": "https://github.com/siyuh/Squidiff/pull/13#issuecomment-3875042930",
+        "body": "pass",
+        "user": {
+          "login": "QSChen1021",
+          "name": "QSChen1021",
+          "email": null,
+          "avatar_url": "https://avatars.githubusercontent.com/u/221041076?v=4",
+          "id": 221041076
+        },
+        "id": 3875042930,
+        "pull_request_review_id": null,
+        "in_reply_to_id": null,
+        "created_at": null,
+        "updated_at": null,
+        "review": null,
+        "side": null,
+        "line": null,
+        "start_line": null,
+        "path": null,
+        "body_html": "<p dir=\"auto\">pass</p>"
+      }
+    ],
+    "url": "https://github.com/siyuh/Squidiff/issues/13",
+    "title": "siyuh/Squidiff Issue #13 comments",
+    "display_url": "https://github.com/siyuh/Squidiff/issues/13",
+    "display_title": "siyuh/Squidiff Issue #13 comments"
+  },
+  {
+    "number": 14,
+    "comments": [],
+    "url": "https://github.com/siyuh/Squidiff/issues/14",
+    "title": "siyuh/Squidiff Issue #14 comments",
+    "display_url": "https://github.com/siyuh/Squidiff/issues/14",
+    "display_title": "siyuh/Squidiff Issue #14 comments"
+  },
+  {
+    "number": 15,
+    "comments": [],
+    "url": "https://github.com/siyuh/Squidiff/issues/15",
+    "title": "siyuh/Squidiff Issue #15 comments",
+    "display_url": "https://github.com/siyuh/Squidiff/issues/15",
+    "display_title": "siyuh/Squidiff Issue #15 comments"
+  },
+  {
+    "number": 16,
+    "comments": [],
+    "url": "https://github.com/siyuh/Squidiff/issues/16",
+    "title": "siyuh/Squidiff Issue #16 comments",
+    "display_url": "https://github.com/siyuh/Squidiff/issues/16",
+    "display_title": "siyuh/Squidiff Issue #16 comments"
+  }
+]

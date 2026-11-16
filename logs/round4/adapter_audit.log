@@ -1,0 +1,5 @@
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+diffusion num of steps =  1000
+diffusion num of steps =  1000
+ADAPTER_AUDIT_OK 0.0 ['gene_size must equal output_dim for epsilon prediction', 'Pinned reverse sampler assumes epsilon; use the matched x0 adapter in round3.py', 'Pinned native diffusion training does not implement learned variance']

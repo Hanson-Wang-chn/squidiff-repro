@@ -1,0 +1,11 @@
+model,criterion,mode,sigma,wasserstein,mse
+fullsource,Independent endpoint gene-wise Wasserstein,ot,1.0,0.5573473805085909,0.5040705068546535
+bncal,"Frozen native protocol; endpoint quality checked, not retuned",empirical,1.0,0.5190493079065275,0.4408711048755503
+ema,"Frozen native protocol; endpoint quality checked, not retuned",empirical,1.0,0.5260145400792544,0.4436313665631805
+emacal,"Frozen native protocol; endpoint quality checked, not retuned",empirical,1.0,0.5270499151123188,0.4452633437218257
+finalclip,"Frozen native protocol; endpoint quality checked, not retuned",empirical,1.0,0.506949001109547,0.42686472346341925
+native,Independent endpoint gene-wise Wasserstein,empirical,1.0,0.5193060318075583,0.44090582053674743
+paper_cellnoise,Independent endpoint gene-wise Wasserstein,paired_noise,0.21141943335533142,0.6661750767294299,0.43281970353392396
+layernorm,Independent endpoint gene-wise Wasserstein,ot,1.0,0.4586898592147076,0.26231477131588543
+resblock,Independent endpoint gene-wise Wasserstein,empirical,1.0,0.4856253429281196,0.4209641581455405
+supportbalance,Independent endpoint gene-wise Wasserstein,empirical,1.0,0.5334355191916644,0.4473877085983107

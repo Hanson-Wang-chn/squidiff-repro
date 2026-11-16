@@ -1,0 +1,11 @@
+{
+  "status": "Corrected audit label; not a training or biological prediction run",
+  "original_probe": "Split the source training matrix in its original row order into batches of 64",
+  "row_order": "Rows are grouped by day, so these were predominantly single-day batches, not mixed-day training batches",
+  "raw_latent_rmse_over_eval_rms": 0.4561624228954315,
+  "ema_latent_rmse_over_eval_rms": 0.4609465003013611,
+  "correction": "The final mixed-day audit explicitly interleaves endpoint days before batching and restores original row positions",
+  "corrected_raw_mixed_rmse_over_eval_rms": 0.12562763690948486,
+  "corrected_ema_mixed_rmse_over_eval_rms": 0.12632562220096588,
+  "effect": "Changes the diagnostic interpretation only; no saved model weights or formal training updates were changed"
+}

@@ -1,0 +1,14 @@
+{
+  "initial_probe": {
+    "entry": "Direct import of upstream train_squidiff.py before wrapping its parser",
+    "exec_session": 31527,
+    "exit_code": 1,
+    "error": "ModuleNotFoundError: No module named 'rdkit' from the unconditional top-level scrna_datasets import",
+    "optimizer_updates": 0
+  },
+  "repair": "Expression-only safe entry builds the native expression loader without chemistry imports; drug dependencies remain conditional on the explicit drug path",
+  "parse_result": "results/round4/safe_cli_parsed.json",
+  "runtime_probe": "results/round4/cli_smoke.json",
+  "runtime_log": "logs/round4/cli_smoke.log",
+  "interpretation": "Engineering verification only; no biological reproduction claim"
+}

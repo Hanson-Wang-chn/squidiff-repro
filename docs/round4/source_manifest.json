@@ -1,0 +1,90 @@
+{
+  "note": "Final reviewed sources for replay. Actual training hashes remain bound in each model config and training_source_manifest.json.",
+  "files": [
+    {
+      "path": "scripts/round4.py",
+      "sha256": "a9c2a90ea5195718f2368dced3c1af483123a501c839f43be24fd9339e14ae6c",
+      "snapshot": "docs/round4/final_sources/round4.py.txt"
+    },
+    {
+      "path": "scripts/round4_adapter_audit.py",
+      "sha256": "51f9dfac0eaf6f34003485d556c2d679f2cb169eee0c737dd7c06cdd1f721eea",
+      "snapshot": "docs/round4/final_sources/round4_adapter_audit.py.txt"
+    },
+    {
+      "path": "scripts/round4_bn_audit.py",
+      "sha256": "75dbeb4ee56d3e26f136239b8bac65a30b1872c74dd53282396eecab1e46b351",
+      "snapshot": "docs/round4/final_sources/round4_bn_audit.py.txt"
+    },
+    {
+      "path": "scripts/round4_cleanup.py",
+      "sha256": "5a81a45d7a5d6229d59cf07b8e462c560ff117e3aa8dfe40b63f9b80c2182ec2",
+      "snapshot": "docs/round4/final_sources/round4_cleanup.py.txt"
+    },
+    {
+      "path": "scripts/round4_cli_smoke.py",
+      "sha256": "ce740501c5014fccf1e58e84fb61582c58fda50e0720edf88ddd7c73d8695133",
+      "snapshot": "docs/round4/final_sources/round4_cli_smoke.py.txt"
+    },
+    {
+      "path": "scripts/round4_delivery.py",
+      "sha256": "8f133421d6e6ae8b6363a8eca93980f265e9adf367b1fffbd2c4047bf7db97af",
+      "snapshot": "docs/round4/final_sources/round4_delivery.py.txt"
+    },
+    {
+      "path": "scripts/round4_endpoint_tail.py",
+      "sha256": "5826d01d0fca99c7415c84fb1754a38edf9d8ed65c027f7ccac02a082922e723",
+      "snapshot": "docs/round4/final_sources/round4_endpoint_tail.py.txt"
+    },
+    {
+      "path": "scripts/round4_eval_queue.py",
+      "sha256": "be252073f358465f37dee2a425a0075380d91dacfeaddec6c8b9c0f2b4bbb5c7",
+      "snapshot": "docs/round4/final_sources/round4_eval_queue.py.txt"
+    },
+    {
+      "path": "scripts/round4_evaluate.py",
+      "sha256": "de39ecde3bdc84f9fce7a646a06ccd957e433023cf3426b376f9beca0b858c7e",
+      "snapshot": "docs/round4/final_sources/round4_evaluate.py.txt"
+    },
+    {
+      "path": "scripts/round4_finalize_queue.py",
+      "sha256": "be27790de04fed0d857d4d29cb1585c17f89e014ce5497752ff80cb317cb8258",
+      "snapshot": "docs/round4/final_sources/round4_finalize_queue.py.txt"
+    },
+    {
+      "path": "scripts/round4_integrity.py",
+      "sha256": "9bcebd33368270f18263da09b102001b0c9b75a5eb392335ffa96954f610155f",
+      "snapshot": "docs/round4/final_sources/round4_integrity.py.txt"
+    },
+    {
+      "path": "scripts/round4_paper_queue.py",
+      "sha256": "254e2b3209ee84a93b131c99315e4607780138b70e3eeb98e638ae7d79ec81d0",
+      "snapshot": "docs/round4/final_sources/round4_paper_queue.py.txt"
+    },
+    {
+      "path": "scripts/round4_preflight.py",
+      "sha256": "0ab50fcad57278b8aa217d529d8faa290400d0a4b942c44fc0229a59f13984b2",
+      "snapshot": "docs/round4/final_sources/round4_preflight.py.txt"
+    },
+    {
+      "path": "scripts/round4_queue.py",
+      "sha256": "cfea648b569dbdd14f4aa5f88eb51df17862142dd6ce22bd9624da16e775cc05",
+      "snapshot": "docs/round4/final_sources/round4_queue.py.txt"
+    },
+    {
+      "path": "scripts/round4_report.py",
+      "sha256": "4bc989ab588500a4c9314f5fec43875831b1c0ac6a3461258e056a43c643a79d",
+      "snapshot": "docs/round4/final_sources/round4_report.py.txt"
+    },
+    {
+      "path": "scripts/round4_support_audit.py",
+      "sha256": "3b0538c51470602e016a593160b8843addb8e4fe205041cdfb9d657b1c2fc29b",
+      "snapshot": "docs/round4/final_sources/round4_support_audit.py.txt"
+    },
+    {
+      "path": "scripts/train_source_safe.py",
+      "sha256": "621b909bccf1dde68f02a4c6a438e1edf2848ac11f08d9201ac9b2170fd963be",
+      "snapshot": "docs/round4/final_sources/train_source_safe.py.txt"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "start": 1794741948.0359628,
+  "end": 1794744764.5147088,
+  "jobs": [
+    {
+      "model": "bncal",
+      "exit_code": 0,
+      "command": [
+        "/home/whs/mydata/conda-env/squidiff/bin/python",
+        "/home/whs/squidiff/scripts/round4_evaluate.py",
+        "--model",
+        "bncal",
+        "--oracle",
+        "--use-native-selection"
+      ]
+    },
+    {
+      "model": "ema",
+      "exit_code": 0,
+      "command": [
+        "/home/whs/mydata/conda-env/squidiff/bin/python",
+        "/home/whs/squidiff/scripts/round4_evaluate.py",
+        "--model",
+        "ema",
+        "--oracle",
+        "--use-native-selection"
+      ]
+    },
+    {
+      "model": "emacal",
+      "exit_code": 0,
+      "command": [
+        "/home/whs/mydata/conda-env/squidiff/bin/python",
+        "/home/whs/squidiff/scripts/round4_evaluate.py",
+        "--model",
+        "emacal",
+        "--oracle",
+        "--use-native-selection"
+      ]
+    },
+    {
+      "model": "finalclip",
+      "exit_code": 0,
+      "command": [
+        "/home/whs/mydata/conda-env/squidiff/bin/python",
+        "/home/whs/squidiff/scripts/round4_evaluate.py",
+        "--model",
+        "finalclip",
+        "--oracle",
+        "--use-native-selection"
+      ]
+    },
+    {
+      "model": "layernorm",
+      "exit_code": 0,
+      "command": [
+        "/home/whs/mydata/conda-env/squidiff/bin/python",
+        "/home/whs/squidiff/scripts/round4_evaluate.py",
+        "--model",
+        "layernorm",
+        "--oracle"
+      ]
+    },
+    {
+      "model": "resblock",
+      "exit_code": 0,
+      "command": [
+        "/home/whs/mydata/conda-env/squidiff/bin/python",
+        "/home/whs/squidiff/scripts/round4_evaluate.py",
+        "--model",
+        "resblock",
+        "--oracle"
+      ]
+    },
+    {
+      "model": "fullsource",
+      "exit_code": 0,
+      "command": [
+        "/home/whs/mydata/conda-env/squidiff/bin/python",
+        "/home/whs/squidiff/scripts/round4_evaluate.py",
+        "--model",
+        "fullsource",
+        "--oracle"
+      ]
+    },
+    {
+      "model": "supportbalance",
+      "exit_code": 0,
+      "command": [
+        "/home/whs/mydata/conda-env/squidiff/bin/python",
+        "/home/whs/squidiff/scripts/round4_evaluate.py",
+        "--model",
+        "supportbalance",
+        "--oracle"
+      ]
+    }
+  ],
+  "all_success": true
+}

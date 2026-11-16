@@ -1,0 +1,28 @@
+{
+  "native_update_max_error": 0.0,
+  "residual_algebra_max_error": 0.0,
+  "layernorm_companion_max_error": 4.76837158203125e-07,
+  "variants": [
+    {
+      "variant": "layernorm",
+      "loss": 1.122027039527893,
+      "parameters": 52142343
+    },
+    {
+      "variant": "resblock",
+      "loss": 1.8881645202636719,
+      "parameters": 52142343
+    },
+    {
+      "variant": "fullsource",
+      "loss": 1.1229690313339233,
+      "parameters": 52142343
+    },
+    {
+      "variant": "supportbalance",
+      "loss": 1.119594693183899,
+      "parameters": 52142343
+    }
+  ],
+  "scope": "Engineering checks only, not biological results"
+}

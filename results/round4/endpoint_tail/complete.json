@@ -1,0 +1,14 @@
+{
+  "rows": 10,
+  "models": [
+    "native",
+    "layernorm",
+    "resblock",
+    "fullsource",
+    "supportbalance"
+  ],
+  "selection": "Training endpoint T > 3; threshold and comparison frozen before new middle-day evaluation",
+  "shared_xT_within_model": true,
+  "updates": 0,
+  "interpretation": "RNA-conditioned training capacity control; neither generation of an unseen state nor prediction of its population expansion"
+}

@@ -1,0 +1,20 @@
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+diffusion num of steps =  1000
+VALIDATE bncal {"mode": "empirical", "sigma": 1.0, "wasserstein": 0.5190493079065275, "mse": 0.4408711048755503}
+TEST bncal fixed 0 0.6288612902964766 0.8949626572354464 0 55
+TEST bncal fixed 1 0.3434559934536001 0.8958176863663053 4 49
+TEST bncal fixed 2 0.3606708557934454 0.9364083254931029 2 74
+TEST bncal fixed 3 0.7350969156077376 0.9926171157609982 0 106
+TEST bncal selected 0 0.9940479695822892 0.13134500082960585 0 0
+TEST bncal selected 1 0.6396325741965845 0.18764362078504443 0 0
+TEST bncal selected 2 0.7472520355942036 0.3185724624019349 0 0
+TEST bncal selected 3 0.9920492544213149 0.3386729954035642 0 0
+DIAGNOSTIC bncal mean_direction_removed 0.6005669053429743 0.15197199709689205
+DIAGNOSTIC bncal target_rna_oracle 0.7984001593253357 0.3729508162624552

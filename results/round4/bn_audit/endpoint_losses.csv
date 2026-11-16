@@ -1,0 +1,5 @@
+weights,buffers,endpoint_validation_loss,latent_change_over_raw_rms,bn1_mean_change,bn2_mean_change
+raw,original_buffers,1.1578317339805653,0.0,0.0,0.0
+raw,training_recalibrated,1.1561499445939747,0.025170153006911278,0.048335399478673935,0.0283043310046196
+ema,original_buffers,1.1089054254444393,0.0,0.0,0.0
+ema,training_recalibrated,1.108117014215095,0.02636258862912655,0.04962737858295441,0.045932427048683167

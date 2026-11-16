@@ -1,0 +1,18 @@
+[
+  {
+    "path": "scripts/round4.py",
+    "sha256": "a9c2a90ea5195718f2368dced3c1af483123a501c839f43be24fd9339e14ae6c"
+  },
+  {
+    "path": "scripts/round4_queue.py",
+    "sha256": "cfea648b569dbdd14f4aa5f88eb51df17862142dd6ce22bd9624da16e775cc05"
+  },
+  {
+    "path": "scripts/round2.py",
+    "sha256": "787dc9c88c2a95b2757de77b468a97357d532b54194fcf341abf090e5a9ef246"
+  },
+  {
+    "path": "scripts/common.py",
+    "sha256": "17fdeeb95a053d42791a1e6b171dbb2b76864c91c3d4239390f3c0f69887e535"
+  }
+]

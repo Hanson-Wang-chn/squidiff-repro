@@ -1,0 +1,132 @@
+{
+  "status": "complete",
+  "time": 1794741309.3673925,
+  "authorization": "User explicitly allowed old checkpoint deletion for round4",
+  "retained": "All final/best inference weights, data, predictions and logs; current round2/3 resume states",
+  "consequence": "Retired historical runs cannot resume optimizer/RNG state; inference remains available",
+  "free_before": 16102494208,
+  "free_after": 28771495936,
+  "bytes_unlinked": 12673484910,
+  "records": [
+    {
+      "path": "results/norman/balanced_fp32_s42/latest.pt",
+      "bytes": 834411314,
+      "sha256": "5a2614c07b345a6a32cf11e2d8bcb75ccf2331fa9b05048c45bf42ba5cca64e3",
+      "final_weight": "results/norman/balanced_fp32_s42/step_100000.pt",
+      "final_sha256": "ff860abdab4f587726b84139a57f9ba5aaed4d5eae3295bd45f041f554e59379",
+      "training_step": 100000
+    },
+    {
+      "path": "results/norman/fp32_tf32_s42/latest.pt",
+      "bytes": 834706738,
+      "sha256": "a90895c4c73c36704e6bf81c01206497509d280471c92dbbd555ac353e09a594",
+      "final_weight": "results/norman/fp32_tf32_s42/step_100000.pt",
+      "final_sha256": "9324a502649465b579460e2fe4970afe689d39335ef82596f21cec72ed087be2",
+      "training_step": 100000
+    },
+    {
+      "path": "results/norman/source1000_epsres_s42/latest.pt",
+      "bytes": 912772530,
+      "sha256": "fe1516c8bbd29356bdc5ffd72f58a307da1acb5ec9af309412f8cf284045d132",
+      "final_weight": "results/norman/source1000_epsres_s42/step_100000.pt",
+      "final_sha256": "4dd9b7e3a7e6a9c2add3ac495adcbfc55da1a531a25b0a092f9f62647759422a",
+      "training_step": 100000
+    },
+    {
+      "path": "results/norman/source1000_fp32_s42/latest.pt",
+      "bytes": 912772466,
+      "sha256": "4dc3d14552e8ae7c57bb16527d54de231d54cb6eb6415ceeb349ef0677610c9c",
+      "final_weight": "results/norman/source1000_fp32_s42/step_100000.pt",
+      "final_sha256": "da7f2cad6800c7d267675f49ca99d3ecdf81a2e1a1c66ab29a69f319617104db",
+      "training_step": 100000
+    },
+    {
+      "path": "results/norman/source_fp32_s42/latest.pt",
+      "bytes": 834411314,
+      "sha256": "9267c369b56bf3bbaa6f30b495cbd7589f268670405f0472abd0afd65a7c18db",
+      "final_weight": "results/norman/source_fp32_s42/step_100000.pt",
+      "final_sha256": "01747edd5f1d86af108303ab405ea431e4149ef15fce7b38d0809e116bde17f2",
+      "training_step": 100000
+    },
+    {
+      "path": "results/norman/source_fp32_s43/latest.pt",
+      "bytes": 834411250,
+      "sha256": "24117ed7733411a2c4658765bf40843f0a51416da18b8d464fd573353b0887ce",
+      "final_weight": "results/norman/source_fp32_s43/step_100000.pt",
+      "final_sha256": "3a677649783ce33b4ae87284a6af3a98f25d1abfc490bc0d8ea1fed6d774dcc9",
+      "training_step": 100000
+    },
+    {
+      "path": "results/norman/source_fp32_s44/latest.pt",
+      "bytes": 834411250,
+      "sha256": "1d45d6b83b93f69b2e7b87090ba54af234debf33d75b12f2e66bb242103d3d88",
+      "final_weight": "results/norman/source_fp32_s44/step_100000.pt",
+      "final_sha256": "2229e929469340e8dc12f9733706c2d81dca4bd567a596b5d1a8164d67d4581d",
+      "training_step": 100000
+    },
+    {
+      "path": "results/norman/v1/latest.pt",
+      "bytes": 834706610,
+      "sha256": "1a39693fdefb0f2d3cbf984fb7a21ddf9a7405b244ca4f094420e7f719d7f398",
+      "final_weight": "results/norman/v1/step_100000.pt",
+      "final_sha256": "a223a206cfb408f1ef31c8c85a9876926200e7d581e16a14fd9189f43bd662e1",
+      "training_step": 100000
+    },
+    {
+      "path": "results/ipsc/all_days_fp32_s42/latest.pt",
+      "bytes": 834412018,
+      "sha256": "dc6e59283df4aa228e7bd005eef756407446a7f793387589f0a1c67756b8cd44",
+      "final_weight": "results/ipsc/all_days_fp32_s42/step_100000.pt",
+      "final_sha256": "a3b07d03405380cacb4f00752b6212ece057306dcd3fbe89585bd278874d06a0",
+      "training_step": 100000
+    },
+    {
+      "path": "results/ipsc/fp32_ieee_s42/latest.pt",
+      "bytes": 834411826,
+      "sha256": "35909a892e349dc8cb5625c481c6af1ac9220c1614c21565d1b871b63f42c640",
+      "final_weight": "results/ipsc/fp32_ieee_s42/step_100000.pt",
+      "final_sha256": "1e626efb0de2cfe4d80c5a3bb4f47e2ba196761e1273425c77c6e936736fe21e",
+      "training_step": 100000
+    },
+    {
+      "path": "results/ipsc/fp32_tf32_s42/latest.pt",
+      "bytes": 834411698,
+      "sha256": "d79f50ce2b93e47c852c2bb315dfbd9f7ecaa2ef90b948b3739a76b3168a553b",
+      "final_weight": "results/ipsc/fp32_tf32_s42/step_100000.pt",
+      "final_sha256": "b77149690b7ff0506f34ffa6fca21ee99ccd0f63f90f83364b5179c1867888f5",
+      "training_step": 100000
+    },
+    {
+      "path": "results/ipsc/fresh_endpoints_fp32_s42/latest.pt",
+      "bytes": 834411314,
+      "sha256": "a0df5b2b3f7c06a00ca7882770a57dce504a2e554d0f8064b10a0952af56f1f4",
+      "final_weight": "results/ipsc/fresh_endpoints_fp32_s42/step_100000.pt",
+      "final_sha256": "de02feb782feec83883269467bc9ea529bec261963904beb745a34caf5d4e1ec",
+      "training_step": 100000
+    },
+    {
+      "path": "results/ipsc/full_endpoints_fp32_s42/latest.pt",
+      "bytes": 834411890,
+      "sha256": "87c5e62446955842f4fef66950174774bfced5ac1f39920e6fbbf680ff2744ab",
+      "final_weight": "results/ipsc/full_endpoints_fp32_s42/step_100000.pt",
+      "final_sha256": "7d65650a150b312efb402017002edf1972e97bb6e6061a57f987566babbf9f4b",
+      "training_step": 100000
+    },
+    {
+      "path": "results/ipsc/source_fp32_s43/latest.pt",
+      "bytes": 834411442,
+      "sha256": "fbe949e877e5f250282c189125e63fabb34bc04f8b6551a94c5df97b614a45bc",
+      "final_weight": "results/ipsc/source_fp32_s43/step_100000.pt",
+      "final_sha256": "4dee2e2c139a0da695776c9f963fd7b2d8abe1a73da9f3cd780455f67a102d99",
+      "training_step": 100000
+    },
+    {
+      "path": "results/ipsc/source_fp32_s44/latest.pt",
+      "bytes": 834411250,
+      "sha256": "beb26502dc3f7b2502c0e1240da919889c023d37b8b0038575011cb673fd3a2f",
+      "final_weight": "results/ipsc/source_fp32_s44/step_100000.pt",
+      "final_sha256": "a1cf44dcd501cc3a313a169b86a694f4655250468f98226ca49186f45373996e",
+      "training_step": 100000
+    }
+  ]
+}

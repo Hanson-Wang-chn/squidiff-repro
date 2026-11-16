@@ -1,0 +1,12 @@
+{
+  "selected": {
+    "mode": "empirical",
+    "sigma": 1.0,
+    "wasserstein": 0.506949001109547,
+    "mse": 0.42686472346341925
+  },
+  "criterion": "Frozen native protocol; endpoint quality checked, not retuned",
+  "checkpoint_step": 100000,
+  "intermediate_RNA_used": false,
+  "common_random_bank": true
+}

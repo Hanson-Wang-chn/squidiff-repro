@@ -1,0 +1,20 @@
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+diffusion num of steps =  1000
+VALIDATE finalclip {"mode": "empirical", "sigma": 1.0, "wasserstein": 0.506949001109547, "mse": 0.42686472346341925}
+TEST finalclip fixed 0 -1.9628938965303546 3.873672363605971 0 151
+TEST finalclip fixed 1 -0.6647701682263223 2.611156348239165 10 131
+TEST finalclip fixed 2 -0.40625245869023274 1.9925270865267763 5 129
+TEST finalclip fixed 3 0.2150073279165532 1.795003564125897 0 135
+TEST finalclip selected 0 0.9948718905927907 0.14343167041098545 0 0
+TEST finalclip selected 1 0.6457020974001533 0.1920379277721804 0 0
+TEST finalclip selected 2 0.7631484791866618 0.3194846334315177 0 0
+TEST finalclip selected 3 0.9924080259446785 0.3431647485482972 0 0
+DIAGNOSTIC finalclip mean_direction_removed 0.6085341723167597 0.16369375478922546
+DIAGNOSTIC finalclip target_rna_oracle 0.7957900311663317 0.3468704006378539

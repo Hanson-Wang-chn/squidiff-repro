@@ -1,0 +1,59 @@
+{
+  "rows": [
+    {
+      "weights": "raw",
+      "buffers": "original_buffers",
+      "endpoint_validation_loss": 1.1578317339805653,
+      "latent_change_over_raw_rms": 0.0,
+      "bn1_mean_change": 0.0,
+      "bn2_mean_change": 0.0
+    },
+    {
+      "weights": "raw",
+      "buffers": "training_recalibrated",
+      "endpoint_validation_loss": 1.1561499445939747,
+      "latent_change_over_raw_rms": 0.025170153006911278,
+      "bn1_mean_change": 0.048335399478673935,
+      "bn2_mean_change": 0.0283043310046196
+    },
+    {
+      "weights": "ema",
+      "buffers": "original_buffers",
+      "endpoint_validation_loss": 1.1089054254444393,
+      "latent_change_over_raw_rms": 0.0,
+      "bn1_mean_change": 0.0,
+      "bn2_mean_change": 0.0
+    },
+    {
+      "weights": "ema",
+      "buffers": "training_recalibrated",
+      "endpoint_validation_loss": 1.108117014215095,
+      "latent_change_over_raw_rms": 0.02636258862912655,
+      "bn1_mean_change": 0.04962737858295441,
+      "bn2_mean_change": 0.045932427048683167
+    }
+  ],
+  "geometry": [
+    {
+      "weights": "raw",
+      "condition": "mixed_train_batches",
+      "latent_rmse_over_eval_rms": 0.12562763690948486
+    },
+    {
+      "weights": "raw",
+      "condition": "single_day_batches",
+      "latent_rmse_over_eval_rms": 0.4585784077644348
+    },
+    {
+      "weights": "ema",
+      "condition": "mixed_train_batches",
+      "latent_rmse_over_eval_rms": 0.12632562220096588
+    },
+    {
+      "weights": "ema",
+      "condition": "single_day_batches",
+      "latent_rmse_over_eval_rms": 0.46336930990219116
+    }
+  ],
+  "scope": "All fitting and auditing uses endpoint RNA only; train-batch mode is a diagnostic, not a prediction protocol"
+}

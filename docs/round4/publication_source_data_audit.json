@@ -1,0 +1,106 @@
+{
+  "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41592-025-02877-y/MediaObjects/41592_2025_2877_MOESM5_ESM.zip",
+  "expected_bytes": 36733376,
+  "request_range": "bytes=36602304-36733375",
+  "status": 206,
+  "content_range": "bytes 36602304-36733375/36733376",
+  "members": [
+    {
+      "name": "source_data/",
+      "bytes": 0,
+      "compressed": 0,
+      "header_offset": 0,
+      "compression": 0,
+      "crc": 0
+    },
+    {
+      "name": "source_data/0Gy_02.tif",
+      "bytes": 6294486,
+      "compressed": 4924960,
+      "header_offset": 74,
+      "compression": 8,
+      "crc": 3773606799
+    },
+    {
+      "name": "source_data/1Gy_02.tif",
+      "bytes": 6294486,
+      "compressed": 4163297,
+      "header_offset": 4925134,
+      "compression": 8,
+      "crc": 4293395730
+    },
+    {
+      "name": "source_data/.DS_Store",
+      "bytes": 6148,
+      "compressed": 442,
+      "header_offset": 9088531,
+      "compression": 8,
+      "crc": 1781606912
+    },
+    {
+      "name": "__MACOSX/source_data/._.DS_Store",
+      "bytes": 120,
+      "compressed": 53,
+      "header_offset": 9089072,
+      "compression": 8,
+      "crc": 952141835
+    },
+    {
+      "name": "source_data/0Gy_03.tif",
+      "bytes": 6294486,
+      "compressed": 5083304,
+      "header_offset": 9089235,
+      "compression": 8,
+      "crc": 2668718442
+    },
+    {
+      "name": "source_data/1Gy_01.tif",
+      "bytes": 6294486,
+      "compressed": 3588485,
+      "header_offset": 14172639,
+      "compression": 8,
+      "crc": 2898859470
+    },
+    {
+      "name": "source_data/0Gy_01.tif",
+      "bytes": 6294486,
+      "compressed": 5255182,
+      "header_offset": 17761224,
+      "compression": 8,
+      "crc": 4108989935
+    },
+    {
+      "name": "__MACOSX/source_data/._0Gy_01.tif",
+      "bytes": 233,
+      "compressed": 141,
+      "header_offset": 23016506,
+      "compression": 8,
+      "crc": 1216866040
+    },
+    {
+      "name": "source_data/4Gy_01.tif",
+      "bytes": 6294488,
+      "compressed": 5114398,
+      "header_offset": 23016758,
+      "compression": 8,
+      "crc": 621620390
+    },
+    {
+      "name": "source_data/4Gy_02.tif",
+      "bytes": 6294486,
+      "compressed": 4442104,
+      "header_offset": 28131256,
+      "compression": 8,
+      "crc": 1980735594
+    },
+    {
+      "name": "source_data/4Gy_03.tif",
+      "bytes": 6294486,
+      "compressed": 4158584,
+      "header_offset": 32573460,
+      "compression": 8,
+      "crc": 2544335974
+    }
+  ],
+  "method": "Read official ZIP central directory by HTTP range; no fake archive saved"
+}

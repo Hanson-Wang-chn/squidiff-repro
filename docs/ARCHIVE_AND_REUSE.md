@@ -1,6 +1,6 @@
 # GitHub 归档、恢复与复现
 
-本仓库保存 2026-11-13 至 2026-11-15 的三轮 Squidiff 本地复现与科学审计。2026-11-15 将 day1 专项诊断、第二轮和第三轮实验纳入 Git 归档，提交身份为 `whs <hs.wang.chn@outlook.com>`，默认分支为 `main`。科学结论及报告索引见 [README](../README.md)。
+本仓库保存 2026-11-13 至 2026-11-15 的四轮 Squidiff 本地复现与科学审计，归档于 2026-11-16 更新，包含 day1 专项诊断和第二至第四轮实验。提交身份为 `whs <hs.wang.chn@outlook.com>`，默认分支为 `main`。科学结论及报告索引见 [README](../README.md)。
 
 ## 归档保留什么
 
@@ -16,7 +16,7 @@
 
 **不归档数据矩阵、缓存及任何 checkpoint。** 包括原始 CSV/TSV/H5AD/压缩数据、处理后 H5AD、作者权重、本地模型/EMA/优化器/RNG 状态。预测 NPZ 属于有价值的实验输出，全部保留；其中可能含用于比较的测试表达和细胞/基因标识，不等同于完整原始数据集。
 
-完整工作区文件约 **310 MiB**。为完整保留新增两轮的预测、图和审计证据，归档预算从 300 MiB 调整为 **350 MiB**，单文件仍限制 **25 MiB**；实际字节数、逐文件 SHA256 和有意排除的数据/权重清单见 [archive_manifest.json](archive_manifest.json)。Git 会共享内容完全相同的文件对象，实际传输大小由 Git 打包决定。清单本身不对自身计算 SHA256，由 Git 提交保护。`.gitignore` 不删除服务器上的原文件；本次也没有清理现存数据和模型。
+归档文件约 **356 MiB**。为完整保留第四轮的预测、图和审计证据，归档预算从 350 MiB 调整为 **375 MiB**，单文件仍限制 **25 MiB**；实际字节数、逐文件 SHA256 和有意排除的数据/权重清单见 [archive_manifest.json](archive_manifest.json)。此预算约束当前归档内容，不包含本地 `.git` 和被忽略的文件；Git 历史与打包会影响实际上传及克隆大小。清单本身不对自身计算 SHA256，由 Git 提交保护。`.gitignore` 不删除服务器上的原文件；本次也没有清理现存数据和模型。
 
 `status.json`、`complete.json`、`assessment.json`、`final_integrity.json` 和日志中的 PID、可用空间、checkpoint 存在性等，都是实验完成时的历史记录，不能当作新机器的实时状态。**克隆后可以直接查看结果，但不能从旧训练步数恢复或直接调用模型推理。** 原权重删除后，需要重新训练才能做新的模型推理。
 
@@ -91,8 +91,8 @@ python scripts/verify_archive.py
 - `results/research/sampling_null_summary.csv`、`transient_programs/`、`conditional_uncertainty/`：负对照、瞬态程序、条件抽样区间。
 - `results/{norman,ipsc}/{run}/research_eval/{tag}/`：逐基因表、指标与预测 NPZ；`results/rejected/` 记录作废实验，不能作有效预测成绩。
 - `logs/README_research_full_20261113.txt`、`logs/events.jsonl`：完整过程。
-- [day1 诊断](../report.md)、[第二轮](../report-2.md)、[第三轮](../report-3.md)：后续报告；对应的 `results/diagnosis_20261115/`、`results/round2/`、`results/round3/` 保留指标、图、逐基因表和预测 NPZ。
-- `docs/round2/`、`docs/round3/`、`logs/round2/`、`logs/round3/`：后续实验的来源、环境与历史训练/评估过程。
+- [day1 诊断](../report.md)、[第二轮](../report-2.md)、[第三轮](../report-3.md)、[第四轮](../report-4.md)：后续报告；对应的 `results/diagnosis_20261115/` 和 `results/round{2,3,4}/` 保留指标、图、逐基因表和预测 NPZ。
+- `docs/round{2,3,4}/`、`logs/round{2,3,4}/`：后续实验的来源、环境与历史训练/评估过程。
 
 使用 NumPy 检查预测文件时，应保留归档里的基因顺序和评估标签：
 
@@ -183,6 +183,8 @@ python scripts/final_integrity.py
 这重跑的是第一轮 15 个研究模型及后续流程；历史 v1、硬件基准、额外探索诊断不会因此全部重建。需重建 v1 时另外运行 `python scripts/pipeline.py`。`research_parallel.py` 是原机器的 CUDA MPS 三队列入口，要求系统有 `nvidia-cuda-mps-control`；通用复现先用上述串行流程。
 
 第二、三轮的参数和命令分别见 [report-2.md](../report-2.md) 和 [report-3.md](../report-3.md)。必须先重建第一轮 iPSC 分区，再运行 `python scripts/round2.py prepare`。在新克隆中，应先按前述步骤隔离全部旧结果和日志；报告中的绝对环境路径应替换为新机器的 `conda activate squidiff`。第三轮作者权重诊断还依赖重新下载的作者数据和 checkpoint，不能仅凭归档直接推理。
+
+第四轮流程和运行参数见 [report-4.md](../report-4.md) 与 `scripts/round4*.py`、`scripts/train_source_safe.py`。`docs/round4/training_sources/` 和 `final_sources/` 分别保存训练时与交付时的源码快照；相关 manifest 保留哈希。`results/round4/delivery_manifest.json`、`final_integrity.json` 是实验交付时的历史记录，可能列出未归档的数据和模型，应以本仓库的 `docs/archive_manifest.json` 校验可移植归档。
 
 重训中断后，同一 run 有 `latest.pt` 时可恢复；**只存在旧 `status.json` 而没有权重时不能续训**，所以必须先隔离旧结果。`final_integrity.py` 检查本地数据、权重与预测的一致性，应在重训完成后使用；归档下载后的完整性应使用 `verify_archive.py`。历史 `results/research/final_integrity.json` 保留本轮原机器检查结果。
 

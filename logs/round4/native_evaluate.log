@@ -1,0 +1,26 @@
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+diffusion num of steps =  1000
+VALIDATE native {"mode": "fixed", "sigma": 0.7, "wasserstein": 1.3390943724201052, "mse": 1.8332315258354117}
+VALIDATE native {"mode": "isotropic", "sigma": 0.0, "wasserstein": 1.0716251224385684, "mse": 0.37645592491421664}
+VALIDATE native {"mode": "isotropic", "sigma": 0.21141943335533142, "wasserstein": 0.8577822814628548, "mse": 0.37821388175006515}
+VALIDATE native {"mode": "isotropic", "sigma": 0.42283886671066284, "wasserstein": 0.6733526382764323, "mse": 0.4717003532804376}
+VALIDATE native {"mode": "empirical", "sigma": 1.0, "wasserstein": 0.5193060318075583, "mse": 0.44090582053674743}
+VALIDATE native {"mode": "paired", "sigma": 1.0, "wasserstein": 0.7033808739624811, "mse": 0.38800393256376586}
+VALIDATE native {"mode": "ot", "sigma": 1.0, "wasserstein": 0.5721914446853477, "mse": 0.4037956428588477}
+TEST native fixed 0 0.6308674332478529 0.9000093622573574 0 56
+TEST native fixed 1 0.3487716811911704 0.8980438424972818 4 53
+TEST native fixed 2 0.3696421094082877 0.9376134738172792 2 71
+TEST native fixed 3 0.7371796219259596 0.9932194571200913 0 103
+TEST native selected 0 0.9941104735946749 0.13178646724192125 0 0
+TEST native selected 1 0.6401664400724857 0.1865208442598426 0 0
+TEST native selected 2 0.7529316178886547 0.31901463115985584 0 0
+TEST native selected 3 0.9919515253717769 0.34013045089353305 0 0
+DIAGNOSTIC native mean_direction_removed 0.6007809926606082 0.15176501290960004
+DIAGNOSTIC native target_rna_oracle 0.7930732820045624 0.3600721374762361

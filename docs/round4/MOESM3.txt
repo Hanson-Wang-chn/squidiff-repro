@@ -1,0 +1,1323 @@
+Peer Review File
+Squidiff: Predicting cellular development and responses to
+perturbations using a diffusion model
+Corresponding Author: Professor Kam Leong
+This file contains all editorial decision letters in order by version, followed by all author rebuttals in order by version. 
+Version 0: 
+Decision Letter: 
+24th Jan 2025 
+Dear Kam, 
+I hope you're well. 
+Your Article, "Squidiff: Predicting cellular development and responses to perturbations using a diffusion model", has now been
+seen by 3 reviewers. As you will see from their comments below, although the reviewers find your work of considerable
+potential interest, they have raised a number of concerns. We are interested in the possibility of publishing your paper in
+Nature Methods, but would like to consider your response to these concerns before we reach a final decision on publication. 
+We therefore invite you to revise your manuscript to address these concerns. We also suggest adding some benchmarking
+data comparing Squidiff to existing similiar methods, eg PRNet published in Nature Communications. 
+Another point - ref2 asks for data showing the use of Squidiff in analysing drug perturbations. As drug interactions and drug
+discovery is beyond the scope of Nature Methods so answering it is completely optional (you can also answer it in the
+discussion). I will leave it upto you. 
+We are committed to providing a fair and constructive peer-review process. Do not hesitate to contact us if there are specific
+requests from the reviewers that you believe are technically impossible or unlikely to yield a meaningful outcome. 
+When revising your paper: 
+* include a point-by-point response to the reviewers and to any editorial suggestions 
+* please underline/highlight any additions to the text or areas with other significant changes to facilitate review of the revised
+manuscript 
+* address the points listed described below to conform to our open science requirements 
+* ensure it complies with our general format requirements as set out in our guide to authors at www.nature.com/naturemethods 
+* resubmit all the necessary files electronically by using the link below to access your home page 
+Link Redacted 
+Note: This URL links to your confidential home page and associated information about manuscripts you may have submitted,
+or that you are reviewing for us. If you wish to forward this email to co-authors, please delete the link to your homepage. 
+We hope to receive your revised paper within ten weeks. If you cannot send it within this time, please let us know. In this event,
+
+we will still be happy to reconsider your paper at a later date so long as nothing similar has been accepted for publication at
+Nature Methods or published elsewhere. 
+OPEN SCIENCE REQUIREMENTS 
+REPORTING SUMMARY AND EDITORIAL POLICY CHECKLISTS 
+When revising your manuscript, please update your reporting summary and editorial policy checklists. 
+Reporting summary: https://www.nature.com/documents/nr-reporting-summary.zip 
+Editorial policy checklist: https://www.nature.com/documents/nr-editorial-policy-checklist.zip 
+If your paper includes custom software, we also ask you to complete a supplemental reporting summary. 
+Software supplement: https://www.nature.com/documents/nr-software-policy.pdf 
+Please submit these with your revised manuscript. They will be available to reviewers to aid in their evaluation if the paper is
+re-reviewed. If you have any questions about the checklist, please see http://www.nature.com/authors/policies/availability.html
+or contact me. 
+Please note that these forms are dynamic ‘smart pdfs’ and must therefore be downloaded and completed in Adobe Reader. We
+will then flatten them for ease of use by the reviewers. If you would like to reference the guidance text as you complete the
+template, please access these flattened versions at http://www.nature.com/authors/policies/availability.html. 
+EXTENDED DATA FIGURES 
+When re-submitting your manuscript, please ensure that any supplementary figures and tables that are crucial to the
+manuscript’s conclusions are converted into Extended Data figures and tables to increase visibility of these data. Extended
+Data figures and tables are online-only (present in the online PDF and full-text HTML versions of the paper), peer-reviewed
+display items that provide essential background to the article but are not included in the main article due to space constraints.
+A maximum of ten Extended Data display items (figures and tables) is permitted. 
+DATA AVAILABILITY 
+We strongly encourage you to deposit all new data associated with the paper in a persistent repository where they can be
+freely and enduringly accessed. We recommend submitting the data to discipline-specific and community-recognized
+repositories; a list of repositories is provided here: http://www.nature.com/sdata/policies/repositories 
+All novel DNA and RNA sequencing data, protein sequences, genetic polymorphisms, linked genotype and phenotype data,
+gene expression data, macromolecular structures, and proteomics data must be deposited in a publicly accessible database,
+and accession codes and associated hyperlinks must be provided in the “Data Availability” section. 
+Refer to our data policies here: https://www.nature.com/nature-research/editorial-policies/reporting-standards#availability-of-
+data 
+To further increase transparency, we encourage you to provide, in tabular form, the data underlying the graphical
+representations used in your figures. This is in addition to our data-deposition policy for specific types of experiments and large
+datasets. For readers, the source data will be made accessible directly from the figure legend. Spreadsheets can be submitted
+in .xls, .xlsx or .csv formats. Only one (1) file per figure is permitted: thus if there is a multi-paneled figure the source data for
+each panel should be clearly labeled in the csv/Excel file; alternately the data for a figure can be included in multiple, clearly
+labeled sheets in an Excel file. File sizes of up to 30 MB are permitted. When submitting source data files with your manuscript
+please select the Source Data file type and use the Title field in the File Description tab to indicate which figure the source data
+pertains to. 
+Please include a “Data availability” subsection in the Online Methods. This section should inform readers about the availability
+of the data used to support the conclusions of your study, including accession codes to public repositories, references to
+source data that may be published alongside the paper, unique identifiers such as URLs to data repository entries, or data set
+DOIs, and any other statement about data availability. At a minimum, you should include the following statement: “The data that
+support the findings of this study are available from the corresponding author upon request”, describing which data is available
+upon request and mentioning any restrictions on availability. If DOIs are provided, please include these in the Reference list
+(authors, title, publisher (repository name), identifier, year). For more guidance on how to write this section please see:
+http://www.nature.com/authors/policies/data/data-availability-statements-data-citations.pdf 
+CODE AVAILABILITY 
+Please include a “Code Availability” subsection in the Online Methods which details how your custom code is made available.
+Only in rare cases (where code is not central to the main conclusions of the paper) is the statement “available upon request”
+allowed (and reasons should be specified). 
+We request that you deposit code in a DOI-minting repository such as Zenodo, Gigantum or Code Ocean and cite the DOI in
+
+the Reference list. We also request that you use code versioning and provide a license. 
+For more information on our code sharing policy and requirements, please see: 
+https://www.nature.com/nature-research/editorial-policies/reporting-standards#availability-of-computer-code 
+MATERIALS AVAILABILITY 
+As a condition of publication in Nature Methods, authors are required to make unique materials promptly available to others
+without undue qualifications. 
+Authors reporting new chemical compounds must provide chemical structure, synthesis and characterization details. Authors
+reporting mutant strains and cell lines are strongly encouraged to use established public repositories. 
+More details about our materials availability policy can be found at https://www.nature.com/nature-portfolio/editorial-
+policies/reporting-standards#availability-of-materials 
+SUPPLEMENTARY PROTOCOL 
+To help facilitate reproducibility and uptake of your method, we ask you to prepare a step-by-step Supplementary Protocol for
+the method described in this paper. We <a href="https://www.nature.com/nature-research/editorial-policies/reporting-
+standards#protocols" target="new">encourage authors to share their step-by-step experimental protocols</a> on a protocol
+sharing platform of their choice and report the protocol DOI in the reference list. Nature Portfolio's protocols.io is a free-to-use
+and open resource for protocols; protocols deposited onto protocols.io are citable and can be linked from the published article.
+More details can found at <a href="https://www.protocols.io/help/publish-articles" target="new">protocols.io</a>. 
+ORCID 
+Nature Methods is committed to improving transparency in authorship. As part of our efforts in this direction, we are now
+requesting that all authors identified as ‘corresponding author’ on published papers create and link their Open Researcher and
+Contributor Identifier (ORCID) with their account on the Manuscript Tracking System (MTS), prior to acceptance. This applies
+to primary research papers only. ORCID helps the scientific community achieve unambiguous attribution of all scholarly
+contributions. You can create and link your ORCID from the home page of the MTS by clicking on ‘Modify my Springer Nature
+account’. For more information please visit please visit <a
+href="http://www.springernature.com/orcid">www.springernature.com/orcid</a>. 
+Please do not hesitate to contact me if you have any questions or would like to discuss these revisions further. We look forward
+to seeing the revised manuscript and thank you for the opportunity to consider your work. 
+Sincerely, 
+Madhura 
+Madhura Mukhopadhyay, PhD 
+Senior Editor 
+Nature Methods 
+Reviewers' Comments: 
+Reviewer #1 (Remarks to the Author): 
+The authors present a very interesting approach combining a diffusion model with a variational autoencoder to predict single-
+cell transcriptomic trajectories during development, as well as perturbations in response to drug exposure and radiation. The
+show high accuracy of their model relative to two other tools with similar goals: scGen and GEARS. The paper is very well-
+written, with exciting results, well-described figures, and detailed Methods. I do not have any major alteration
+recommendations, mostly minor editorial comments. 
+1. On page 2, it is not fair to say that “Multiple cell types or cross-cell type transfer of prediction” is not addressed by existing
+tools. This is the goal of scGen, as well as scVIDR [PMID: 37602218]. 
+2. On page 4, xT needs to be better explained. What does a “stochastic subcode” mean? This is not a commonly used term or
+concept. 
+3. Related to the above point, the Figure 1 title states “a semantic latent space (zsem), and a diffusion process to generate xT.”
+Like the description of Zsem, xT should also be described in a few words here, with maybe a reference to “See text for details.” 
+4. Also in Figure 1 caption: … “(A, B, C, D1, and D2), ” panels D1 and D2 are not marked on the figure itself. 
+5. On page 6, paragraph 1, “Linear Interpolation (Lerp)”: is Lerp a term from scGen? Is it necessary to use the abbreviation?
+There is also a reference to “Lerp providing a direct path …”. The term is best dropped unless essential. “Linear Interpolation”
+
+should suffice. 
+6. Page 8, “approaches” is misspelt: “… which cannot be accurately modeled by additive approached”. 
+7. Page 8: “A study involving drug tests on glioblastoma highlighted the distinct effects of Etopside.” – Etoposide is misspelt. 
+8. Figure 2, Panel B: is the UMAP visualization from original gene expression space or latent space? 
+9. Figure 2: the boxplots in Panel E were not clear to me. What is the Y-axis? Also, the colors of the lines in the Cell Density vs.
+Pseudotime plot need to be explained in a legend. 
+10. Figure 2, panel F: Likewise, what do the red, yellow, blue circles denote? Days? If so, the progression seems to be from
+right to left. This is counterintuitive and should be reversed to left to right. 
+11. Figure 3, panel E: What do the looped vectors on top left denote? Needs to be explained. 
+12. Page 15, paragraph 1: References to NFkB are not showing the character “k”. 
+13. Page 15, paragraph 3: Figure 6D is never referred to, 
+Overall, this is a very impressive and important article, and I would like to commend the authors on their excellent work. 
+- Sudin Bhattacharya 
+Michigan State University 
+Reviewer #2 (Remarks to the Author): 
+In this manuscript, the authors introduced Squidiff, a diffusion model-based method that uses transcriptomic data as training
+sets to develop a generative model. This method is capable of predicting gene expression distributions under perturbation
+including cell differentiation, gene and drug perturbation, irradiation and radiation. The authors mainly compared the
+performance of Squidiff with scGen, a VAE-based method, on gene and drug perturbation and cell differentiation data. They
+especially claimed that Squidiff could reconstruct smooth transitions of cells by a denoising process which variational
+autoencoder-based models could not do. 
+In all, the novelty of this study is represented by employing a diffusion model-based deep-learning approach, which better
+leverages information from environmental variables than previous models. Besides, I appreciate the authors' effort in applying
+and validating their method using datasets from various biological scenarios. Especially, the authors designed an experiment
+in validating Squidiff’s ability in predicting the effect physical perturbations using BVO cells. Finally, the manuscript is well-
+organized and not hard to follow. 
+While predicting the transitions of cells responding to perturbations is interesting, there are several concerns, regarding the
+method description, validation, and explanation of the results. The authors need to provide more details on the data
+preprocessing and model training. In addition, the method requires state-of-art GPUs and is time consuming in running time,
+and this may affect broad application of the method. 
+Major issues: 
+1. An important application of Squidiff lies in predicting the impact of environmental changes on transcriptomics. However, the
+authors do not provide a clear explanation of how these environmental changes are quantitatively defined or how they are
+integrated with transcriptomic data during the training process. Specifically, it is unclear whether the characteristics of
+environmental changes are directly used as input variables or indirectly incorporated through latent representations (e.g.,
+z_sem). A more detailed explanation of this aspect of the modeling process would be beneficial. 
+2. In the Reverse Process subsection, the definition of ϵ_θ is unclear. Are the definitions of ϵ_θ (x_t,t) and ϵ_θ (x_t,t,z_sem )
+the same? The authors need to review the definition of p_θ (x_(t-1)│x_t,z_sem )=N(f_θ (x_1,1,z_sem,0)) to ensure its
+accuracy. Additionally, transcriptomics data does not obey a Gaussian distribution, and the authors need to explain whether
+this has an impact on model performance. 
+3. In Figure 3A, the two-gene perturbations are represented as the linear interpolation of two latent variables. This is
+interesting, but the authors need more validations to support the assumption. Why is interpolation performed in the latent space
+rather than in the gene expression space? What properties of the latent space justify this choice? This is not clear from the
+semantic encoder. And I am interested in its ability to predict the effects of drug combinations on cell transitions, can this
+method be trained with single drug perturbations and then used to predict the effects of multiple drugs? 
+4. In Figure 3D, the results of CTSL, SAT1 and TIMP4 seem not very good. Is there any reason for selecting these genes? 
+
+5. Figure 6D is not cited in the main text, nor does it have any caption. 
+6.In general, Supplementary Figures are poorly interpreted in the main texts. The authors need to include more details
+regarding the results illustrated in Supplementary Figures, instead of summarizing them into one sentence with an unclear
+citation. 
+7. An introduction to splatter, and how it is employed to generate simulated data, are needed. 
+8. How was the pseudotime analysis performed for the iPSC dataset? 
+9. The first paragraph of the Methods section needs to focus more on the description of DPM and DDIM, instead of introducing
+their applications or limitations. 
+10. How are the scRNA datasets in the analysis processed? The authors need to include more details on the quality control,
+preprocessing, and the software they used. 
+11. It is advised to summarize the hyperparameter settings used in the model into a Supplementary Table. 
+12. What is the hardware and system requirement to run Squidiff? What is its time and memory cost? Besides, the authors
+provide code on GitHub, but it remains unclear if they have provided codes to reproduce all results in the manuscript. It would
+be great if the authors could also provide the analysis code on GitHub for reproducibility. 
+Minor issues: 
+The notation ‘t’ in the Diffusion process should be italic. 
+Page 6, ‘… in this experiments.’ should be ‘in these experiments’. 
+Page 8, ‘… by additive approached.’ should be ‘… by additive approaches.’. 
+Page 18, ‘… of the squiff model’ should be ‘… of the squidiff model’. 
+Page 19, ‘… x0 to latent …’ should be ‘… x_0 to latent …’. 
+Reviewer #3 (Remarks to the Author): 
+Overview: 
+The authors introduce Squidiff (Single-cell QUantitative Inference of stimuli responses by DIFFusion models), a diffusion-
+based framework for predicting cellular responses to perturbations over time. Squidiff is evaluated across diverse and impactful
+tasks, including cell differentiation, gene and drug perturbations, radiation-induced structural damage, and treatment effects in
+organoids. Notably, the method demonstrates statistically significant improvements over established models such as scGen
+and GEARS in predicting expression levels in unseen data. 
+Beyond its benchmarking success, Squidiff is validated against blood vessel organoid (BVO) data, showcasing its ability to
+model relevant biological processes even when key time points or cell types are held out during training. The model’s
+capability to generalize and predict complex cell development trajectories under varied stimuli is a major advance for the field.
+Squidiff represents an innovative and comprehensive framework for perturbation response prediction and cellular development
+modeling. 
+Strengths: 
+- Many experiments showcasing Squidiff’s capabilities. 
+- Validated on new data, showing its ability to capture relevant biological function. 
+- Superior performance on benchmarks against commonly-used methods such as GEARS and scGen. 
+- Uses a diffusion architecture, which is not necessarily new (e.g. scDiffusion, scDiff), however seems to be the first to be
+thoroughly evaluated on cell development trajectories with strong results 
+Overall comments: 
+There seem to be some typos and grammatical mistakes throughout the manuscript. A few are listed below: 
+- Formatting error: page numbers overlap with figure captions 
+- P. 9 in the first paragraph under the section “Squidiff predicts cell differentiation in blood vessel organoids”, there is an
+unnecessary period in “...snapshots of organoids development. at specific…” 
+- P. 12 in the first half, there is an extra space after the parenthetical reference to Fig. 4H, and awkward pluralization in “mural
+progenitors features”: “...RNA data[18] (Fig. 4H) . The existence of differentiating EC cells from day 5 to day 9 shown as mural
+progenitors features…” 
+- P. 19 fix the grammar here “...allowing the encode of x0 to latent code xT…” 
+
+- P. 19 need a space after the period “...on an extra latent variable z_sem.The objective is…” 
+- P. 19 formatting errors on the equations at the bottom of the page 
+- P. 20 one of those versions of z_sem should be chosen at the end of the section “Semantic encoder” 
+- P. 21 in “Stochastic encoder” the first sentence has awkward grammar “...process enables the encode of input gene
+expression…” 
+- P. 21 missing period after the definition of x_t+1 in “Stochastic encoder” 
+- Authors may consider citing the following relevant works: 
+scDiffusion (Luo et al., 2024) – single cell diffusion model 
+scDiff (Tang et al., 2023) – another single cell diffusion model 
+Questions: 
+- The VAE is mentioned as an encoder for the latent representations, but the semantic encoder in the Methods section does not
+describe a VAE architecture. It only explains that it is a standard MLP encoder. Furthermore, the loss function in the Training
+section does not contain a KL divergence term, which would be necessary for a VAE. Is there a VAE anywhere in this
+architecture? If not, it seems several edits are in order. 
+If I have misunderstood and there is a VAE somewhere in this architecture, what is the motivation for using the DDIM+VAE
+architecture over a standard conditional DDPM or DDIM? An ablation showing the value of the VAE would be helpful, for
+example, on the synthetic data in Figure 1. 
+- What is the reason for selecting the 203 genes as opposed to keeping all 500 highly variable genes in Figure 3C? 
+- The MMD and Correlation values are extremely close to perfect. Have you looked at correlations between deltas of control vs
+perturbations or top n differentially expressed genes (e.g. as is done in the GEARS or scGPT papers)? Models are typically
+less likely to saturate on these metrics, and they would provide a clearer picture of the difference between the methods. 
+- This is not quite clear to me on page 14: “The model successfully generated the transcriptomic data under irradiation with
+high accuracy (Fig. 5C). We then applied the model to the predicted data interpolated from the healthy sample to acquire the
+predicted irradiated data for endothelial cells, mural cells, and fibroblasts.” Can you clarify what is being predicted? Are you
+first predicting the held out cell types on day 11, and then generating the rest of the trajectory using the latent delta vector
+between healthy and irradiated cells? 
+- Can you clarify how the model is able to generate meaningful latent embeddings on unseen cell types in the irradiation
+section? This would be an unusually strong kind of generalization, but perhaps I am misunderstanding how the expression is
+being generated in this case. 
+Reviewer: David van Dijk 
+Version 1: 
+Decision Letter: 
+Our ref: NMETH-A58695A 
+25th Apr 2025 
+Dear Kam, 
+Thank you for submitting your revised manuscript "Squidiff: Predicting cellular development and responses to perturbations
+using a diffusion model" (NMETH-A58695A). It has now been seen by the original referees and their comments are below. The
+reviewers find that the paper has improved in revision, and therefore we'll be happy in principle to publish it in Nature Methods,
+pending minor revisions to satisfy the referees' final requests and to comply with our editorial and formatting guidelines. 
+We are now performing detailed checks on your paper and will send you a checklist detailing our editorial and formatting
+requirements within two weeks or so. Please do not upload the final materials and make any revisions until you receive this
+additional information from us. 
+TRANSPARENT PEER REVIEW 
+Nature Methods offers a transparent peer review option for new original research manuscripts submitted from 17th February
+2021. We encourage increased transparency in peer review by publishing the reviewer comments, author rebuttal letters and
+editorial decision letters if the authors agree. Such peer review material is made available as a supplementary peer review file.
+Please state in the cover letter ‘I wish to participate in transparent peer review’ if you want to opt in, or ‘I do not wish to
+participate in transparent peer review’ if you don’t. Failure to state your preference will result in delays in accepting your
+manuscript for publication. 
+Please note: we allow redactions to authors’ rebuttal and reviewer comments in the interest of confidentiality. If you are
+concerned about the release of confidential data, please let us know specifically what information you would like to have
+removed. Please note that we cannot incorporate redactions for any other reasons. Reviewer names will be published in the
+peer review files if the reviewer signed the comments to authors, or if reviewers explicitly agree to release their name. For more
+information, please refer to our <a href="https://www.nature.com/documents/nr-transparent-peer-review.pdf" target="new">FAQ
+page</a>. 
+ORCID 
+
+IMPORTANT: Non-corresponding authors do not have to link their ORCIDs but are encouraged to do so. Please note that it
+will not be possible to add/modify ORCIDs at proof. Thus, please let your co-authors know that if they wish to have their ORCID
+added to the paper they must follow the procedure described in the following link prior to acceptance:
+https://www.springernature.com/gp/researchers/orcid/orcid-for-nature-research 
+Thank you again for your interest in Nature Methods. Please do not hesitate to contact me if you have any questions. We will
+be in touch again soon. 
+Sincerely, 
+Madhura 
+Madhura Mukhopadhyay, PhD 
+Senior Editor 
+Nature Methods 
+Reviewer #1 (Remarks to the Author): 
+My thanks to the authors for addressing my comments. I would again commend them for this very interesting work. 
+Reviewer #2 (Remarks to the Author): 
+No more comments 
+Reviewer #3 (Remarks to the Author): 
+The authors have satisfactorily addressed my previous comments and clarified the key points raised. Squidiff represents a
+significant contribution to the field of single-cell perturbation response prediction, and I support its publication. 
+— David van Dijk 
+Version 2: 
+Decision Letter: 
+18th Sep 2025 
+Dear Kam, 
+I am pleased to inform you that your Article, "Squidiff: Predicting cellular development and responses to perturbations using a
+diffusion model", has now been accepted for publication in Nature Methods. The received and accepted dates will be 16th Nov
+2024 and 18th Sep 2025. This note is intended to let you know what to expect from us over the next month or so, and to let you
+know where to address any further questions. 
+Over the next few weeks, your paper will be copyedited to ensure that it conforms to Nature Methods style. Once your paper is
+typeset, you will receive an email with a link to choose the appropriate publishing options for your paper and our Author
+Services team will be in touch regarding any additional information that may be required. It is extremely important that you let
+us know now whether you will be difficult to contact over the next month. If this is the case, we ask that you send us the contact
+information (email, phone and fax) of someone who will be able to check the proofs and deal with any last-minute problems. 
+After the grant of rights is completed, you will receive a link to your electronic proof via email with a request to make any
+corrections within 48 hours. If, when you receive your proof, you cannot meet this deadline, please inform us at
+rjsproduction@springernature.com immediately. 
+Authors may need to take specific actions to achieve compliance with funder and institutional open access mandates.
+If your research is supported by a funder that requires immediate open access (e.g. according to <a
+href=“https://www.springernature.com/gp/open-science/plan-s-compliance”> Plan S principles</a> or the <a
+href=“https://www.springernature.com/gp/open-science/us-federal-agency-compliance”> NIH public access policy</a>) then
+you should select the gold OA route, and we will direct you to the compliant route where possible. Because authors warrant
+under our subscription licensing terms that they haven’t committed to licensing any version of their article under a licence
+inconsistent with the terms of our agreement – including the applicable embargo period – publication under the subscription
+model isn’t suitable for authors whose funders require no embargo. 
+If you have any questions about our publishing options, costs, Open Access requirements, or our legal forms, please contact
+
+ASJournals@springernature.com 
+If you have posted a preprint on any preprint server, please ensure that the preprint details are updated with a publication
+reference, including the DOI and a URL to the published version of the article on the journal website. 
+You may wish to make your media relations office aware of your accepted publication, in case they consider it appropriate to
+organize some internal or external publicity. Once your paper has been scheduled you will receive an email confirming the
+publication details. This is normally 3-4 working days in advance of publication. If you need additional notice of the date and
+time of publication, please let the production team know when you receive the proof of your article to ensure there is sufficient
+time to coordinate. Further information on our embargo policies can be found here:
+https://www.nature.com/authors/policies/embargo.html 
+To assist our authors in disseminating their research to the broader community, our SharedIt initiative provides you with a
+unique shareable link that will allow anyone (with or without a subscription) to read the published article. Recipients of the link
+with a subscription will also be able to download and print the PDF. 
+As soon as your article is published, you will receive an automated email with your shareable link. 
+If you are active on Twitter/X or Bluesky, please e-mail me your and your coauthors’ handles so that we may tag you when the
+paper is published. 
+You can now use a single sign-on for all your accounts, view the status of all your manuscript submissions and reviews,
+access usage statistics for your published articles and download a record of your refereeing activity for the Nature journals. 
+Please note that you and any of your coauthors will be able to order reprints and single copies of the issue containing your
+article through Nature Portfolio's reprint website, which is located at http://www.nature.com/reprints/author-reprints.html. If there
+are any questions about reprints please send an email to author-reprints@nature.com and someone will assist you. 
+Please feel free to contact me if you have questions about any of these points. 
+Best regards, 
+Madhura 
+Madhura Mukhopadhyay, PhD 
+Senior Editor 
+Nature Methods 
+** Visit the Springer Nature Editorial and Publishing website at <a href="http://editorial-jobs.springernature.com?
+utm_source=ejP_NMeth_email&utm_medium=ejP_NMeth_email&utm_campaign=ejp_Nmeth">www.springernature.com/editorial-
+and-publishing-jobs</a> for more information about our career opportunities. If you have any questions please click <a
+href="mailto:editorial.publishing.jobs@springernature.com">here</a>.**
+
+Open Access This Peer Review File is licensed under a Creative Commons Attribution 4.0 International License, which
+permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit
+to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made.
+In cases where reviewers are anonymous, credit should be given to 'Anonymous Referee' and the source.
+The images or other third party material in this Peer Review File are included in the article’s Creative Commons license,
+unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons license
+and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission
+directly from the copyright holder.
+To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/
+
+Point-by-point response:  
+ 
+Responses to reviewers' comments are shown in blue. 
+ 
+Editorial suggestions:  
+We also suggest adding some benchmarking data comparing Squidiff to existing similar methods, eg PRNet 
+published in Nature Communications. 
+ 
+Response: We appreciate the editor’s insightful suggestions on benchmarking PRNet (Qi et al, 2024) with 
+Squidiff. PRNet is a perturbation-conditioned deep generative model designed to predict transcriptional 
+responses to novel chemical perturbations. It uses a Perturb-adapter to encode drug compounds and dosages 
+within a variational autoencoder (VAE) framework. In contrast, the original Squidiff model relies solely on single-
+cell transcriptomics data as input and does not account for drug information. To benchmark effectively, we have 
+updated Squidiff with an option that also enables the encoding of drug information. Specifically, we adopted the 
+drug-rescaled Functional Class Fingerprints (rFCFP) from PRNet, which updates the Squidiff semantic latent 
+variable 𝑧!"# to 𝑧!"#′ = 𝐸𝑛𝑐(𝑥$, 𝑟𝐹𝐶𝐹𝑃) (Fig. R1A, Fig. 3H). With this enhancement, we benchmarked the 
+performance of Squidiff and PRNet using the sci-plex3 dataset (Srivatsan, S. R. et al. 2020), specifically 
+evaluating their ability to generalize to unseen drug components (Fig. R1B, Fig. 3I). We also tested the 
+performance under a random split of the data (Fig. R1C, Fig. 3I). Our results show that Squidiff performs 
+comparably to, or in some cases surpasses, PRnet.     
+ 
+Figure R1. A. Schematic diagram of Squidiff integrated with drug-rescaled Functional Class Fingerprints 
+(rFCFP). B-C. Performance evaluation of Squidiff and PRNet using Pearson correlation and R-squared scores 
+in out-of-distribution perturbation scenarios, including both unseen compound split and random split in the sci-
+
+plex datasets. Each condition was tested with n=3. Statistical significance was assessed using a one-sided t-
+test.  
+ 
+Another point - ref2 asks for data showing the use of Squidiff in analysing drug perturbations. As drug interactions 
+and drug discovery is beyond the scope of Nature Methods so answering it is completely optional (you can also 
+answer it in the discussion). I will leave it upto you. 
+ 
+Response: We thank the editor for their consideration. We have addressed this question by utilizing the 
+4i datasets (Bunne, C. et al. 2023), which profiles molecular and morphology properties of melanoma cells 
+treated with various drug compounds. The prediction of single-cell data for drug combination treatments provided 
+by Squidiff hold a high accuracy compared to ground-truth data. We have also added additional details to the 
+discussion. Please refer to the following answers for more information (Fig. R2, Reviewer #2 Comment No. 3). 
+ 
+ 
+Reviewer #1:  
+Remarks to the Author: 
+The authors present a very interesting approach combining a diffusion model with a variational autoencoder to 
+predict single-cell transcriptomic trajectories during development, as well as perturbations in response to drug 
+exposure and radiation. The show high accuracy of their model relative to two other tools with similar goals: 
+scGen and GEARS. The paper is very well-written, with exciting results, well-described figures, and detailed 
+Methods. I do not have any major alteration recommendations, mostly minor editorial comments. 
+ 
+Response: We thank the reviewer for the encouraging comments. We are delighted that the reviewer is 
+impressed with Squidiff's performance and clarity.  
+ 
+1. On page 2, it is not fair to say that “Multiple cell types or cross-cell type transfer of prediction” is not addressed 
+by existing tools. This is the goal of scGen, as well as scVIDR [PMID: 37602218]. 
+ 
+Response: We apologize for the inaccuracy and have revised the statement to “These models often focus on 
+one specific task” to more accurately reflect the multi-task capabilities enabled by Squidiff. We also appreciate 
+the reminder about the related method, scVIDR, and have included a citation for scVIDR in the revised 
+manuscript (on page 2). 
+ 
+2. On page 4, xT needs to be better explained. What does a “stochastic subcode” mean? This is not a commonly 
+used term or concept. 
+ 
+Response: We appreciate the reviewer for highlighting this inconsistency and apologize for the confusion 
+regarding the terminology of 𝑥%. To clarify, 𝑥% is a Gaussian noise that controls the stochasticity of the generated 
+single-cell data, in comparison to the semantic latent variables 𝑧!"# that represent the perturbation environments. 
+We have revised the manuscript to provide a clearer explanation and remove the term “subcode” for consistency 
+(Methods). 
+ 
+3. Related to the above point, the Figure 1 title states “a semantic latent space (zsem), and a diffusion process 
+to generate xT.” Like the description of Zsem, xT should also be described in a few words here, with maybe a 
+reference to “See text for details.” 
+ 
+Response: We have added a brief description of 𝑧!"# and 𝑥% in both Figure 1 and its caption for clarity. 
+ 
+4. Also in Figure 1 caption: … “(A, B, C, D1, and D2), ” panels D1 and D2 are not marked on the figure itself. 
+
+ 
+Response: These labels are cell states and are marked in Figure 1A. To improve clarity and avoid potential 
+misinterpretation, we have revised the labels to state a,b,c,d1, and d2, as highlighted in the caption for Figure 1.  
+ 
+5. On page 6, paragraph 1, “Linear Interpolation (Lerp)”: is Lerp a term from scGen? Is it necessary to use the 
+abbreviation? There is also a reference to “Lerp providing a direct path …”. The term is best dropped unless 
+essential. “Linear Interpolation” should suffice. 
+ 
+Response: We thank the reviewer’s careful observation. The abbreviation "Lerp" was adopted from DiffAE 
+[https://arxiv.org/abs/2111.15640], not scGen when we referred to this method. However, we agree with the 
+reviewer that this introduces unnecessary confusion, and we have deleted this term in the revised version.  
+ 
+6. Page 8, “approaches” is misspelt: “… which cannot be accurately modeled by additive approached”. 
+ 
+Response: Thank you for pointing out the typo and we have corrected it.  
+ 
+7. Page 8: “A study involving drug tests on glioblastoma highlighted the distinct effects of Etopside.” – Etoposide 
+is misspelt. 
+ 
+Response: We thank the reviewer for identifying the typos in the manuscript. We have thoroughly reviewed the 
+revised version multiple times to ensure that any remaining typographical errors have been corrected. 
+ 
+8. Figure 2, Panel B: is the UMAP visualization from original gene expression space or latent space? 
+ 
+Response: The point is well-taken. The UMAP in Figure 2B represents the original gene expression. We have 
+clarified this in the figure description and provided additional details in the caption to enhance clarity. 
+ 
+9. Figure 2: the boxplots in Panel E were not clear to me. What is the Y-axis? Also, the colors of the lines in the 
+Cell Density vs. Pseudotime plot need to be explained in a legend. 
+ 
+Response: The boxplots in Panel E represent the distribution of predicted gene expression for real days along 
+with pseudotime, as well as the expression of NANOG, GATA6, and T over pseudotime and real time. These 
+plots illustrate that the predicted gene expression aligns with pseudotime analysis, supporting the biological 
+interpretation of cellular differentiation. We apologize for the missing Y-axis and have added it in the updated 
+version. The colors of the lines have been labeled in the legend.  
+ 
+ 
+10. Figure 2, panel F: Likewise, what do the red, yellow, blue circles denote? Days? If so, the progression seems 
+to be from right to left. This is counterintuitive and should be reversed to left to right. 
+Response: We fully agree with the reviewer’s comment and have addressed it in Figure 2 in the updated version.  
+ 
+ 
+11. Figure 3, panel E: What do the looped vectors on top left denote? Needs to be explained. 
+ 
+Response: We appreciate the reviewer’s observation. The looped vectors are icons representing 𝑧!"# for 
+different cell types and the drug-associated latent vectors. We have added more descriptions in the figure panels 
+and captions for clarity. 
+ 
+12. Page 15, paragraph 1: References to NFkB are not showing the character “k”. 
+
+ 
+Response: Thank you for your valuable feedback. After reviewing our manuscript, we identified that NF-κB–
+related signaling pathways are discussed on pages 13, 14, and 16. We also noted that additional references 
+may be needed following the mention of these pathways in Supplementary Figure 8. Accordingly, we have now 
+included the following citations to strengthen our discussion: 
+● Boneberg, E.-M., and T. Hartung. "Molecular aspects of anti-inflammatory action of G-CSF." 
+Inflammation Research 51 (2002): 119–128. 
+● Magné, Nicolas, Robert-Alain Toillon, Virginie Bottero, Céline Didelot, Paul Van Houtte, Jean-Pierre 
+Gérard, and Jean-François Peyron. "NF-κB modulation and ionizing radiation: mechanisms and future 
+directions for cancer treatment." Cancer Letters 231, no. 2 (2006): 158–168. 
+13. Page 15, paragraph 3: Figure 6D is never referred to, 
+ 
+Response: We apologize for the mistake and have added the reference for Figure 6D.  
+ 
+Overall, this is a very impressive and important article, and I would like to commend the authors on their excellent 
+work. 
+ 
+Response: Thank you very much for your positive feedback; we truly appreciate it! 
+ 
+- Sudin Bhattacharya 
+Michigan State University 
+ 
+ 
+ 
+Reviewer #2:  
+Remarks to the Author: 
+In this manuscript, the authors introduced Squidiff, a diffusion model-based method that uses transcriptomic data 
+as training sets to develop a generative model. This method is capable of predicting gene expression distributions 
+under perturbation including cell differentiation, gene and drug perturbation, irradiation and radiation. The authors 
+mainly compared the performance of Squidiff with scGen, a VAE-based method, on gene and drug perturbation 
+and cell differentiation data. They especially claimed that Squidiff could reconstruct smooth transitions of cells 
+by a denoising process which variational autoencoder-based models could not do. 
+ 
+In all, the novelty of this study is represented by employing a diffusion model-based deep-learning approach, 
+which better leverages information from environmental variables than previous models. Besides, I appreciate 
+the authors' effort in applying and validating their method using datasets from various biological scenarios. 
+Especially, the authors designed an experiment in validating Squidiff’s ability in predicting the effect physical 
+perturbations using BVO cells. Finally, the manuscript is well-organized and not hard to follow. 
+ 
+While predicting the transitions of cells responding to perturbations is interesting, there are several concerns, 
+regarding the method description, validation, and explanation of the results. The authors need to provide more 
+details on the data preprocessing and model training. In addition, the method requires state-of-art GPUs and is 
+time consuming in running time, and this may affect broad application of the method. 
+ 
+Response: We appreciate the reviewer’s thoughtful feedback and their recognition of the novelty and strengths 
+of Squidiff, as well as its validation across diverse biological scenarios. 
+ 
+
+We acknowledge the importance of providing additional details on data preprocessing and model training. In 
+response, we have expanded the Methods section to provide a more comprehensive and explicit description of 
+these aspects.  
+ 
+Major issues: 
+1. An important application of Squidiff lies in predicting the impact of environmental changes on transcriptomics. 
+However, the authors do not provide a clear explanation of how these environmental changes are quantitatively 
+defined or how they are integrated with transcriptomic data during the training process. Specifically, it is unclear 
+whether the characteristics of environmental changes are directly used as input variables or indirectly 
+incorporated through latent representations (e.g., z_sem). A more detailed explanation of this aspect of the 
+modeling process would be beneficial. 
+ 
+Response: We thank the reviewer for acknowledging our method’s capability to incorporate environmental 
+changes, and we appreciate the opportunity to provide a more concrete explanation. In Squidiff, different 
+perturbations are encoded via the semantic latent variable 𝑧!"#, while stochasticity is controlled via the random 
+variable 𝑥%. This is because the latter captures transcriptomic variability, given the deterministic environment 
+specified by 𝑧!"#.  These perturbations are assumed to be inherently reflected in the transcriptomic data under 
+given conditions, making explicit encoding of environmental factors as input variables unnecessary. Instead, our 
+latent space representation effectively captures the impact of perturbations solely through transcriptomic data. 
+  
+However, we recognize that in some cases, transcriptomic data alone may not be sufficient, for example, 
+in scenarios involving unseen drug perturbations where additional compound-specific information is available. 
+To address this need, we introduce an adapter module inspired by PRNet (Qi et al, 2024, Figure 3H). While this 
+module is not involved in the training process, it encodes SMILES-based drug structure and dosage information 
+into a latent representation. This drug-encoded representation is then concatenated with the original semantic 
+latent variable 𝑧!"#, forming an extended representation 𝑧!"#′.  In future work outside the scope of this paper, 
+Squidiff could incorporate additional environmental factors as needed to enhance its predictive capability. We 
+have also updated the revised manuscript to clarify and expand this discussion. 
+ 
+2. In the Reverse Process subsection, the definition of ϵ_θ is unclear. Are the definitions of ϵ_θ (x_t,t) and ϵ_θ 
+(x_t,t,z_sem ) the same? The authors need to review the definition of p_θ (x_(t-1)│x_t,z_sem )=N(f_θ 
+(x_1,1,z_sem,0)) to ensure its accuracy. Additionally, transcriptomics data does not obey a Gaussian distribution, 
+and the authors need to explain whether this has an impact on model performance. 
+ 
+Response: We appreciate the reviewer’s feedback regarding the need for clarification. In response, we have 
+updated the Reverse Process subsection to ensure consistency in notation and improve readability. Specifically, 
+𝜖&(𝑥', 𝑡) represents a neural network that predicts noise given 𝑥'. In the Squidiff model, since we want to 
+generate data based on environment embeddings (encoded as 𝑧!"# ), the neural network is additionally 
+conditioned on 𝑧!"#.  
+ 
+We acknowledge the reviewer’s concern that transcriptomic data does not follow a Gaussian distribution. 
+However, Squidiff is explicitly designed to model this complex data distribution (Supplementary Fig. 1E). 
+Specifically, note that while 𝑝(𝑥'()|𝑥') is not necessarily Gaussian, 𝑝(𝑥'()|𝑥', 𝑥$) is. Therefore, we first predict 
+𝑥$ by 𝑥' and 𝑧!"# using the neural network 𝜖&(𝑥', 𝑡, 𝑧!"#), and then sample 𝑥'() from 𝑝(𝑥'()|𝑥', 𝑥$). This ensures 
+that the eventual 𝑥$ is drawn from a complex, biologically relevant distribution, allowing Squidiff to fully leverage 
+the representational power of deep neural networks. 
+ 
+ 
+
+3. In Figure 3A, the two-gene perturbations are represented as the linear interpolation of two latent variables. 
+This is interesting, but the authors need more validations to support the assumption. Why is interpolation 
+performed in the latent space rather than in the gene expression space? What properties of the latent space 
+justify this choice? This is not clear from the semantic encoder. And I am interested in its ability to predict the 
+effects of drug combinations on cell transitions, can this method be trained with single drug perturbations and 
+then used to predict the effects of multiple drugs? 
+ 
+Response: We appreciate the reviewer’s insightful comments. The goal of Squidiff is to generate gene 
+expression profiles under various conditions. Performing linear interpolation in gene expression space is not 
+feasible due to the high dimensionality, complexity, and inherent experimental noise, including batch effects and 
+non-linear dependencies on perturbations.  Instead, Squidiff leverages a latent space learned by the semantic 
+encoder, which captures biologically meaningful features of a cell’s state in a structured and smooth manner, 
+which is a similar strategy as scGen (Lotfollahi et al 2019). Operating in this latent space reduces noise while 
+preserving essential biological variations. Moreover, the latent space is designed to allow perturbation effects to 
+be additive. Linear interpolations correspond to meaningful cellular transitions rather than arbitrary mathematical 
+mixtures of gene expression vectors. Additionally, the latent space inherently encodes cellular states along with 
+properties such as perturbation awareness, cell type identity and developmental stage. This structured 
+representation enables the model to capture key transcriptomic patterns while filtering out spurious variations, 
+justifying why interpolation in the latent space is preferable.  
+Regarding Squidiff’s ability to predict the effects of drug combinations on cell state transitions, its 
+architecture is inherently suited for generalization. The assumption is that the latent space captures additive or 
+synergistic interactions implicitly. Due to the limited availability of single-cell RNA sequencing data related to 
+drug combinations, we evaluated Squidiff on an alternative dataset 4i (Bunne, C. et al. 2023), which profiles 
+molecular and morphology properties of melanoma cells treated with various drug compounds using a novel 
+microscopic technology.  
+To assess Squidiff’s predictive capability, we withheld drug combination data during training and trained 
+Squidiff using only control cells and cells treated with single drugs, including trametinib, panobinostat, dabrafenib, 
+erlotinib, and midostaurin. We then used Squidiff to generate single-cell data for drug combination treatments 
+and compared the Pearson correlation between predicted and ground-truth responses from the 4i dataset. While 
+4i does not contain single-cell transcriptomic data and provides only ~50 features per condition, it serves as an 
+initial validation of Squidiff's ability to generalize to drug perturbations (Fig. R2). However, we acknowledge that 
+the limited cellular features in this dataset may constrain Squidiff's ability to fully capture complex drug 
+interactions compared to transcriptomic data.    
+ 
+Figure R2. Performance (Pearson scores) of Squidfiff on 4i dataset.  
+ 
+4. In Figure 3D, the results of CTSL, SAT1 and TIMP4 seem not very good. Is there any reason for selecting 
+these genes? 
+ 
+
+Response: We appreciate the reviewer’s observation. The 12 genes shown in Figure 3D were randomly selected 
+to provide a representative comparison across different methods. As a result, variability in performance among 
+certain genes, such as CTSL, SAT1, and TIMP4, is expected due to inherent differences in gene expression 
+dynamics. While some cases may not perfectly match the ground truth, the overall trends and distribution of 
+predictions remain consistent, demonstrating Squidiff’s robustness in capturing gene expression patterns. 
+  
+5. Figure 6D is not cited in the main text, nor does it have any caption. 
+ 
+Response: We apologize for the mistakes and have added the reference for Figure 6D.  
+ 
+6.In general, Supplementary Figures are poorly interpreted in the main texts. The authors need to include more 
+details regarding the results illustrated in Supplementary Figures, instead of summarizing them into one sentence 
+with an unclear citation. 
+ 
+Response: We apologize for the unclear statements of the supplementary figures. We have referred to the 
+subpanel of supplement Fig in the main text to facilitate the understanding of these supplement figures.  
+ 
+7. An introduction to splatter, and how it is employed to generate simulated data, are needed. 
+ 
+Response: We have added a section for splatter and simulation data in the method section “Simulation of single-
+cell RNA sequencing data”. 
+ 
+8. How was the pseudotime analysis performed for the iPSC dataset? 
+ 
+Response: We have added a section for pseudotime analysis in the method section. 
+ 
+9. The first paragraph of the Methods section needs to focus more on the description of DPM and DDIM, instead 
+of introducing their applications or limitations. 
+ 
+Response: We agree with the reviewer's comments and have added more details of the description of DPM and 
+DDIM in the first paragraph of the methods. 
+ 
+10. How are the scRNA datasets in the analysis processed? The authors need to include more details on the 
+quality control, preprocessing, and the software they used. 
+ 
+Response: We have added two sections “Data preprocessing and quality control” and “Squidiff training tasks” 
+for scRNA analysis, including quality control and preprocessing, and used software in the method section. We 
+have also stated the differences in each section.  
+ 
+11. It is advised to summarize the hyperparameter settings used in the model into a Supplementary Table. 
+ 
+Response: We have added supplementary table 1 for the hyperparameter settings used in the model. 
+ 
+12. What is the hardware and system requirement to run Squidiff? What is its time and memory cost? Besides, 
+the authors provide code on GitHub, but it remains unclear if they have provided codes to reproduce all results 
+in the manuscript. It would be great if the authors could also provide the analysis code on GitHub for 
+reproducibility. 
+Response: We appreciate the reviewer’s reminder and provide the following details. Squidiff was developed and 
+tested with one NVIDIA H100 80GB HBM3. The time to a dataset with 8000 cells and 500 genes is about 15 
+
+mins. While a high-performance GPU is recommended for efficiency, Squidiff can also run on lower-end GPUs, 
+though with increased runtime. To facilitate reproducibility, we have made the Squidiff model, tutorial, and 
+analysis code at https://github.com/siyuh/Squidiff and https://github.com/siyuh/Squidiff_reproducibility. 
+ 
+Minor issues: 
+The notation ‘t’ in the Diffusion process should be italic. 
+Page 6, ‘… in this experiments.’ should be ‘in these experiments’. 
+Page 8, ‘… by additive approached.’ should be ‘… by additive approaches.’. 
+Page 18, ‘… of the squiff model’ should be ‘… of the squidiff model’. 
+Page 19, ‘… x0 to latent …’ should be ‘… x_0 to latent …’. 
+ 
+Response: We thank the reviewer’s careful reading of our manuscript and for identifying these typographical 
+errors. We apologize for these mistakes and have corrected them in the revised version.  
+ 
+ 
+ 
+Reviewer #3  
+Remarks to the Author: 
+ 
+Overview: 
+ 
+The authors introduce Squidiff (Single-cell QUantitative Inference of stimuli responses by DIFFusion models), a 
+diffusion-based framework for predicting cellular responses to perturbations over time. Squidiff is evaluated 
+across diverse and impactful tasks, including cell differentiation, gene and drug perturbations, radiation-induced 
+structural damage, and treatment effects in organoids. Notably, the method demonstrates statistically significant 
+improvements over established models such as scGen and GEARS in predicting expression levels in unseen 
+data. 
+ 
+Beyond its benchmarking success, Squidiff is validated against blood vessel organoid (BVO) data, showcasing 
+its ability to model relevant biological processes even when key time points or cell types are held out during 
+training. The model’s capability to generalize and predict complex cell development trajectories under varied 
+stimuli is a major advance for the field. Squidiff represents an innovative and comprehensive framework for 
+perturbation response prediction and cellular development modeling. 
+ 
+ 
+Strengths: 
+ 
+- Many experiments showcasing Squidiff’s capabilities. 
+- Validated on new data, showing its ability to capture relevant biological function. 
+- Superior performance on benchmarks against commonly-used methods such as GEARS and scGen. 
+- Uses a diffusion architecture, which is not necessarily new (e.g. scDiffusion, scDiff), however seems to be the 
+first to be thoroughly evaluated on cell development trajectories with strong results 
+ 
+Response: We appreciate the reviewer’s positive assessment of Squidiff and their recognition of its strengths. 
+ 
+ 
+Overall comments: 
+ 
+There seem to be some typos and grammatical mistakes throughout the manuscript. A few are listed below: 
+
+ 
+- Formatting error: page numbers overlap with figure captions 
+- P. 9 in the first paragraph under the section “Squidiff predicts cell differentiation in blood vessel organoids”, 
+there is an unnecessary period in “...snapshots of organoids development. at specific…” 
+- P. 12 in the first half, there is an extra space after the parenthetical reference to Fig. 4H, and awkward 
+pluralization in “mural progenitors features”: “...RNA data[18] (Fig. 4H) . The existence of differentiating EC cells 
+from day 5 to day 9 shown as mural progenitors features…” 
+- P. 19 fix the grammar here “...allowing the encode of x0 to latent code xT…” 
+- P. 19 need a space after the period “...on an extra latent variable z_sem.The objective is…” 
+- P. 19 formatting errors on the equations at the bottom of the page 
+- P. 20 one of those versions of z_sem should be chosen at the end of the section “Semantic encoder” 
+- P. 21 in “Stochastic encoder” the first sentence has awkward grammar “...process enables the encode of input 
+gene expression…” 
+- P. 21 missing period after the definition of x_t+1 in “Stochastic encoder” 
+ 
+Response: We thank the reviewer for pointing out the typographical and grammatical mistakes. We have 
+addressed all these comments in the revised manuscript.  
+ 
+ 
+- Authors may consider citing the following relevant works: 
+scDiffusion (Luo et al., 2024) – single cell diffusion model 
+scDiff (Tang et al., 2023) – another single cell diffusion model 
+ 
+Response: We appreciate the suggestion and have cited scDiffusion (Luo et al., 2024) and scDiff (Tang et al., 
+2023) in the revised manuscript, highlighting Squidiff’s distinctions in scope and application. Thank you for the 
+recommendation. 
+ 
+Questions: 
+- The VAE is mentioned as an encoder for the latent representations, but the semantic encoder in the Methods 
+section does not describe a VAE architecture. It only explains that it is a standard MLP encoder. Furthermore, 
+the loss function in the Training section does not contain a KL divergence term, which would be necessary for a 
+VAE. Is there a VAE anywhere in this architecture? If not, it seems several edits are in order. 
+If I have misunderstood and there is a VAE somewhere in this architecture, what is the motivation for using the 
+DDIM+VAE architecture over a standard conditional DDPM or DDIM? An ablation showing the value of the VAE 
+would be helpful, for example, on the synthetic data in Figure 1. 
+ 
+Response: We sincerely apologize for the inaccuracies in writing related to an MLP encoder. The whole model 
+does not have VAE, and for the semantic encoder, we use an MLP as an encoder. We have updated it in our 
+revised manuscript (Section “Semantic encoder” in Methods). 
+ 
+- What is the reason for selecting the 203 genes as opposed to keeping all 500 highly variable genes in Figure 
+3C? 
+ 
+Response: We apologize for the inconsistency in the reported gene number. We selected 203 highly variable 
+which includes the 200 high variable genes and selected genes associated with iPSC differentiation and 
+pluripotency for both training and testing. However, we also show the results with 500 highly variable genes here 
+to indicate the robustness of the model training. 
+
+ 
+Figure R3. Scatterplot of predicted ZBTB25+PTPN12 single-cell RNA sequencing and ground-truth data with 
+500 highly variable genes by Squidiff.  
+ 
+- The MMD and Correlation values are extremely close to perfect. Have you looked at correlations between 
+deltas of control vs perturbations or top n differentially expressed genes (e.g. as is done in the GEARS or scGPT 
+papers)? Models are typically less likely to saturate on these metrics, and they would provide a clearer picture 
+of the difference between the methods. 
+ 
+Response: We understand the reviewer’s concern. To further confirm the performance of Squidiff on gene 
+perturbation tasks, we evaluated its accuracy in predicting expression changes by analyzing the deltas between 
+control and perturbed conditions. Additionally, we assessed the fraction of genes where the predicted expression 
+changes were opposite to the ground truth, providing a more comprehensive measure of model performance. 
+ 
+Figure R4. Left: bar plots comparing the true expression changes induced by ZBTB25+PTPN12 perturbation on 
+control single-cell data across all genes, evaluated using Squidiff, scGen, and GEARS based on R² values. Right: 
+fraction of genes where the predicted expression changes are opposite to the ground truth.  
+ 
+- This is not quite clear to me on page 14: “The model successfully generated the transcriptomic data under 
+irradiation with high accuracy (Fig. 5C). We then applied the model to the predicted data interpolated from the 
+healthy sample to acquire the predicted irradiated data for endothelial cells, mural cells, and fibroblasts.” Can 
+you clarify what is being predicted? Are you first predicting the held out cell types on day 11, and then generating 
+the rest of the trajectory using the latent delta vector between healthy and irradiated cells? 
+ 
+Response: Yes, we first excluded both healthy and irradiated fibroblasts and mural cells from the day 11 BVO 
+dataset. Squidiff was trained solely on healthy and irradiated endothelial cells, allowing it to learn from both the 
+cellular representations as well as the radiation-representative latent variables. The model then predicted the 
+irradiated fibroblasts and mural cells based on the learned  𝛥𝑧!"# on day 11, as shown in Fig. 5C. Then we 
+applied the 𝛥𝑧!"# to all the healthy interpolated data from Fig. 4, to obtain the time-series irradiated data, which 
+is showed in Fig. 5D. 
+ 
+
+- Can you clarify how the model is able to generate meaningful latent embeddings on unseen cell types in the 
+irradiation section? This would be an unusually strong kind of generalization, but perhaps I am misunderstanding 
+how the expression is being generated in this case. 
+Response: We thank the reviewer for raising this critical point. Without Functional Class Fingerprints (rFCFP, Qi 
+et al, 2024), Squidiff would not be able to predict responses to an unseen drug, as the model would lack exposure 
+to its structural information. However, because the model learns gene relationships from single-cell 
+transcriptomics data, it can generalize effectively within the transcriptomic space. Although the model was trained 
+only on endothelial cells, the semantic encoder was able to encode and distinguish fibroblasts and mural cells 
+during the model testing. The semantic variable 𝛥𝑧!"# captures the irradiation effect in known cell types, thus 
+demonstrating the generalization capability to unseen fibroblast and mural cells. However, this generalization 
+might be influenced by the similarities between mural cells, fibroblasts, and endothelial cells in BVOs, as they all 
+originate from iPSCs. However, if applied to a completely different experimental setting, additional training may 
+be required for effective generalization. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Point-by-point response:  
+ 
+Responses to reviewers' comments are shown in blue. 
+ 
+Editorial suggestions:  
+We also suggest adding some benchmarking data comparing Squidiff to existing similar methods, eg PRNet 
+published in Nature Communications. 
+ 
+Response: We appreciate the editor’s insightful suggestions on benchmarking PRNet (Qi et al, 2024) with 
+Squidiff. PRNet is a perturbation-conditioned deep generative model designed to predict transcriptional 
+responses to novel chemical perturbations. It uses a Perturb-adapter to encode drug compounds and dosages 
+within a variational autoencoder (VAE) framework. In contrast, the original Squidiff model relies solely on single-
+cell transcriptomics data as input and does not account for drug information. To benchmark effectively, we have 
+updated Squidiff with an option that also enables the encoding of drug information. Specifically, we adopted the 
+drug-rescaled Functional Class Fingerprints (rFCFP) from PRNet, which updates the Squidiff semantic latent 
+variable 𝑧!"# to 𝑧!"#′ = 𝐸𝑛𝑐(𝑥$, 𝑟𝐹𝐶𝐹𝑃) (Fig. R1A, Fig. 3H). With this enhancement, we benchmarked the 
+performance of Squidiff and PRNet using the sci-plex3 dataset (Srivatsan, S. R. et al. 2020), specifically 
+evaluating their ability to generalize to unseen drug components (Fig. R1B, Fig. 3I). We also tested the 
+performance under a random split of the data (Fig. R1C, Fig. 3I). Our results show that Squidiff performs 
+comparably to, or in some cases surpasses, PRnet.     
+ 
+Figure R1. A. Schematic diagram of Squidiff integrated with drug-rescaled Functional Class Fingerprints 
+(rFCFP). B-C. Performance evaluation of Squidiff and PRNet using Pearson correlation and R-squared scores 
+in out-of-distribution perturbation scenarios, including both unseen compound split and random split in the sci-
+
+plex datasets. Each condition was tested with n=3. Statistical significance was assessed using a one-sided t-
+test.  
+ 
+Another point - ref2 asks for data showing the use of Squidiff in analysing drug perturbations. As drug interactions 
+and drug discovery is beyond the scope of Nature Methods so answering it is completely optional (you can also 
+answer it in the discussion). I will leave it upto you. 
+ 
+Response: We thank the editor for their consideration. We have addressed this question by utilizing the 
+4i datasets (Bunne, C. et al. 2023), which profiles molecular and morphology properties of melanoma cells 
+treated with various drug compounds. The prediction of single-cell data for drug combination treatments provided 
+by Squidiff hold a high accuracy compared to ground-truth data. We have also added additional details to the 
+discussion. Please refer to the following answers for more information (Fig. R2, Reviewer #2 Comment No. 3). 
+ 
+ 
+Reviewer #1:  
+Remarks to the Author: 
+The authors present a very interesting approach combining a diffusion model with a variational autoencoder to 
+predict single-cell transcriptomic trajectories during development, as well as perturbations in response to drug 
+exposure and radiation. The show high accuracy of their model relative to two other tools with similar goals: 
+scGen and GEARS. The paper is very well-written, with exciting results, well-described figures, and detailed 
+Methods. I do not have any major alteration recommendations, mostly minor editorial comments. 
+ 
+Response: We thank the reviewer for the encouraging comments. We are delighted that the reviewer is 
+impressed with Squidiff's performance and clarity.  
+ 
+1. On page 2, it is not fair to say that “Multiple cell types or cross-cell type transfer of prediction” is not addressed 
+by existing tools. This is the goal of scGen, as well as scVIDR [PMID: 37602218]. 
+ 
+Response: We apologize for the inaccuracy and have revised the statement to “These models often focus on 
+one specific task” to more accurately reflect the multi-task capabilities enabled by Squidiff. We also appreciate 
+the reminder about the related method, scVIDR, and have included a citation for scVIDR in the revised 
+manuscript (on page 2). 
+ 
+2. On page 4, xT needs to be better explained. What does a “stochastic subcode” mean? This is not a commonly 
+used term or concept. 
+ 
+Response: We appreciate the reviewer for highlighting this inconsistency and apologize for the confusion 
+regarding the terminology of 𝑥%. To clarify, 𝑥% is a Gaussian noise that controls the stochasticity of the generated 
+single-cell data, in comparison to the semantic latent variables 𝑧!"# that represent the perturbation environments. 
+We have revised the manuscript to provide a clearer explanation and remove the term “subcode” for consistency 
+(Methods). 
+ 
+3. Related to the above point, the Figure 1 title states “a semantic latent space (zsem), and a diffusion process 
+to generate xT.” Like the description of Zsem, xT should also be described in a few words here, with maybe a 
+reference to “See text for details.” 
+ 
+Response: We have added a brief description of 𝑧!"# and 𝑥% in both Figure 1 and its caption for clarity. 
+ 
+4. Also in Figure 1 caption: … “(A, B, C, D1, and D2), ” panels D1 and D2 are not marked on the figure itself. 
+
+ 
+Response: These labels are cell states and are marked in Figure 1A. To improve clarity and avoid potential 
+misinterpretation, we have revised the labels to state a,b,c,d1, and d2, as highlighted in the caption for Figure 1.  
+ 
+5. On page 6, paragraph 1, “Linear Interpolation (Lerp)”: is Lerp a term from scGen? Is it necessary to use the 
+abbreviation? There is also a reference to “Lerp providing a direct path …”. The term is best dropped unless 
+essential. “Linear Interpolation” should suffice. 
+ 
+Response: We thank the reviewer’s careful observation. The abbreviation "Lerp" was adopted from DiffAE 
+[https://arxiv.org/abs/2111.15640], not scGen when we referred to this method. However, we agree with the 
+reviewer that this introduces unnecessary confusion, and we have deleted this term in the revised version.  
+ 
+6. Page 8, “approaches” is misspelt: “… which cannot be accurately modeled by additive approached”. 
+ 
+Response: Thank you for pointing out the typo and we have corrected it.  
+ 
+7. Page 8: “A study involving drug tests on glioblastoma highlighted the distinct effects of Etopside.” – Etoposide 
+is misspelt. 
+ 
+Response: We thank the reviewer for identifying the typos in the manuscript. We have thoroughly reviewed the 
+revised version multiple times to ensure that any remaining typographical errors have been corrected. 
+ 
+8. Figure 2, Panel B: is the UMAP visualization from original gene expression space or latent space? 
+ 
+Response: The point is well-taken. The UMAP in Figure 2B represents the original gene expression. We have 
+clarified this in the figure description and provided additional details in the caption to enhance clarity. 
+ 
+9. Figure 2: the boxplots in Panel E were not clear to me. What is the Y-axis? Also, the colors of the lines in the 
+Cell Density vs. Pseudotime plot need to be explained in a legend. 
+ 
+Response: The boxplots in Panel E represent the distribution of predicted gene expression for real days along 
+with pseudotime, as well as the expression of NANOG, GATA6, and T over pseudotime and real time. These 
+plots illustrate that the predicted gene expression aligns with pseudotime analysis, supporting the biological 
+interpretation of cellular differentiation. We apologize for the missing Y-axis and have added it in the updated 
+version. The colors of the lines have been labeled in the legend.  
+ 
+ 
+10. Figure 2, panel F: Likewise, what do the red, yellow, blue circles denote? Days? If so, the progression seems 
+to be from right to left. This is counterintuitive and should be reversed to left to right. 
+Response: We fully agree with the reviewer’s comment and have addressed it in Figure 2 in the updated version.  
+ 
+ 
+11. Figure 3, panel E: What do the looped vectors on top left denote? Needs to be explained. 
+ 
+Response: We appreciate the reviewer’s observation. The looped vectors are icons representing 𝑧!"# for 
+different cell types and the drug-associated latent vectors. We have added more descriptions in the figure panels 
+and captions for clarity. 
+ 
+12. Page 15, paragraph 1: References to NFkB are not showing the character “k”. 
+
+ 
+Response: Thank you for your valuable feedback. After reviewing our manuscript, we identified that NF-κB–
+related signaling pathways are discussed on pages 13, 14, and 16. We also noted that additional references 
+may be needed following the mention of these pathways in Supplementary Figure 8. Accordingly, we have now 
+included the following citations to strengthen our discussion: 
+● Boneberg, E.-M., and T. Hartung. "Molecular aspects of anti-inflammatory action of G-CSF." 
+Inflammation Research 51 (2002): 119–128. 
+● Magné, Nicolas, Robert-Alain Toillon, Virginie Bottero, Céline Didelot, Paul Van Houtte, Jean-Pierre 
+Gérard, and Jean-François Peyron. "NF-κB modulation and ionizing radiation: mechanisms and future 
+directions for cancer treatment." Cancer Letters 231, no. 2 (2006): 158–168. 
+13. Page 15, paragraph 3: Figure 6D is never referred to, 
+ 
+Response: We apologize for the mistake and have added the reference for Figure 6D.  
+ 
+Overall, this is a very impressive and important article, and I would like to commend the authors on their excellent 
+work. 
+ 
+Response: Thank you very much for your positive feedback; we truly appreciate it! 
+ 
+- Sudin Bhattacharya 
+Michigan State University 
+ 
+ 
+ 
+Reviewer #2:  
+Remarks to the Author: 
+In this manuscript, the authors introduced Squidiff, a diffusion model-based method that uses transcriptomic data 
+as training sets to develop a generative model. This method is capable of predicting gene expression distributions 
+under perturbation including cell differentiation, gene and drug perturbation, irradiation and radiation. The authors 
+mainly compared the performance of Squidiff with scGen, a VAE-based method, on gene and drug perturbation 
+and cell differentiation data. They especially claimed that Squidiff could reconstruct smooth transitions of cells 
+by a denoising process which variational autoencoder-based models could not do. 
+ 
+In all, the novelty of this study is represented by employing a diffusion model-based deep-learning approach, 
+which better leverages information from environmental variables than previous models. Besides, I appreciate 
+the authors' effort in applying and validating their method using datasets from various biological scenarios. 
+Especially, the authors designed an experiment in validating Squidiff’s ability in predicting the effect physical 
+perturbations using BVO cells. Finally, the manuscript is well-organized and not hard to follow. 
+ 
+While predicting the transitions of cells responding to perturbations is interesting, there are several concerns, 
+regarding the method description, validation, and explanation of the results. The authors need to provide more 
+details on the data preprocessing and model training. In addition, the method requires state-of-art GPUs and is 
+time consuming in running time, and this may affect broad application of the method. 
+ 
+Response: We appreciate the reviewer’s thoughtful feedback and their recognition of the novelty and strengths 
+of Squidiff, as well as its validation across diverse biological scenarios. 
+ 
+
+We acknowledge the importance of providing additional details on data preprocessing and model training. In 
+response, we have expanded the Methods section to provide a more comprehensive and explicit description of 
+these aspects.  
+ 
+Major issues: 
+1. An important application of Squidiff lies in predicting the impact of environmental changes on transcriptomics. 
+However, the authors do not provide a clear explanation of how these environmental changes are quantitatively 
+defined or how they are integrated with transcriptomic data during the training process. Specifically, it is unclear 
+whether the characteristics of environmental changes are directly used as input variables or indirectly 
+incorporated through latent representations (e.g., z_sem). A more detailed explanation of this aspect of the 
+modeling process would be beneficial. 
+ 
+Response: We thank the reviewer for acknowledging our method’s capability to incorporate environmental 
+changes, and we appreciate the opportunity to provide a more concrete explanation. In Squidiff, different 
+perturbations are encoded via the semantic latent variable 𝑧!"#, while stochasticity is controlled via the random 
+variable 𝑥%. This is because the latter captures transcriptomic variability, given the deterministic environment 
+specified by 𝑧!"#.  These perturbations are assumed to be inherently reflected in the transcriptomic data under 
+given conditions, making explicit encoding of environmental factors as input variables unnecessary. Instead, our 
+latent space representation effectively captures the impact of perturbations solely through transcriptomic data. 
+  
+However, we recognize that in some cases, transcriptomic data alone may not be sufficient, for example, 
+in scenarios involving unseen drug perturbations where additional compound-specific information is available. 
+To address this need, we introduce an adapter module inspired by PRNet (Qi et al, 2024, Figure 3H). While this 
+module is not involved in the training process, it encodes SMILES-based drug structure and dosage information 
+into a latent representation. This drug-encoded representation is then concatenated with the original semantic 
+latent variable 𝑧!"#, forming an extended representation 𝑧!"#′.  In future work outside the scope of this paper, 
+Squidiff could incorporate additional environmental factors as needed to enhance its predictive capability. We 
+have also updated the revised manuscript to clarify and expand this discussion. 
+ 
+2. In the Reverse Process subsection, the definition of ϵ_θ is unclear. Are the definitions of ϵ_θ (x_t,t) and ϵ_θ 
+(x_t,t,z_sem ) the same? The authors need to review the definition of p_θ (x_(t-1)│x_t,z_sem )=N(f_θ 
+(x_1,1,z_sem,0)) to ensure its accuracy. Additionally, transcriptomics data does not obey a Gaussian distribution, 
+and the authors need to explain whether this has an impact on model performance. 
+ 
+Response: We appreciate the reviewer’s feedback regarding the need for clarification. In response, we have 
+updated the Reverse Process subsection to ensure consistency in notation and improve readability. Specifically, 
+𝜖&(𝑥', 𝑡) represents a neural network that predicts noise given 𝑥'. In the Squidiff model, since we want to 
+generate data based on environment embeddings (encoded as 𝑧!"# ), the neural network is additionally 
+conditioned on 𝑧!"#.  
+ 
+We acknowledge the reviewer’s concern that transcriptomic data does not follow a Gaussian distribution. 
+However, Squidiff is explicitly designed to model this complex data distribution (Supplementary Fig. 1E). 
+Specifically, note that while 𝑝(𝑥'()|𝑥') is not necessarily Gaussian, 𝑝(𝑥'()|𝑥', 𝑥$) is. Therefore, we first predict 
+𝑥$ by 𝑥' and 𝑧!"# using the neural network 𝜖&(𝑥', 𝑡, 𝑧!"#), and then sample 𝑥'() from 𝑝(𝑥'()|𝑥', 𝑥$). This ensures 
+that the eventual 𝑥$ is drawn from a complex, biologically relevant distribution, allowing Squidiff to fully leverage 
+the representational power of deep neural networks. 
+ 
+ 
+
+3. In Figure 3A, the two-gene perturbations are represented as the linear interpolation of two latent variables. 
+This is interesting, but the authors need more validations to support the assumption. Why is interpolation 
+performed in the latent space rather than in the gene expression space? What properties of the latent space 
+justify this choice? This is not clear from the semantic encoder. And I am interested in its ability to predict the 
+effects of drug combinations on cell transitions, can this method be trained with single drug perturbations and 
+then used to predict the effects of multiple drugs? 
+ 
+Response: We appreciate the reviewer’s insightful comments. The goal of Squidiff is to generate gene 
+expression profiles under various conditions. Performing linear interpolation in gene expression space is not 
+feasible due to the high dimensionality, complexity, and inherent experimental noise, including batch effects and 
+non-linear dependencies on perturbations.  Instead, Squidiff leverages a latent space learned by the semantic 
+encoder, which captures biologically meaningful features of a cell’s state in a structured and smooth manner, 
+which is a similar strategy as scGen (Lotfollahi et al 2019). Operating in this latent space reduces noise while 
+preserving essential biological variations. Moreover, the latent space is designed to allow perturbation effects to 
+be additive. Linear interpolations correspond to meaningful cellular transitions rather than arbitrary mathematical 
+mixtures of gene expression vectors. Additionally, the latent space inherently encodes cellular states along with 
+properties such as perturbation awareness, cell type identity and developmental stage. This structured 
+representation enables the model to capture key transcriptomic patterns while filtering out spurious variations, 
+justifying why interpolation in the latent space is preferable.  
+Regarding Squidiff’s ability to predict the effects of drug combinations on cell state transitions, its 
+architecture is inherently suited for generalization. The assumption is that the latent space captures additive or 
+synergistic interactions implicitly. Due to the limited availability of single-cell RNA sequencing data related to 
+drug combinations, we evaluated Squidiff on an alternative dataset 4i (Bunne, C. et al. 2023), which profiles 
+molecular and morphology properties of melanoma cells treated with various drug compounds using a novel 
+microscopic technology.  
+To assess Squidiff’s predictive capability, we withheld drug combination data during training and trained 
+Squidiff using only control cells and cells treated with single drugs, including trametinib, panobinostat, dabrafenib, 
+erlotinib, and midostaurin. We then used Squidiff to generate single-cell data for drug combination treatments 
+and compared the Pearson correlation between predicted and ground-truth responses from the 4i dataset. While 
+4i does not contain single-cell transcriptomic data and provides only ~50 features per condition, it serves as an 
+initial validation of Squidiff's ability to generalize to drug perturbations (Fig. R2). However, we acknowledge that 
+the limited cellular features in this dataset may constrain Squidiff's ability to fully capture complex drug 
+interactions compared to transcriptomic data.    
+ 
+Figure R2. Performance (Pearson scores) of Squidfiff on 4i dataset.  
+ 
+4. In Figure 3D, the results of CTSL, SAT1 and TIMP4 seem not very good. Is there any reason for selecting 
+these genes? 
+ 
+
+Response: We appreciate the reviewer’s observation. The 12 genes shown in Figure 3D were randomly selected 
+to provide a representative comparison across different methods. As a result, variability in performance among 
+certain genes, such as CTSL, SAT1, and TIMP4, is expected due to inherent differences in gene expression 
+dynamics. While some cases may not perfectly match the ground truth, the overall trends and distribution of 
+predictions remain consistent, demonstrating Squidiff’s robustness in capturing gene expression patterns. 
+  
+5. Figure 6D is not cited in the main text, nor does it have any caption. 
+ 
+Response: We apologize for the mistakes and have added the reference for Figure 6D.  
+ 
+6.In general, Supplementary Figures are poorly interpreted in the main texts. The authors need to include more 
+details regarding the results illustrated in Supplementary Figures, instead of summarizing them into one sentence 
+with an unclear citation. 
+ 
+Response: We apologize for the unclear statements of the supplementary figures. We have referred to the 
+subpanel of supplement Fig in the main text to facilitate the understanding of these supplement figures.  
+ 
+7. An introduction to splatter, and how it is employed to generate simulated data, are needed. 
+ 
+Response: We have added a section for splatter and simulation data in the method section “Simulation of single-
+cell RNA sequencing data”. 
+ 
+8. How was the pseudotime analysis performed for the iPSC dataset? 
+ 
+Response: We have added a section for pseudotime analysis in the method section. 
+ 
+9. The first paragraph of the Methods section needs to focus more on the description of DPM and DDIM, instead 
+of introducing their applications or limitations. 
+ 
+Response: We agree with the reviewer's comments and have added more details of the description of DPM and 
+DDIM in the first paragraph of the methods. 
+ 
+10. How are the scRNA datasets in the analysis processed? The authors need to include more details on the 
+quality control, preprocessing, and the software they used. 
+ 
+Response: We have added two sections “Data preprocessing and quality control” and “Squidiff training tasks” 
+for scRNA analysis, including quality control and preprocessing, and used software in the method section. We 
+have also stated the differences in each section.  
+ 
+11. It is advised to summarize the hyperparameter settings used in the model into a Supplementary Table. 
+ 
+Response: We have added supplementary table 1 for the hyperparameter settings used in the model. 
+ 
+12. What is the hardware and system requirement to run Squidiff? What is its time and memory cost? Besides, 
+the authors provide code on GitHub, but it remains unclear if they have provided codes to reproduce all results 
+in the manuscript. It would be great if the authors could also provide the analysis code on GitHub for 
+reproducibility. 
+Response: We appreciate the reviewer’s reminder and provide the following details. Squidiff was developed and 
+tested with one NVIDIA H100 80GB HBM3. The time to a dataset with 8000 cells and 500 genes is about 15 
+
+mins. While a high-performance GPU is recommended for efficiency, Squidiff can also run on lower-end GPUs, 
+though with increased runtime. To facilitate reproducibility, we have made the Squidiff model, tutorial, and 
+analysis code at https://github.com/siyuh/Squidiff and https://github.com/siyuh/Squidiff_reproducibility. 
+ 
+Minor issues: 
+The notation ‘t’ in the Diffusion process should be italic. 
+Page 6, ‘… in this experiments.’ should be ‘in these experiments’. 
+Page 8, ‘… by additive approached.’ should be ‘… by additive approaches.’. 
+Page 18, ‘… of the squiff model’ should be ‘… of the squidiff model’. 
+Page 19, ‘… x0 to latent …’ should be ‘… x_0 to latent …’. 
+ 
+Response: We thank the reviewer’s careful reading of our manuscript and for identifying these typographical 
+errors. We apologize for these mistakes and have corrected them in the revised version.  
+ 
+ 
+ 
+Reviewer #3  
+Remarks to the Author: 
+ 
+Overview: 
+ 
+The authors introduce Squidiff (Single-cell QUantitative Inference of stimuli responses by DIFFusion models), a 
+diffusion-based framework for predicting cellular responses to perturbations over time. Squidiff is evaluated 
+across diverse and impactful tasks, including cell differentiation, gene and drug perturbations, radiation-induced 
+structural damage, and treatment effects in organoids. Notably, the method demonstrates statistically significant 
+improvements over established models such as scGen and GEARS in predicting expression levels in unseen 
+data. 
+ 
+Beyond its benchmarking success, Squidiff is validated against blood vessel organoid (BVO) data, showcasing 
+its ability to model relevant biological processes even when key time points or cell types are held out during 
+training. The model’s capability to generalize and predict complex cell development trajectories under varied 
+stimuli is a major advance for the field. Squidiff represents an innovative and comprehensive framework for 
+perturbation response prediction and cellular development modeling. 
+ 
+ 
+Strengths: 
+ 
+- Many experiments showcasing Squidiff’s capabilities. 
+- Validated on new data, showing its ability to capture relevant biological function. 
+- Superior performance on benchmarks against commonly-used methods such as GEARS and scGen. 
+- Uses a diffusion architecture, which is not necessarily new (e.g. scDiffusion, scDiff), however seems to be the 
+first to be thoroughly evaluated on cell development trajectories with strong results 
+ 
+Response: We appreciate the reviewer’s positive assessment of Squidiff and their recognition of its strengths. 
+ 
+ 
+Overall comments: 
+ 
+There seem to be some typos and grammatical mistakes throughout the manuscript. A few are listed below: 
+
+ 
+- Formatting error: page numbers overlap with figure captions 
+- P. 9 in the first paragraph under the section “Squidiff predicts cell differentiation in blood vessel organoids”, 
+there is an unnecessary period in “...snapshots of organoids development. at specific…” 
+- P. 12 in the first half, there is an extra space after the parenthetical reference to Fig. 4H, and awkward 
+pluralization in “mural progenitors features”: “...RNA data[18] (Fig. 4H) . The existence of differentiating EC cells 
+from day 5 to day 9 shown as mural progenitors features…” 
+- P. 19 fix the grammar here “...allowing the encode of x0 to latent code xT…” 
+- P. 19 need a space after the period “...on an extra latent variable z_sem.The objective is…” 
+- P. 19 formatting errors on the equations at the bottom of the page 
+- P. 20 one of those versions of z_sem should be chosen at the end of the section “Semantic encoder” 
+- P. 21 in “Stochastic encoder” the first sentence has awkward grammar “...process enables the encode of input 
+gene expression…” 
+- P. 21 missing period after the definition of x_t+1 in “Stochastic encoder” 
+ 
+Response: We thank the reviewer for pointing out the typographical and grammatical mistakes. We have 
+addressed all these comments in the revised manuscript.  
+ 
+ 
+- Authors may consider citing the following relevant works: 
+scDiffusion (Luo et al., 2024) – single cell diffusion model 
+scDiff (Tang et al., 2023) – another single cell diffusion model 
+ 
+Response: We appreciate the suggestion and have cited scDiffusion (Luo et al., 2024) and scDiff (Tang et al., 
+2023) in the revised manuscript, highlighting Squidiff’s distinctions in scope and application. Thank you for the 
+recommendation. 
+ 
+Questions: 
+- The VAE is mentioned as an encoder for the latent representations, but the semantic encoder in the Methods 
+section does not describe a VAE architecture. It only explains that it is a standard MLP encoder. Furthermore, 
+the loss function in the Training section does not contain a KL divergence term, which would be necessary for a 
+VAE. Is there a VAE anywhere in this architecture? If not, it seems several edits are in order. 
+If I have misunderstood and there is a VAE somewhere in this architecture, what is the motivation for using the 
+DDIM+VAE architecture over a standard conditional DDPM or DDIM? An ablation showing the value of the VAE 
+would be helpful, for example, on the synthetic data in Figure 1. 
+ 
+Response: We sincerely apologize for the inaccuracies in writing related to an MLP encoder. The whole model 
+does not have VAE, and for the semantic encoder, we use an MLP as an encoder. We have updated it in our 
+revised manuscript (Section “Semantic encoder” in Methods). 
+ 
+- What is the reason for selecting the 203 genes as opposed to keeping all 500 highly variable genes in Figure 
+3C? 
+ 
+Response: We apologize for the inconsistency in the reported gene number. We selected 203 highly variable 
+which includes the 200 high variable genes and selected genes associated with iPSC differentiation and 
+pluripotency for both training and testing. However, we also show the results with 500 highly variable genes here 
+to indicate the robustness of the model training. 
+
+ 
+Figure R3. Scatterplot of predicted ZBTB25+PTPN12 single-cell RNA sequencing and ground-truth data with 
+500 highly variable genes by Squidiff.  
+ 
+- The MMD and Correlation values are extremely close to perfect. Have you looked at correlations between 
+deltas of control vs perturbations or top n differentially expressed genes (e.g. as is done in the GEARS or scGPT 
+papers)? Models are typically less likely to saturate on these metrics, and they would provide a clearer picture 
+of the difference between the methods. 
+ 
+Response: We understand the reviewer’s concern. To further confirm the performance of Squidiff on gene 
+perturbation tasks, we evaluated its accuracy in predicting expression changes by analyzing the deltas between 
+control and perturbed conditions. Additionally, we assessed the fraction of genes where the predicted expression 
+changes were opposite to the ground truth, providing a more comprehensive measure of model performance. 
+ 
+Figure R4. Left: bar plots comparing the true expression changes induced by ZBTB25+PTPN12 perturbation on 
+control single-cell data across all genes, evaluated using Squidiff, scGen, and GEARS based on R² values. Right: 
+fraction of genes where the predicted expression changes are opposite to the ground truth.  
+ 
+- This is not quite clear to me on page 14: “The model successfully generated the transcriptomic data under 
+irradiation with high accuracy (Fig. 5C). We then applied the model to the predicted data interpolated from the 
+healthy sample to acquire the predicted irradiated data for endothelial cells, mural cells, and fibroblasts.” Can 
+you clarify what is being predicted? Are you first predicting the held out cell types on day 11, and then generating 
+the rest of the trajectory using the latent delta vector between healthy and irradiated cells? 
+ 
+Response: Yes, we first excluded both healthy and irradiated fibroblasts and mural cells from the day 11 BVO 
+dataset. Squidiff was trained solely on healthy and irradiated endothelial cells, allowing it to learn from both the 
+cellular representations as well as the radiation-representative latent variables. The model then predicted the 
+irradiated fibroblasts and mural cells based on the learned  𝛥𝑧!"# on day 11, as shown in Fig. 5C. Then we 
+applied the 𝛥𝑧!"# to all the healthy interpolated data from Fig. 4, to obtain the time-series irradiated data, which 
+is showed in Fig. 5D. 
+ 
+
+- Can you clarify how the model is able to generate meaningful latent embeddings on unseen cell types in the 
+irradiation section? This would be an unusually strong kind of generalization, but perhaps I am misunderstanding 
+how the expression is being generated in this case. 
+Response: We thank the reviewer for raising this critical point. Without Functional Class Fingerprints (rFCFP, Qi 
+et al, 2024), Squidiff would not be able to predict responses to an unseen drug, as the model would lack exposure 
+to its structural information. However, because the model learns gene relationships from single-cell 
+transcriptomics data, it can generalize effectively within the transcriptomic space. Although the model was trained 
+only on endothelial cells, the semantic encoder was able to encode and distinguish fibroblasts and mural cells 
+during the model testing. The semantic variable 𝛥𝑧!"# captures the irradiation effect in known cell types, thus 
+demonstrating the generalization capability to unseen fibroblast and mural cells. However, this generalization 
+might be influenced by the similarities between mural cells, fibroblasts, and endothelial cells in BVOs, as they all 
+originate from iPSCs. However, if applied to a completely different experimental setting, additional training may 
+be required for effective generalization. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

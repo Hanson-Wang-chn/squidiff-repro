@@ -1,0 +1,29 @@
+{
+  "start": 1794743309.714395,
+  "jobs": [
+    {
+      "script": "round4_endpoint_tail.py",
+      "exit_code": 0,
+      "command": [
+        "/home/whs/mydata/conda-env/squidiff/bin/python",
+        "/home/whs/squidiff/scripts/round4_endpoint_tail.py"
+      ]
+    },
+    {
+      "script": "round4_integrity.py",
+      "exit_code": 0,
+      "command": [
+        "/home/whs/mydata/conda-env/squidiff/bin/python",
+        "/home/whs/squidiff/scripts/round4_integrity.py"
+      ]
+    },
+    {
+      "script": "round4_report.py",
+      "exit_code": 0,
+      "command": [
+        "/home/whs/mydata/conda-env/squidiff/bin/python",
+        "/home/whs/squidiff/scripts/round4_report.py"
+      ]
+    }
+  ]
+}

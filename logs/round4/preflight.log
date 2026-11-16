@@ -1,0 +1,12 @@
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+diffusion num of steps =  1000
+diffusion num of steps =  1000
+diffusion num of steps =  1000
+diffusion num of steps =  1000
+diffusion num of steps =  1000
+diffusion num of steps =  1000
+diffusion num of steps =  1000
+PREFLIGHT_OK 0.0 4.76837158203125e-07 [{'variant': 'layernorm', 'loss': 1.122027039527893, 'parameters': 52142343}, {'variant': 'resblock', 'loss': 1.8881645202636719, 'parameters': 52142343}, {'variant': 'fullsource', 'loss': 1.1229690313339233, 'parameters': 52142343}, {'variant': 'supportbalance', 'loss': 1.119594693183899, 'parameters': 52142343}]

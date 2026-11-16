@@ -1,0 +1,39 @@
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+Logging to /home/whs/squidiff/logs/round4/safe_cli_smoke
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+diffusion num of steps =  1000
+-------------------------
+| grad_norm  | 4.14     |
+| loss       | 1.08     |
+| loss_q0    | 1.1      |
+| loss_q1    | 0.998    |
+| loss_q2    | 1.11     |
+| loss_q3    | 1.07     |
+| mse        | 1.08     |
+| mse_q0     | 1.1      |
+| mse_q1     | 0.998    |
+| mse_q2     | 1.11     |
+| mse_q3     | 1.07     |
+| param_norm | 172      |
+| samples    | 8        |
+| step       | 0        |
+-------------------------
+-------------------------
+| grad_norm  | 3.84     |
+| loss       | 1.09     |
+| loss_q0    | 1.15     |
+| loss_q1    | 1.05     |
+| loss_q2    | 1.14     |
+| loss_q3    | 1.06     |
+| mse        | 1.09     |
+| mse_q0     | 1.15     |
+| mse_q1     | 1.05     |
+| mse_q2     | 1.14     |
+| mse_q3     | 1.06     |
+| param_norm | 172      |
+| samples    | 16       |
+| step       | 1        |
+-------------------------
+SAFE_CLI_SMOKE_OK [1.0833826065063477, 1.092944860458374]

@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://europepmc.org/articles/PMC12872408/bin/NIHMS2128263-supplement-Supplementary_Methods.docx",
+    "status": 403,
+    "bytes": 5767,
+    "mime": "text/html; charset=UTF-8"
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12872408/bin/NIHMS2128263-supplement-Supplementary_Methods.docx",
+    "status": 404,
+    "bytes": 48716,
+    "mime": "text/html; charset=utf-8"
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12872408/bin/NIHMS2128263-supplement-Supplementary_Methods.docx?download=1",
+    "status": 404,
+    "bytes": 48716,
+    "mime": "text/html; charset=utf-8"
+  },
+  {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12872408/supplementaryFiles",
+    "status": 200,
+    "bytes": 297,
+    "mime": "application/xml"
+  }
+]

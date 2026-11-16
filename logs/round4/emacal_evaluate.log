@@ -1,0 +1,20 @@
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+diffusion num of steps =  1000
+VALIDATE emacal {"mode": "empirical", "sigma": 1.0, "wasserstein": 0.5270499151123188, "mse": 0.4452633437218257}
+TEST emacal fixed 0 0.6162359294419552 0.9049599634209881 0 60
+TEST emacal fixed 1 0.32585011322381796 0.9209384286617084 4 58
+TEST emacal fixed 2 0.3330665977619609 0.9659463268638744 2 78
+TEST emacal fixed 3 0.7146612209412992 1.025261287552227 0 109
+TEST emacal selected 0 0.9932785207858034 0.14204440351987918 0 0
+TEST emacal selected 1 0.6404075710935686 0.19657637186784996 0 0
+TEST emacal selected 2 0.7456222328253035 0.3260819544498615 0 0
+TEST emacal selected 3 0.9914633166932393 0.34715344935151127 0 0
+DIAGNOSTIC emacal mean_direction_removed 0.6016833703427411 0.16117986560740974
+DIAGNOSTIC emacal target_rna_oracle 0.7987768559774113 0.37795617059916065

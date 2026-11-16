@@ -1,0 +1,15 @@
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+             pool  day  rows   T_mean  T_above3_mass  all_three_above3_mass
+           source    0  1200 0.042602       0.005000               0.000000
+           source    3  1200 0.240657       0.038333               0.001667
+   supportbalance    0  1200 0.035167       0.004353               0.000000
+   supportbalance    3  1200 0.300260       0.050261               0.000923
+       fullsource    0  8874 0.070521       0.008452               0.000451
+       fullsource    3  7706 0.266659       0.041267               0.002595
+target_diagnostic    1   600 6.250064       0.943333               0.490000
+target_diagnostic    2   600 0.853891       0.130000               0.018333

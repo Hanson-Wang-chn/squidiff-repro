@@ -1,0 +1,104 @@
+{
+  "clusters": [
+    {
+      "day": 0,
+      "cluster": 0,
+      "cells": 87,
+      "sampling_mass": 0.0625
+    },
+    {
+      "day": 0,
+      "cluster": 1,
+      "cells": 67,
+      "sampling_mass": 0.0625
+    },
+    {
+      "day": 0,
+      "cluster": 2,
+      "cells": 293,
+      "sampling_mass": 0.0625
+    },
+    {
+      "day": 0,
+      "cluster": 3,
+      "cells": 91,
+      "sampling_mass": 0.0625
+    },
+    {
+      "day": 0,
+      "cluster": 4,
+      "cells": 114,
+      "sampling_mass": 0.0625
+    },
+    {
+      "day": 0,
+      "cluster": 5,
+      "cells": 157,
+      "sampling_mass": 0.0625
+    },
+    {
+      "day": 0,
+      "cluster": 6,
+      "cells": 12,
+      "sampling_mass": 0.0625
+    },
+    {
+      "day": 0,
+      "cluster": 7,
+      "cells": 379,
+      "sampling_mass": 0.0625
+    },
+    {
+      "day": 3,
+      "cluster": 0,
+      "cells": 35,
+      "sampling_mass": 0.0625
+    },
+    {
+      "day": 3,
+      "cluster": 1,
+      "cells": 183,
+      "sampling_mass": 0.0625
+    },
+    {
+      "day": 3,
+      "cluster": 2,
+      "cells": 102,
+      "sampling_mass": 0.0625
+    },
+    {
+      "day": 3,
+      "cluster": 3,
+      "cells": 271,
+      "sampling_mass": 0.0625
+    },
+    {
+      "day": 3,
+      "cluster": 4,
+      "cells": 63,
+      "sampling_mass": 0.0625
+    },
+    {
+      "day": 3,
+      "cluster": 5,
+      "cells": 246,
+      "sampling_mass": 0.0625
+    },
+    {
+      "day": 3,
+      "cluster": 6,
+      "cells": 94,
+      "sampling_mass": 0.0625
+    },
+    {
+      "day": 3,
+      "cluster": 7,
+      "cells": 206,
+      "sampling_mass": 0.0625
+    }
+  ],
+  "k_per_endpoint": 8,
+  "features": "training endpoint RNA only",
+  "middle_days_used": false,
+  "training_data_sha256": "cf6e2feddfb1a9ab257ddec6e5a9c35475b79e2af4b291d923e7195a4052ce61"
+}

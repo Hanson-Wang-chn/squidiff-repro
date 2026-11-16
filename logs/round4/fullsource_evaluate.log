@@ -1,0 +1,24 @@
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+diffusion num of steps =  1000
+VALIDATE fullsource {"mode": "fixed", "sigma": 0.7, "wasserstein": 0.8431921366783587, "mse": 0.7782194920605146}
+VALIDATE fullsource {"mode": "isotropic", "sigma": 0.0, "wasserstein": 0.7278006890526756, "mse": 0.6093553671178642}
+VALIDATE fullsource {"mode": "isotropic", "sigma": 0.21878565847873688, "wasserstein": 0.6520425425778669, "mse": 0.594754604077503}
+VALIDATE fullsource {"mode": "isotropic", "sigma": 0.43757131695747375, "wasserstein": 0.6496787965199813, "mse": 0.6009682698830641}
+VALIDATE fullsource {"mode": "empirical", "sigma": 1.0, "wasserstein": 0.5848101975428961, "mse": 0.4894376087876721}
+VALIDATE fullsource {"mode": "paired", "sigma": 1.0, "wasserstein": 0.5925212850652346, "mse": 0.5985317511187287}
+VALIDATE fullsource {"mode": "ot", "sigma": 1.0, "wasserstein": 0.5573473805085909, "mse": 0.5040705068546535}
+TEST fullsource fixed 0 0.8419925538857328 0.3701150766488475 0 13
+TEST fullsource fixed 1 0.5314217829282702 0.4019845026124434 1 9
+TEST fullsource fixed 2 0.6341397361296719 0.43373640231480143 0 8
+TEST fullsource fixed 3 0.9263348604671285 0.45866343665135595 0 11
+TEST fullsource selected 0 0.9869120407444503 0.2524772786940836 0 1
+TEST fullsource selected 1 0.6342321772068444 0.28003734757367055 0 1
+TEST fullsource selected 2 0.7100076173553826 0.3422957069612312 0 0
+TEST fullsource selected 3 0.9712548688558562 0.3517015919278492 0 2
+DIAGNOSTIC fullsource mean_direction_removed 0.6062356141574383 0.2307379557254171
+DIAGNOSTIC fullsource target_rna_oracle 0.8003590830190151 0.5952135756010345

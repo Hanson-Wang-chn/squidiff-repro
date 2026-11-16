@@ -1,0 +1,12 @@
+{
+  "selected": {
+    "mode": "paired_noise",
+    "sigma": 0.21141943335533142,
+    "wasserstein": 0.6661750767294299,
+    "mse": 0.43281970353392396
+  },
+  "criterion": "Independent endpoint gene-wise Wasserstein",
+  "checkpoint_step": 100000,
+  "intermediate_RNA_used": false,
+  "common_random_bank": true
+}

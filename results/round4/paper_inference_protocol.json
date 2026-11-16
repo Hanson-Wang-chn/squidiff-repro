@@ -1,0 +1,12 @@
+{
+  "source": "https://doi.org/10.1101/2024.11.16.623974",
+  "version": "2025-08-26 revision, obtained via Europe PMC PMC12407682 fullTextXML",
+  "timing": "Added after complete updated Methods retrieval, before any new trained-model middle-day evaluation",
+  "question": "Literal cell-wise z0 + alpha * delta + eta versus the notebook's mean(z0) + alpha * delta + eta",
+  "model": "Historical native_s42 final100k; no new training and no seed search",
+  "fixed": {"mode": "paired_noise", "sigma": 0.7},
+  "endpoint_only_candidates": ["0", "0.5 * within_endpoint_RMS", "within_endpoint_RMS", "0.7"],
+  "selection": "Independent endpoint validation gene-wise Wasserstein only",
+  "sampling": "Same frozen random input banks, 600 cells, 1000 DDIM steps, same rule for all four days",
+  "interpretation": "Explicit inference sensitivity; z0 in the prose is ambiguous, so this is not asserted to be a proven author implementation bug"
+}

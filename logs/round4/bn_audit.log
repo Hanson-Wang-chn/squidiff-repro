@@ -1,0 +1,10 @@
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+diffusion num of steps =  1000
+{'weights': 'raw', 'buffers': 'original_buffers', 'endpoint_validation_loss': 1.1578317339805653, 'latent_change_over_raw_rms': 0.0, 'bn1_mean_change': 0.0, 'bn2_mean_change': 0.0}
+{'weights': 'raw', 'buffers': 'training_recalibrated', 'endpoint_validation_loss': 1.1561499445939747, 'latent_change_over_raw_rms': 0.025170153006911278, 'bn1_mean_change': 0.048335399478673935, 'bn2_mean_change': 0.0283043310046196}
+diffusion num of steps =  1000
+{'weights': 'ema', 'buffers': 'original_buffers', 'endpoint_validation_loss': 1.1089054254444393, 'latent_change_over_raw_rms': 0.0, 'bn1_mean_change': 0.0, 'bn2_mean_change': 0.0}
+{'weights': 'ema', 'buffers': 'training_recalibrated', 'endpoint_validation_loss': 1.108117014215095, 'latent_change_over_raw_rms': 0.02636258862912655, 'bn1_mean_change': 0.04962737858295441, 'bn2_mean_change': 0.045932427048683167}

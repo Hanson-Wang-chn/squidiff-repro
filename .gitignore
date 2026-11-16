@@ -15,6 +15,10 @@ htmlcov/
 .venv/
 venv/
 .conda/
+# Local agent configuration and cloud credentials are not project artifacts.
+/.agents/
+/.codex/
+/.aws/
 /env/
 /envs/
 /conda-env/
@@ -44,7 +48,9 @@ venv/
 *.pth.*
 *.ckpt.*
 *.safetensors.*
+*.onnx.*
 checkpoints/
+checkpoint/
 pytorch_model*.bin
 optimizer*.bin
 
@@ -65,6 +71,10 @@ optimizer*.bin
 .env.*
 !.env.example
 .git-credentials
+.netrc
+.npmrc
+id_rsa
+id_ed25519
 *.pem
 *.key
 .DS_Store

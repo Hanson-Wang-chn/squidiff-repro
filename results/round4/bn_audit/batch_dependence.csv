@@ -1,0 +1,5 @@
+weights,condition,latent_rmse_over_eval_rms
+raw,mixed_train_batches,0.12562763690948486
+raw,single_day_batches,0.4585784077644348
+ema,mixed_train_batches,0.12632562220096588
+ema,single_day_batches,0.46336930990219116

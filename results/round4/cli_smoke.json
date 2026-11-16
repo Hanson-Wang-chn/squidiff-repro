@@ -1,0 +1,14 @@
+{
+  "real_optimizer_updates": 2,
+  "losses": [
+    1.0833826065063477,
+    1.092944860458374
+  ],
+  "checkpoint_calls": [
+    0,
+    2
+  ],
+  "chemistry_dependency_required": false,
+  "drug_false_parsed_correctly": true,
+  "scope": "Engineering smoke test only; no biological evaluation and no checkpoints saved"
+}

@@ -1,0 +1,12 @@
+{
+  "selected": {
+    "mode": "empirical",
+    "sigma": 1.0,
+    "wasserstein": 0.5193060318075583,
+    "mse": 0.44090582053674743
+  },
+  "criterion": "Independent endpoint gene-wise Wasserstein",
+  "checkpoint_step": 100000,
+  "intermediate_RNA_used": false,
+  "common_random_bank": true
+}

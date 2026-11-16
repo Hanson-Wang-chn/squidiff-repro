@@ -1,0 +1,20 @@
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+diffusion num of steps =  1000
+VALIDATE ema {"mode": "empirical", "sigma": 1.0, "wasserstein": 0.5260145400792544, "mse": 0.4436313665631805}
+TEST ema fixed 0 0.6205509697919585 0.9084920421832552 0 59
+TEST ema fixed 1 0.3330973814137814 0.9223273561949221 4 56
+TEST ema fixed 2 0.3432166546738957 0.9663855681418985 2 76
+TEST ema fixed 3 0.7168800086388821 1.0251742219952091 0 107
+TEST ema selected 0 0.993550188977981 0.14225939010163227 0 0
+TEST ema selected 1 0.6418532758880986 0.19533272474839275 0 0
+TEST ema selected 2 0.7516320214209795 0.32616655654409743 0 0
+TEST ema selected 3 0.9914616835269913 0.3480372883093029 0 0
+DIAGNOSTIC ema mean_direction_removed 0.6026580609043715 0.16078648956148148
+DIAGNOSTIC ema target_rna_oracle 0.7937663513084261 0.364885176984147

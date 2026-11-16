@@ -1,0 +1,46 @@
+{
+  "start": 1794741465.0886118,
+  "commands": {
+    "layernorm": [
+      "/home/whs/mydata/conda-env/squidiff/bin/python",
+      "scripts/round4.py",
+      "train",
+      "--variant",
+      "layernorm"
+    ],
+    "resblock": [
+      "/home/whs/mydata/conda-env/squidiff/bin/python",
+      "scripts/round4.py",
+      "train",
+      "--variant",
+      "resblock"
+    ],
+    "fullsource": [
+      "/home/whs/mydata/conda-env/squidiff/bin/python",
+      "scripts/round4.py",
+      "train",
+      "--variant",
+      "fullsource"
+    ],
+    "supportbalance": [
+      "/home/whs/mydata/conda-env/squidiff/bin/python",
+      "scripts/round4.py",
+      "train",
+      "--variant",
+      "supportbalance"
+    ]
+  },
+  "pids": {
+    "layernorm": 370525,
+    "resblock": 370526,
+    "fullsource": 370527,
+    "supportbalance": 370528
+  },
+  "seed": 42,
+  "steps_each": 100000,
+  "frozen_protocol_sha256": "40e3da6d2b2810b719c30c6a6ba11c413d93bb934f405a1b1e092f20d2913356",
+  "env": {
+    "CUDA_MPS_PIPE_DIRECTORY": "/tmp/squidiff-round4-mps",
+    "CUDA_MPS_LOG_DIRECTORY": "/home/whs/squidiff/logs/round4/mps"
+  }
+}

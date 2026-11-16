@@ -1,0 +1,21 @@
+{
+  "fixed_sigma_replay": [
+    {
+      "day": 0,
+      "max_abs_error": 0.0
+    },
+    {
+      "day": 1,
+      "max_abs_error": 0.0
+    },
+    {
+      "day": 2,
+      "max_abs_error": 0.0
+    },
+    {
+      "day": 3,
+      "max_abs_error": 0.0
+    }
+  ],
+  "all_exact": true
+}

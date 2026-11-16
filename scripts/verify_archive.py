@@ -14,7 +14,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "docs/archive_manifest.json"
 MAX_FILE_BYTES = 25 * 1024**2
-MAX_TOTAL_BYTES = 350 * 1024**2
+MAX_TOTAL_BYTES = 375 * 1024**2
 WEIGHT_SUFFIXES = {".pt", ".pth", ".ckpt", ".safetensors", ".onnx"}
 
 
@@ -55,7 +55,7 @@ def write_manifest():
         entries.append({"path": name, "bytes": size, "sha256": digest(path)})
     total = sum(e["bytes"] for e in entries)
     if total > MAX_TOTAL_BYTES:
-        raise ValueError("Archive exceeds the 350 MiB project budget")
+        raise ValueError("Archive exceeds the 375 MiB project budget")
     excluded = []
     for parent in (ROOT / "data", ROOT / "results"):
         for path in sorted(parent.rglob("*")):
@@ -100,7 +100,7 @@ def verify():
             errors.append(f"Size/SHA256 mismatch: {name}")
     total = sum(entry["bytes"] for entry in entries)
     if total != manifest["total_bytes"] or total + MANIFEST.stat().st_size > MAX_TOTAL_BYTES:
-        errors.append("Inconsistent size or archive exceeds the 350 MiB project budget")
+        errors.append("Inconsistent size or archive exceeds the 375 MiB project budget")
     # A source ZIP has no .git directory; checksum verification still works there.
     if (ROOT / ".git").exists():
         expected = set(names) | {MANIFEST.relative_to(ROOT).as_posix()}

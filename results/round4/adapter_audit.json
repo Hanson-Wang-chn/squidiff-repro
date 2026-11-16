@@ -1,0 +1,10 @@
+{
+  "nonnegative_x0_native_max_error": 0.0,
+  "negative_x0_recovery_max_error": 3.814697265625e-06,
+  "false_string_parsed_correctly": true,
+  "unsupported_configurations_rejected": [
+    "gene_size must equal output_dim for epsilon prediction",
+    "Pinned reverse sampler assumes epsilon; use the matched x0 adapter in round3.py",
+    "Pinned native diffusion training does not implement learned variance"
+  ]
+}

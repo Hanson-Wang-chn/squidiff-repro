@@ -1,0 +1,12 @@
+{
+  "start": 1794742688.4034421,
+  "end": 1794743552.2612257,
+  "command": [
+    "/home/whs/mydata/conda-env/squidiff/bin/python",
+    "/home/whs/squidiff/scripts/round4_evaluate.py",
+    "--model",
+    "paper_cellnoise",
+    "--oracle"
+  ],
+  "exit_code": 0
+}

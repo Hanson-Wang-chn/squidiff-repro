@@ -1,0 +1,26 @@
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+diffusion num of steps =  1000
+VALIDATE resblock {"mode": "fixed", "sigma": 0.7, "wasserstein": 0.7620245050053174, "mse": 0.3928717481892992}
+VALIDATE resblock {"mode": "isotropic", "sigma": 0.0, "wasserstein": 1.0908135269296706, "mse": 0.3420897239178461}
+VALIDATE resblock {"mode": "isotropic", "sigma": 0.4454937279224396, "wasserstein": 0.8526882688592419, "mse": 0.345536154988373}
+VALIDATE resblock {"mode": "isotropic", "sigma": 0.8909874558448792, "wasserstein": 0.722160582847457, "mse": 0.45118191204575886}
+VALIDATE resblock {"mode": "empirical", "sigma": 1.0, "wasserstein": 0.4856253429281196, "mse": 0.4209641581455405}
+VALIDATE resblock {"mode": "paired", "sigma": 1.0, "wasserstein": 0.7487439100930379, "mse": 0.3801251488874361}
+VALIDATE resblock {"mode": "ot", "sigma": 1.0, "wasserstein": 0.5822794923611394, "mse": 0.4327021657365241}
+TEST resblock fixed 0 0.9882725864185187 0.11241050326051967 0 0
+TEST resblock fixed 1 0.64895630065402 0.13130639653798426 0 0
+TEST resblock fixed 2 0.7618586950380956 0.18375970453741805 0 0
+TEST resblock fixed 3 0.9650925066739338 0.20959966988981857 0 0
+TEST resblock selected 0 0.9960153937054087 0.09319437768868132 0 0
+TEST resblock selected 1 0.6402621682107437 0.12794924760625387 0 0
+TEST resblock selected 2 0.7515463306574857 0.2669504578613366 0 0
+TEST resblock selected 3 0.9935585344945937 0.31302941800604456 0 0
+DIAGNOSTIC resblock mean_direction_removed 0.6016708151054891 0.10618343676503476
+DIAGNOSTIC resblock target_rna_oracle 0.8048604020306223 0.41838292038689057

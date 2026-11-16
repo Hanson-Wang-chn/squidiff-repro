@@ -1,0 +1,10 @@
+{
+  "question": "Can a completed model conditionally express high T on the rare endpoint cells actually present in its training pool?",
+  "frozen_before": "Any new layernorm/resblock/fullsource/supportbalance middle-day evaluation",
+  "models": ["native", "layernorm", "resblock", "fullsource", "supportbalance"],
+  "selection": "All training endpoint rows with T > 3, no selection using predictions",
+  "modes": ["own RNA encoding", "same-day training latent mean"],
+  "comparison": "Same initial xT within each model, taken from the already frozen main test input bank; no new seed or sweep",
+  "updates": 0,
+  "interpretation": "Training capacity diagnostic only; cannot count as prediction of an unseen day or the correct abundance of a rare program"
+}

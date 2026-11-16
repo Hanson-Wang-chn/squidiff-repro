@@ -1,0 +1,26 @@
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/home/whs/mydata/conda-env/squidiff/lib/python3.10/site-packages/anndata/_core/anndata.py:1754: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+diffusion num of steps =  1000
+VALIDATE layernorm {"mode": "fixed", "sigma": 0.7, "wasserstein": 7.681353541622334, "mse": 59.85621824386462}
+VALIDATE layernorm {"mode": "isotropic", "sigma": 0.0, "wasserstein": 1.1378167615286228, "mse": 0.4667614299805919}
+VALIDATE layernorm {"mode": "isotropic", "sigma": 0.13572581112384796, "wasserstein": 0.8567851536887539, "mse": 0.4382455033168699}
+VALIDATE layernorm {"mode": "isotropic", "sigma": 0.2714516222476959, "wasserstein": 0.642783592328213, "mse": 0.49035525526896306}
+VALIDATE layernorm {"mode": "empirical", "sigma": 1.0, "wasserstein": 0.5159551912922715, "mse": 0.48446102090838195}
+VALIDATE layernorm {"mode": "paired", "sigma": 1.0, "wasserstein": 0.6594603541884541, "mse": 0.4601858519699154}
+VALIDATE layernorm {"mode": "ot", "sigma": 1.0, "wasserstein": 0.4586898592147076, "mse": 0.26231477131588543}
+TEST layernorm fixed 0 -20.830977175137352 8.525781963525029 0 194
+TEST layernorm fixed 1 -17.146194328837463 7.5519803223704605 13 183
+TEST layernorm fixed 2 -20.98428766994974 7.213867638401377 5 193
+TEST layernorm fixed 3 -16.5044080950977 7.376743323171201 0 199
+TEST layernorm selected 0 0.9968577469935423 0.12486070173132854 0 0
+TEST layernorm selected 1 0.637669060035838 0.11319675622061671 0 0
+TEST layernorm selected 2 0.7530749928195791 0.1814874780610747 0 0
+TEST layernorm selected 3 0.9938257650894459 0.2780233440150429 0 1
+DIAGNOSTIC layernorm mean_direction_removed 0.5984904485081252 0.09008781378041021
+DIAGNOSTIC layernorm target_rna_oracle 0.8242133863916813 0.5183395227787938
